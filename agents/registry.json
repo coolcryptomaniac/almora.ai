@@ -1,0 +1,20 @@
+{
+  "town":"Almora","version":1,"policy":"read-first-human-accountability",
+  "agents":[
+    {"id":"town-concierge","mission":"Route local questions to the correct workflow"},
+    {"id":"civic-watch","mission":"Maintain verified facilities and public issue state"},
+    {"id":"monkey-wildlife","mission":"Map wildlife conflict and coordinate humane response"},
+    {"id":"local-jobs","mission":"Match verified jobs to opted-in local candidates"},
+    {"id":"farm-watch","mission":"Surface crop, weather and wildlife risk"},
+    {"id":"health-navigator","mission":"Navigate verified care and transport; never diagnose"},
+    {"id":"transport-watch","mission":"Track transport and last-mile disruptions"},
+    {"id":"road-access","mission":"Track closures, landslides, potholes and access"},
+    {"id":"education","mission":"Connect students with education resources"},
+    {"id":"traffic","mission":"Surface traffic, parking and unsafe-road hotspots"},
+    {"id":"price-scam-watch","mission":"Flag suspicious patterns for human review"},
+    {"id":"government-navigator","mission":"Explain public services and schemes"},
+    {"id":"tourism","mission":"Coordinate responsible tourism information"},
+    {"id":"commerce","mission":"Make verified local businesses discoverable"},
+    {"id":"local-task-router","mission":"Match local needs to trusted providers"}
+  ]
+}
