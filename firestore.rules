@@ -5,6 +5,7 @@ service cloud.firestore {
     function moderator() {
       return signedIn() && exists(/databases/$(database)/documents/moderators/$(request.auth.uid));
     }
+    function owner(uid) { return signedIn() && request.auth.uid == uid; }
 
     match /reports/{reportId} {
       allow create: if request.resource.data.keys().hasOnly(['category','location','description','status','source','createdAt'])
@@ -24,13 +25,49 @@ service cloud.firestore {
     match /businesses/{id} { allow read: if true; allow write: if moderator(); }
     match /verifiedSources/{id} { allow read: if true; allow write: if moderator(); }
 
+    match /jobSubmissions/{id} {
+      allow create: if signedIn()
+                    && request.resource.data.ownerUid == request.auth.uid
+                    && request.resource.data.status == 'pending'
+                    && request.resource.data.role is string
+                    && request.resource.data.role.size() <= 120
+                    && request.resource.data.employer is string
+                    && request.resource.data.employer.size() <= 160
+                    && request.resource.data.location is string
+                    && request.resource.data.location.size() <= 160;
+      allow read: if moderator() || (signedIn() && resource.data.ownerUid == request.auth.uid);
+      allow update, delete: if moderator();
+    }
+
+    match /businessSubmissions/{id} {
+      allow create: if signedIn()
+                    && request.resource.data.ownerUid == request.auth.uid
+                    && request.resource.data.status == 'pending'
+                    && request.resource.data.name is string
+                    && request.resource.data.name.size() <= 160
+                    && request.resource.data.category is string
+                    && request.resource.data.category.size() <= 120
+                    && request.resource.data.location is string
+                    && request.resource.data.location.size() <= 160;
+      allow read: if moderator() || (signedIn() && resource.data.ownerUid == request.auth.uid);
+      allow update, delete: if moderator();
+    }
+
+    match /jobApplications/{id} {
+      allow create: if signedIn()
+                    && request.resource.data.applicantUid == request.auth.uid
+                    && request.resource.data.status == 'submitted';
+      allow read: if moderator() || (signedIn() && resource.data.applicantUid == request.auth.uid);
+      allow update, delete: if moderator();
+    }
+
     match /moderators/{uid} {
       allow read: if signedIn() && request.auth.uid == uid;
       allow write: if false;
     }
 
     match /candidateProfiles/{uid} {
-      allow read, write: if signedIn() && request.auth.uid == uid;
+      allow read, write: if owner(uid);
     }
 
     match /{document=**} { allow read, write: if false; }
