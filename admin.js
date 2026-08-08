@@ -1,0 +1,18 @@
+import { firebaseConfig } from './firebase-config.js';
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js';
+import { getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js';
+import { getFirestore, collection, query, where, onSnapshot, doc, setDoc, updateDoc, serverTimestamp } from 'https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js';
+
+const app=initializeApp(firebaseConfig);const auth=getAuth(app);const db=getFirestore(app);
+const authBox=document.querySelector('#authBox'),consoleEl=document.querySelector('#console'),reportsEl=document.querySelector('#reports'),statusEl=document.querySelector('#authStatus'),logoutBtn=document.querySelector('#logout');
+let unsubscribe=null;
+
+document.querySelector('#login').onclick=async()=>{statusEl.textContent='Signing in…';try{await signInWithEmailAndPassword(auth,document.querySelector('#email').value.trim(),document.querySelector('#password').value);statusEl.textContent='';}catch(e){statusEl.textContent='Sign-in failed. Check credentials and moderator access.';}};
+logoutBtn.onclick=()=>signOut(auth);
+
+onAuthStateChanged(auth,user=>{if(unsubscribe){unsubscribe();unsubscribe=null}if(!user){authBox.classList.remove('hidden');consoleEl.classList.add('hidden');logoutBtn.classList.add('hidden');return}authBox.classList.add('hidden');consoleEl.classList.remove('hidden');logoutBtn.classList.remove('hidden');const q=query(collection(db,'reports'),where('status','==','new'));unsubscribe=onSnapshot(q,snap=>{document.querySelector('#count').textContent=`${snap.size} pending`;reportsEl.innerHTML='';if(!snap.size){reportsEl.innerHTML='<div class="reportCard">No pending reports.</div>';return}snap.forEach(d=>renderReport(d.id,d.data()));},err=>{reportsEl.innerHTML='<div class="reportCard">Access denied. Add this user UID as a document ID inside the Firestore <code>moderators</code> collection, then sign in again.</div>';console.error(err);});});
+
+function renderReport(id,r){const card=document.createElement('article');card.className='reportCard';card.innerHTML=`<small>${escapeHtml(r.category||'Other')} · ${escapeHtml(r.location||'Unknown location')}</small><h3>${escapeHtml(r.description||'')}</h3><small>Submitted ${escapeHtml(r.createdAt||'')}</small><div class="actions"><button class="approve">Approve to public map</button><button class="reject">Reject</button></div>`;card.querySelector('.approve').onclick=()=>approve(id,r,card);card.querySelector('.reject').onclick=()=>rejectReport(id,card);reportsEl.appendChild(card)}
+async function approve(id,r,card){const lat=prompt('Verified latitude for this issue (example 29.5892):');if(lat===null)return;const lng=prompt('Verified longitude for this issue (example 79.6467):');if(lng===null)return;const latitude=Number(lat),longitude=Number(lng);if(!Number.isFinite(latitude)||!Number.isFinite(longitude)){alert('Invalid coordinates');return}await setDoc(doc(db,'publicIssues',id),{category:r.category||'Other',location:r.location||'',description:r.description||'',status:'verified',latitude,longitude,source:'moderated-resident-report',verifiedAt:serverTimestamp()});await updateDoc(doc(db,'reports',id),{status:'verified',moderatedAt:serverTimestamp()});card.remove()}
+async function rejectReport(id,card){if(!confirm('Reject this report? It will remain private and will not appear publicly.'))return;await updateDoc(doc(db,'reports',id),{status:'rejected',moderatedAt:serverTimestamp()});card.remove()}
+function escapeHtml(v){return String(v).replace(/[&<>'\"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]))}

@@ -2,7 +2,9 @@ rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
     function signedIn() { return request.auth != null; }
-    function moderator() { return signedIn() && request.auth.token.moderator == true; }
+    function moderator() {
+      return signedIn() && exists(/databases/$(database)/documents/moderators/$(request.auth.uid));
+    }
 
     match /reports/{reportId} {
       allow create: if request.resource.data.keys().hasOnly(['category','location','description','status','source','createdAt'])
@@ -21,6 +23,11 @@ service cloud.firestore {
     match /transport/{id} { allow read: if true; allow write: if moderator(); }
     match /businesses/{id} { allow read: if true; allow write: if moderator(); }
     match /verifiedSources/{id} { allow read: if true; allow write: if moderator(); }
+
+    match /moderators/{uid} {
+      allow read: if signedIn() && request.auth.uid == uid;
+      allow write: if false;
+    }
 
     match /candidateProfiles/{uid} {
       allow read, write: if signedIn() && request.auth.uid == uid;
