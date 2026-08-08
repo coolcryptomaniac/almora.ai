@@ -14,7 +14,6 @@ permissions:
 
 jobs:
   deploy:
-    if: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_ALMORAAI != '' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
