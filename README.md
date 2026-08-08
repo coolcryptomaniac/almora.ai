@@ -10,30 +10,53 @@ Almora.ai is an open civic-tech experiment to create an AI-native coordination l
 - Live OpenStreetMap centered on Almora
 - Browser geolocation
 - Live Almora weather via Open-Meteo
-- Map filters for roads, wildlife, health, jobs and transport
-- Resident problem-report workflow
-- Optional Firestore persistence
-- Privacy-first Firestore rules
+- Realtime Firestore public-data listeners
+- Resident issue reporting and moderation
+- Resident accounts and private skills profiles
+- Moderated local jobs and business marketplace
+- Moderator/admin console
+- Firebase App Check using reCAPTCHA Enterprise
+- Firebase AI Logic client with deterministic fallback
 - 15-agent town registry
-- Automatic GitHub Pages deployment workflow
+- Firebase Hosting CI/CD workflow
+- GitHub Pages retained as a manual fallback only
 
-**Important:** civic markers currently included in the map are explicitly seed/demo markers. They are not represented as live incidents. Live civic data should only appear after a verified source or moderated resident report is connected.
+**Important:** civic seed markers are explicitly demo markers. They are not represented as live incidents. Public civic data should only come from moderated resident reports or verified sources.
 
-## Run locally
+## Firebase project
 
-```bash
-python3 -m http.server 8000
-```
+Project ID: `almoraai`
 
-## Enable Firebase
+The production path is:
 
-1. Create a Firebase project and enable Cloud Firestore.
-2. Register a Web app.
-3. Copy `firebase-config.example.js` to `firebase-config.js`.
-4. Paste the Firebase web-app configuration into it.
-5. Deploy `firestore.rules` and `firestore.indexes.json` using Firebase CLI.
+`GitHub → GitHub Actions → Firebase Hosting → App Check → Firebase AI Logic / Firestore`
 
-Never commit service-account keys or Firebase Admin credentials.
+### App Check
+
+The web app initializes App Check with the registered reCAPTCHA Enterprise site key before Auth/Firestore/AI usage. Keep enforcement **off initially**, deploy the app, then review App Check metrics. Turn enforcement on only after valid requests are consistently visible.
+
+For local development after enforcement is enabled, configure Firebase's App Check debug provider rather than disabling production protection.
+
+### Firebase AI Logic
+
+`ai-client.js` uses the Gemini Developer API backend through Firebase AI Logic and currently targets `gemini-3.5-flash`. If AI Logic is unavailable or not yet enabled in the Firebase console, the homepage falls back to deterministic Almora-specific routing instead of failing.
+
+No Gemini API key is stored in this repository.
+
+## Hosting
+
+Firebase Hosting is the primary production host. `.github/workflows/firebase-hosting.yml` supports:
+
+- live deployment from `main`;
+- temporary preview channels for pull requests.
+
+The workflow is intentionally skipped until this GitHub Actions secret exists:
+
+`FIREBASE_SERVICE_ACCOUNT_ALMORAAI`
+
+The recommended way to create it is Firebase CLI's official Hosting GitHub integration (`firebase init hosting:github`), which creates the deployment service account and stores the credential as a GitHub secret. Never commit the service-account JSON.
+
+`.github/workflows/pages.yml` is manual-only and exists purely as a fallback; it is not the production path.
 
 ## Firestore model
 
@@ -41,32 +64,39 @@ Never commit service-account keys or Firebase Admin credentials.
 - `publicIssues` — moderated public issue feed
 - `facilities`
 - `jobs`
+- `jobSubmissions`
+- `jobApplications`
 - `candidateProfiles`
 - `transport`
 - `businesses`
+- `businessSubmissions`
 - `verifiedSources`
+- `moderators`
 
-Unverified reports are not publicly readable by default. Moderation should promote verified facts into public collections.
+Unverified submissions are not publicly readable by default. Moderation promotes verified facts into public collections.
+
+## Run locally
+
+Because App Check reCAPTCHA Enterprise validates allowed hostnames, local development should use the official App Check debug provider once enforcement is enabled. Before enforcement, a simple static server is enough:
+
+```bash
+python3 -m http.server 8000
+```
 
 ## Agents
 
 See `agents/registry.json`. Agents are **read-first**. AI may retrieve, classify, summarize and coordinate routine workflows. High-impact actions require accountable humans, especially medical/emergency cases, wildlife intervention, government submissions, accusations, payments and employment decisions.
 
-## GitHub Pages
-
-`.github/workflows/pages.yml` deploys the repository on pushes to `main`. In repository settings set **Pages → Source → GitHub Actions**.
-
 ## Next milestones
 
-- Firebase Authentication for residents, businesses and moderators
-- Moderation/admin dashboard
+- Connect the custom `almora.ai` domain to Firebase Hosting
+- Turn on Firebase AI Logic in the Firebase console if not already enabled
+- Observe App Check metrics, then enforce it for AI Logic and Firestore
 - Verified Almora facilities dataset
-- Live moderated issue markers from Firestore
-- Jobs marketplace + private candidate profiles
 - Hindi/English UI and voice
-- AI gateway with source-backed retrieval and tool calling
 - Transport and road adapters
 - Wildlife hotspot analytics
 - Public resolution metrics
+- Remote Config for switching AI models without redeploying
 
 Before accepting external civic-data contributions, add an explicit open-source license, privacy policy, contribution policy and moderation policy.
