@@ -1,0 +1,14 @@
+{
+  "updatedAt": "2026-08-09",
+  "policy": "Official sources are authoritative for directory facts; community/map records are discovery-only until moderated.",
+  "sources": [
+    {"id":"district-home","name":"District Almora / NIC","url":"https://almora.nic.in/","type":"government","scope":"utilities, helplines, notices"},
+    {"id":"district-hospitals","name":"District Almora Hospitals","url":"https://almora.nic.in/public-utility-category/hospitals/","type":"government","scope":"hospital contacts"},
+    {"id":"district-colleges","name":"District Almora Colleges/Universities","url":"https://almora.nic.in/public-utility-category/colleges/","type":"government","scope":"college contacts"},
+    {"id":"district-postal","name":"District Almora Postal","url":"https://almora.nic.in/public-utility-category/postal/","type":"government","scope":"postal contacts"},
+    {"id":"district-municipality","name":"District Almora Municipalities","url":"https://almora.nic.in/public-utility-category/municipality/","type":"government","scope":"municipal bodies"},
+    {"id":"district-announcements","name":"District Almora Announcements","url":"https://almora.nic.in/notice_category/announcements/","type":"government","scope":"current notices and road SOPs"},
+    {"id":"uttarakhand-tourism-almora","name":"Uttarakhand Tourism — Almora","url":"https://www.uttarakhandtourism.gov.in/destination/almora","type":"government","scope":"tourism, access, heritage, figures"},
+    {"id":"uttarakhand-culture","name":"Uttarakhand Tourism — Voices and Culture","url":"https://www.uttarakhandtourism.gov.in/page/voices-and-culture","type":"government","scope":"festivals and culture"}
+  ]
+}
