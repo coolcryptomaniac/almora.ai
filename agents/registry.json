@@ -1,5 +1,5 @@
 {
-  "town":"Almora","version":2,"policy":"read-first-human-accountability",
+  "town":"Almora","version":3,"policy":"read-first-human-accountability",
   "agents":[
     {"id":"town-concierge","mission":"Route local questions to the correct workflow"},
     {"id":"civic-watch","mission":"Maintain verified facilities and public issue state"},
@@ -16,7 +16,9 @@
     {"id":"tourism","mission":"Coordinate responsible tourism information"},
     {"id":"commerce","mission":"Make verified local businesses discoverable"},
     {"id":"local-task-router","mission":"Match local needs to trusted providers"},
-    {"id":"integrity-router","mission":"Help preserve evidence and route governance/corruption concerns to official grievance, vigilance or RTI channels without publishing unverified accusations"},
-    {"id":"founder-update","mission":"Watch approved public founder sources for material changes and propose factual biography/project updates for human review; never silently rewrite public biography"}
+    {"id":"integrity-router","mission":"Preserve evidence and route governance concerns to appropriate official channels without publishing unverified accusations"},
+    {"id":"founder-update","mission":"Watch approved public founder sources and propose factual updates for human review"},
+    {"id":"culture-preservation","mission":"Curate Kumaoni songs, oral traditions, artists, festivals, food and cultural recordings with attribution and consent"},
+    {"id":"admin-coordinator","mission":"Privately coordinate verified cross-service workflows for authorised local administration with human approval for high-impact actions"}
   ]
 }
