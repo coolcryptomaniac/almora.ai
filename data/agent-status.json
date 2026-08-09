@@ -1,18 +1,12 @@
 {
-  "generated_at": "2026-08-09T09:00:00Z",
-  "agent_count": 19,
-  "meaning": "configured means code or policy exists; it does not mean the agent independently runs or learns",
-  "operational_layers": {
-    "interactive_routing": true,
-    "daily_news_workflow": true,
-    "official_source_watch": true,
-    "firebase_hosting": true,
-    "daily_agent_scorecard": true,
-    "autonomous_model_training": false
-  },
-  "status_summary": {
-    "configured": 19,
-    "scheduled_automation_present": 3,
-    "self_learning_models": 0
-  }
+  "updatedAt":"2026-08-09T14:45:00Z",
+  "mode":"coordination-not-self-training",
+  "explanation":"Agents consume refreshed public signals and coordinate workflows. They do not retrain or self-modify the underlying language model.",
+  "metrics":{"newsSignals":5,"monkeyHotspots":12,"peopleProfiles":13,"agentCount":15,"collaborationCount":5},
+  "agents":[
+    {"id":"town-concierge","label":"Citizen Support","state":"ready","signalCount":5,"signals":[]},{"id":"civic-watch","label":"Civic & Safety","state":"ready","signalCount":4,"signals":[]},{"id":"monkey-wildlife","label":"Monkey & Wildlife","state":"ready","signalCount":6,"signals":[]},{"id":"local-jobs","label":"Jobs & Skills","state":"ready","signalCount":1,"signals":[]},{"id":"farm-watch","label":"Farming & Wildlife","state":"ready","signalCount":6,"signals":[]},{"id":"health-navigator","label":"Health & Wellness","state":"ready","signalCount":0,"signals":[]},{"id":"transport-watch","label":"Transport","state":"ready","signalCount":2,"signals":[]},{"id":"road-access","label":"Road Access","state":"ready","signalCount":2,"signals":[]},{"id":"education","label":"Education","state":"ready","signalCount":1,"signals":[]},{"id":"traffic","label":"Traffic","state":"ready","signalCount":2,"signals":[]},{"id":"price-scam-watch","label":"Price Watch","state":"ready","signalCount":0,"signals":[]},{"id":"government-navigator","label":"Government Navigator","state":"ready","signalCount":3,"signals":[]},{"id":"tourism","label":"Tourism Planner","state":"ready","signalCount":2,"signals":[]},{"id":"commerce","label":"Local Commerce","state":"ready","signalCount":1,"signals":[]},{"id":"local-task-router","label":"Clean Almora & Local Tasks","state":"ready","signalCount":2,"signals":[]}
+  ],
+  "collaborations":[
+    {"agents":["monkey-wildlife","farm-watch"],"reason":"Wildlife conflict affects homes, crops and farm decisions","signals":["Dharanaula","Khatyari","Pokharkhali"]},{"agents":["road-access","transport-watch"],"reason":"Road and infrastructure updates change viable travel routes","signals":["Monsoon road opening SOP"]},{"agents":["local-jobs","education"],"reason":"Connect skills and learning pathways to employment signals","signals":[]},{"agents":["government-navigator","civic-watch"],"reason":"Policy and government updates need clear citizen explanations","signals":["SIR digitisation","District administration"]},{"agents":["tourism","road-access"],"reason":"Tourism planning should account for road access","signals":["Monsoon road opening SOP"]}
+  ]
 }
