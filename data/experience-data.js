@@ -32,6 +32,6 @@ export const digitalServices=[
 ];
 
 export const droneVideos=[
-{title:'Almora + Jageshwar from above',youtubeId:'mA_Vhen3mQ8',credit:'WildFilmsIndia',note:'Aerial footage; embedded from the original YouTube publisher.'},
-{title:'Drone Monday · Almora',youtubeId:'BUJ7pgioQGw',credit:'Manu & Baani',note:'Short aerial film of Almora and the Himalayan landscape.'}
+{title:'Almora from Above · Drone in Clouds',youtubeId:'_giPAFAkjw8',credit:'RPS',note:'Published January 2026; aerial views of Almora, Kumaon ridges and low clouds.'},
+{title:'Aerial view of Jageshwar Dham',youtubeId:'KHn01Wakd6k',credit:'WildFilmsIndia',note:'Published October 2025; aerial footage of the Jageshwar temple complex in Almora district.'}
 ];
