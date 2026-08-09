@@ -9,6 +9,7 @@ on:
     paths:
       - 'agents/**'
       - 'data/monkey-hotspots.json'
+      - 'data/apps.json'
       - '.github/workflows/town-intelligence.yml'
 
 permissions:
@@ -30,18 +31,21 @@ jobs:
         run: python3 agents/people_refresh.py
       - name: Coordinate agents
         run: python3 agents/agent_orchestrator.py
+      - name: Build shared evidence memory
+        run: python3 agents/learning_loop.py
       - name: Validate generated JSON
         run: |
           python3 -m json.tool data/live-news.json >/dev/null
           python3 -m json.tool data/people.json >/dev/null
           python3 -m json.tool data/monkey-hotspots.json >/dev/null
           python3 -m json.tool data/agent-status.json >/dev/null
+          python3 -m json.tool data/agent-learning.json >/dev/null
       - name: Commit refreshed public intelligence
         id: data_commit
         run: |
           git config user.name 'almora-ai-agent'
           git config user.email 'actions@users.noreply.github.com'
-          git add data/live-news.json data/people.json data/agent-status.json
+          git add data/live-news.json data/people.json data/agent-status.json data/agent-learning.json
           if git diff --cached --quiet; then
             echo 'changed=false' >> "$GITHUB_OUTPUT"
             echo 'No public intelligence changes.'
