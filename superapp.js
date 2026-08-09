@@ -1,3 +1,4 @@
+import './impact.js';
 import {directory,culture,figures,officialLinks,emergency,liveNotices} from './data/almora-knowledge.js';
 
 const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
