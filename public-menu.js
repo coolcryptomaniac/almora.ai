@@ -22,19 +22,22 @@ shell.innerHTML=`<div class="publicMenuBackdrop" id="publicMenuBackdrop" hidden>
 document.body.appendChild(shell);
 const drawer=document.querySelector('#publicMenuDrawer'),backdrop=document.querySelector('#publicMenuBackdrop');
 
-function ensureMenuButton(){
+function ensureHeaderControls(){
  const nav=document.querySelector('header nav');if(!nav)return;
+ let login=document.querySelector('#identityLogin');
+ if(!login){login=document.createElement('a');login.id='identityLogin';login.className='identityLogin';login.href='./resident-login.html';login.textContent='Sign in';}
  let btn=document.querySelector('#publicMenuButton');
  if(!btn){btn=document.createElement('button');btn.id='publicMenuButton';btn.className='publicMenuButton';btn.type='button';btn.setAttribute('aria-label','Open Almora features');btn.innerHTML='<span class="hamburgerBars"><i></i><i></i><i></i></span><span class="menuWord">Explore</span>';}
  const report=nav.querySelector('#reportTop');
+ if(login.parentElement!==nav)nav.insertBefore(login,report||nav.firstChild);
  if(btn.parentElement!==nav)nav.insertBefore(btn,report||nav.firstChild);
- else if(report&&btn.nextSibling!==report)nav.insertBefore(btn,report);
+ if(report){nav.insertBefore(login,report);nav.insertBefore(btn,report)}
 }
 function openMenu(){drawer.classList.add('open');drawer.setAttribute('aria-hidden','false');backdrop.hidden=false;document.body.classList.add('menuOpen');document.querySelector('#publicMenuButton')?.setAttribute('aria-expanded','true')}
 function closeMenu(){drawer.classList.remove('open');drawer.setAttribute('aria-hidden','true');backdrop.hidden=true;document.body.classList.remove('menuOpen');document.querySelector('#publicMenuButton')?.setAttribute('aria-expanded','false')}
 
 document.addEventListener('click',e=>{if(e.target.closest('#publicMenuButton'))openMenu()});
 document.querySelector('#publicMenuClose')?.addEventListener('click',closeMenu);backdrop?.addEventListener('click',closeMenu);document.querySelectorAll('#publicMenuDrawer a').forEach(a=>a.addEventListener('click',closeMenu));document.querySelector('#menuReport')?.addEventListener('click',()=>{closeMenu();document.querySelector('#report')?.click()});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&drawer.classList.contains('open'))closeMenu()});
-ensureMenuButton();
-const nav=document.querySelector('header nav');if(nav)new MutationObserver(()=>ensureMenuButton()).observe(nav,{childList:true});
+ensureHeaderControls();
+const nav=document.querySelector('header nav');if(nav)new MutationObserver(()=>ensureHeaderControls()).observe(nav,{childList:true});
 import('./personality-images.js').catch(console.error);
