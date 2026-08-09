@@ -4,6 +4,6 @@
   "photo":"https://avatars.githubusercontent.com/u/33383333?v=4",
   "github":"https://github.com/coolcryptomaniac",
   "linkedin":"https://www.linkedin.com/in/rockermohit",
-  "upiId":"",
-  "supportNote":"UPI is intentionally blank until the founder publishes a verified payment handle. Never guess or infer financial identifiers."
+  "upiId":"coolmohit@ybl",
+  "supportNote":"Verified founder-provided UPI handle. Payment UI must always ask the user to verify the payee name in their payment app before confirming."
 }
