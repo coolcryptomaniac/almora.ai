@@ -65,7 +65,7 @@ async function run(viewport, name) {
     }
     await page.waitForSelector('#reportDialog[open]');
     await page.locator('#reportDialog button[value="cancel"]').click();
-    await page.waitForSelector('#reportDialog:not([open])');
+    await page.waitForFunction(() => !document.querySelector('#reportDialog')?.open);
 
     if (viewport.width < 861) {
       stage = 'mobile menu';
