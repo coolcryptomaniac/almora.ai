@@ -17,6 +17,7 @@ async function run(viewport, name) {
     stage = 'main content';
     await page.waitForSelector('#home');
     await page.waitForSelector('#newsGrid .newsCard', { timeout: 10000 });
+    await page.screenshot({ path: `homepage-${name}.png`, fullPage: true });
 
     stage = 'internal links';
     const hrefs = await page.locator('a[href^="#"]').evaluateAll(nodes => nodes.map(n => n.getAttribute('href')).filter(Boolean));
@@ -49,7 +50,11 @@ async function run(viewport, name) {
     await page.waitForSelector('#richGrid .richCard', { timeout: 12000 });
 
     stage = 'report dialog';
-    await page.locator('[data-report]').first().click();
+    if (viewport.width < 861) {
+      await page.locator('button[data-action="report"]').click();
+    } else {
+      await page.locator('[data-report]').first().click();
+    }
     await page.waitForSelector('#reportDialog[open]');
     await page.locator('#reportDialog button[value="cancel"]').click();
 
