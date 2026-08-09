@@ -1,0 +1,45 @@
+name: Town Intelligence Refresh
+
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'agents/**'
+      - 'data/monkey-hotspots.json'
+      - '.github/workflows/town-intelligence.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: town-intelligence
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    if: ${{ !contains(github.event.head_commit.message || '', '[data-refresh]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Refresh curated news
+        run: python3 agents/news_refresh.py
+      - name: Refresh people atlas
+        run: python3 agents/people_refresh.py
+      - name: Coordinate agents
+        run: python3 agents/agent_orchestrator.py
+      - name: Validate generated JSON
+        run: |
+          python3 -m json.tool data/live-news.json >/dev/null
+          python3 -m json.tool data/people.json >/dev/null
+          python3 -m json.tool data/monkey-hotspots.json >/dev/null
+          python3 -m json.tool data/agent-status.json >/dev/null
+      - name: Commit refreshed public intelligence
+        run: |
+          git config user.name 'almora-ai-agent'
+          git config user.email 'actions@users.noreply.github.com'
+          git add data/live-news.json data/people.json data/agent-status.json
+          git diff --cached --quiet || git commit -m 'data: refresh town intelligence [data-refresh]'
+          git push
