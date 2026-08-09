@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "purpose": "Connect related Almora needs so one request can surface the next useful service instead of ending in a silo.",
+  "links": [
+    {"from":"job","to":["skills","transport","childcare","business"],"rule":"A job match should also check commute feasibility, required skills and employer verification."},
+    {"from":"health","to":["transport","emergency","pharmacy"],"rule":"Health navigation may suggest transport and nearby verified facilities but must not diagnose."},
+    {"from":"road","to":["transport","health","school","tourism","commerce"],"rule":"A road disruption can affect buses, emergency access, schools, visitors and deliveries."},
+    {"from":"wildlife","to":["farming","forest-support","road","school"],"rule":"Wildlife reports can inform crop risk and public-safety routing without recommending harm."},
+    {"from":"farming","to":["weather","wildlife","market","transport","schemes"],"rule":"Farm support should connect risk, market access, transport and applicable public support."},
+    {"from":"business","to":["jobs","directory","delivery","tourism","market"],"rule":"Verified local businesses can hire, receive service demand and appear in relevant discovery."},
+    {"from":"tourism","to":["weather","roads","transport","culture","business"],"rule":"Trips should combine current conditions, access, culture and local commerce."},
+    {"from":"education","to":["transport","scholarships","skills","jobs"],"rule":"Education guidance should connect students to access, funding and future local work."},
+    {"from":"price-scam","to":["market","consumer-help","integrity"],"rule":"Price anomalies and scam reports remain evidence-first and go to human review before publication."},
+    {"from":"culture","to":["artists","events","tourism","education","business"],"rule":"Cultural discovery should support attribution, local artists, learning and responsible tourism."}
+  ],
+  "privacy": {
+    "private_profiles_never_public": true,
+    "cross_matching_requires_purpose": true,
+    "sensitive_attributes_excluded": ["Aadhaar number","biometric templates","medical records","religion","caste"]
+  }
+}
