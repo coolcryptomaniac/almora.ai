@@ -30,8 +30,8 @@ service cloud.firestore {
       allow create: if signedIn()
                     && request.resource.data.requesterUid == request.auth.uid
                     && request.resource.data.status == 'open'
-                    && request.resource.data.service is string
-                    && request.resource.data.service.size() <= 80
+                    && request.resource.data['service'] is string
+                    && request.resource.data['service'].size() <= 80
                     && request.resource.data.location is string
                     && request.resource.data.location.size() <= 160
                     && request.resource.data.description is string
