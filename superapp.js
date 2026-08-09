@@ -1,5 +1,9 @@
 import {directory,culture,figures,officialLinks,emergency,liveNotices} from './data/almora-knowledge.js';
 
+const perf=document.createElement('style');
+perf.textContent=`html,body{overflow-x:hidden!important;overscroll-behavior-y:auto}.reveal,.reveal.in{opacity:1!important;transform:none!important;transition:none!important}.aurora{display:none!important}.quickDock,.publicMenuBackdrop,.publicMenuDrawer,header{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}.glassPanel:before{display:none!important}@media (prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}`;
+document.head.appendChild(perf);document.body?.classList.remove('menuOpen');
+
 const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
 const dirUrl=q=>`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(q)}`;
 const categories={all:'All',health:'Health',education:'Education',government:'Gov',utility:'Utilities',transport:'Transport',shopping:'Shops'};
