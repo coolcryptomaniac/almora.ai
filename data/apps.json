@@ -1,18 +1,18 @@
 {
   "release":"8.2",
   "apps":[
-    {"id":"home","name":"Almora AI Home","url":"./","kind":"core","critical":true},
-    {"id":"hill-life","name":"Hill Life Resolver","url":"./hill-life.html","kind":"coordination","critical":true},
-    {"id":"monkey","name":"Monkey Watch","url":"./monkey.html","kind":"wildlife","critical":true},
-    {"id":"water","name":"Water Watch","url":"./water.html","kind":"utilities","critical":true},
-    {"id":"education-rural","name":"Rural Education","url":"./education-rural.html","kind":"education","critical":true},
-    {"id":"travel","name":"Travel Planner","url":"./travel.html","kind":"mobility","critical":true},
-    {"id":"integrations","name":"App Bridge","url":"./integrations.html","kind":"integrations","critical":false},
-    {"id":"jobs","name":"Jobs & Skills","url":"./jobs.html","kind":"jobs","critical":true},
-    {"id":"services","name":"Local Services","url":"./services.html","kind":"tasks","critical":true},
-    {"id":"businesses","name":"Business Hub","url":"./businesses.html","kind":"commerce","critical":false},
-    {"id":"people","name":"People Atlas","url":"./people.html","kind":"culture","critical":false},
-    {"id":"founder","name":"Founder & Support","url":"./mohit-pandey.html","kind":"project","critical":false},
-    {"id":"status","name":"Release Health","url":"./status.html","kind":"health","critical":true}
+    {"id":"home","name":"Almora AI Home","url":"./","kind":"core","critical":true,"selector":"#home"},
+    {"id":"hill-life","name":"Hill Life Resolver","url":"./hill-life.html","kind":"coordination","critical":true,"selector":"[data-resolver-result]"},
+    {"id":"monkey","name":"Monkey Watch","url":"./monkey.html","kind":"wildlife","critical":true,"selector":"#monkeyMap"},
+    {"id":"water","name":"Water Watch","url":"./water.html","kind":"utilities","critical":true,"selector":"[data-town-report]"},
+    {"id":"education-rural","name":"Rural Education","url":"./education-rural.html","kind":"education","critical":true,"selector":"[data-town-report]"},
+    {"id":"travel","name":"Travel Planner","url":"./travel.html","kind":"mobility","critical":true,"selector":"[data-routes] .routeRow"},
+    {"id":"integrations","name":"App Bridge","url":"./integrations.html","kind":"integrations","critical":false,"selector":"[data-integrations] .integrationBox"},
+    {"id":"jobs","name":"Jobs & Skills","url":"./jobs.html","kind":"jobs","critical":true,"selector":"#jobs"},
+    {"id":"services","name":"Local Services","url":"./services.html","kind":"tasks","critical":true,"selector":"#serviceGrid"},
+    {"id":"businesses","name":"Business Hub","url":"./businesses.html","kind":"commerce","critical":false,"selector":"body"},
+    {"id":"people","name":"People Atlas","url":"./people.html","kind":"culture","critical":false,"selector":".atlasPerson"},
+    {"id":"founder","name":"Founder & Support","url":"./mohit-pandey.html","kind":"project","critical":false,"selector":"[data-founder-support]"},
+    {"id":"status","name":"Release Health","url":"./status.html","kind":"health","critical":true,"selector":"#releaseBig"}
   ]
 }
