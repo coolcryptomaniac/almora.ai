@@ -14,3 +14,7 @@ async function richWeather(){try{const r=await fetch('https://api.open-meteo.com
 
 const apps=document.createElement('section');apps.id='app-coverage';apps.className='section';apps.innerHTML=`<div class="sectionHead"><div><span>DIGITAL SERVICES</span><h2>What works in Almora?</h2><p>Coverage is source-checked. Unknown services stay on a watchlist instead of being guessed unavailable.</p></div></div><div class="appCoverageGrid">${digitalServices.map(x=>`<article class="appCard ${x.status}"><span>${x.status==='verified'?'● Verified in Almora':'◌ Coverage watch'}</span><h3>${x.name}</h3><p><b>${x.category}</b><br>${x.detail}</p>${x.url?`<a href="${x.url}" target="_blank" rel="noopener">Open service ↗</a>`:''}</article>`).join('')}</div>`;live.parentNode?.insertBefore(apps,live.nextSibling);
 import('./live-extras.js').catch(console.error);
+
+for(const href of ['./news-sports.css','./ux-upgrade.css']){const link=document.createElement('link');link.rel='stylesheet';link.href=href;document.head.appendChild(link)}
+import('./news-sports.js').catch(console.error);
+import('./ux-upgrade.js').catch(console.error);
