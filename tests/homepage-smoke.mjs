@@ -25,10 +25,10 @@ async function checkSharedPage(){
     if(before===after)throw new Error('Shared page theme switch failed');
     await page.locator('#globalLangSwitch').click();
     await page.waitForTimeout(100);
-    if(!(await page.locator('.marketHero h1').textContent()).includes('स्थानीय काम'))throw new Error('Jobs Hindi localization failed');
+    if(!(await page.locator('.sectionHead h2').first().textContent()).includes('घर के करीब'))throw new Error('Jobs Hindi localization failed');
     await page.locator('#globalLangSwitch').click();
     await page.waitForTimeout(100);
-    if(!(await page.locator('.marketHero h1').textContent()).includes('स्थानीय काम'))throw new Error('Jobs Kumaoni localization failed');
+    if(!(await page.locator('.sectionHead h2').first().textContent()).includes('घर नजीक'))throw new Error('Jobs Kumaoni localization failed');
     report.sharedPage={ok:true,theme:after,language:'kfy'};
   }finally{await page.close()}
 }
