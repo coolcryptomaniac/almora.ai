@@ -45,5 +45,11 @@ function bindQuickActions(){
  document.addEventListener('click',e=>{const b=e.target.closest('[data-target]');if(!b)return;const target=$(b.dataset.target);if(target){e.preventDefault();target.scrollIntoView({behavior:'auto',block:'start'});}});
 }
 function updateToday(){const d=new Date();if($('#todayDate'))$('#todayDate').textContent=new Intl.DateTimeFormat('en-IN',{weekday:'long',day:'numeric',month:'long'}).format(d);const h=d.getHours();if($('#dayGreeting'))$('#dayGreeting').textContent=h<12?'Good morning, Almora.':h<17?'Good afternoon, Almora.':'Good evening, Almora.';}
+async function loadMenu(){
+ if(document.querySelector('#publicMenuDrawer'))return;
+ let link=document.querySelector('link[href="./public-menu.css"]');
+ if(!link){link=document.createElement('link');link.rel='stylesheet';link.href='./public-menu.css';document.head.appendChild(link);await new Promise(r=>{link.onload=r;link.onerror=r;setTimeout(r,1200)});}
+ await import('./public-menu.js');
+}
 
-try{buildDirectory();buildTransport();renderCulture();renderSources();renderNotices();bindQuickActions();updateToday();}catch(e){console.error('Almora UI init failed',e)}
+try{buildDirectory();buildTransport();renderCulture();renderSources();renderNotices();bindQuickActions();updateToday();loadMenu().catch(console.error);}catch(e){console.error('Almora UI init failed',e)}
