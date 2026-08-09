@@ -1,4 +1,5 @@
 import './impact.js';
+import './public-menu.js';
 import {directory,culture,figures,officialLinks,emergency,liveNotices} from './data/almora-knowledge.js';
 
 const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
@@ -29,5 +30,5 @@ function quickActions(){$$('.quickDock button').forEach(b=>b.onclick=()=>{const 
 function updateToday(){const d=new Date();const el=$('#todayDate');if(el)el.textContent=new Intl.DateTimeFormat('en-IN',{weekday:'long',day:'numeric',month:'long'}).format(d);const hour=d.getHours();const g=$('#dayGreeting');if(g)g.textContent=hour<12?'Good morning, Almora.':hour<17?'Good afternoon, Almora.':'Good evening, Almora.';}
 
 buildDirectory();buildTransport();renderCulture();renderSources();renderNotices();quickActions();updateToday();activateReveal();
-const mm=document.createElement('link');mm.rel='stylesheet';mm.href='./multimedia.css';document.head.appendChild(mm);
+for(const href of ['./multimedia.css','./public-menu.css']){const l=document.createElement('link');l.rel='stylesheet';l.href=href;document.head.appendChild(l)}
 import('./multimedia.js').catch(console.error);
