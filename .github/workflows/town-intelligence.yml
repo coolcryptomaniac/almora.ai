@@ -33,6 +33,8 @@ jobs:
         run: python3 agents/agent_orchestrator.py
       - name: Build shared evidence memory
         run: python3 agents/learning_loop.py
+      - name: Build ranked content feed
+        run: python3 agents/content_engine.py
       - name: Validate generated JSON
         run: |
           python3 -m json.tool data/live-news.json >/dev/null
@@ -40,12 +42,13 @@ jobs:
           python3 -m json.tool data/monkey-hotspots.json >/dev/null
           python3 -m json.tool data/agent-status.json >/dev/null
           python3 -m json.tool data/agent-learning.json >/dev/null
+          python3 -m json.tool data/content-feed.json >/dev/null
       - name: Commit refreshed public intelligence
         id: data_commit
         run: |
           git config user.name 'almora-ai-agent'
           git config user.email 'actions@users.noreply.github.com'
-          git add data/live-news.json data/people.json data/agent-status.json data/agent-learning.json
+          git add data/live-news.json data/people.json data/agent-status.json data/agent-learning.json data/content-feed.json
           if git diff --cached --quiet; then
             echo 'changed=false' >> "$GITHUB_OUTPUT"
             echo 'No public intelligence changes.'
