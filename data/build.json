@@ -1,8 +1,8 @@
 {
-  "release":"Almora v8.1",
-  "releaseId":"almora-v8.1-2026-08-09",
+  "release":"Almora v8.2",
+  "releaseId":"almora-v8.2-2026-08-10",
   "channel":"production",
   "hosting":"Firebase Hosting",
   "expectedHosts":["almoraai.web.app","almora.ai"],
-  "note":"Both Firebase hostnames should serve the same release. HTML is configured no-cache; static modules revalidate frequently."
+  "note":"Code-hardening release: sharp hero rendering, verified UPI support, resilient runtime, expanded cultural borders and shared agent evidence memory."
 }

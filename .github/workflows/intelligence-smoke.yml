@@ -24,6 +24,10 @@ jobs:
         run: python3 agents/news_refresh.py
       - name: Coordinate agents
         run: python3 agents/agent_orchestrator.py
+      - name: Build shared evidence memory
+        run: python3 agents/learning_loop.py
+      - name: Build ranked content feed
+        run: python3 agents/content_engine.py
       - name: Validate output quality
         run: |
           python3 - <<'PY'
@@ -31,8 +35,11 @@ jobs:
           people=json.load(open('data/people.json'))
           news=json.load(open('data/live-news.json'))
           agents=json.load(open('data/agent-status.json'))
+          learning=json.load(open('data/agent-learning.json'))
+          content=json.load(open('data/content-feed.json'))
           routes=json.load(open('data/routes.json'))
           integrations=json.load(open('data/integrations.json'))
+          apps=json.load(open('data/apps.json'))
           assert 12 <= people['count'] <= 200, people['count']
           assert len(people['people']) == people['count']
           names={p['name'] for p in people['people']}
@@ -48,7 +55,17 @@ jobs:
           assert len(categories) >= 4, categories
           assert agents['metrics']['agentCount'] >= 20, agents['metrics']
           assert agents['metrics']['collaborationCount'] >= 8, agents['metrics']
+          assert learning['mode'] == 'shared-evidence-memory-not-model-training'
+          assert learning['count'] >= 4, learning
+          assert all(x.get('evidence') for x in learning['lessons'])
+          assert all(x.get('expiresAt') for x in learning['lessons'])
+          assert content['count'] >= 12, content
+          assert len(content.get('agentIndex',{})) >= 8, content.get('agentIndex')
+          assert any(x.get('kind')=='news' for x in content['items'])
+          assert any(x.get('kind') in {'problem','route','person'} for x in content['items'])
           assert len(routes.get('routes',[])) >= 7
           assert len(integrations.get('integrations',[])) >= 6
-          print({'people':people['count'],'verified_auto':len(auto),'news':len(news['items']),'categories':sorted(categories),'agents':agents['metrics'],'routes':len(routes['routes']),'integrations':len(integrations['integrations'])})
+          assert len(apps.get('apps',[])) >= 12
+          assert any(a.get('id')=='hill-life' and a.get('critical') for a in apps['apps'])
+          print({'people':people['count'],'verified_auto':len(auto),'news':len(news['items']),'categories':sorted(categories),'agents':agents['metrics'],'learning':learning['count'],'content':content['count'],'routes':len(routes['routes']),'integrations':len(integrations['integrations']),'apps':len(apps['apps'])})
           PY
