@@ -1,37 +1,25 @@
-# Manual Patch
+# Manual patch checklist
 
 ## Replace
-
-Replace the repository root `index.html` with the included `index.html`.
+- existing `index.html`
 
 ## Add
+- `exact-homepage.css`
+- `exact-homepage.js`
+- `config.example.js`
+- `assets/hero-top.png`
+- `assets/tripti-card.png`
 
-Add:
+## Keep
+- login pages
+- auth pages
+- jobs / businesses pages
+- firebase files
+- github workflows
 
-```text
-theme-v3.css
-theme-v3.js
-assets/aipan-mark.svg
+## Recommended commit
+```bash
+git add index.html exact-homepage.css exact-homepage.js config.example.js assets/hero-top.png assets/tripti-card.png
+git commit -m "feat: exact premium almora homepage with interactive ask ai"
+git push
 ```
-
-## Do NOT delete
-
-Keep all existing login, jobs, businesses, services, authentication, backend, rules, and workflow files.
-
-## Why this patch is safer
-
-The previous homepage accumulated several independent UI modules that could all modify navigation and layout. This version consolidates the public homepage into one visual/runtime layer.
-
-It deliberately does **not** import:
-
-```text
-public-menu.js
-superapp.js
-multimedia.js
-news-sports.js
-ux-upgrade.js
-```
-
-because their functionality is represented directly in the new homepage and loading them again would recreate duplicate menus and conflicting layout rules.
-
-Once Theme V3 is stable, useful backend/data functions from those modules can be migrated one-by-one into `theme-v3.js`.
