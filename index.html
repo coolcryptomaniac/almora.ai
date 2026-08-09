@@ -1,17 +1,309 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#070b0a"><meta name="description" content="Almora AI — an intelligent local operating layer for Almora, Uttarakhand."><title>Almora AI — Your town, one conversation away</title><link rel="stylesheet" href="./styles.css"><link rel="stylesheet" href="./superapp.css"><link rel="stylesheet" href="./public-menu.css"></head><body><header><a class="brand" href="#"><span>आ</span><b>almora.ai</b></a><nav><div class="topNavMore"><a href="#transport">Move</a><a href="#directory">Directory</a><a href="#notices">Notices</a><a href="#culture">Culture</a><a href="#map-section">Map</a></div><a id="identityLogin" class="identityLogin" href="./resident-login.html">Sign in</a><button id="publicMenuButton" class="publicMenuButton" type="button" aria-label="Open Almora features"><span class="hamburgerBars"><i></i><i></i><i></i></span><span class="menuWord">Explore</span></button><button id="reportTop">Report issue</button></nav></header><main>
-<section class="hero"><div class="signal"><i></i> ALMORA INTELLIGENCE NETWORK · VERIFIED-FIRST</div><h1>What can Almora<br><em>help you with?</em></h1><p class="sub">One AI interface for transport, government services, hospitals, schools, jobs, shops, farming, wildlife, tourism, culture and everyday life across Almora.</p><div class="command"><div class="spark">✦</div><textarea id="prompt" rows="2" placeholder="Ask anything about Almora…"></textarea><button id="ask">Ask AI ↑</button></div><div id="answer" class="answer" hidden></div><div class="chips"><button data-q="Find the nearest verified hospital in Almora">🏥 Hospital</button><button data-q="Help me travel by bus or taxi from Almora">🚌 Transport</button><button data-q="Which government office handles my problem?">🏛️ Gov help</button><button data-q="Find local jobs matching my skills">💼 Jobs</button><button data-q="Tell me about Almora culture and festivals">🎭 Culture</button><button data-q="Monkeys are damaging crops near my village">🐒 Wildlife</button></div></section>
-<section class="pulse"><div><small>NETWORK</small><b>15 AI agents</b></div><div><small>GROUNDING</small><b>Official + moderated data</b></div><div><small>WEATHER</small><b id="weather">Loading Almora…</b></div><div><small>STATUS</small><b>Fast local shell</b></div></section>
-<section class="section"><div class="townNow"><div class="glassPanel"><span class="kicker">TODAY IN ALMORA</span><h3 id="dayGreeting">Namaskar, Almora.</h3><p id="todayDate" class="sub" style="margin:0;text-align:left;font-size:15px"></p><div class="miniStats"><div><b>4</b><span>official hospitals seeded</span></div><div><b>6</b><span>district colleges listed officially</span></div><div><b>15</b><span>AI workflows connected</span></div></div></div><div class="glassPanel"><span class="kicker">ONE TOWN · ONE TAP</span><h3>Do something now.</h3><div class="livePill">Fast app shell</div></div></div><div class="oneTapGrid"><button class="oneTap" data-target="#transport"><span>🚌</span><b>Get somewhere</b><small>Bus, taxi, walk or private vehicle.</small></button><button class="oneTap" data-target="#directory"><span>⌘</span><b>Find a place</b><small>Hospitals, offices, colleges, shops.</small></button><button class="oneTap" data-q="I need help with a government service in Almora"><span>🏛️</span><b>Get civic help</b><small>Route to the right office or service.</small></button><button class="oneTap" data-target="#notices"><span>✦</span><b>Town pulse</b><small>Official notices, road guidance and local context.</small></button></div></section>
-<section id="transport" class="section"><div class="sectionHead"><div><span>ONE-CLICK MOBILITY</span><h2>Move through Almora.</h2><p>Choose a mode and jump straight to navigation or ask the transport agent to resolve the trip.</p></div></div><div class="resolver"><div class="glassPanel"><div class="transportModes"><button class="modeBtn active" data-mode="bus">🚌<br><b>Bus</b></button><button class="modeBtn" data-mode="taxi">🚕<br><b>Taxi</b></button><button class="modeBtn" data-mode="walk">🥾<br><b>Walk</b></button><button class="modeBtn" data-mode="drive">🚗<br><b>Drive</b></button></div><p class="offlineNote">Live timetable data is only shown when a verified source is available.</p></div><div class="glassPanel routeCard"><span class="kicker">TRANSPORT RESOLVER</span><h3 id="routeTitle">Public bus</h3><p id="routeDesc">Start with Almora Bus Terminal and verify current departure information.</p><div class="routeActions"><a id="routeNavigate" class="primary" href="#" target="_blank" rel="noopener">Open navigation ↗</a><button id="routeAsk">Ask transport AI</button></div></div></div></section>
-<section id="directory" class="section"><div class="sectionHead"><div><span>ALMORA DIRECTORY</span><h2>Find what matters.</h2><p>Official district records are marked separately from map/directory listings.</p></div></div><div class="directoryTools"><input id="directorySearch" placeholder="Search hospital, college, electricity, office, shop…"><div id="directoryFilters"></div></div><div id="directoryGrid" class="directoryGrid"><article class="placeCard"><h3>Loading directory…</h3><p>The rest of the site remains usable even if this data is unavailable.</p></article></div></section>
-<section id="notices" class="section"><div class="sectionHead"><div><span>DISTRICT PULSE</span><h2>Official notices that may affect your day.</h2></div></div><div id="noticeGrid" class="directoryGrid"><article class="placeCard"><h3>Official updates</h3><p>Loading the locally cached notice set.</p></article></div></section>
-<section id="map-section" class="section map-section"><div class="sectionHead"><div><span>TOWN MAP</span><h2>Almora, spatially.</h2><p>The map loads lazily and never blocks the rest of Almora.ai.</p></div><div class="mapActions"><button id="locate">◎ Locate me</button><button id="report">＋ Report problem</button></div></div><div class="mapShell"><div id="map"><div class="mapFallback">Map loads only when needed.</div></div><div class="mapNote">OpenStreetMap · lazy loaded</div></div></section>
-<section id="culture" class="section cultureBand"><div class="sectionHead"><div><span class="eyebrowArt">Kumaon, remembered & alive</span><h2>Culture is infrastructure too.</h2></div></div><p class="cultureQuote">Almora is not just a location. It is a <em>living cultural network</em> of fairs, temples, food, art, memory and ideas.</p><div class="cultureGrid"><div><span class="kicker">CULTURAL + CIVIC CALENDAR</span><div id="calendarList" class="calendarList"></div></div><div><span class="kicker">FIGURES OF ALMORA</span><div id="figureList" class="figureList"></div></div></div></section>
-<section id="services" class="section"><div class="sectionHead"><div><span>TOWN OS</span><h2>Everyday life, routed.</h2></div></div><div class="cards"><article data-q="Find local services"><i>⌘</i><h3>Services</h3><p>Facilities, shops, professionals and public offices.</p><b>Ask →</b></article><article data-q="Find a local job"><i>↗</i><h3>Jobs ↔ people</h3><p>Verified vacancies matched to opted-in skills.</p><b>Match →</b></article><article data-q="Help with farming and wildlife"><i>⌁</i><h3>Farm + wildlife</h3><p>Crop risk, weather and humane wildlife-conflict workflows.</p><b>Get help →</b></article><article data-q="Find healthcare"><i>+</i><h3>Health</h3><p>Verified facilities and transport navigation.</p><b>Navigate →</b></article><article data-q="Explain a government service"><i>◇</i><h3>Government</h3><p>Turn complicated schemes into clear next steps.</p><b>Start →</b></article><article data-q="Plan a responsible Almora trip"><i>△</i><h3>Tourism</h3><p>Weather, roads, places and culture in one assistant.</p><b>Explore →</b></article></div></section>
-<section class="section"><div class="sectionHead"><div><span>OFFICIAL SOURCE WALL</span><h2>Trust is visible.</h2></div></div><div id="sourceWall" class="sourceWall"></div></section>
-<section class="section"><div class="sectionHead"><div><span>URGENT HELP</span><h2>Important numbers.</h2></div></div><div id="emergencyStrip" class="emergencyStrip"></div></section>
-<section id="missions" class="section missions"><div class="sectionHead"><div><span>ALMORA MISSIONS</span><h2>AI aimed at actual problems.</h2></div></div><div class="missionGrid"><div><strong>01</strong><h3>Monkey menace</h3><p>Reports → hotspot intelligence → humane intervention workflow.</p></div><div><strong>02</strong><h3>Local unemployment</h3><p>Skills graph → verified vacancies → matching.</p></div><div><strong>03</strong><h3>Road access</h3><p>Evidence → verification → ownership → resolution.</p></div><div><strong>04</strong><h3>Price & scam watch</h3><p>Evidence → anomaly detection → human review.</p></div></div></section></main>
-<div class="quickDock"><button data-target="#transport"><i>🚌</i>Move</button><button data-target="#directory"><i>⌘</i>Find</button><button data-target="#notices"><i>⚡</i>Pulse</button><button data-target="#map-section"><i>◎</i>Map</button><button data-q="Help me with something in Almora"><i>✦</i>AI</button></div>
-<footer><div><b>almora.ai</b><p>AI-native civic coordination for a Himalayan town.</p></div><div class="trust">Official data · Community reports · Human accountability</div></footer>
-<dialog id="reportDialog"><form method="dialog"><button class="close">×</button><span>REPORT TO ALMORA AI</span><h2>What needs attention?</h2><label>Category<select id="category"><option>Road / access</option><option>Monkey / wildlife</option><option>Transport</option><option>Farming</option><option>Health access</option><option>Education</option><option>Price / scam</option><option>Public service</option><option>Other</option></select></label><label>Broad location<input id="reportLocation" placeholder="Locality, village or landmark"></label><label>What happened?<textarea id="reportText" rows="4" placeholder="Describe what you observed…"></textarea></label><p class="privacy">Don't include Aadhaar numbers, medical records or unnecessary personal information.</p><button id="submitReport" value="default">Save report</button><div id="reportStatus"></div></form></dialog>
-<script type="module" src="./public-menu.js"></script><script type="module" src="./superapp.js"></script><script type="module" src="./app.js"></script></body></html>
+<!doctype html>
+<html lang="en" data-theme="modern">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#07110d">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Almora.ai — local help, culture, services and opportunities for Almora.">
+  <title>almora.ai — Your town, one conversation away</title>
+  <link rel="preload" href="./theme-v3.css?v=3.0.0" as="style">
+  <link rel="stylesheet" href="./theme-v3.css?v=3.0.0">
+</head>
+<body>
+  <div class="appShell">
+    <aside class="sideNav" id="sideNav" aria-label="Main navigation">
+      <div class="sideBrand">
+        <a href="#home" class="brandMark"><span>आ</span><strong>almora.ai</strong></a>
+        <button class="iconBtn sideClose" id="sideClose" aria-label="Close menu">×</button>
+      </div>
+
+      <div class="sideScroll">
+        <nav class="navGroup">
+          <span class="navLabel" data-i18n="nav.everyday">Everyday</span>
+          <a class="navItem active" href="#home"><i>⌂</i><span data-i18n="nav.home">Home</span></a>
+          <a class="navItem" href="#news"><i>◉</i><span data-i18n="nav.now">Almora Now</span><em>LIVE</em></a>
+          <a class="navItem" href="#transport"><i>▣</i><span data-i18n="nav.transport">Transport</span></a>
+          <a class="navItem" href="#health"><i>✚</i><span data-i18n="nav.health">Health & wellness</span></a>
+          <a class="navItem" href="#directory"><i>⌘</i><span data-i18n="nav.directory">Market & directory</span></a>
+        </nav>
+
+        <nav class="navGroup">
+          <span class="navLabel" data-i18n="nav.opportunity">Opportunity</span>
+          <a class="navItem" href="./jobs.html"><i>▰</i><span data-i18n="nav.jobs">Jobs & skills</span></a>
+          <a class="navItem" href="./businesses.html"><i>▦</i><span data-i18n="nav.business">Business hub</span></a>
+          <a class="navItem" href="#education"><i>◇</i><span data-i18n="nav.education">Education</span></a>
+          <a class="navItem" href="#farming"><i>♧</i><span data-i18n="nav.farming">Farming & wildlife</span></a>
+        </nav>
+
+        <nav class="navGroup">
+          <span class="navLabel" data-i18n="nav.explore">Culture & explore</span>
+          <a class="navItem" href="#culture"><i>♫</i><span data-i18n="nav.culture">Culture & songs</span></a>
+          <a class="navItem" href="#places"><i>△</i><span data-i18n="nav.tourism">Tourism & treks</span></a>
+          <a class="navItem" href="#sports"><i>✦</i><span data-i18n="nav.sports">Sports & fitness</span></a>
+          <a class="navItem" href="#events"><i>◫</i><span data-i18n="nav.events">Events & festivals</span></a>
+        </nav>
+
+        <nav class="navGroup">
+          <span class="navLabel" data-i18n="nav.civic">Civic & safety</span>
+          <a class="navItem" href="#civic"><i>▤</i><span data-i18n="nav.civicHelp">Local services</span></a>
+          <a class="navItem" href="#safety"><i>◆</i><span data-i18n="nav.safety">Safety & alerts</span></a>
+          <a class="navItem" href="#map"><i>●</i><span data-i18n="nav.map">Maps & places</span></a>
+        </nav>
+
+        <div class="accessBox">
+          <span class="navLabel" data-i18n="access.title">Access</span>
+          <a href="./resident-login.html"><i>◎</i><span><b data-i18n="access.citizen">Citizen</b><small data-i18n="access.citizenSub">Profile, jobs & local help</small></span></a>
+          <a href="./business-login.html"><i>▦</i><span><b data-i18n="access.business">Business</b><small data-i18n="access.businessSub">List, hire & connect</small></span></a>
+          <a href="./government-login.html"><i>◇</i><span><b data-i18n="access.localAdmin">Local administration</b><small data-i18n="access.localAdminSub">Verified staff access</small></span></a>
+        </div>
+      </div>
+
+      <button class="reportSide" data-open-report>＋ <span data-i18n="action.report">Report / suggest</span></button>
+      <div class="locationPill">● <span data-i18n="location.almora">Almora, Uttarakhand</span></div>
+    </aside>
+
+    <div class="page">
+      <header class="topbar">
+        <button class="iconBtn hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+        <a class="mobileBrand" href="#home"><span>आ</span><strong>almora.ai</strong></a>
+
+        <div class="topSearch">
+          <span>⌕</span>
+          <input id="topPrompt" type="search" data-i18n-placeholder="hero.placeholder" placeholder="Ask Almora AI anything…">
+          <button aria-label="Voice input">◉</button>
+        </div>
+
+        <div class="topActions">
+          <button class="langSwitch" id="langSwitch" title="English / हिन्दी / कुमाऊँनी">EN</button>
+          <button class="themeSwitch" id="themeSwitch" title="Switch visual theme">
+            <span class="themeDot"></span><b>Modern</b>
+          </button>
+          <div class="weatherMini"><span>☀</span><b id="topTemp">21°</b><small>Almora</small></div>
+          <button class="reportTop" data-open-report>＋ <span data-i18n="action.reportShort">Report</span></button>
+        </div>
+      </header>
+
+      <main>
+        <section id="home" class="hero">
+          <div class="heroBackdrop"></div>
+          <div class="aipanHalo"></div>
+
+          <div class="heroContent">
+            <div class="eyebrow"><span class="liveDot"></span><span data-i18n="hero.eyebrow">ALMORA · SMART · LOCAL · HUMAN</span></div>
+            <h1 data-i18n="hero.title">What can Almora help you with?</h1>
+            <p data-i18n="hero.subtitle">One beautiful place for local help, travel, jobs, culture, health, businesses and everyday life.</p>
+
+            <div class="aiBar">
+              <span class="aiSpark">✦</span>
+              <textarea id="prompt" rows="1" data-i18n-placeholder="hero.placeholder" placeholder="Ask anything about Almora…"></textarea>
+              <button id="ask"><span data-i18n="hero.ask">Ask AI</span> ↑</button>
+            </div>
+            <div id="answer" class="answerCard" hidden></div>
+
+            <div class="quickActions">
+              <button data-q="Find a hospital near me"><span>✚</span><b data-i18n="quick.hospital">Hospital</b></button>
+              <button data-q="Help me travel in Almora"><span>▣</span><b data-i18n="quick.transport">Transport</b></button>
+              <button data-q="Find local jobs"><span>▰</span><b data-i18n="quick.jobs">Jobs</b></button>
+              <button data-q="Tell me about Kumaoni culture"><span>♫</span><b data-i18n="quick.culture">Culture</b></button>
+              <button data-q="Help with monkey or wildlife issues"><span>♧</span><b data-i18n="quick.wildlife">Wildlife</b></button>
+              <button data-q="Plan a visit around Almora"><span>△</span><b data-i18n="quick.explore">Explore</b></button>
+            </div>
+          </div>
+
+          <aside class="todayCard">
+            <small data-i18n="today.title">ALMORA TODAY</small>
+            <div class="todayTemp"><span>☀</span><strong id="weatherNow">21°</strong></div>
+            <p id="weatherText" data-i18n="today.clear">Clear sky</p>
+            <div class="aqBadge">AQI <b>42</b> · <span data-i18n="today.good">Good</span></div>
+            <div class="todayMeta"><span><small data-i18n="today.sunrise">Sunrise</small><b>5:42</b></span><span><small data-i18n="today.sunset">Sunset</small><b>18:31</b></span></div>
+            <hr>
+            <b data-i18n="today.updates">Live updates</b>
+            <ul>
+              <li>● <span data-i18n="today.roads">Roads: check before long hill travel</span></li>
+              <li>● <span data-i18n="today.weather">Weather: live</span></li>
+              <li>● <span data-i18n="today.help">Town help: available</span></li>
+            </ul>
+          </aside>
+        </section>
+
+        <section class="serviceStrip" id="civic">
+          <button data-open-report><i class="serviceIcon danger">!</i><span><b data-i18n="services.issue">Report an issue</b><small data-i18n="services.issueSub">Road, waste, wildlife, service</small></span></button>
+          <button data-q="Find a local job near me"><i class="serviceIcon work">▰</i><span><b data-i18n="services.jobs">Jobs near you</b><small data-i18n="services.jobsSub">Local work & skills</small></span></button>
+          <button data-q="Find healthcare in Almora"><i class="serviceIcon health">✚</i><span><b data-i18n="services.health">Health</b><small data-i18n="services.healthSub">Hospitals & navigation</small></span></button>
+          <button data-q="Tell me the best local transport option"><i class="serviceIcon move">▣</i><span><b data-i18n="services.move">Move</b><small data-i18n="services.moveSub">Bus, taxi, walk, drive</small></span></button>
+          <button data-q="Show tourist places around Almora"><i class="serviceIcon explore">△</i><span><b data-i18n="services.explore">Explore</b><small data-i18n="services.exploreSub">Places, temples & trails</small></span></button>
+        </section>
+
+        <section id="news" class="contentSection">
+          <div class="sectionTitleRow">
+            <div>
+              <span class="kicker">◉ <span data-i18n="news.kicker">ALMORA NOW</span></span>
+              <h2 data-i18n="news.title">Important news. No noise.</h2>
+              <p data-i18n="news.subtitle">Innovation, jobs, policy, infrastructure, education and major local developments.</p>
+            </div>
+            <a href="#news" class="textLink" data-i18n="common.viewAll">View all →</a>
+          </div>
+
+          <div class="filterPills">
+            <button class="active" data-news-filter="all" data-i18n="news.all">Top stories</button>
+            <button data-news-filter="innovation" data-i18n="news.innovation">Innovation</button>
+            <button data-news-filter="jobs" data-i18n="news.jobs">Jobs</button>
+            <button data-news-filter="policy" data-i18n="news.policy">Policy</button>
+            <button data-news-filter="sports" data-i18n="news.sports">Sports</button>
+          </div>
+          <div class="newsGrid" id="newsGrid"></div>
+        </section>
+
+        <section id="places" class="contentSection">
+          <div class="sectionTitleRow">
+            <div><span class="kicker">⌖ <span data-i18n="places.kicker">EXPERIENCE ALMORA</span></span><h2 data-i18n="places.title">Places worth stepping into.</h2></div>
+          </div>
+          <div class="placeRail" id="placeRail"></div>
+        </section>
+
+        <section id="culture" class="contentSection cultureSection">
+          <div class="sectionTitleRow">
+            <div>
+              <span class="kicker">♫ <span data-i18n="culture.kicker">KUMAONI CULTURE</span></span>
+              <h2 data-i18n="culture.title">Listen to the mountains.</h2>
+              <p data-i18n="culture.subtitle">Songs, stories, festivals, food, craft and living traditions of Kumaon.</p>
+            </div>
+          </div>
+          <div class="cultureLayout">
+            <div class="radioCard">
+              <div class="radioHead"><span class="vinyl">◉</span><div><small data-i18n="radio.title">KUMAONI RADIO</small><h3 data-i18n="radio.subtitle">Curated cultural listening</h3></div></div>
+              <div id="radioList" class="radioList"></div>
+              <a class="wideLink" href="https://www.youtube.com/results?search_query=Kumaoni+folk+music" target="_blank" rel="noopener" data-i18n="radio.more">Explore more music ↗</a>
+            </div>
+            <div class="cultureTiles">
+              <article><span>✺</span><b data-i18n="culture.festivals">Festivals</b><p data-i18n="culture.festivalsSub">Nanda Devi, Harela, Dussehra and local fairs.</p></article>
+              <article><span>◈</span><b data-i18n="culture.aipan">Aipan & craft</b><p data-i18n="culture.aipanSub">Living visual traditions and local making.</p></article>
+              <article><span>♨</span><b data-i18n="culture.food">Food</b><p data-i18n="culture.foodSub">Bal Mithai, Singauri, Bhatt, Madua and more.</p></article>
+              <article><span>❖</span><b data-i18n="culture.stories">Stories</b><p data-i18n="culture.storiesSub">Oral histories, legends and community memory.</p></article>
+            </div>
+          </div>
+        </section>
+
+        <section id="sports" class="contentSection">
+          <div class="sectionTitleRow">
+            <div><span class="kicker">✦ <span data-i18n="sports.kicker">SPORTS & FITNESS</span></span><h2 data-i18n="sports.title">Train where champions began.</h2></div>
+          </div>
+          <div class="peopleGrid">
+            <article class="personCard">
+              <div class="personVisual athleteOne"></div>
+              <small>BADMINTON</small><h3>Lakshya Sen</h3><p data-i18n="sports.lakshya">Olympian and world-class badminton player born in Almora.</p>
+            </article>
+            <article class="personCard">
+              <div class="personVisual athleteTwo"></div>
+              <small>CRICKET</small><h3>Ekta Bisht</h3><p data-i18n="sports.ekta">India cricketer and one of Uttarakhand's pioneering international players.</p>
+            </article>
+            <article class="personCard">
+              <div class="personVisual athleteThree"></div>
+              <small>PUBLIC SERVICE</small><h3>Tripti Bhatt</h3><p data-i18n="sports.tripti">Distinguished public-service leader from Almora.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="directory" class="contentSection splitSection">
+          <div class="smartPanel">
+            <span class="kicker">⌘ <span data-i18n="directory.kicker">LOCAL DIRECTORY</span></span>
+            <h2 data-i18n="directory.title">Find what matters.</h2>
+            <div class="directorySearch"><span>⌕</span><input id="directoryInput" data-i18n-placeholder="directory.placeholder" placeholder="Search hospitals, gyms, offices, shops…"></div>
+            <div class="directoryMini" id="directoryMini"></div>
+          </div>
+          <div class="smartPanel" id="transport">
+            <span class="kicker">▣ <span data-i18n="transport.kicker">MOVE AROUND</span></span>
+            <h2 data-i18n="transport.title">Choose how you want to go.</h2>
+            <div class="transportModes">
+              <a href="https://www.google.com/maps/search/?api=1&query=Almora+Bus+Station" target="_blank"><span>▣</span><b data-i18n="transport.bus">Bus</b></a>
+              <a href="https://www.google.com/maps/search/?api=1&query=Taxi+Almora" target="_blank"><span>◫</span><b data-i18n="transport.taxi">Taxi</b></a>
+              <a href="https://www.google.com/maps/dir/?api=1&destination=Almora+Uttarakhand&travelmode=walking" target="_blank"><span>♟</span><b data-i18n="transport.walk">Walk</b></a>
+              <a href="https://www.google.com/maps/dir/?api=1&destination=Almora+Uttarakhand&travelmode=driving" target="_blank"><span>◇</span><b data-i18n="transport.drive">Drive</b></a>
+            </div>
+          </div>
+        </section>
+
+        <section id="map" class="contentSection">
+          <div class="sectionTitleRow">
+            <div><span class="kicker">● <span data-i18n="map.kicker">ALMORA MAP</span></span><h2 data-i18n="map.title">See the town spatially.</h2></div>
+          </div>
+          <div class="mapFrame">
+            <iframe title="Map of Almora" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=79.60%2C29.55%2C79.70%2C29.63&layer=mapnik&marker=29.5892%2C79.6467"></iframe>
+            <div class="mapOverlay">
+              <b data-i18n="map.overlay">Almora town map</b>
+              <a href="https://www.openstreetmap.org/#map=13/29.5892/79.6467" target="_blank" data-i18n="map.open">Open full map ↗</a>
+            </div>
+          </div>
+        </section>
+
+        <section id="safety" class="contentSection statusSection">
+          <div class="agentPanel">
+            <div class="sectionTitleRow">
+              <div><span class="kicker">✦ <span data-i18n="agents.kicker">WORKING FOR YOU</span></span><h2 data-i18n="agents.title">Local helpers behind the scenes.</h2><p data-i18n="agents.subtitle">Specialised assistants route questions to the right local workflow.</p></div>
+            </div>
+            <div class="agentGrid">
+              <div><span>▣</span><b data-i18n="agents.road">Road & transport</b><small>● Active</small></div>
+              <div><span>✚</span><b data-i18n="agents.health">Health</b><small>● Active</small></div>
+              <div><span>▰</span><b data-i18n="agents.jobs">Jobs & skills</b><small>● Active</small></div>
+              <div><span>◇</span><b data-i18n="agents.education">Education</b><small>● Active</small></div>
+              <div><span>♧</span><b data-i18n="agents.farm">Farm & wildlife</b><small>● Active</small></div>
+              <div><span>△</span><b data-i18n="agents.tourism">Tourism</b><small>● Active</small></div>
+              <div><span>◆</span><b data-i18n="agents.safety">Safety</b><small>● Active</small></div>
+              <div><span>⌘</span><b data-i18n="agents.local">Local services</b><small>● Active</small></div>
+            </div>
+          </div>
+
+          <div class="accessPanel">
+            <span class="kicker" data-i18n="access.title">ACCESS</span>
+            <h2 data-i18n="access.choose">Choose your role.</h2>
+            <a class="accessCard citizen" href="./resident-login.html"><span>◎</span><div><b data-i18n="access.citizen">Citizen</b><small data-i18n="access.citizenSub">Profile, jobs & local help</small></div><i>›</i></a>
+            <a class="accessCard business" href="./business-login.html"><span>▦</span><div><b data-i18n="access.business">Business</b><small data-i18n="access.businessSub">List, hire & connect</small></div><i>›</i></a>
+            <a class="accessCard localAdmin" href="./government-login.html"><span>◇</span><div><b data-i18n="access.localAdmin">Local administration</b><small data-i18n="access.localAdminSub">Verified staff access</small></div><i>›</i></a>
+          </div>
+        </section>
+
+        <footer>
+          <div class="footerPattern"></div>
+          <strong>almora.ai</strong>
+          <span data-i18n="footer.line">Smart local help. Kumaoni heart.</span>
+          <small>जय अल्मोड़ा · जय कुमाऊँ · जय उत्तराखण्ड</small>
+        </footer>
+      </main>
+    </div>
+  </div>
+
+  <nav class="mobileDock" aria-label="Mobile navigation">
+    <a href="#home"><span>⌂</span><b data-i18n="dock.home">Home</b></a>
+    <a href="#news"><span>◉</span><b data-i18n="dock.now">Now</b></a>
+    <button data-focus-ai><span>✦</span><b>AI</b></button>
+    <a href="#map"><span>●</span><b data-i18n="dock.map">Map</b></a>
+    <button id="mobileMore"><span>☰</span><b data-i18n="dock.more">More</b></button>
+  </nav>
+
+  <dialog id="reportDialog">
+    <form method="dialog" class="reportForm" id="reportForm">
+      <div class="dialogHead">
+        <div><span class="kicker" data-i18n="report.kicker">HELP IMPROVE ALMORA</span><h2 data-i18n="report.title">Report or suggest something.</h2></div>
+        <button value="cancel" class="iconBtn">×</button>
+      </div>
+      <div class="reportChoices">
+        <button type="button" data-report-category="Road">🛣️ <span data-i18n="report.road">Road</span></button>
+        <button type="button" data-report-category="Wildlife">🐒 <span data-i18n="report.wildlife">Wildlife</span></button>
+        <button type="button" data-report-category="Transport">🚌 <span data-i18n="report.transport">Transport</span></button>
+        <button type="button" data-report-category="Health">🏥 <span data-i18n="report.health">Health</span></button>
+        <button type="button" data-report-category="Waste">♻️ <span data-i18n="report.waste">Waste</span></button>
+        <button type="button" data-report-category="Other">✦ <span data-i18n="report.other">Other</span></button>
+      </div>
+      <input type="hidden" id="reportCategory" value="Other">
+      <label><span data-i18n="report.location">Area or landmark</span><input id="reportLocation" required data-i18n-placeholder="report.locationPlaceholder" placeholder="e.g. Dharanaula, Khatyari…"></label>
+      <label><span data-i18n="report.details">What happened?</span><textarea id="reportText" required rows="4" data-i18n-placeholder="report.detailsPlaceholder" placeholder="Describe the issue or suggestion…"></textarea></label>
+      <p class="privacyNote" data-i18n="report.privacy">Please do not add Aadhaar numbers, medical records or unnecessary personal details.</p>
+      <button type="submit" class="submitReport" data-i18n="report.submit">Save report</button>
+      <div id="reportStatus" class="reportStatus"></div>
+    </form>
+  </dialog>
+
+  <script type="module" src="./theme-v3.js?v=3.0.0"></script>
+</body>
+</html>
