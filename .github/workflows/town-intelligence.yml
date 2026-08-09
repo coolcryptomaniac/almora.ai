@@ -37,9 +37,24 @@ jobs:
           python3 -m json.tool data/monkey-hotspots.json >/dev/null
           python3 -m json.tool data/agent-status.json >/dev/null
       - name: Commit refreshed public intelligence
+        id: data_commit
         run: |
           git config user.name 'almora-ai-agent'
           git config user.email 'actions@users.noreply.github.com'
           git add data/live-news.json data/people.json data/agent-status.json
-          git diff --cached --quiet || git commit -m 'data: refresh town intelligence [data-refresh]'
-          git push
+          if git diff --cached --quiet; then
+            echo 'changed=false' >> "$GITHUB_OUTPUT"
+            echo 'No public intelligence changes.'
+          else
+            git commit -m 'data: refresh town intelligence [data-refresh]'
+            git push
+            echo 'changed=true' >> "$GITHUB_OUTPUT"
+          fi
+      - name: Deploy refreshed intelligence to Firebase Hosting
+        if: steps.data_commit.outputs.changed == 'true'
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_ALMORAAI }}
+          channelId: live
+          projectId: almoraai
