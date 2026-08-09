@@ -31,7 +31,7 @@ jobs:
       - name: Validate output quality
         run: |
           python3 - <<'PY'
-          import json
+          import json,re
           people=json.load(open('data/people.json'))
           news=json.load(open('data/live-news.json'))
           agents=json.load(open('data/agent-status.json'))
@@ -50,9 +50,31 @@ jobs:
           assert all('Wikidata human' in p.get('verification','') or 'Wikidata instance-of human' in p.get('verification','') for p in auto)
           assert all('almora' in (p.get('connection','')+' '+p.get('description','')).lower() for p in people['people'] if p.get('id') != 'mohit-pandey-almora-ai')
           assert 'Hemant Pandey' not in names, 'Regional-only Pithoragarh profile must not enter strict Almora atlas'
+
           categories={x['category'] for x in news['items']}
           assert len(news['items']) >= 8, len(news['items'])
           assert len(categories) >= 4, categories
+          dynamic=[x for x in news['items'] if x.get('categoryBasis')=='headline-keyword']
+          assert dynamic, 'Expected category-qualified live stories'
+          assert all(x.get('discoveredBy') for x in dynamic)
+          checks={
+            'jobs':r'job|vacanc|recruit|hiring|employment|apprentice|ssc|psc|रोजगार|भर्ती|नौकरी',
+            'education':r'school|college|university|student|education|scholarship|academic|exam|teacher|campus|शिक्षा|विद्यालय|कॉलेज|छात्र|परीक्षा',
+            'sports':r'sport|badminton|cricket|football|athlete|tournament|championship|bwf|olymp|stadium|खेल|खिलाड़ी',
+            'science':r'science|scientist|laboratory|space|artificial intelligence|\bai\b|scientific|विज्ञान|वैज्ञानिक',
+            'innovation':r'innovation|innovator|startup|technology|\btech\b|prototype|skynex|flying car|drone|electric vehicle|incubator|entrepreneurship|नवाचार|स्टार्टअप|तकनीक',
+            'infrastructure':r'road|highway|bridge|water supply|transport|rail|railway|airport|infrastructure|construction|landslide|tunnel|sewer|pipeline|सड़क|पुल|रेल|परिवहन',
+            'environment':r'monkey|wildlife|forest|climate|environment|leopard|agriculture|farm|waste|water conservation|biodiversity|बंदर|वन्यजीव|जंगल|पर्यावरण|कृषि',
+            'politics':r'election|party|congress|bjp|politic|minister|chief minister|cm dhami|cabinet|mla|\bmp\b|rally|चुनाव|भाजपा|कांग्रेस|मंत्री|मुख्यमंत्री',
+            'governance':r'government|administration|district magistrate|\bdm\b|policy|scheme|digitisation|digital governance|sop|public notice|tender|सरकार|प्रशासन|नीति|योजना'
+          }
+          for x in dynamic:
+            pat=checks.get(x['category'])
+            assert pat and re.search(pat,x['title'],re.I), (x['category'],x['title'])
+          bad=('ms dhoni seeks blessings','pause, reflect, reset: is taking a career break')
+          learned=json.dumps(learning,ensure_ascii=False).lower()
+          assert not any(x in learned for x in bad), 'Agent learning contains query-spillover evidence'
+
           assert agents['metrics']['agentCount'] >= 20, agents['metrics']
           assert agents['metrics']['collaborationCount'] >= 8, agents['metrics']
           assert learning['mode'] == 'shared-evidence-memory-not-model-training'
@@ -67,5 +89,5 @@ jobs:
           assert len(integrations.get('integrations',[])) >= 6
           assert len(apps.get('apps',[])) >= 12
           assert any(a.get('id')=='hill-life' and a.get('critical') for a in apps['apps'])
-          print({'people':people['count'],'verified_auto':len(auto),'news':len(news['items']),'categories':sorted(categories),'agents':agents['metrics'],'learning':learning['count'],'content':content['count'],'routes':len(routes['routes']),'integrations':len(integrations['integrations']),'apps':len(apps['apps'])})
+          print({'people':people['count'],'verified_auto':len(auto),'news':len(news['items']),'qualified_live':len(dynamic),'categories':sorted(categories),'agents':agents['metrics'],'learning':learning['count'],'content':content['count'],'routes':len(routes['routes']),'integrations':len(integrations['integrations']),'apps':len(apps['apps'])})
           PY
