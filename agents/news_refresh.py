@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import json, re, urllib.parse, urllib.request, xml.etree.ElementTree as ET
 from collections import Counter, defaultdict
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
@@ -17,7 +18,6 @@ QUERIES={
  'infrastructure':'Almora Uttarakhand road water transport infrastructure project',
  'environment':'Almora Uttarakhand environment wildlife monkey forest climate farming'
 }
-# Always-useful official/public-interest anchors. They keep the feed useful when a live RSS source is thin or temporarily unavailable.
 BASELINE=[
  {'id':'official-district','category':'governance','title':'Almora district administration and current public notices','source':'District Almora','published':'','url':'https://almora.nic.in/','summary':'Official district notices, public utilities, tenders, disaster-management and administration updates.'},
  {'id':'official-jobs','category':'jobs','title':'Uttarakhand Subordinate Service Selection Commission recruitment updates','source':'UKSSSC','published':'','url':'https://sssc.uk.gov.in/','summary':'Official state recruitment notices and candidate updates.'},
@@ -30,9 +30,7 @@ EXCLUDE=re.compile(r'\b(murder|rape|theft|robbery|assault|suicide|minor accident
 MAJOR=re.compile(r'\b(state|national|high court|supreme court|policy|government|election|minister|major|मुख्यमंत्री|सरकार|राज्य|राष्ट्रीय)\b',re.I)
 TRUSTED=('almora.nic.in','uk.gov.in','sports.uk.gov.in','sssc.uk.gov.in','kunainital.ac.in','amarujala.com','jagran.com','livehindustan.com','timesofindia.indiatimes.com','hindustantimes.com','thehindu.com','indianexpress.com','economictimes.indiatimes.com','indiatoday.in','livemint.com','moneycontrol.com','theprint.in','pti.in')
 SOCIAL=('LinkedIn','YouTube','Instagram','X')
-CATEGORY_RULES=[
- ('jobs',re.compile(r'\b(job|jobs|vacanc|recruit|hiring|employment|ssc|psc|रोजगार|भर्ती)\b',re.I)),('education',re.compile(r'\b(school|college|university|student|education|scholarship|research|exam|teacher|शिक्षा|विद्यालय)\b',re.I)),('sports',re.compile(r'\b(sport|badminton|cricket|football|athlete|tournament|championship|bwf|olymp)\b',re.I)),('science',re.compile(r'\b(science|research|laboratory|space|ai\b|artificial intelligence|scientist)\b',re.I)),('innovation',re.compile(r'\b(innovation|innovator|startup|technology|tech\b|prototype|skynex|flying car|drone|electric vehicle|incubator)\b',re.I)),('infrastructure',re.compile(r'\b(road|highway|bridge|water|transport|rail|airport|infrastructure|project|crore|construction|landslide)\b',re.I)),('environment',re.compile(r'\b(monkey|wildlife|forest|climate|environment|leopard|agriculture|farm|waste|water conservation)\b',re.I)),('politics',re.compile(r'\b(election|party|congress|bjp|politic|minister|mla|mp\b|rally)\b',re.I)),('governance',re.compile(r'\b(government|administration|district magistrate|dm\b|policy|scheme|digitisation|digital governance|sop|सरकार|प्रशासन)\b',re.I))
-]
+CATEGORY_RULES=[('jobs',re.compile(r'\b(job|jobs|vacanc|recruit|hiring|employment|ssc|psc|रोजगार|भर्ती)\b',re.I)),('education',re.compile(r'\b(school|college|university|student|education|scholarship|research|exam|teacher|शिक्षा|विद्यालय)\b',re.I)),('sports',re.compile(r'\b(sport|badminton|cricket|football|athlete|tournament|championship|bwf|olymp)\b',re.I)),('science',re.compile(r'\b(science|research|laboratory|space|ai\b|artificial intelligence|scientist)\b',re.I)),('innovation',re.compile(r'\b(innovation|innovator|startup|technology|tech\b|prototype|skynex|flying car|drone|electric vehicle|incubator)\b',re.I)),('infrastructure',re.compile(r'\b(road|highway|bridge|water|transport|rail|airport|infrastructure|project|crore|construction|landslide)\b',re.I)),('environment',re.compile(r'\b(monkey|wildlife|forest|climate|environment|leopard|agriculture|farm|waste|water conservation)\b',re.I)),('politics',re.compile(r'\b(election|party|congress|bjp|politic|minister|mla|mp\b|rally)\b',re.I)),('governance',re.compile(r'\b(government|administration|district magistrate|dm\b|policy|scheme|digitisation|digital governance|sop|सरकार|प्रशासन)\b',re.I))]
 STOP={'almora','uttarakhand','india','today','latest','news','the','from','with','this','that','young','watch','video','in','of','to','a','an','and'}
 
 def text(node,name):
@@ -64,9 +62,8 @@ def score(row):
     elif age<=180:s+=1
     return s
 def fetch(category,q):
-    url='https://news.google.com/rss/search?'+urllib.parse.urlencode({'q':q,'hl':'en-IN','gl':'IN','ceid':'IN:en'})
-    req=urllib.request.Request(url,headers={'User-Agent':UA})
-    with urllib.request.urlopen(req,timeout=20) as r:root=ET.fromstring(r.read())
+    url='https://news.google.com/rss/search?'+urllib.parse.urlencode({'q':q,'hl':'en-IN','gl':'IN','ceid':'IN:en'});req=urllib.request.Request(url,headers={'User-Agent':UA})
+    with urllib.request.urlopen(req,timeout=12) as r:root=ET.fromstring(r.read())
     rows=[]
     for it in root.findall('./channel/item')[:30]:
         title=text(it,'title');link=text(it,'link');pub=text(it,'pubDate');source_node=it.find('source');source=(source_node.text or '').strip() if source_node is not None else 'News';source_url=source_node.attrib.get('url','') if source_node is not None else ''
@@ -79,16 +76,18 @@ def fetch(category,q):
 
 def main():
     fetched=[];errors=[]
-    for cat,q in QUERIES.items():
-        try:fetched.extend(fetch(cat,q))
-        except Exception as e:errors.append(f'{cat}: {e}')
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        futures={pool.submit(fetch,cat,q):cat for cat,q in QUERIES.items()}
+        for f in as_completed(futures):
+            cat=futures[f]
+            try:fetched.extend(f.result())
+            except Exception as e:errors.append(f'{cat}: {e}')
     fetched.sort(key=lambda x:(x['_score'],published_ts(x.get('published',''))),reverse=True)
     events=set();per_cat=defaultdict(int);clean=[]
     for x in fetched:
         if x['_event'] in events or per_cat[x['category']]>=5:continue
         events.add(x['_event']);per_cat[x['category']]+=1;x.pop('_score',None);x.pop('_event',None);x.pop('sourceUrl',None);key=re.sub(r'\W+',' ',x['title'].lower()).strip();x['id']=f"{x['category']}-{abs(hash(key))}";clean.append(x)
         if len(clean)>=36:break
-    # Append non-duplicate official/public-interest anchors after fresh stories, preserving a useful minimum even during a weak RSS cycle.
     used_urls={x['url'] for x in clean};used_titles={event_signature(x['title']) for x in clean}
     for x in BASELINE:
         sig=event_signature(x['title'])
