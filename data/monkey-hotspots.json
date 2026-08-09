@@ -1,0 +1,19 @@
+{
+  "updatedAt": "2026-08-09T14:30:00Z",
+  "method": "Activity index based on published locality reports and recency. This is not an animal census or verified population density estimate.",
+  "scale": {"1":"low reported activity","2":"moderate","3":"high","4":"very high reported activity"},
+  "hotspots": [
+    {"locality":"Dharanaula","lat":29.6008,"lng":79.6530,"activityIndex":4,"evidenceDate":"2023-05-21","source":"Amar Ujala","sourceUrl":"https://www.amarujala.com/uttarakhand/almora/monkeys-ateck-in-almora-almora-news-c-8-1-146492-2023-05-21"},
+    {"locality":"Khatyari","lat":29.5755,"lng":79.6508,"activityIndex":4,"evidenceDate":"2023-05-21","source":"Amar Ujala","sourceUrl":"https://www.amarujala.com/uttarakhand/almora/monkeys-ateck-in-almora-almora-news-c-8-1-146492-2023-05-21"},
+    {"locality":"Pokharkhali","lat":29.5925,"lng":79.6624,"activityIndex":4,"evidenceDate":"2023-05-21","source":"Amar Ujala","sourceUrl":"https://www.amarujala.com/uttarakhand/almora/monkeys-ateck-in-almora-almora-news-c-8-1-146492-2023-05-21"},
+    {"locality":"Ranidhara","lat":29.5980,"lng":79.6460,"activityIndex":4,"evidenceDate":"2023-05-21","source":"Amar Ujala","sourceUrl":"https://www.amarujala.com/uttarakhand/almora/monkeys-ateck-in-almora-almora-news-c-8-1-146492-2023-05-21"},
+    {"locality":"Dungadhara","lat":29.6044,"lng":79.6468,"activityIndex":4,"evidenceDate":"2023-05-21","source":"Amar Ujala","sourceUrl":"https://www.amarujala.com/uttarakhand/almora/monkeys-ateck-in-almora-almora-news-c-8-1-146492-2023-05-21"},
+    {"locality":"China Khan","lat":29.5900,"lng":79.6558,"activityIndex":4,"evidenceDate":"2023-05-21","source":"Amar Ujala","sourceUrl":"https://www.amarujala.com/uttarakhand/almora/monkeys-ateck-in-almora-almora-news-c-8-1-146492-2023-05-21"},
+    {"locality":"Narsinghbari","lat":29.5960,"lng":79.6385,"activityIndex":4,"evidenceDate":"2023-05-21","source":"Amar Ujala","sourceUrl":"https://www.amarujala.com/uttarakhand/almora/monkeys-ateck-in-almora-almora-news-c-8-1-146492-2023-05-21"},
+    {"locality":"Sarkar Ki Ali","lat":29.5863,"lng":79.6425,"activityIndex":4,"evidenceDate":"2023-05-21","source":"Amar Ujala","sourceUrl":"https://www.amarujala.com/uttarakhand/almora/monkeys-ateck-in-almora-almora-news-c-8-1-146492-2023-05-21"},
+    {"locality":"Bhikiyasain market","lat":29.6657,"lng":79.2308,"activityIndex":3,"evidenceDate":"2024-08-31","source":"Amar Ujala","sourceUrl":"https://www.amarujala.com/uttarakhand/almora/monkey-menace-in-rural-areas-almora-news-c-232-1-shld1003-116537-2024-08-31"},
+    {"locality":"Pali, Bhikiyasain","lat":29.6580,"lng":79.2460,"activityIndex":3,"evidenceDate":"2024-08-31","source":"Amar Ujala","sourceUrl":"https://www.amarujala.com/uttarakhand/almora/monkey-menace-in-rural-areas-almora-news-c-232-1-shld1003-116537-2024-08-31"},
+    {"locality":"Bhatronjkhan","lat":29.5170,"lng":79.2400,"activityIndex":3,"evidenceDate":"2024-08-31","source":"Amar Ujala","sourceUrl":"https://www.amarujala.com/uttarakhand/almora/monkey-menace-in-bhatraunjkhan-almora-news-c-232-1-shld1003-116587-2024-08-31"},
+    {"locality":"Ranikhet","lat":29.6434,"lng":79.4322,"activityIndex":3,"evidenceDate":"2026-05-08","source":"Amar Ujala","sourceUrl":"https://www.amarujala.com/uttarakhand/almora/in-the-morning-flocks-of-monkeys-were-seen-in-the-markets-and-streets-leaving-people-in-panic-ranikhet-news-c-232-1-alm1002-143114-2026-05-08"}
+  ]
+}
