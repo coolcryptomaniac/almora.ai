@@ -1,0 +1,12 @@
+{
+  "updatedAt":"2026-08-09",
+  "policy":"Almora.ai opens official services or live search pages and never claims local availability unless verified. Local alternatives are always shown when useful.",
+  "integrations":[
+    {"id":"rapido","name":"Rapido","icon":"🛵","type":"mobility","url":"https://www.rapido.bike/","status":"Check live availability","fallback":"Use local taxi/shared-taxi directory in Almora.ai"},
+    {"id":"zomato","name":"Zomato","icon":"🍽️","type":"food","url":"https://www.zomato.com/","status":"Check live availability","fallback":"Search verified local restaurants and call directly"},
+    {"id":"swiggy","name":"Swiggy","icon":"🥡","type":"food","url":"https://www.swiggy.com/","status":"Check live availability","fallback":"Use local restaurant and delivery listings"},
+    {"id":"redbus","name":"redBus","icon":"🚌","type":"intercity","url":"https://www.redbus.in/","status":"Search intercity buses","fallback":"Use Almora route planner and local bus information"},
+    {"id":"irctc","name":"IRCTC","icon":"🚆","type":"rail","url":"https://www.irctc.co.in/","status":"Rail booking","fallback":"Plan road connection to Kathgodam/Haldwani first"},
+    {"id":"google-maps","name":"Google Maps","icon":"🗺️","type":"maps","url":"https://www.google.com/maps/search/?api=1&query=Almora%2C+Uttarakhand","status":"Live maps","fallback":"OpenStreetMap is available inside Almora.ai"}
+  ]
+}

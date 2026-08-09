@@ -1,0 +1,14 @@
+{
+  "updatedAt": "2026-08-09",
+  "note": "Approximate road distances and typical drive windows for planning. Actual distance/time varies with route, weather, traffic and road conditions. Open the live map before travel.",
+  "origin": "Almora, Uttarakhand",
+  "routes": [
+    {"id":"ranikhet","name":"Ranikhet","distanceKm":48,"time":"1.5–2 hr","via":"Majkhali / NH109-area hill roads","modes":["shared taxi","private taxi","car"],"map":"https://www.google.com/maps/dir/?api=1&origin=Almora%2C+Uttarakhand&destination=Ranikhet%2C+Uttarakhand"},
+    {"id":"bageshwar","name":"Bageshwar","distanceKm":74,"time":"2–3 hr","via":"Kausani / Someshwar side depending route","modes":["bus","shared taxi","car"],"map":"https://www.google.com/maps/dir/?api=1&origin=Almora%2C+Uttarakhand&destination=Bageshwar%2C+Uttarakhand"},
+    {"id":"haldwani","name":"Haldwani","distanceKm":90,"time":"2.5–3.5 hr","via":"Bhowali / Kathgodam corridor","modes":["bus","shared taxi","private taxi","car"],"map":"https://www.google.com/maps/dir/?api=1&origin=Almora%2C+Uttarakhand&destination=Haldwani%2C+Uttarakhand"},
+    {"id":"nainital","name":"Nainital","distanceKm":65,"time":"2–2.5 hr","via":"Bhowali","modes":["bus","shared taxi","private taxi","car"],"map":"https://www.google.com/maps/dir/?api=1&origin=Almora%2C+Uttarakhand&destination=Nainital%2C+Uttarakhand"},
+    {"id":"pithoragarh","name":"Pithoragarh","distanceKm":115,"time":"3.5–5 hr","via":"Dhaulchhina / Panar corridor depending conditions","modes":["bus","shared taxi","car"],"map":"https://www.google.com/maps/dir/?api=1&origin=Almora%2C+Uttarakhand&destination=Pithoragarh%2C+Uttarakhand"},
+    {"id":"dehradun","name":"Dehradun","distanceKm":350,"time":"8–10 hr","via":"Haldwani / plains connection or alternate hill route","modes":["bus","taxi","car"],"map":"https://www.google.com/maps/dir/?api=1&origin=Almora%2C+Uttarakhand&destination=Dehradun%2C+Uttarakhand"},
+    {"id":"delhi","name":"Delhi","distanceKm":370,"time":"8–11 hr","via":"Haldwani–Rudrapur–Moradabad corridor","modes":["overnight bus","day bus","taxi","car"],"map":"https://www.google.com/maps/dir/?api=1&origin=Almora%2C+Uttarakhand&destination=Delhi"}
+  ]
+}

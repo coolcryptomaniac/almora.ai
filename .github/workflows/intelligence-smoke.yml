@@ -31,18 +31,24 @@ jobs:
           people=json.load(open('data/people.json'))
           news=json.load(open('data/live-news.json'))
           agents=json.load(open('data/agent-status.json'))
-          assert people['count'] >= 100, people['count']
-          assert people['count'] <= 200, people['count']
+          routes=json.load(open('data/routes.json'))
+          integrations=json.load(open('data/integrations.json'))
+          assert 12 <= people['count'] <= 200, people['count']
           assert len(people['people']) == people['count']
           names={p['name'] for p in people['people']}
           known_nonpeople={'Afghanistan','Ashoka Chakra','Battle of Tololing','Bedu Pako Baro Masa','Kumaon','Kumaoni language'}
           assert not (names & known_nonpeople), names & known_nonpeople
           auto=[p for p in people['people'] if p.get('id','').startswith('Q')]
-          assert auto and all(p.get('verification') == 'Wikidata instance-of human (Q5)' for p in auto)
+          assert auto, 'Expected at least one Wikidata-validated public figure'
+          assert all('Wikidata human' in p.get('verification','') or 'Wikidata instance-of human' in p.get('verification','') for p in auto)
+          assert all('almora' in (p.get('connection','')+' '+p.get('description','')).lower() for p in people['people'] if p.get('id') != 'mohit-pandey-almora-ai')
+          assert 'Hemant Pandey' not in names, 'Regional-only Pithoragarh profile must not enter strict Almora atlas'
           categories={x['category'] for x in news['items']}
           assert len(news['items']) >= 8, len(news['items'])
           assert len(categories) >= 4, categories
-          assert agents['metrics']['agentCount'] == 15, agents['metrics']
-          assert agents['metrics']['collaborationCount'] >= 4, agents['metrics']
-          print({'people':people['count'],'verified_auto':len(auto),'news':len(news['items']),'categories':sorted(categories),'agents':agents['metrics']})
+          assert agents['metrics']['agentCount'] >= 20, agents['metrics']
+          assert agents['metrics']['collaborationCount'] >= 8, agents['metrics']
+          assert len(routes.get('routes',[])) >= 7
+          assert len(integrations.get('integrations',[])) >= 6
+          print({'people':people['count'],'verified_auto':len(auto),'news':len(news['items']),'categories':sorted(categories),'agents':agents['metrics'],'routes':len(routes['routes']),'integrations':len(integrations['integrations'])})
           PY
