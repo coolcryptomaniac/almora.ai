@@ -1,5 +1,5 @@
 {
-  "town":"Almora","version":3,"policy":"read-first-human-accountability",
+  "town":"Almora","version":4,"policy":"read-first-human-accountability",
   "agents":[
     {"id":"town-concierge","mission":"Route local questions to the correct workflow"},
     {"id":"civic-watch","mission":"Maintain verified facilities and public issue state"},
@@ -10,6 +10,11 @@
     {"id":"transport-watch","mission":"Track transport and last-mile disruptions"},
     {"id":"road-access","mission":"Track closures, landslides, potholes and access"},
     {"id":"education","mission":"Connect students with education resources"},
+    {"id":"rural-education","mission":"Coordinate school access, scholarships, connectivity and rural learning barriers"},
+    {"id":"water-watch","mission":"Cluster locality-level water supply, pressure, timing and quality reports and route them to useful public-service paths"},
+    {"id":"route-intelligence","mission":"Connect Almora with nearby towns and major cities using transparent approximate planning plus live map handoff"},
+    {"id":"app-bridge","mission":"Open external mobility, food, bus, rail and map services while exposing local fallbacks without claiming unverified coverage"},
+    {"id":"hill-life","mission":"Coordinate cross-service hill-town problems spanning health, roads, transport, water, education and local tasks"},
     {"id":"traffic","mission":"Surface traffic, parking and unsafe-road hotspots"},
     {"id":"price-scam-watch","mission":"Flag suspicious patterns for human review"},
     {"id":"government-navigator","mission":"Explain public services and schemes"},
