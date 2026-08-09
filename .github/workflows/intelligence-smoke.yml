@@ -31,7 +31,8 @@ jobs:
           people=json.load(open('data/people.json'))
           news=json.load(open('data/live-news.json'))
           agents=json.load(open('data/agent-status.json'))
-          assert people['count'] >= 50, people['count']
+          assert people['count'] >= 100, people['count']
+          assert people['count'] <= 200, people['count']
           assert len(people['people']) == people['count']
           names={p['name'] for p in people['people']}
           known_nonpeople={'Afghanistan','Ashoka Chakra','Battle of Tololing','Bedu Pako Baro Masa','Kumaon','Kumaoni language'}
