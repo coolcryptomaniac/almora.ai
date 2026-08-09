@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-08-09T09:00:00Z",
+  "agent_count": 19,
+  "meaning": "configured means code or policy exists; it does not mean the agent independently runs or learns",
+  "operational_layers": {
+    "interactive_routing": true,
+    "daily_news_workflow": true,
+    "official_source_watch": true,
+    "firebase_hosting": true,
+    "daily_agent_scorecard": true,
+    "autonomous_model_training": false
+  },
+  "status_summary": {
+    "configured": 19,
+    "scheduled_automation_present": 3,
+    "self_learning_models": 0
+  }
+}
