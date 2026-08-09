@@ -37,5 +37,7 @@ jobs:
           name: homepage-smoke-diagnostics
           path: |
             homepage-smoke-result.json
+            homepage-desktop.png
+            homepage-mobile.png
             homepage-failure-*.png
           if-no-files-found: ignore
