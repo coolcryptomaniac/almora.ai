@@ -1,12 +1,583 @@
 {
-  "updatedAt":"2026-08-09T14:45:00Z",
-  "mode":"coordination-not-self-training",
-  "explanation":"Agents consume refreshed public signals and coordinate workflows. They do not retrain or self-modify the underlying language model.",
-  "metrics":{"newsSignals":5,"monkeyHotspots":12,"peopleProfiles":13,"agentCount":15,"collaborationCount":5},
-  "agents":[
-    {"id":"town-concierge","label":"Citizen Support","state":"ready","signalCount":5,"signals":[]},{"id":"civic-watch","label":"Civic & Safety","state":"ready","signalCount":4,"signals":[]},{"id":"monkey-wildlife","label":"Monkey & Wildlife","state":"ready","signalCount":6,"signals":[]},{"id":"local-jobs","label":"Jobs & Skills","state":"ready","signalCount":1,"signals":[]},{"id":"farm-watch","label":"Farming & Wildlife","state":"ready","signalCount":6,"signals":[]},{"id":"health-navigator","label":"Health & Wellness","state":"ready","signalCount":0,"signals":[]},{"id":"transport-watch","label":"Transport","state":"ready","signalCount":2,"signals":[]},{"id":"road-access","label":"Road Access","state":"ready","signalCount":2,"signals":[]},{"id":"education","label":"Education","state":"ready","signalCount":1,"signals":[]},{"id":"traffic","label":"Traffic","state":"ready","signalCount":2,"signals":[]},{"id":"price-scam-watch","label":"Price Watch","state":"ready","signalCount":0,"signals":[]},{"id":"government-navigator","label":"Government Navigator","state":"ready","signalCount":3,"signals":[]},{"id":"tourism","label":"Tourism Planner","state":"ready","signalCount":2,"signals":[]},{"id":"commerce","label":"Local Commerce","state":"ready","signalCount":1,"signals":[]},{"id":"local-task-router","label":"Clean Almora & Local Tasks","state":"ready","signalCount":2,"signals":[]}
+  "updatedAt": "2026-08-09T15:04:36.069126+00:00",
+  "mode": "coordination-not-self-training",
+  "explanation": "Agents consume refreshed public signals and coordinate workflows. They do not retrain or self-modify the underlying language model.",
+  "metrics": {
+    "newsSignals": 45,
+    "monkeyHotspots": 12,
+    "peopleProfiles": 13,
+    "agentCount": 15,
+    "collaborationCount": 5
+  },
+  "agents": [
+    {
+      "id": "town-concierge",
+      "label": "Citizen Support",
+      "state": "ready",
+      "signalCount": 5,
+      "signals": [
+        {
+          "category": "innovation",
+          "title": "No ethanol needed: Young innovator from Uttarakhand's Almora tests flying car - India Today",
+          "source": "India Today",
+          "published": "Fri, 07 Aug 2026 08:06:44 GMT",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPQXVIMGVnNjFBT2pIeUdiUXpTN1AwN3ZvbWZQcHlOWFBTNUVIRzBJYTZHUTdpX29DX2JGSWRMMlBpSE5ES0JLODRQNnU0T2hIdEI4MHBzaUdLLXVkVDAxb2J5RkxuRVhOeTlpNzQ3U3hFbHNzZkRQVEtmWUd0SUVNbnhwYWVPQjl0TkNYYnh1QlFSdVBWRzRFN2RIZm81QTVqMm5jQzZmczJEQVdGRDAzNEVGWkVxd0p1VzFFa2dQNUU4RU1MNHFCWEpLRTZPZ9IB0wFBVV95cUxNbV9zdjliWlJVa3hKVTNaNnVZYnBLZkxzVWVvR2UzVTNHZEhjd01NWVV1T3dvRVZDUUtCVDNPNFBkTXJkc2xyb0dvdHZMcWxPRmtxZXRyY2xxY0xTSmQ4UFIyZzFuRTBENjRKQWFFcWxwVDh6MkxQVUx3WXFFLWRxSGFwN1h6bXhYU2haNktJTTlmSDNqMENvLTIxeEFBdXFPVnotYUt3NTdTaEp5ZE9nek5mdGZJZlFQLTdfOVRKNDRuVUlVR1BTaUF3Ym1maDJ4b21N?oc=5",
+          "summary": "",
+          "id": "innovation-2223357036609413313"
+        },
+        {
+          "category": "innovation",
+          "title": "#WATCH 🎥 | Almora, Uttarakhand: A glimpse of personal air mobility from the hills. Ravi Tamta, founder of Hapida Sky Pvt Ltd, has successfully test-flown the prototype of HAPIDA SKYNeX, a single-seater electric flying vehicle developed using modified drone - LinkedIn",
+          "source": "LinkedIn",
+          "published": "Sat, 08 Aug 2026 12:41:53 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPS2lnVUVVbDF6SDh3MzNaUl95Z2t0enBWQUZxTXJ6WmpNNUJSTlc0MjYxYUZaNDF3V0ZwNEFBUmpvd0hHWTRiUldFTTYwNFlJblhNbmxoRjZtbkRyV2t0Vk5FR3JyZWVRQ3FYRFFldEY2TC1ST3ZudDlRNVNsLUplMlNkTGtjUXh3bGxKdUJ1S2p6aC1xNjNjc0owMnJPNDgteWFiZ1c3SHk1Zw?oc=5",
+          "summary": "",
+          "id": "innovation-2880143448271827156"
+        },
+        {
+          "category": "innovation",
+          "title": "“Wait… is that a car flying?” Meet Ravi Tamta from Uttarakhand’s Almora, who built HAPIDA SKYNeX - Moneycontrol.com",
+          "source": "Moneycontrol.com",
+          "published": "Sun, 09 Aug 2026 04:53:53 GMT",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxONlpXUkpEd0NnTkpqVl9ZSndmeEJSb2JHZ2ltSXZzU2hxZFcwUmo3YUMweE5tdjVQRFN4OEpJZWJLM205aks5SWIzb0dta2N5VkNrc09xODhCNmtHY1FnZ3Bnak9wSTVjeEVqOXpsa04xbGJjUGM3d3cyY3hmUWoxTXhvUDIxa1FRLTU2N0dtcU5aUVE5TG91NjJaRXVuMmtZUDEzMUVaamk4dUY4NGdlZDJwdzNOMXFkd0prN25DdGdrLWFNaFA3Mk9icUZkamgzRGx1QVRHMm9XZWlPdFoxeXZvRWrSAeoBQVVfeXFMUGV3SmtqUEZuWGc3RGRoaVc0Vjd6aTdYSm5wYnV2ejFIaUFWODJWcG1DNGNPRno0OEw0V2R4cDdUT20tWXJsQ3JvNVpXWFZ1WXRlT3dzdUJ4RnNneU50QmJhRlNrbGFzeHdhUHUxNGxnLU4tZmhRYm43UmozdnZha0dpTXRxcURuakNoSkF2bFEwdUE1Wk5TTDl1Mkt3VkViWk1haEYtYUNvckEwT0M0SXJncWdwbURMdTVEb0lMcUlMQ2c0WVQtSkcwMDNHcVBiRy15RG5nWDZoaXVFd2JTeXZNdmJzLWhhSExn?oc=5",
+          "summary": "",
+          "id": "innovation-1827598885317913054"
+        },
+        {
+          "category": "innovation",
+          "title": "This Uttarakhand youth built a flying car. Watch it take off in Almora - The Economic Times",
+          "source": "The Economic Times",
+          "published": "Fri, 07 Aug 2026 09:20:04 GMT",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNVjlDVDR6ZWZXV3pJeWZPSWo0Mll6YUE0Vlk1TFJCSFp3OU5LVzRWa0dnNGQ1Q3hlYXZEbHo4aks3ZUMxZWZoampuUXIzSGxjNFFEVnpVMHlabm0zczg1WXd4YkJZQnJiVllFTjU1bnpHVV9mR1BkUFFMT2JUUVZVWndSczNScGNJMnBCSllvazZudFpSMnowU1g4a2NHbV81NnFyNDM1TXN0UmtyYklWWWxVWkxvSmEtai11U3pFWEgzX2RRN2stRXFNcGZOM0lHTkJKQWJwb9IB3AFBVV95cUxPdXRMVjdGZmRBQnAxdHg2ZGNTSXBMNjNZajFVRTVwVTAyT0tNaVVFWXdiOGllWmlhbzdIVWJucXpQakJsOEhGTTFmT2dWcERVa3hDcGFUSm1sNVZCYlVSOW14X09tRl9Nb0djcmdxOHdmYWRCMUlXeThLNFhnOVdDRmV0bkhKbmtweHFHLWFWOUdrRzlXWDRkSGxKbUthNTZzT3BELW1ISDVLSVNQNlVxdk9FaGlzYUg3R3hEU1JXcl92WDBhSUFJc25tWEI2c2o5QVhfSFkybEpocFVI?oc=5",
+          "summary": "",
+          "id": "innovation-1022010129806652773"
+        },
+        {
+          "category": "innovation",
+          "title": "‘Flying car’: This Uttarakhand man built a flying car that needs no fuel - The Indian Express",
+          "source": "The Indian Express",
+          "published": "Sun, 09 Aug 2026 05:38:26 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPdm9Fb3BuWjRHUnNlWHFRakVRTDFHLWhjWU5TSlYwVzVmMkRoajhaUHlOZ2ltcDdqS21wZTQzWW93MkpLSHFzdFg1VEFsNUt6RDlSSVpEcWZqLVAtdDI1TVNPMHNlOUlxcXlPX3pvY2NyN29tU3p3N2Rkb2k4TTk0OU5iZlF2M08zR0pNNVRuSXJxcGZUUFk5NHpzRk94Q3lFc0psRjhfa1NnZmNSdGJMZ0E0aThqbWtpazdFUGFfRWR4TkHSAcoBQVVfeXFMTVB4SjN5ZUNJN2w4WEVieFVFOVJGcWZWT3Vod09STmdTZFQxcUdCWFBOOVFWV2puNXhOMXlxemo4ZWw4TDFhaDJNTmlZVlJDZ3BPZ1dickNBdWhIT1o5TjFsR21CUlVwbzNRYnFaT3MybnNhWU01THp3V2tvN0NxQlJrNTJaTWVqTWd2T3FqZ1ZMU19iZUhaQnBYQTYwdTF3bUZYVVM0YUdfRTlmaWpsWHJDUURKZU9KODQxbGVMZmFzR1d4VE5mRVRZUQ?oc=5",
+          "summary": "",
+          "id": "innovation-6842455164053196943"
+        }
+      ]
+    },
+    {
+      "id": "civic-watch",
+      "label": "Civic & Safety",
+      "state": "ready",
+      "signalCount": 5,
+      "signals": [
+        {
+          "category": "politics",
+          "title": "Uttarakhand CM Dhami receives grand welcome in Almora, highlights state development initiatives - ANI News",
+          "source": "ANI News",
+          "published": "Sun, 21 Jun 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNWFptamdzejJlZTlDVXktT0tMelhRRmlicDRTSktuMnVYZTdRNklaR0dna0lScU9pVkxYSXktcTZEVzI5OG5sMVJlNzhnZUVOaDdYUjdVb2RsR2VoZG5Vc0YwM051Y25uUG1ZMGFXU1JpM3RiUzdlczlQRWpaTVQ2N0o2R252UWphM2FYNjB1aXZMVjVDdDkxSTc4bFhYeGg0emxkVjV3c2xKU0RzNy1KZWFmSm0zbWliendpNmhJMzNrdEFTWkhldzF3MG5vTnUtc3p6cXpESDc5cXBUcEYyWWlibERVU0dHNnc?oc=5",
+          "summary": "",
+          "id": "politics-13379144026299792"
+        },
+        {
+          "category": "politics",
+          "title": "7 valleys to be developed under new aroma revolution policy - The Times of India",
+          "source": "The Times of India",
+          "published": "Sun, 14 Dec 2025 08:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQb0JkeDlWTWNTcmFkTVdBNkxlZVJRSU5nM1dDWloyTTNvRVM4VnNIcWIyVVNLdWI4bnpSN1p2WTYySkJ4Q3gyNnlhSXFVU090d09PWFN0dHM4czY5elhvWEl2YTV6cDhIczRYLUhUY2RoLWxCRy13WWtaM2Q2YW9vUzFKOVFDSmpQdnBKcGlVUVpGNC1EdER1TEx5UEtGNTBoajFKSURlMGtQTHNFLVotMFV5VThzWWpESlhCYlliRm9mV0gzN1NYXzZDZ2d4OXp60gHWAUFVX3lxTE91T29fd3AyYVJnVkRUdlVRbWRuT09CcGNyTUlHMGl1NTRRbFlYemtkV1g1ZWxMMFpGZzNoRVJRMDNSWTFwUS1WbGRTRHVvZm1fQ3pYX2dQZURNOC1YS21HZlRJczFLRVNwekxXMzE1X3FPaHBUOXg3V2RoQmFvN3V6Q0dma2NUektWSko3cDZKbGJhOFAydi1JVGM4UGs5T1c5LTB2V3NhcElFbUlPZWhFdnktald6WDYxZGZkWm1EQzVsYlJRa2NfRVFiU0l5bjVUUU9ncnc?oc=5",
+          "summary": "",
+          "id": "politics-14842352883358324"
+        },
+        {
+          "category": "politics",
+          "title": "Uttarakhand committed to 'Viksit Bharat' goal, says CM Dhami in Almora - ANI News",
+          "source": "ANI News",
+          "published": "Wed, 27 May 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNQXpFaWYtWk9hUV9ybEJ2Z2lUamZ2RWVvSDk1bndGd2ZzUzh0Nk5oellaSnI4VkZNbGNLejhFeG9UMTJvTGFTa3M0Xzd0bG9pTVVPazl1aEhveUVPSFJybFlGanY2UmNOdzdsUFlSeEozdDZIYk5WM2RKaDJUX2tYZHJTRVczQmlWTDNfY1lvNmlHSjV3NFFfXzVKYkxpdmUyNVNQczFsdGNRUFBkM1JzQWhRNXVQaV9DUExnd01Ub2RVZm54SGc?oc=5",
+          "summary": "",
+          "id": "politics-7164858442363399133"
+        },
+        {
+          "category": "politics",
+          "title": "Environment Summit - When Almora hogged limelight before who’s who of India - Elets eGov",
+          "source": "Elets eGov",
+          "published": "Wed, 24 Oct 2018 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPcTNMaDlZbGMtN2haM2FCWldfd3JFa1ZobHhQQmFyVW1VYl80ZFBoLUtoNXFsWGlCZ0lKUGl0YWc2M090OHdsRU9MeTBTOTBRb0ZDSGpiN01vaTNwc0w2TXJCQkszOUR4OXJDVlVISTljMzJSZ2NNTmNOWVV6MDZ4ZE4tUDR3R0hNcEtpZmIxTkxSbWh2c3c?oc=5",
+          "summary": "",
+          "id": "politics-4334560330515000617"
+        },
+        {
+          "category": "infrastructure",
+          "title": "Centre clears way for new roads in U’khand - The Times of India",
+          "source": "The Times of India",
+          "published": "Tue, 06 Jan 2026 08:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxObHRESkFkWkpMaGd3c2NfcDF3UkFZcXoyWU9ZVnh5di01OWNGYVZtbGhlRzBseVloeTF5azlKY3NTeElGZDdXamY0UWtEcHhOLW9obU8xRk1hVXBKQzJsTmtKVDZEby1WMlF1YTZjWTFlUWJtbTZFbXA0YlZHYnFRSUlkb05zQV9NeDZMYWtNYnAxZlJSbG1idDJEZG1YaEpBMzZ5cmtXR2w1X21aaXI5VGhXVU9IUk0t0gG-AUFVX3lxTFA0X2RnRVBNZ2FxVm9kWFhuTUcwQUJNRmlmS3FiTnNzV0xvZm5nX3lqLVZUYjN6SmtmQmExVjVoQkhpOU1ubnJPOUItMFpmTnQ2OFZoUm1jTjZwT2VZUy13UWxkMDhaVFFBQVA2VkFpcl9JN1VkVm1YZUpOaWhhdFlKOGpjSnhNWTBIMFJrSFpHWERiYkN1cHpuSFlrTDlneG5QMUNoQlpzcXBPUUtNYW9lWHNFWkZVOVdudTZHTnc?oc=5",
+          "summary": "",
+          "id": "infrastructure-2999898601757875979"
+        }
+      ]
+    },
+    {
+      "id": "monkey-wildlife",
+      "label": "Monkey & Wildlife",
+      "state": "ready",
+      "signalCount": 4,
+      "signals": [
+        {
+          "title": "Dharanaula: reported monkey activity level 4/4",
+          "category": "wildlife",
+          "url": "https://www.amarujala.com/uttarakhand/almora/monkeys-ateck-in-almora-almora-news-c-8-1-146492-2023-05-21"
+        },
+        {
+          "title": "Khatyari: reported monkey activity level 4/4",
+          "category": "wildlife",
+          "url": "https://www.amarujala.com/uttarakhand/almora/monkeys-ateck-in-almora-almora-news-c-8-1-146492-2023-05-21"
+        },
+        {
+          "title": "Pokharkhali: reported monkey activity level 4/4",
+          "category": "wildlife",
+          "url": "https://www.amarujala.com/uttarakhand/almora/monkeys-ateck-in-almora-almora-news-c-8-1-146492-2023-05-21"
+        },
+        {
+          "title": "Ranidhara: reported monkey activity level 4/4",
+          "category": "wildlife",
+          "url": "https://www.amarujala.com/uttarakhand/almora/monkeys-ateck-in-almora-almora-news-c-8-1-146492-2023-05-21"
+        }
+      ]
+    },
+    {
+      "id": "local-jobs",
+      "label": "Jobs & Skills",
+      "state": "ready",
+      "signalCount": 5,
+      "signals": [
+        {
+          "category": "jobs",
+          "title": "Uttarakhand HC upholds domicile-linked eligibility for primary teacher recruitment - ET Education",
+          "source": "ET Education",
+          "published": "Sat, 11 Apr 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPTFl5cEdaeEl3OGFqYUNZRjdWQVZlUlhfeGp0c2RaUmNQUnZHaU5EU1NZWVduR1NPS0tXTC1DaXhueTBZNm9BS2czSDNVZGl4WU4wU1hXeTYtaFlkNEtkYjlpcnI0Y09QTXk2RFUtMFJoYXBCRVd0LUlVekZYNDhEYU9STDBsNU1EOF9SM3diWUEzcGw0dVhSdXREbHhsSTNIOEo5V190OTBUa1lhd1BObXlvSDdIbE44VmRXUXVRZFl4S1pHLTBnT3ZOQnJEWGFoT3E5d2pvdURYOGloR2dSdXJxRDQ3N19YVmViWE96VnQ5b3Fzc0Fr0gH8AUFVX3lxTE9qajN2d2dBdlM3ZlZKTVJJQjR3SnNOV0lnbENRRUM2bmlDUHB1dkw2ZzcxR2cwWDluLW1JdllRMTc0OEYydDlzcFUzSXVEZk0xYkxtUU1Ob0xkc0hwTEsyd2lXUkI3VFM5N05vSUZyQWFFTmxQUGI4U3dLNUY0NUFEbkJRVkctNXkxRndsbG5CRDY3a09IYjYzRG5jNlF2V0VLcU5rd0tRZXQ2aVlLMUJOemFxWjFHWXJNMEJ6aXpSd3JUMlpZMVlqNFQzby1qdS1yVWpybUhMakgtR2hZUlY0R3o1SGduVFBpam12UHRTcWw0ZTByNUFyM0Jneg?oc=5",
+          "summary": "",
+          "id": "jobs-6082934137554182945"
+        },
+        {
+          "category": "jobs",
+          "title": "Uttarakhand govt to open new language training centre in Almora - ANI News",
+          "source": "ANI News",
+          "published": "Fri, 13 Mar 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOSDZ6cXRON2kteGl3Y0VNQ0VJTlpyYUJpQmY1cnBaV182X1Q4WTZYX1g3a3BmVTFZcGx3b0cwTEdESU05MzZBd18xY0pPTG1YZ2dsRU1PX3M2allEQzMxUlUxYkY4ay1xU3F1cm5PY0ZiWjhiWjVnNjNCNVdtSzdJY29HZ0lvUE1oQmdZX01CT2VQeEVaSDdZVFhtRmlEX2VHUU5NNnEzZDFFTThDT2h4eWRYVkxEc01qc3R6elF5Qk1ORUZJeXc?oc=5",
+          "summary": "",
+          "id": "jobs-6904201731010718315"
+        },
+        {
+          "category": "jobs",
+          "title": "826 government primary schools shut in Uttarakhand over five years due to zero enrolment - The New Indian Express",
+          "source": "The New Indian Express",
+          "published": "Fri, 13 Mar 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQY0ljUC1YNS1EbHFxaHk0S091dWZZZXNIUEpTME1yV1lsMEF3cW81U2tJQ2JGRF9YOTdiUTNVZGR4X0lJc2ZBZTFjTXp5UldROVVrVWs4eVdXNUxZWGRERFItWXAtQl9TblhkVGVLX0NMTGp0Ml9kaU1OMHVmTzdPSXV4V0p2R0NpWWpkdEZNOEY1dmxHdUhrVGpnZ2NSVmZ5VEJXS1lGTDRVWXNvV0liUG85WEthOUdOVTNlYm9iVXNGY0ZwejluNGxhQ2NKcVFWb3R4Y0hR0gHjAUFVX3lxTFA5WW1jMmI0Zk8ya2xHSWNBUGluODJZOElaaVJHcnJqaVE1YzlETTRrLU1SdXpteDJzdHB1a3RWNmhVZ3ViaFhNTV9IczRVeGNkeUl5T0UxMnNzNlJzU1QzbVVubk1GTGRjNFU4a192bVc3SkhCRWxRLU9GSFM5cDR2ZlI5QVpsUEpjcURVSGNOa3FhZFBhUHdaaTBrLU5QdWIzQkFwUjJjQzl3UDE1eGJmdVlaeV9fR0pmNDB3b0pwRnR1Z0x1VW1rUjVLSkk5eGlNQ2xLc2F5dlNzRS1nNkhmY0Y0?oc=5",
+          "summary": "",
+          "id": "jobs-8929423911342924617"
+        },
+        {
+          "category": "jobs",
+          "title": "March to Dehradun: The state of healthcare in Uttarakhand 25 years after its formation - The Indian Express",
+          "source": "The Indian Express",
+          "published": "Fri, 31 Oct 2025 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOeFRSa3V5ZjR3aTlTMGFVbUsxcVViQkJDR2FGQzNXMFNhSUlISnpOUFdxTENreE9MSjczdmsxcGQ0YTZ2S1NtX29MMVotTjJZcU5SOVZabjJoYjlQZlZ2MkpFeWNtbWF6WkNNNjNGdVlEcnl4QS1oWl90THU4RWxuNVlUY1RWd184ejB0c29NbnY2V1o2UGfSAZwBQVVfeXFMTXF1eFlqMTA4ZWZRSFkwa2lmRWJmVnpyYmptT09mWndvXzFuTFZqWlpUbjctWWlIajdrU3lXZVNtemVoOFUxTjc2S0tNNDM5Y0ZoaHJHQkt4TXM5TVQzRXpYOFBudjBxSWpyLW9BVzU2U1BEMmFSZkc3bEgtNlVidklXekNHcmUxVkpFR0hidXRqSXNLcFU4WTU5aXVW?oc=5",
+          "summary": "",
+          "id": "jobs-389590612272633505"
+        },
+        {
+          "category": "jobs",
+          "title": "Civic Services completes acquisition of Alps Pharmaceuticals Private Limited to create over 1000 jobs in Almora, Uttrakhan - Business Standard",
+          "source": "Business Standard",
+          "published": "Tue, 02 Nov 2021 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxOQVF5TGRtX3Z3VXg0cU1DUVBUcGVCWGcyT3RUZ2R4emsxQ1VZbktQdnBYRUllcWwxelZHcWNRUlNZc2E0SzhJRDAtUGp0Q1BncU5KSVQ3aEdpekdKT1daam5KMDl3UjNUUFVTelQxZC0wUXRYR2J3QjdCNHY2MUVKQUF3S0dDbWJtTmlwb29kaEhrWWpZb2EydHluLS1MMXo3WFgtYXRRNkgzdjNlbVZpa2JQWXpWM3lhaVZCcXZWXzlxYk55eVRPM2xyZ3l4dXNnZ1lfclEtWVBiWmw2YmZ5VjlfMHJKOVJlTkI1eE9MWjF3SS1fUERYcjRpOTZkaDk2eTNvUEJEamhSWVQzY2M1eGNadFBaNGV3SVJlMEN6c0RHN1hwWXE2NkNn0gGvAkFVX3lxTE5Ea1dWaTd3MklWcWt1VjcybWtkYk16ZXJaR1lMQUU3cGR2aGVMNmktZHl0QjdidmN0RFdjelhjNWFjbE5za3EwUWRGUjhmTHJzUXZoWTBqckJIVHVPdVF3dU1WZ3JtNHd6NTgzMV9pWVA1LXc4ZnVqTnduT3RaQWNqQ3IydndLWVIyWTZadmlpVkRLcUVHY1QyODJSUGw3Q3YtQ2ZCNEJSYlhQNGEyWXFpaVR4QU9XRHJtWHRvbi1BVjBDazgyd1dMZE5VT1hNNnp2a3ozenM1dU5yYTBlSWozVXhBVjRnamFBV0JJaTdPTWd3cHVQTUQxZlQ3RHg3ZExLcFd3b0pKQU1LMTBqU1JFM040cW5RNDJGQWRrZ2I2aUEyUi1nYkpadlRXcUNBbw?oc=5",
+          "summary": "",
+          "id": "jobs-1184067848884091477"
+        }
+      ]
+    },
+    {
+      "id": "farm-watch",
+      "label": "Farming & Wildlife",
+      "state": "ready",
+      "signalCount": 4,
+      "signals": [
+        {
+          "title": "Dharanaula: reported monkey activity level 4/4",
+          "category": "wildlife",
+          "url": "https://www.amarujala.com/uttarakhand/almora/monkeys-ateck-in-almora-almora-news-c-8-1-146492-2023-05-21"
+        },
+        {
+          "title": "Khatyari: reported monkey activity level 4/4",
+          "category": "wildlife",
+          "url": "https://www.amarujala.com/uttarakhand/almora/monkeys-ateck-in-almora-almora-news-c-8-1-146492-2023-05-21"
+        },
+        {
+          "title": "Pokharkhali: reported monkey activity level 4/4",
+          "category": "wildlife",
+          "url": "https://www.amarujala.com/uttarakhand/almora/monkeys-ateck-in-almora-almora-news-c-8-1-146492-2023-05-21"
+        },
+        {
+          "title": "Ranidhara: reported monkey activity level 4/4",
+          "category": "wildlife",
+          "url": "https://www.amarujala.com/uttarakhand/almora/monkeys-ateck-in-almora-almora-news-c-8-1-146492-2023-05-21"
+        }
+      ]
+    },
+    {
+      "id": "health-navigator",
+      "label": "Health & Wellness",
+      "state": "ready",
+      "signalCount": 0,
+      "signals": []
+    },
+    {
+      "id": "transport-watch",
+      "label": "Transport",
+      "state": "ready",
+      "signalCount": 2,
+      "signals": [
+        {
+          "category": "infrastructure",
+          "title": "Centre clears way for new roads in U’khand - The Times of India",
+          "source": "The Times of India",
+          "published": "Tue, 06 Jan 2026 08:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxObHRESkFkWkpMaGd3c2NfcDF3UkFZcXoyWU9ZVnh5di01OWNGYVZtbGhlRzBseVloeTF5azlKY3NTeElGZDdXamY0UWtEcHhOLW9obU8xRk1hVXBKQzJsTmtKVDZEby1WMlF1YTZjWTFlUWJtbTZFbXA0YlZHYnFRSUlkb05zQV9NeDZMYWtNYnAxZlJSbG1idDJEZG1YaEpBMzZ5cmtXR2w1X21aaXI5VGhXVU9IUk0t0gG-AUFVX3lxTFA0X2RnRVBNZ2FxVm9kWFhuTUcwQUJNRmlmS3FiTnNzV0xvZm5nX3lqLVZUYjN6SmtmQmExVjVoQkhpOU1ubnJPOUItMFpmTnQ2OFZoUm1jTjZwT2VZUy13UWxkMDhaVFFBQVA2VkFpcl9JN1VkVm1YZUpOaWhhdFlKOGpjSnhNWTBIMFJrSFpHWERiYkN1cHpuSFlrTDlneG5QMUNoQlpzcXBPUUtNYW9lWHNFWkZVOVdudTZHTnc?oc=5",
+          "summary": "",
+          "id": "infrastructure-2999898601757875979"
+        },
+        {
+          "category": "infrastructure",
+          "title": "Uttarakhand CM Pushkar Singh Dhami Launches ₹138 Crore Mega Development Push in Almora Across 26 Projects - Indianmasterminds",
+          "source": "Indianmasterminds",
+          "published": "Thu, 28 May 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORWN5QkVNbmZiSjh4YWdydW1tck9vRzdsRUlTNVozSkZ1M1NLS3ZIZTN0NWJUMnI3dmFLbG9hOEhHZklHSzkxRHdoSlhBSU5SN1JnMWdnQ2F0XzNGeG1qMEcxaXlDSDhrR3BobXk3aGhScVdKWGhNOHdvOHZCX21XMk5aREJTZ2JwaGZPeDBhb3VteWs0aU5XbGNoMExrV3h4dUE?oc=5",
+          "summary": "",
+          "id": "infrastructure-7314282145916665290"
+        }
+      ]
+    },
+    {
+      "id": "road-access",
+      "label": "Road Access",
+      "state": "ready",
+      "signalCount": 2,
+      "signals": [
+        {
+          "category": "infrastructure",
+          "title": "Centre clears way for new roads in U’khand - The Times of India",
+          "source": "The Times of India",
+          "published": "Tue, 06 Jan 2026 08:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxObHRESkFkWkpMaGd3c2NfcDF3UkFZcXoyWU9ZVnh5di01OWNGYVZtbGhlRzBseVloeTF5azlKY3NTeElGZDdXamY0UWtEcHhOLW9obU8xRk1hVXBKQzJsTmtKVDZEby1WMlF1YTZjWTFlUWJtbTZFbXA0YlZHYnFRSUlkb05zQV9NeDZMYWtNYnAxZlJSbG1idDJEZG1YaEpBMzZ5cmtXR2w1X21aaXI5VGhXVU9IUk0t0gG-AUFVX3lxTFA0X2RnRVBNZ2FxVm9kWFhuTUcwQUJNRmlmS3FiTnNzV0xvZm5nX3lqLVZUYjN6SmtmQmExVjVoQkhpOU1ubnJPOUItMFpmTnQ2OFZoUm1jTjZwT2VZUy13UWxkMDhaVFFBQVA2VkFpcl9JN1VkVm1YZUpOaWhhdFlKOGpjSnhNWTBIMFJrSFpHWERiYkN1cHpuSFlrTDlneG5QMUNoQlpzcXBPUUtNYW9lWHNFWkZVOVdudTZHTnc?oc=5",
+          "summary": "",
+          "id": "infrastructure-2999898601757875979"
+        },
+        {
+          "category": "infrastructure",
+          "title": "Uttarakhand CM Pushkar Singh Dhami Launches ₹138 Crore Mega Development Push in Almora Across 26 Projects - Indianmasterminds",
+          "source": "Indianmasterminds",
+          "published": "Thu, 28 May 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORWN5QkVNbmZiSjh4YWdydW1tck9vRzdsRUlTNVozSkZ1M1NLS3ZIZTN0NWJUMnI3dmFLbG9hOEhHZklHSzkxRHdoSlhBSU5SN1JnMWdnQ2F0XzNGeG1qMEcxaXlDSDhrR3BobXk3aGhScVdKWGhNOHdvOHZCX21XMk5aREJTZ2JwaGZPeDBhb3VteWs0aU5XbGNoMExrV3h4dUE?oc=5",
+          "summary": "",
+          "id": "infrastructure-7314282145916665290"
+        }
+      ]
+    },
+    {
+      "id": "education",
+      "label": "Education",
+      "state": "ready",
+      "signalCount": 5,
+      "signals": [
+        {
+          "category": "jobs",
+          "title": "Uttarakhand HC upholds domicile-linked eligibility for primary teacher recruitment - ET Education",
+          "source": "ET Education",
+          "published": "Sat, 11 Apr 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPTFl5cEdaeEl3OGFqYUNZRjdWQVZlUlhfeGp0c2RaUmNQUnZHaU5EU1NZWVduR1NPS0tXTC1DaXhueTBZNm9BS2czSDNVZGl4WU4wU1hXeTYtaFlkNEtkYjlpcnI0Y09QTXk2RFUtMFJoYXBCRVd0LUlVekZYNDhEYU9STDBsNU1EOF9SM3diWUEzcGw0dVhSdXREbHhsSTNIOEo5V190OTBUa1lhd1BObXlvSDdIbE44VmRXUXVRZFl4S1pHLTBnT3ZOQnJEWGFoT3E5d2pvdURYOGloR2dSdXJxRDQ3N19YVmViWE96VnQ5b3Fzc0Fr0gH8AUFVX3lxTE9qajN2d2dBdlM3ZlZKTVJJQjR3SnNOV0lnbENRRUM2bmlDUHB1dkw2ZzcxR2cwWDluLW1JdllRMTc0OEYydDlzcFUzSXVEZk0xYkxtUU1Ob0xkc0hwTEsyd2lXUkI3VFM5N05vSUZyQWFFTmxQUGI4U3dLNUY0NUFEbkJRVkctNXkxRndsbG5CRDY3a09IYjYzRG5jNlF2V0VLcU5rd0tRZXQ2aVlLMUJOemFxWjFHWXJNMEJ6aXpSd3JUMlpZMVlqNFQzby1qdS1yVWpybUhMakgtR2hZUlY0R3o1SGduVFBpam12UHRTcWw0ZTByNUFyM0Jneg?oc=5",
+          "summary": "",
+          "id": "jobs-6082934137554182945"
+        },
+        {
+          "category": "jobs",
+          "title": "Uttarakhand govt to open new language training centre in Almora - ANI News",
+          "source": "ANI News",
+          "published": "Fri, 13 Mar 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOSDZ6cXRON2kteGl3Y0VNQ0VJTlpyYUJpQmY1cnBaV182X1Q4WTZYX1g3a3BmVTFZcGx3b0cwTEdESU05MzZBd18xY0pPTG1YZ2dsRU1PX3M2allEQzMxUlUxYkY4ay1xU3F1cm5PY0ZiWjhiWjVnNjNCNVdtSzdJY29HZ0lvUE1oQmdZX01CT2VQeEVaSDdZVFhtRmlEX2VHUU5NNnEzZDFFTThDT2h4eWRYVkxEc01qc3R6elF5Qk1ORUZJeXc?oc=5",
+          "summary": "",
+          "id": "jobs-6904201731010718315"
+        },
+        {
+          "category": "jobs",
+          "title": "826 government primary schools shut in Uttarakhand over five years due to zero enrolment - The New Indian Express",
+          "source": "The New Indian Express",
+          "published": "Fri, 13 Mar 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQY0ljUC1YNS1EbHFxaHk0S091dWZZZXNIUEpTME1yV1lsMEF3cW81U2tJQ2JGRF9YOTdiUTNVZGR4X0lJc2ZBZTFjTXp5UldROVVrVWs4eVdXNUxZWGRERFItWXAtQl9TblhkVGVLX0NMTGp0Ml9kaU1OMHVmTzdPSXV4V0p2R0NpWWpkdEZNOEY1dmxHdUhrVGpnZ2NSVmZ5VEJXS1lGTDRVWXNvV0liUG85WEthOUdOVTNlYm9iVXNGY0ZwejluNGxhQ2NKcVFWb3R4Y0hR0gHjAUFVX3lxTFA5WW1jMmI0Zk8ya2xHSWNBUGluODJZOElaaVJHcnJqaVE1YzlETTRrLU1SdXpteDJzdHB1a3RWNmhVZ3ViaFhNTV9IczRVeGNkeUl5T0UxMnNzNlJzU1QzbVVubk1GTGRjNFU4a192bVc3SkhCRWxRLU9GSFM5cDR2ZlI5QVpsUEpjcURVSGNOa3FhZFBhUHdaaTBrLU5QdWIzQkFwUjJjQzl3UDE1eGJmdVlaeV9fR0pmNDB3b0pwRnR1Z0x1VW1rUjVLSkk5eGlNQ2xLc2F5dlNzRS1nNkhmY0Y0?oc=5",
+          "summary": "",
+          "id": "jobs-8929423911342924617"
+        },
+        {
+          "category": "jobs",
+          "title": "March to Dehradun: The state of healthcare in Uttarakhand 25 years after its formation - The Indian Express",
+          "source": "The Indian Express",
+          "published": "Fri, 31 Oct 2025 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOeFRSa3V5ZjR3aTlTMGFVbUsxcVViQkJDR2FGQzNXMFNhSUlISnpOUFdxTENreE9MSjczdmsxcGQ0YTZ2S1NtX29MMVotTjJZcU5SOVZabjJoYjlQZlZ2MkpFeWNtbWF6WkNNNjNGdVlEcnl4QS1oWl90THU4RWxuNVlUY1RWd184ejB0c29NbnY2V1o2UGfSAZwBQVVfeXFMTXF1eFlqMTA4ZWZRSFkwa2lmRWJmVnpyYmptT09mWndvXzFuTFZqWlpUbjctWWlIajdrU3lXZVNtemVoOFUxTjc2S0tNNDM5Y0ZoaHJHQkt4TXM5TVQzRXpYOFBudjBxSWpyLW9BVzU2U1BEMmFSZkc3bEgtNlVidklXekNHcmUxVkpFR0hidXRqSXNLcFU4WTU5aXVW?oc=5",
+          "summary": "",
+          "id": "jobs-389590612272633505"
+        },
+        {
+          "category": "jobs",
+          "title": "Civic Services completes acquisition of Alps Pharmaceuticals Private Limited to create over 1000 jobs in Almora, Uttrakhan - Business Standard",
+          "source": "Business Standard",
+          "published": "Tue, 02 Nov 2021 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxOQVF5TGRtX3Z3VXg0cU1DUVBUcGVCWGcyT3RUZ2R4emsxQ1VZbktQdnBYRUllcWwxelZHcWNRUlNZc2E0SzhJRDAtUGp0Q1BncU5KSVQ3aEdpekdKT1daam5KMDl3UjNUUFVTelQxZC0wUXRYR2J3QjdCNHY2MUVKQUF3S0dDbWJtTmlwb29kaEhrWWpZb2EydHluLS1MMXo3WFgtYXRRNkgzdjNlbVZpa2JQWXpWM3lhaVZCcXZWXzlxYk55eVRPM2xyZ3l4dXNnZ1lfclEtWVBiWmw2YmZ5VjlfMHJKOVJlTkI1eE9MWjF3SS1fUERYcjRpOTZkaDk2eTNvUEJEamhSWVQzY2M1eGNadFBaNGV3SVJlMEN6c0RHN1hwWXE2NkNn0gGvAkFVX3lxTE5Ea1dWaTd3MklWcWt1VjcybWtkYk16ZXJaR1lMQUU3cGR2aGVMNmktZHl0QjdidmN0RFdjelhjNWFjbE5za3EwUWRGUjhmTHJzUXZoWTBqckJIVHVPdVF3dU1WZ3JtNHd6NTgzMV9pWVA1LXc4ZnVqTnduT3RaQWNqQ3IydndLWVIyWTZadmlpVkRLcUVHY1QyODJSUGw3Q3YtQ2ZCNEJSYlhQNGEyWXFpaVR4QU9XRHJtWHRvbi1BVjBDazgyd1dMZE5VT1hNNnp2a3ozenM1dU5yYTBlSWozVXhBVjRnamFBV0JJaTdPTWd3cHVQTUQxZlQ3RHg3ZExLcFd3b0pKQU1LMTBqU1JFM040cW5RNDJGQWRrZ2I2aUEyUi1nYkpadlRXcUNBbw?oc=5",
+          "summary": "",
+          "id": "jobs-1184067848884091477"
+        }
+      ]
+    },
+    {
+      "id": "traffic",
+      "label": "Traffic",
+      "state": "ready",
+      "signalCount": 2,
+      "signals": [
+        {
+          "category": "infrastructure",
+          "title": "Centre clears way for new roads in U’khand - The Times of India",
+          "source": "The Times of India",
+          "published": "Tue, 06 Jan 2026 08:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxObHRESkFkWkpMaGd3c2NfcDF3UkFZcXoyWU9ZVnh5di01OWNGYVZtbGhlRzBseVloeTF5azlKY3NTeElGZDdXamY0UWtEcHhOLW9obU8xRk1hVXBKQzJsTmtKVDZEby1WMlF1YTZjWTFlUWJtbTZFbXA0YlZHYnFRSUlkb05zQV9NeDZMYWtNYnAxZlJSbG1idDJEZG1YaEpBMzZ5cmtXR2w1X21aaXI5VGhXVU9IUk0t0gG-AUFVX3lxTFA0X2RnRVBNZ2FxVm9kWFhuTUcwQUJNRmlmS3FiTnNzV0xvZm5nX3lqLVZUYjN6SmtmQmExVjVoQkhpOU1ubnJPOUItMFpmTnQ2OFZoUm1jTjZwT2VZUy13UWxkMDhaVFFBQVA2VkFpcl9JN1VkVm1YZUpOaWhhdFlKOGpjSnhNWTBIMFJrSFpHWERiYkN1cHpuSFlrTDlneG5QMUNoQlpzcXBPUUtNYW9lWHNFWkZVOVdudTZHTnc?oc=5",
+          "summary": "",
+          "id": "infrastructure-2999898601757875979"
+        },
+        {
+          "category": "infrastructure",
+          "title": "Uttarakhand CM Pushkar Singh Dhami Launches ₹138 Crore Mega Development Push in Almora Across 26 Projects - Indianmasterminds",
+          "source": "Indianmasterminds",
+          "published": "Thu, 28 May 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORWN5QkVNbmZiSjh4YWdydW1tck9vRzdsRUlTNVozSkZ1M1NLS3ZIZTN0NWJUMnI3dmFLbG9hOEhHZklHSzkxRHdoSlhBSU5SN1JnMWdnQ2F0XzNGeG1qMEcxaXlDSDhrR3BobXk3aGhScVdKWGhNOHdvOHZCX21XMk5aREJTZ2JwaGZPeDBhb3VteWs0aU5XbGNoMExrV3h4dUE?oc=5",
+          "summary": "",
+          "id": "infrastructure-7314282145916665290"
+        }
+      ]
+    },
+    {
+      "id": "price-scam-watch",
+      "label": "Price Watch",
+      "state": "ready",
+      "signalCount": 0,
+      "signals": []
+    },
+    {
+      "id": "government-navigator",
+      "label": "Government Navigator",
+      "state": "ready",
+      "signalCount": 4,
+      "signals": [
+        {
+          "category": "politics",
+          "title": "Uttarakhand CM Dhami receives grand welcome in Almora, highlights state development initiatives - ANI News",
+          "source": "ANI News",
+          "published": "Sun, 21 Jun 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNWFptamdzejJlZTlDVXktT0tMelhRRmlicDRTSktuMnVYZTdRNklaR0dna0lScU9pVkxYSXktcTZEVzI5OG5sMVJlNzhnZUVOaDdYUjdVb2RsR2VoZG5Vc0YwM051Y25uUG1ZMGFXU1JpM3RiUzdlczlQRWpaTVQ2N0o2R252UWphM2FYNjB1aXZMVjVDdDkxSTc4bFhYeGg0emxkVjV3c2xKU0RzNy1KZWFmSm0zbWliendpNmhJMzNrdEFTWkhldzF3MG5vTnUtc3p6cXpESDc5cXBUcEYyWWlibERVU0dHNnc?oc=5",
+          "summary": "",
+          "id": "politics-13379144026299792"
+        },
+        {
+          "category": "politics",
+          "title": "7 valleys to be developed under new aroma revolution policy - The Times of India",
+          "source": "The Times of India",
+          "published": "Sun, 14 Dec 2025 08:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQb0JkeDlWTWNTcmFkTVdBNkxlZVJRSU5nM1dDWloyTTNvRVM4VnNIcWIyVVNLdWI4bnpSN1p2WTYySkJ4Q3gyNnlhSXFVU090d09PWFN0dHM4czY5elhvWEl2YTV6cDhIczRYLUhUY2RoLWxCRy13WWtaM2Q2YW9vUzFKOVFDSmpQdnBKcGlVUVpGNC1EdER1TEx5UEtGNTBoajFKSURlMGtQTHNFLVotMFV5VThzWWpESlhCYlliRm9mV0gzN1NYXzZDZ2d4OXp60gHWAUFVX3lxTE91T29fd3AyYVJnVkRUdlVRbWRuT09CcGNyTUlHMGl1NTRRbFlYemtkV1g1ZWxMMFpGZzNoRVJRMDNSWTFwUS1WbGRTRHVvZm1fQ3pYX2dQZURNOC1YS21HZlRJczFLRVNwekxXMzE1X3FPaHBUOXg3V2RoQmFvN3V6Q0dma2NUektWSko3cDZKbGJhOFAydi1JVGM4UGs5T1c5LTB2V3NhcElFbUlPZWhFdnktald6WDYxZGZkWm1EQzVsYlJRa2NfRVFiU0l5bjVUUU9ncnc?oc=5",
+          "summary": "",
+          "id": "politics-14842352883358324"
+        },
+        {
+          "category": "politics",
+          "title": "Uttarakhand committed to 'Viksit Bharat' goal, says CM Dhami in Almora - ANI News",
+          "source": "ANI News",
+          "published": "Wed, 27 May 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNQXpFaWYtWk9hUV9ybEJ2Z2lUamZ2RWVvSDk1bndGd2ZzUzh0Nk5oellaSnI4VkZNbGNLejhFeG9UMTJvTGFTa3M0Xzd0bG9pTVVPazl1aEhveUVPSFJybFlGanY2UmNOdzdsUFlSeEozdDZIYk5WM2RKaDJUX2tYZHJTRVczQmlWTDNfY1lvNmlHSjV3NFFfXzVKYkxpdmUyNVNQczFsdGNRUFBkM1JzQWhRNXVQaV9DUExnd01Ub2RVZm54SGc?oc=5",
+          "summary": "",
+          "id": "politics-7164858442363399133"
+        },
+        {
+          "category": "politics",
+          "title": "Environment Summit - When Almora hogged limelight before who’s who of India - Elets eGov",
+          "source": "Elets eGov",
+          "published": "Wed, 24 Oct 2018 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPcTNMaDlZbGMtN2haM2FCWldfd3JFa1ZobHhQQmFyVW1VYl80ZFBoLUtoNXFsWGlCZ0lKUGl0YWc2M090OHdsRU9MeTBTOTBRb0ZDSGpiN01vaTNwc0w2TXJCQkszOUR4OXJDVlVISTljMzJSZ2NNTmNOWVV6MDZ4ZE4tUDR3R0hNcEtpZmIxTkxSbWh2c3c?oc=5",
+          "summary": "",
+          "id": "politics-4334560330515000617"
+        }
+      ]
+    },
+    {
+      "id": "tourism",
+      "label": "Tourism Planner",
+      "state": "ready",
+      "signalCount": 2,
+      "signals": [
+        {
+          "category": "infrastructure",
+          "title": "Centre clears way for new roads in U’khand - The Times of India",
+          "source": "The Times of India",
+          "published": "Tue, 06 Jan 2026 08:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxObHRESkFkWkpMaGd3c2NfcDF3UkFZcXoyWU9ZVnh5di01OWNGYVZtbGhlRzBseVloeTF5azlKY3NTeElGZDdXamY0UWtEcHhOLW9obU8xRk1hVXBKQzJsTmtKVDZEby1WMlF1YTZjWTFlUWJtbTZFbXA0YlZHYnFRSUlkb05zQV9NeDZMYWtNYnAxZlJSbG1idDJEZG1YaEpBMzZ5cmtXR2w1X21aaXI5VGhXVU9IUk0t0gG-AUFVX3lxTFA0X2RnRVBNZ2FxVm9kWFhuTUcwQUJNRmlmS3FiTnNzV0xvZm5nX3lqLVZUYjN6SmtmQmExVjVoQkhpOU1ubnJPOUItMFpmTnQ2OFZoUm1jTjZwT2VZUy13UWxkMDhaVFFBQVA2VkFpcl9JN1VkVm1YZUpOaWhhdFlKOGpjSnhNWTBIMFJrSFpHWERiYkN1cHpuSFlrTDlneG5QMUNoQlpzcXBPUUtNYW9lWHNFWkZVOVdudTZHTnc?oc=5",
+          "summary": "",
+          "id": "infrastructure-2999898601757875979"
+        },
+        {
+          "category": "infrastructure",
+          "title": "Uttarakhand CM Pushkar Singh Dhami Launches ₹138 Crore Mega Development Push in Almora Across 26 Projects - Indianmasterminds",
+          "source": "Indianmasterminds",
+          "published": "Thu, 28 May 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORWN5QkVNbmZiSjh4YWdydW1tck9vRzdsRUlTNVozSkZ1M1NLS3ZIZTN0NWJUMnI3dmFLbG9hOEhHZklHSzkxRHdoSlhBSU5SN1JnMWdnQ2F0XzNGeG1qMEcxaXlDSDhrR3BobXk3aGhScVdKWGhNOHdvOHZCX21XMk5aREJTZ2JwaGZPeDBhb3VteWs0aU5XbGNoMExrV3h4dUE?oc=5",
+          "summary": "",
+          "id": "infrastructure-7314282145916665290"
+        }
+      ]
+    },
+    {
+      "id": "commerce",
+      "label": "Local Commerce",
+      "state": "ready",
+      "signalCount": 5,
+      "signals": [
+        {
+          "category": "jobs",
+          "title": "Uttarakhand HC upholds domicile-linked eligibility for primary teacher recruitment - ET Education",
+          "source": "ET Education",
+          "published": "Sat, 11 Apr 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPTFl5cEdaeEl3OGFqYUNZRjdWQVZlUlhfeGp0c2RaUmNQUnZHaU5EU1NZWVduR1NPS0tXTC1DaXhueTBZNm9BS2czSDNVZGl4WU4wU1hXeTYtaFlkNEtkYjlpcnI0Y09QTXk2RFUtMFJoYXBCRVd0LUlVekZYNDhEYU9STDBsNU1EOF9SM3diWUEzcGw0dVhSdXREbHhsSTNIOEo5V190OTBUa1lhd1BObXlvSDdIbE44VmRXUXVRZFl4S1pHLTBnT3ZOQnJEWGFoT3E5d2pvdURYOGloR2dSdXJxRDQ3N19YVmViWE96VnQ5b3Fzc0Fr0gH8AUFVX3lxTE9qajN2d2dBdlM3ZlZKTVJJQjR3SnNOV0lnbENRRUM2bmlDUHB1dkw2ZzcxR2cwWDluLW1JdllRMTc0OEYydDlzcFUzSXVEZk0xYkxtUU1Ob0xkc0hwTEsyd2lXUkI3VFM5N05vSUZyQWFFTmxQUGI4U3dLNUY0NUFEbkJRVkctNXkxRndsbG5CRDY3a09IYjYzRG5jNlF2V0VLcU5rd0tRZXQ2aVlLMUJOemFxWjFHWXJNMEJ6aXpSd3JUMlpZMVlqNFQzby1qdS1yVWpybUhMakgtR2hZUlY0R3o1SGduVFBpam12UHRTcWw0ZTByNUFyM0Jneg?oc=5",
+          "summary": "",
+          "id": "jobs-6082934137554182945"
+        },
+        {
+          "category": "jobs",
+          "title": "Uttarakhand govt to open new language training centre in Almora - ANI News",
+          "source": "ANI News",
+          "published": "Fri, 13 Mar 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOSDZ6cXRON2kteGl3Y0VNQ0VJTlpyYUJpQmY1cnBaV182X1Q4WTZYX1g3a3BmVTFZcGx3b0cwTEdESU05MzZBd18xY0pPTG1YZ2dsRU1PX3M2allEQzMxUlUxYkY4ay1xU3F1cm5PY0ZiWjhiWjVnNjNCNVdtSzdJY29HZ0lvUE1oQmdZX01CT2VQeEVaSDdZVFhtRmlEX2VHUU5NNnEzZDFFTThDT2h4eWRYVkxEc01qc3R6elF5Qk1ORUZJeXc?oc=5",
+          "summary": "",
+          "id": "jobs-6904201731010718315"
+        },
+        {
+          "category": "jobs",
+          "title": "826 government primary schools shut in Uttarakhand over five years due to zero enrolment - The New Indian Express",
+          "source": "The New Indian Express",
+          "published": "Fri, 13 Mar 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQY0ljUC1YNS1EbHFxaHk0S091dWZZZXNIUEpTME1yV1lsMEF3cW81U2tJQ2JGRF9YOTdiUTNVZGR4X0lJc2ZBZTFjTXp5UldROVVrVWs4eVdXNUxZWGRERFItWXAtQl9TblhkVGVLX0NMTGp0Ml9kaU1OMHVmTzdPSXV4V0p2R0NpWWpkdEZNOEY1dmxHdUhrVGpnZ2NSVmZ5VEJXS1lGTDRVWXNvV0liUG85WEthOUdOVTNlYm9iVXNGY0ZwejluNGxhQ2NKcVFWb3R4Y0hR0gHjAUFVX3lxTFA5WW1jMmI0Zk8ya2xHSWNBUGluODJZOElaaVJHcnJqaVE1YzlETTRrLU1SdXpteDJzdHB1a3RWNmhVZ3ViaFhNTV9IczRVeGNkeUl5T0UxMnNzNlJzU1QzbVVubk1GTGRjNFU4a192bVc3SkhCRWxRLU9GSFM5cDR2ZlI5QVpsUEpjcURVSGNOa3FhZFBhUHdaaTBrLU5QdWIzQkFwUjJjQzl3UDE1eGJmdVlaeV9fR0pmNDB3b0pwRnR1Z0x1VW1rUjVLSkk5eGlNQ2xLc2F5dlNzRS1nNkhmY0Y0?oc=5",
+          "summary": "",
+          "id": "jobs-8929423911342924617"
+        },
+        {
+          "category": "jobs",
+          "title": "March to Dehradun: The state of healthcare in Uttarakhand 25 years after its formation - The Indian Express",
+          "source": "The Indian Express",
+          "published": "Fri, 31 Oct 2025 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOeFRSa3V5ZjR3aTlTMGFVbUsxcVViQkJDR2FGQzNXMFNhSUlISnpOUFdxTENreE9MSjczdmsxcGQ0YTZ2S1NtX29MMVotTjJZcU5SOVZabjJoYjlQZlZ2MkpFeWNtbWF6WkNNNjNGdVlEcnl4QS1oWl90THU4RWxuNVlUY1RWd184ejB0c29NbnY2V1o2UGfSAZwBQVVfeXFMTXF1eFlqMTA4ZWZRSFkwa2lmRWJmVnpyYmptT09mWndvXzFuTFZqWlpUbjctWWlIajdrU3lXZVNtemVoOFUxTjc2S0tNNDM5Y0ZoaHJHQkt4TXM5TVQzRXpYOFBudjBxSWpyLW9BVzU2U1BEMmFSZkc3bEgtNlVidklXekNHcmUxVkpFR0hidXRqSXNLcFU4WTU5aXVW?oc=5",
+          "summary": "",
+          "id": "jobs-389590612272633505"
+        },
+        {
+          "category": "jobs",
+          "title": "Civic Services completes acquisition of Alps Pharmaceuticals Private Limited to create over 1000 jobs in Almora, Uttrakhan - Business Standard",
+          "source": "Business Standard",
+          "published": "Tue, 02 Nov 2021 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxOQVF5TGRtX3Z3VXg0cU1DUVBUcGVCWGcyT3RUZ2R4emsxQ1VZbktQdnBYRUllcWwxelZHcWNRUlNZc2E0SzhJRDAtUGp0Q1BncU5KSVQ3aEdpekdKT1daam5KMDl3UjNUUFVTelQxZC0wUXRYR2J3QjdCNHY2MUVKQUF3S0dDbWJtTmlwb29kaEhrWWpZb2EydHluLS1MMXo3WFgtYXRRNkgzdjNlbVZpa2JQWXpWM3lhaVZCcXZWXzlxYk55eVRPM2xyZ3l4dXNnZ1lfclEtWVBiWmw2YmZ5VjlfMHJKOVJlTkI1eE9MWjF3SS1fUERYcjRpOTZkaDk2eTNvUEJEamhSWVQzY2M1eGNadFBaNGV3SVJlMEN6c0RHN1hwWXE2NkNn0gGvAkFVX3lxTE5Ea1dWaTd3MklWcWt1VjcybWtkYk16ZXJaR1lMQUU3cGR2aGVMNmktZHl0QjdidmN0RFdjelhjNWFjbE5za3EwUWRGUjhmTHJzUXZoWTBqckJIVHVPdVF3dU1WZ3JtNHd6NTgzMV9pWVA1LXc4ZnVqTnduT3RaQWNqQ3IydndLWVIyWTZadmlpVkRLcUVHY1QyODJSUGw3Q3YtQ2ZCNEJSYlhQNGEyWXFpaVR4QU9XRHJtWHRvbi1BVjBDazgyd1dMZE5VT1hNNnp2a3ozenM1dU5yYTBlSWozVXhBVjRnamFBV0JJaTdPTWd3cHVQTUQxZlQ3RHg3ZExLcFd3b0pKQU1LMTBqU1JFM040cW5RNDJGQWRrZ2I2aUEyUi1nYkpadlRXcUNBbw?oc=5",
+          "summary": "",
+          "id": "jobs-1184067848884091477"
+        }
+      ]
+    },
+    {
+      "id": "local-task-router",
+      "label": "Clean Almora & Local Tasks",
+      "state": "ready",
+      "signalCount": 2,
+      "signals": [
+        {
+          "category": "infrastructure",
+          "title": "Centre clears way for new roads in U’khand - The Times of India",
+          "source": "The Times of India",
+          "published": "Tue, 06 Jan 2026 08:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxObHRESkFkWkpMaGd3c2NfcDF3UkFZcXoyWU9ZVnh5di01OWNGYVZtbGhlRzBseVloeTF5azlKY3NTeElGZDdXamY0UWtEcHhOLW9obU8xRk1hVXBKQzJsTmtKVDZEby1WMlF1YTZjWTFlUWJtbTZFbXA0YlZHYnFRSUlkb05zQV9NeDZMYWtNYnAxZlJSbG1idDJEZG1YaEpBMzZ5cmtXR2w1X21aaXI5VGhXVU9IUk0t0gG-AUFVX3lxTFA0X2RnRVBNZ2FxVm9kWFhuTUcwQUJNRmlmS3FiTnNzV0xvZm5nX3lqLVZUYjN6SmtmQmExVjVoQkhpOU1ubnJPOUItMFpmTnQ2OFZoUm1jTjZwT2VZUy13UWxkMDhaVFFBQVA2VkFpcl9JN1VkVm1YZUpOaWhhdFlKOGpjSnhNWTBIMFJrSFpHWERiYkN1cHpuSFlrTDlneG5QMUNoQlpzcXBPUUtNYW9lWHNFWkZVOVdudTZHTnc?oc=5",
+          "summary": "",
+          "id": "infrastructure-2999898601757875979"
+        },
+        {
+          "category": "infrastructure",
+          "title": "Uttarakhand CM Pushkar Singh Dhami Launches ₹138 Crore Mega Development Push in Almora Across 26 Projects - Indianmasterminds",
+          "source": "Indianmasterminds",
+          "published": "Thu, 28 May 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORWN5QkVNbmZiSjh4YWdydW1tck9vRzdsRUlTNVozSkZ1M1NLS3ZIZTN0NWJUMnI3dmFLbG9hOEhHZklHSzkxRHdoSlhBSU5SN1JnMWdnQ2F0XzNGeG1qMEcxaXlDSDhrR3BobXk3aGhScVdKWGhNOHdvOHZCX21XMk5aREJTZ2JwaGZPeDBhb3VteWs0aU5XbGNoMExrV3h4dUE?oc=5",
+          "summary": "",
+          "id": "infrastructure-7314282145916665290"
+        }
+      ]
+    }
   ],
-  "collaborations":[
-    {"agents":["monkey-wildlife","farm-watch"],"reason":"Wildlife conflict affects homes, crops and farm decisions","signals":["Dharanaula","Khatyari","Pokharkhali"]},{"agents":["road-access","transport-watch"],"reason":"Road and infrastructure updates change viable travel routes","signals":["Monsoon road opening SOP"]},{"agents":["local-jobs","education"],"reason":"Connect skills and learning pathways to employment signals","signals":[]},{"agents":["government-navigator","civic-watch"],"reason":"Policy and government updates need clear citizen explanations","signals":["SIR digitisation","District administration"]},{"agents":["tourism","road-access"],"reason":"Tourism planning should account for road access","signals":["Monsoon road opening SOP"]}
+  "collaborations": [
+    {
+      "agents": [
+        "monkey-wildlife",
+        "farm-watch"
+      ],
+      "reason": "Wildlife conflict affects homes, crops and farm decisions",
+      "signals": [
+        "Dharanaula",
+        "Khatyari",
+        "Pokharkhali"
+      ]
+    },
+    {
+      "agents": [
+        "road-access",
+        "transport-watch"
+      ],
+      "reason": "Road and infrastructure updates change viable travel routes",
+      "signals": [
+        "Centre clears way for new roads in U’khand - The Times of India",
+        "Uttarakhand CM Pushkar Singh Dhami Launches ₹138 Crore Mega Development Push in Almora Across 26 Projects - Indianmasterminds"
+      ]
+    },
+    {
+      "agents": [
+        "local-jobs",
+        "education"
+      ],
+      "reason": "Jobs and education signals should connect vacancies to skills",
+      "signals": [
+        "Uttarakhand HC upholds domicile-linked eligibility for primary teacher recruitment - ET Education",
+        "Uttarakhand govt to open new language training centre in Almora - ANI News",
+        "826 government primary schools shut in Uttarakhand over five years due to zero enrolment - The New Indian Express"
+      ]
+    },
+    {
+      "agents": [
+        "government-navigator",
+        "civic-watch"
+      ],
+      "reason": "Policy and government updates need clear citizen-facing explanations",
+      "signals": [
+        "Uttarakhand CM Dhami receives grand welcome in Almora, highlights state development initiatives - ANI News",
+        "7 valleys to be developed under new aroma revolution policy - The Times of India",
+        "Uttarakhand committed to 'Viksit Bharat' goal, says CM Dhami in Almora - ANI News"
+      ]
+    },
+    {
+      "agents": [
+        "tourism",
+        "road-access"
+      ],
+      "reason": "Tourism planning should account for access and infrastructure",
+      "signals": [
+        "Centre clears way for new roads in U’khand - The Times of India",
+        "Uttarakhand CM Pushkar Singh Dhami Launches ₹138 Crore Mega Development Push in Almora Across 26 Projects - Indianmasterminds"
+      ]
+    }
   ]
 }
