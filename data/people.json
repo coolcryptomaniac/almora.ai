@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-08-09T15:21:57.453355+00:00",
-  "method": "Public figures linked from Wikipedia’s List of Kumaoni people plus Almora’s notable-person references, enriched from Wikipedia/Wikimedia. Founder/public-profile additions are maintained separately. Inclusion means documented regional connection, not endorsement.",
-  "count": 127,
+  "updatedAt": "2026-08-09T15:26:12.575470+00:00",
+  "method": "Public figures gathered from Kumaoni/Almora Wikipedia list/category pages, then validated through Wikidata as instance-of human (Q5). Founder and a small number of public-profile additions are maintained separately. Inclusion means documented regional connection, not endorsement.",
+  "count": 83,
   "people": [
     {
       "id": "mohit-pandey-almora-ai",
@@ -12,29 +12,8 @@
       "image": "https://avatars.githubusercontent.com/u/33383333?v=4",
       "url": "https://github.com/coolcryptomaniac",
       "source": "Founder profile",
-      "featured": true
-    },
-    {
-      "id": "Q889",
-      "name": "Afghanistan",
-      "description": "Afghanistan, officially the Islamic Emirate of Afghanistan, is a landlocked country located at the crossroads of Central and South Asia. It is bordered by Pakistan to the east and south, Iran to the west, Turkmenistan to the northwest, Uzbekistan to the north, Tajikistan to the northeast, and China to the northeast and east. Occupying 652,864 square kilometers (252,072 sq mi) of land, the country is predominantly mou",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_the_Taliban.svg/960px-Flag_of_the_Taliban.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "url": "https://en.wikipedia.org/wiki/Afghanistan",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q369894",
-      "name": "Aide-de-camp",
-      "description": "An aide-de-camp (; French: [ɛd də kɑ̃]; plural: aides-de-camp) is a personal assistant or secretary to a person of high rank, usually a senior military, police or government officer, or to a member of a royal family or a head of state. The term comes from a French expression meaning \"helper in the military camp\". An aide-de-camp may participate at ceremonial functions, and the first aide-de-camp is typically the fore",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public service",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Napoleon_Division_General_by_Bellange.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-      "url": "https://en.wikipedia.org/wiki/Aide-de-camp",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "featured": true,
+      "verification": "self-maintained public profile"
     },
     {
       "id": "Q4699629",
@@ -44,8 +23,9 @@
       "occupation": "Public service",
       "image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Ajay_Bhatt_Minister_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
       "url": "https://en.wikipedia.org/wiki/Ajay_Bhatt_%28politician%29",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q27942237",
@@ -55,41 +35,33 @@
       "occupation": "Sports",
       "image": "https://upload.wikimedia.org/wikipedia/commons/2/21/Anirudh_Thapa_2019_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
       "url": "https://en.wikipedia.org/wiki/Anirudh_Thapa",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q29253659",
       "name": "Anupam Joshi",
-      "description": "Anupam Joshi is the Vice Provost, Chief Artificial Intelligence (AI) Officer and Oros Family Professor in the University of Maryland Baltimore County, Baltimore, MD, USA. He is also the Director of the UMBC Cybersecurity Institute. Professor Joshi is regarded as a leading expert in Artificial Intelligence and Cybersecurity and has often been interviewed by the media for his opinions on cyberattacks, AI and ChatGPT Pr",
+      "description": "Anupam Joshi is the Vice Provost, Chief Artificial Intelligence (AI) Officer and Oros Family Professor in the University of Maryland Baltimore County, Baltimore, MD, USA. He is also the Director of the UMBC Cybersecurity Institute. Professor Joshi is regarded as a leading expert in Artificial Intelligence and Cybersecurity and has often been interviewed by the media for his opinions on cyberattacks, AI and ChatGPT Professor Joshi was named Fellow of the Am",
       "birthPlace": "Kumaon / Almora documented connection",
       "occupation": "Public service",
       "image": "https://upload.wikimedia.org/wikipedia/commons/7/74/Anupam_Joshi_%2854986971715%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
       "url": "https://en.wikipedia.org/wiki/Anupam_Joshi",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q779929",
-      "name": "Ashoka Chakra",
-      "description": "The Ashoka Chakra (Transl: Ashoka's wheel) is an Indian symbol which is a depiction of the Dharmachakra. It is called so because it appears on a number of edicts of Ashoka, most prominent among which is the Lion Capital of Ashoka. The most visible use of the Ashoka Chakra today is at the centre of the Flag of India (adopted on 22 July 1947), where it is rendered in a navy blue colour on a white background, replacing ",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public service",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Ashoka_Chakra.svg/960px-Ashoka_Chakra.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "url": "https://en.wikipedia.org/wiki/Ashoka_Chakra",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q4900784",
       "name": "B. D. Pande",
-      "description": "Bhairab Dutt Pande (17 March 1917 – 2009) was a member of the Indian Civil Service and Union Cabinet Secretary of the Government of India under Indira Gandhi. He served as the Governor of West Bengal (1981–1983), and Punjab (1983–1984), and the Administrator of Chandigarh for a brief period. Born in Almora, in the Indian state of Uttarakhand, Pande served as a Cabinet Secretary to the Union Government from 2 November",
+      "description": "Bhairab Dutt Pande (17 March 1917 – 2009) was a member of the Indian Civil Service and Union Cabinet Secretary of the Government of India under Indira Gandhi. He served as the Governor of West Bengal (1981–1983), and Punjab (1983–1984), and the Administrator of Chandigarh for a brief period. Born in Almora, in the Indian state of Uttarakhand, Pande served as a Cabinet Secretary to the Union Government from 2 November 1972 to 31 March 1977.",
       "birthPlace": "Kumaon / Almora documented connection",
       "occupation": "Public service",
       "image": "",
       "url": "https://en.wikipedia.org/wiki/B._D._Pande",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q79052294",
@@ -99,8 +71,9 @@
       "occupation": "Culture",
       "image": "https://upload.wikimedia.org/wikipedia/commons/7/7a/B_k_samant.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
       "url": "https://en.wikipedia.org/wiki/B._K._Samant",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q4834107",
@@ -110,19 +83,21 @@
       "occupation": "Culture",
       "image": "",
       "url": "https://en.wikipedia.org/wiki/B._M._Shah",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q4837303",
       "name": "Baba Hari Dass",
-      "description": "Baba Hari Dass (Devanagari: बाबा हरि दास) (26 March 1923 – 25 September 2018) was an Indian yogi, silent monk and commentator of Indian scriptural traditions of dharma and moksha. He was classically trained in the Ashtanga of Patanjali (also known as Rāja yoga), as well as Kriya yoga, Ayurveda, Samkhya, Sri Vidya, Tantra, Vedanta, and Sanskrit. Baba Hari Dass took a vow of silence in 1952, which he upheld through the",
+      "description": "Baba Hari Dass (Devanagari: बाबा हरि दास) (26 March 1923 – 25 September 2018) was an Indian yogi, silent monk and commentator of Indian scriptural traditions of dharma and moksha. He was classically trained in the Ashtanga of Patanjali (also known as Rāja yoga), as well as Kriya yoga, Ayurveda, Samkhya, Sri Vidya, Tantra, Vedanta, and Sanskrit. Baba Hari Dass took a vow of silence in 1952, which he upheld through the rest of his life.",
       "birthPlace": "Kumaon / Almora documented connection",
       "occupation": "Public figure",
       "image": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Baba_Hari_Dass_yoga_teacher.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
       "url": "https://en.wikipedia.org/wiki/Baba_Hari_Dass",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q4838863",
@@ -132,8 +107,9 @@
       "occupation": "Public service",
       "image": "",
       "url": "https://en.wikipedia.org/wiki/Bachi_Singh_Rawat",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q21070000",
@@ -143,8 +119,9 @@
       "occupation": "Science & education",
       "image": "",
       "url": "https://en.wikipedia.org/wiki/Badri_Datt_Pandey",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q16018062",
@@ -154,52 +131,33 @@
       "occupation": "Public service",
       "image": "https://upload.wikimedia.org/wikipedia/commons/8/84/Bahadur_Singh_Bohra.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
       "url": "https://en.wikipedia.org/wiki/Bahadur_Singh_Bohra",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q4872565",
-      "name": "Battle of Tololing",
-      "description": "The Battle of Tololing was a pivotal battle in the Kargil War between India and troops from one full battalion of Pakistan’s Northern Light Infantry who were aided by Pakistani irregulars in 1999.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "",
-      "url": "https://en.wikipedia.org/wiki/Battle_of_Tololing",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q132732198",
       "name": "Baz Bahadur Chand",
       "description": "Baz Bahadur Chand (Kumaoni: बाज़ बहादुर चंद; 1598 - 1680), born Baz Gusain (बाज़ गुसाईं), was the 50th Maharaja of the Chand Dynasty of Kumaon. He ascended to the throne in 1638 after the death of his adoptive father, the previous Maharaja Trimal Chand. Under his reign the Kingdom of Kumaon grew considerably in influence, territory, power and wealth.",
       "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
+      "occupation": "Public service",
       "image": "https://upload.wikimedia.org/wikipedia/en/c/c7/Baz_Bahadur_Chand.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
       "url": "https://en.wikipedia.org/wiki/Baz_Bahadur_Chand",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
-      "id": "Q4879459",
-      "name": "Bedu Pako Baro Masa",
-      "description": "Bedu Pako Baro Masa (English: Figs do ripen round the year) is a Kumaoni folk song in Kumaoni language which was composed by Mohan Upreti, B. M. Shah and written by Brijendra Lal Shah. This Kumaoni song was composed, written and first performed in the early 1950s and since has become popular all over Uttarakhand as even before it had been sung as a traditional folk song among the villagers in Kumaon. This song is the",
+      "id": "Q22007335",
+      "name": "Disha Patani",
+      "description": "Disha Patani (pronounced [ˈd̪ɪʃa paːʈəˈni]; born 13 June 1992) is an Indian actress who works primarily in Hindi films. Known for her fitness and supporting roles in male-dominated films, she has appeared in Forbes India's Celebrity 100 list of 2019. Patani made her acting debut with the Telugu action drama Loafer (2015), and had her first Hindi film release with the biopic M.S. Dhoni: The Untold Story (2016).",
       "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "",
-      "url": "https://en.wikipedia.org/wiki/Bedu_Pako_Baro_Masa",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q4900607",
-      "name": "Bhagat Singh Koshyari",
-      "description": "Bhagat Singh Koshyari (born 17 June 1942) is an Indian politician, journalist, author and former teacher who served as the 22nd governor of Maharashtra from 2019 to 2023. An RSS veteran, Koshyari served as National Vice-President of BJP and party's 3rd State president for Uttarakhand. He also served as 2nd Chief Minister of Uttarakhand (formerly Uttaranchal) from 2001 to 2002 and thereafter, was the first leader of t",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public service",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Bhagat_Singh_Koshyari.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-      "url": "https://en.wikipedia.org/wiki/Bhagat_Singh_Koshyari",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "occupation": "Culture",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/7/75/Photos-Disha-Patani-snapped-at-Myntra-event_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "url": "https://en.wikipedia.org/wiki/Disha_Patani",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q15205490",
@@ -209,8 +167,9 @@
       "occupation": "Sports",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Ekta-bisht.jpg/960px-Ekta-bisht.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
       "url": "https://en.wikipedia.org/wiki/Ekta_Bisht",
-      "source": "Wikipedia / Wikimedia",
-      "featured": true
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": true,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q28370184",
@@ -220,19 +179,9 @@
       "occupation": "Public service",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Ganesh_Joshi_Mussoorie_MLA.jpg/960px-Ganesh_Joshi_Mussoorie_MLA.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
       "url": "https://en.wikipedia.org/wiki/Ganesh_Joshi",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q114257336",
-      "name": "Garhwal and Doti invasion of Kumaon",
-      "description": "The Garhwal and Doti invasion of Kumaon was a joint military offence of Garhwal Kingdom and Doti Kingdom on Kumaon Kingdom in 1680.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "",
-      "url": "https://en.wikipedia.org/wiki/Garhwal_and_Doti_invasion_of_Kumaon",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q5555489",
@@ -242,8 +191,9 @@
       "occupation": "Public service",
       "image": "",
       "url": "https://en.wikipedia.org/wiki/Ghananand_Pande",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q5564303",
@@ -253,8 +203,9 @@
       "occupation": "Culture",
       "image": "",
       "url": "https://en.wikipedia.org/wiki/Girish_Tiwari",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q52151604",
@@ -264,52 +215,33 @@
       "occupation": "Culture",
       "image": "",
       "url": "https://en.wikipedia.org/wiki/Gopal_Datt",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q2724411",
       "name": "Govind Ballabh Pant",
-      "description": "Govind Ballabh Pant (10 September 1887 – 7 March 1961) was an Indian independence activist and politician who was the first Chief Minister of Uttar Pradesh. Alongside Mahatma Gandhi, Jawaharlal Nehru and Vallabhbhai Patel, Pant was a key figure in the Indian independence movement and later a pivotal figure in the Indian government. He was one of the foremost political leaders of Uttar Pradesh (then known as United Pr",
+      "description": "Govind Ballabh Pant (10 September 1887 – 7 March 1961) was an Indian independence activist and politician who was the first Chief Minister of Uttar Pradesh. Alongside Mahatma Gandhi, Jawaharlal Nehru and Vallabhbhai Patel, Pant was a key figure in the Indian independence movement and later a pivotal figure in the Indian government. He was one of the foremost political leaders of Uttar Pradesh (then known as United Provinces) and a key player in the success",
       "birthPlace": "Kumaon / Almora documented connection",
       "occupation": "Public service",
       "image": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Govind_Ballabh_Pant_1965_stamp_of_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
       "url": "https://en.wikipedia.org/wiki/Govind_Ballabh_Pant",
-      "source": "Wikipedia / Wikimedia",
-      "featured": true
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": true,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q3632735",
       "name": "Govind Chandra Pande",
-      "description": "Govind Chandra Pande (30 July 1923 – 21 May 2011) was a well-known Indian scholar, philosopher and historian of the Vedic and the Buddhist periods. He served as professor of ancient history and vice-chancellor at Jaipur and Allahabad universities. He was also the chairman of the Indian Institute of Advanced Study, Simla for several years, the Chairman of Allahabad Museum Society and the Chairman of Central Tibetan So",
+      "description": "Govind Chandra Pande (30 July 1923 – 21 May 2011) was a well-known Indian scholar, philosopher and historian of the Vedic and the Buddhist periods. He served as professor of ancient history and vice-chancellor at Jaipur and Allahabad universities. He was also the chairman of the Indian Institute of Advanced Study, Simla for several years, the Chairman of Allahabad Museum Society and the Chairman of Central Tibetan Society, Sarnath Varanasi.",
       "birthPlace": "Kumaon / Almora documented connection",
       "occupation": "Science & education",
       "image": "https://upload.wikimedia.org/wikipedia/commons/b/b0/The_Vice_President_Shri_Bhairon_Singh_Shekhawat_presenting_13th_%22Saraswati_Samman%22_award_to_Prof._G.C._Pande_on_his_book_%27Bhagirathi%27_at_a_function_organised_by_K.K._Birla_foundation_in_New_Delhi_on_September_6%2C_2004.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
       "url": "https://en.wikipedia.org/wiki/Govind_Chandra_Pande",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q805868",
-      "name": "HMIS Kumaon",
-      "description": "HMIS Kumaon (J182) was a Bangor-class minesweeper built for the Royal Navy, but transferred to the Royal Indian Navy (RIN) during the Second World War.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public service",
-      "image": "",
-      "url": "https://en.wikipedia.org/wiki/HMIS_Kumaon",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q1707839",
-      "name": "Haldwani",
-      "description": "Haldwani (Kumaoni: Haldvānī) is the largest city of Kumaon, and the third most populous city in the Indian state of Uttarakhand. Haldwani is said to be the financial capital of Uttarakhand, having the most commercial, economic and industrial activities of the state. Haldwani is located in the Nainital District, and is one of its thirteen subdivisions.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Tikonia_Haldwani_02.jpg/960px-Tikonia_Haldwani_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "url": "https://en.wikipedia.org/wiki/Haldwani",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q5653448",
@@ -319,8 +251,9 @@
       "occupation": "Public figure",
       "image": "",
       "url": "https://en.wikipedia.org/wiki/Hargovind_Pant",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q19560099",
@@ -330,8 +263,9 @@
       "occupation": "Public service",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/US_Navy_110407-N-XXXXX-036_Indian_navy_Rear_Adm._HCS_Bisht%2C_flag_officer_of_Commanding_Eastern_Fleet%2C_presents_a_gift_to_Vice_Adm._Scott_R._Van_Bu.jpg/960px-US_Navy_110407-N-XXXXX-036_Indian_navy_Rear_Adm._HCS_Bisht%2C_flag_officer_of_Commanding_Eastern_Fleet%2C_presents_a_gift_to_Vice_Adm._Scott_R._Van_Bu.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
       "url": "https://en.wikipedia.org/wiki/Harish_Bisht",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q5657865",
@@ -341,8 +275,9 @@
       "occupation": "Sports",
       "image": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Harish_Chandra_Singh_Rawat%2C_Everester.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
       "url": "https://en.wikipedia.org/wiki/Harish_Chandra_Singh_Rawat",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q5657914",
@@ -352,8 +287,9 @@
       "occupation": "Public service",
       "image": "https://upload.wikimedia.org/wikipedia/commons/2/20/HarishRawat.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
       "url": "https://en.wikipedia.org/wiki/Harish_Rawat",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q5711029",
@@ -363,19 +299,9 @@
       "occupation": "Culture",
       "image": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Hemant_Pandey.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
       "url": "https://en.wikipedia.org/wiki/Hemant_Pandey",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q5451",
-      "name": "Himalayas",
-      "description": "The Himalayas, or Himalaya, is a mountain range in Asia separating the plains of the Indian subcontinent from the Tibetan Plateau. The range has some of the Earth's highest peaks, including the highest, Mount Everest. More than 100 peaks exceeding elevations of 7,200 metres (23,600 feet) above sea level lie in the Himalayas.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Himalayas_and_allied_ranges_NASA_Landsat_showing_the_eight_thousanders%2C_annotated_with_major_rivers.jpg/960px-Himalayas_and_allied_ranges_NASA_Landsat_showing_the_eight_thousanders%2C_annotated_with_major_rivers.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "url": "https://en.wikipedia.org/wiki/Himalayas",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q5996872",
@@ -385,74 +311,9 @@
       "occupation": "Public service",
       "image": "",
       "url": "https://en.wikipedia.org/wiki/Ila_Pant",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q60140",
-      "name": "Indian subcontinent",
-      "description": "The Indian subcontinent is a physiographic region of Asia below the Himalayas which projects into the Indian Ocean between the Bay of Bengal to the east and the Arabian Sea to the west. It is now divided between Bangladesh, India, and Pakistan. Although the terms Indian subcontinent and South Asia are often also used interchangeably to denote a wider region which includes, in addition, Bhutan, the Maldives, Nepal and",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/South_Asia_non_political%2C_with_rivers.jpg/960px-South_Asia_non_political%2C_with_rivers.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "url": "https://en.wikipedia.org/wiki/Indian_subcontinent",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q19662576",
-      "name": "J. P. Joshi",
-      "description": "Jagat Pati Joshi (born 14 July 1932) is an Indian archaeologist who discovered the Indus Valley sites of Dholavira and Surkotada. Joshi served as the Director General of the Archaeological Survey of India (ASI) from 1987 to 1990. However, it is now widely known that the Dholavira site was discovered by geologist Shambhudan Ghadvi.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public service",
-      "image": "",
-      "url": "https://en.wikipedia.org/wiki/J._P._Joshi",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q113773236",
-      "name": "Jagat Chand",
-      "description": "Raja Jagat Chand (reigned c. 1708-1720) was the Chand king of Kumaon Kingdom. He ascended throne of Kumaon in 1708 CE after his father King Gyan Chand's death.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "",
-      "url": "https://en.wikipedia.org/wiki/Jagat_Chand",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q123310372",
-      "name": "Kumaoni Rajput",
-      "description": "Kumaoni Rajput, also referred to Rajputs of Kumaun region of Uttrakhand who held considerable power in the Kumaon region of Uttarakhand. They are the most populated community in the Kumaon and were the landowning caste in the region. They were highly represented in the British Indian Army and formed major part of the Kumaon Regiment.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public service",
-      "image": "",
-      "url": "https://en.wikipedia.org/wiki/Kumaoni_Rajput",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q85775097",
-      "name": "Kumaun Express",
-      "description": "The Kumaun Express (15311 / 15312) is a passenger train belonging to Indian Railways - North Eastern Railway zone that used to run between Agra Fort railway station and Kathgodam railway station in India. It used to run seven days in a week. Its average speed was 36 km/h.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "",
-      "url": "https://en.wikipedia.org/wiki/Kumaun_Express",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q3631045",
-      "name": "Kumaun University",
-      "description": "Kumaun University is a state university headquartered in Nainital, Uttarakhand, India. In 2017, it hosted the first Kautik Student Film Festival.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "",
-      "url": "https://en.wikipedia.org/wiki/Kumaun_University",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q19892143",
@@ -462,8 +323,9 @@
       "occupation": "Public service",
       "image": "",
       "url": "https://en.wikipedia.org/wiki/Lakshman_Singh_Jangpangi",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q27780754",
@@ -473,8 +335,9 @@
       "occupation": "Sports",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Lakshya_Sen_in_2018.jpg/960px-Lakshya_Sen_in_2018.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
       "url": "https://en.wikipedia.org/wiki/Lakshya_Sen",
-      "source": "Wikipedia / Wikimedia",
-      "featured": true
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": true,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q6480075",
@@ -484,41 +347,21 @@
       "occupation": "Science & education",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Lal_Mani_J.jpg/960px-Lal_Mani_J.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
       "url": "https://en.wikipedia.org/wiki/Lal_Mani_Joshi",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q22096006",
       "name": "Lalit Pande",
-      "description": "Lalit Pande is an Indian social worker, environmentalist and the founder of Uttarakhand Seva Nidhi Environmental Education Centre, a non governmental organization promoting environmental education in the hilly areas of the Indian state of Uttarakhand. Under the aegis of the organization, Pande is known to have introduced community educational programmes focused on environment and development and supported over 200 co",
+      "description": "Lalit Pande is an Indian social worker, environmentalist and the founder of Uttarakhand Seva Nidhi Environmental Education Centre, a non governmental organization promoting environmental education in the hilly areas of the Indian state of Uttarakhand. Under the aegis of the organization, Pande is known to have introduced community educational programmes focused on environment and development and supported over 200 community based organizations in the state",
       "birthPlace": "Kumaon / Almora documented connection",
       "occupation": "Business & social impact",
       "image": "",
       "url": "https://en.wikipedia.org/wiki/Lalit_Pande",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q2019121",
-      "name": "List of districts of Uttarakhand",
-      "description": "The Uttarakhand state of India, in Himalayas mountain range, has 13 districts.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/UttarakhandDistricts_numbered.svg/960px-UttarakhandDistricts_numbered.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "url": "https://en.wikipedia.org/wiki/List_of_districts_of_Uttarakhand",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q230003",
-      "name": "Lok Sabha",
-      "description": "The Lok Sabha, also known as the House of the People, is the lower house of the bicameral Parliament of India, where the upper house is Rajya Sabha. Members of the Lok Sabha are elected by an adult universal suffrage and a first-past-the-post system to represent their respective constituencies, and they hold their seats for five years or until the body is dissolved by the president of India on the advice of the union",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/India_18th_Lok_Sabha_Partywise_2026.svg/960px-India_18th_Lok_Sabha_Partywise_2026.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "url": "https://en.wikipedia.org/wiki/Lok_Sabha",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q111818658",
@@ -528,8 +371,9 @@
       "occupation": "Public service",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Laxman_singh_1849.jpg/960px-Laxman_singh_1849.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
       "url": "https://en.wikipedia.org/wiki/Lucky_Bisht",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q19560900",
@@ -539,96 +383,69 @@
       "occupation": "Public service",
       "image": "",
       "url": "https://en.wikipedia.org/wiki/M._C._Joshi_%28archaeologist%29",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q23038227",
       "name": "M. C. Pant",
       "description": "Mohan Chandra Pant (1956–2015) was an Indian radiation oncologist, institution builder and the founder vice chancellor of the H. N. B. Uttarakhand Medical Education University, Dehradun. He served as the director of Dr. Ram Manohar Lohia Institute of Medical Sciences, Lucknow, and was the dean and head of the Radiotherapy Department at the King George's Medical University at the time of his death.",
       "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "",
-      "url": "https://en.wikipedia.org/wiki/M._C._Pant",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q470774",
-      "name": "MS Dhoni",
-      "description": "Mahendra Singh Dhoni ([məˈɦeːnd̪ɾə ˈsɪŋɡʱ ˈd̪ʱoːniː] ; born 7 July 1981) is an Indian professional cricketer who plays as a right-handed batter and a wicket-keeper. Widely regarded as one of the most prolific wicket-keeper batsmen and captains, he represented the Indian cricket team and was the captain of the team in limited overs formats from 2007 to 2017 and in Test cricket from 2008 to 2014. Dhoni has captained th",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Sports",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/MS_Dhoni_%28Prabhav_%2723_-_RiGI_2023%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-      "url": "https://en.wikipedia.org/wiki/MS_Dhoni",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q448347",
-      "name": "Madhumita Bisht",
-      "description": "Madhumita Bisht (born Madhumita Goswami on 5 October 1964 at Jalpaiguri) is an Indian former badminton player from West Bengal. She is an eight-time National singles champion, nine-time doubles winner and a twelve-time mixed doubles winner. She represented India in the 1992 Olympics in Women's singles discipline.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Sports",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/The_President%2C_Dr._A.P.J._Abdul_Kalam_presenting_Padma_Shri_to_Smt._Madhumita_Bisht%2C_badminton_player%2C_at_investiture_ceremony_in_New_Delhi_on_March_29%2C_2006.jpg/960px-thumbnail.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "url": "https://en.wikipedia.org/wiki/Madhumita_Bisht",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q1163330",
-      "name": "Maharaja",
-      "description": "Maharaja (also spelled Maharajah or Maharaj; lit. 'great ruler'; feminine: Maharani or Maharajin) is a royal title in the Indian subcontinent of Sanskrit origin. In modern India and medieval northern India, the title was equivalent to a prince. However, in late ancient India and medieval south India, the title denoted a king.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "",
-      "url": "https://en.wikipedia.org/wiki/Maharaja",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q1191",
-      "name": "Maharashtra",
-      "description": "Maharashtra is a state in the western peninsular region of India occupying a substantial portion of the Deccan Plateau. It is bordered by the Arabian Sea to the west, the Indian states of Karnataka and Goa to the south, Telangana to the southeast and Chhattisgarh to the east, Gujarat and Madhya Pradesh to the north, and the Indian union territory of Dadra and Nagar Haveli and Daman and Diu to the northwest. Maharasht",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Cave_26%2C_Ajanta.jpg/960px-Cave_26%2C_Ajanta.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "url": "https://en.wikipedia.org/wiki/Maharashtra",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q21095551",
-      "name": "Mahendra Singh Mahra",
-      "description": "Mahendra Singh Mahra (born Siltham, Pithoragarh district, Uttarakhand) is an Indian politician and agriculturist who served as a Member of Parliament, Rajya Sabha from Uttarakhand (April 2012 to April 2018), served as Minister Agriculture, Agricultural Marketing & Watershed Management, Government of Uttarakhand (2002 to 2007) and served as a four time MLA representing Pithoragarh Assembly constituency in the first tw",
-      "birthPlace": "Kumaon / Almora documented connection",
       "occupation": "Public service",
       "image": "",
-      "url": "https://en.wikipedia.org/wiki/Mahendra_Singh_Mahra",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "url": "https://en.wikipedia.org/wiki/M._C._Pant",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
-      "id": "Q6746102",
-      "name": "Man-Eaters of Kumaon",
-      "description": "Man-Eaters of Kumaon is a 1944 book written by hunter-naturalist Jim Corbett. It details the experiences that Corbett had in the Kumaon region of India from the 1900s to the 1930s, while hunting man-eating Bengal tigers and Indian leopards. One tiger, for example, was responsible for over 400 human deaths.",
+      "id": "Q6933609",
+      "name": "Muktesh Pant",
+      "description": "Muktesh \"Micky\" Pant (born 1954) is an Indian-American marketing executive with a distinguished career in global consumer goods and food industries. He is best known for serving as the former CEO of Yum China and Reebok India.",
       "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
+      "occupation": "Business & social impact",
       "image": "",
-      "url": "https://en.wikipedia.org/wiki/Man-Eaters_of_Kumaon",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "url": "https://en.wikipedia.org/wiki/Muktesh_Pant",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
-      "id": "Q11027874",
-      "name": "Manish Pandey",
-      "description": "Manish Krishnanand Pandey (Hindi: [mʌˈniːʃ ˈpaːɳɖeː]; born 10 September 1989) is an Indian cricketer. He is a right-handed top-order batsman representing, Karnataka in domestic cricket and Kolkata Knight Riders in the Indian Premier League (IPL). He became the first Indian player to score a century in the IPL in the 2009 season, playing for his former team Royal Challengers Bengaluru.",
+      "id": "Q2604936",
+      "name": "Murli Manohar Joshi",
+      "description": "Murli Manohar Joshi (born 5 January 1934) is an Indian politician and physicist. He is one of the founding members and a senior leader of the Bharatiya Janata Party (BJP) and served as its president from 1991 to 1993. In addition to his role in the BJP, he is a lifelong member of the Rashtriya Swayamsevak Sangh (RSS), a Hindutva paramilitary organisation.",
       "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Sports",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Manish_Pandey_%283%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-      "url": "https://en.wikipedia.org/wiki/Manish_Pandey",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "occupation": "Public service",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/d/da/Murli_Manohar_Joshi_MP.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "url": "https://en.wikipedia.org/wiki/Murli_Manohar_Joshi",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
+    },
+    {
+      "id": "Q3520007",
+      "name": "N. D. Tiwari",
+      "description": "Narayan Datt Tiwari (18 October 1925 – 18 October 2018) was an Indian politician who served as the 9th Chief Minister of Uttar Pradesh and 3rd Chief Minister of Uttaranchal (later Uttarakhand) from 2002 to 2007. He was the first Indian Chief Minister who served for two states. He was a member of the Bharatiya Janata Party, a former member of the Praja Socialist Party and the Indian National Congress.",
+      "birthPlace": "Kumaon / Almora documented connection",
+      "occupation": "Public service",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/7/70/Shri_Narayan_Dutt_Tiwari.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "url": "https://en.wikipedia.org/wiki/N._D._Tiwari",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
+    },
+    {
+      "id": "Q56875972",
+      "name": "Naima Khan Upreti",
+      "description": "Naima Khan Upreti (Hindi: नईमा खान उप्रेती; 25 May 1938 – 15 June 2018) was an Indian theatre actor, singer and a producer at Doordarshan. She was also the wife of Mohan Upreti, considered to be one of the pioneers in Indian theatre music. Naima Khan Upreti is a popular figure in Kumaon and she is remembered for her contribution towards the preservation and revitalisation of Uttarakhand's folk music along with her husband Mohan Upreti.",
+      "birthPlace": "Kumaon / Almora documented connection",
+      "occupation": "Culture",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Naima_Upreti.jpg/960px-Naima_Upreti.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "url": "https://en.wikipedia.org/wiki/Naima_Khan_Upreti",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q6961907",
@@ -638,41 +455,21 @@
       "occupation": "Culture",
       "image": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Namita_Gokhale_at_PubliCon_2012.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
       "url": "https://en.wikipedia.org/wiki/Namita_Gokhale",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q58494410",
       "name": "Namrata Joshi",
       "description": "Namrata Joshi is an Indian film critic based in New Delhi. Originally working for Outlook, she remained there from 1999 till 2015, when she joined The Hindu. She won the National Film Award for Best Film Critic in 2004.",
       "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
+      "occupation": "Public service",
       "image": "",
       "url": "https://en.wikipedia.org/wiki/Namrata_Joshi",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q3521738",
-      "name": "National Human Rights Commission of India",
-      "description": "The National Human Rights Commission of India (NHRC) is a statutory body constituted on 12 October 1993 under the Protection of Human Rights Ordinance of 28 September 1993. It was given a statutory basis by the Protection of Human Rights Act, 1993 (PHRA). The NHRC is responsible for the protection and promotion of human rights, which are defined by the act as \"rights relating to life, liberty, equality and dignity of",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Logo_of_the_National_Human_Rights_Commission.svg/960px-Logo_of_the_National_Human_Rights_Commission.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "url": "https://en.wikipedia.org/wiki/National_Human_Rights_Commission_of_India",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q837",
-      "name": "Nepal",
-      "description": "Nepal, officially the Federal Democratic Republic of Nepal, is a landlocked country in South Asia. It is mainly situated in the Himalayas, but also includes parts of the Indo-Gangetic Plain. It borders the Tibet Autonomous Region of China to the north, and India to the south, east, and west, while it is narrowly separated from Bangladesh by the Siliguri Corridor, and from Bhutan by the Indian state of Sikkim.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Emblem_of_Nepal.svg/960px-Emblem_of_Nepal.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "url": "https://en.wikipedia.org/wiki/Nepal",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q28923698",
@@ -682,30 +479,33 @@
       "occupation": "Culture",
       "image": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Nidhi_Bisht.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
       "url": "https://en.wikipedia.org/wiki/Nidhi_Bisht",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q20685078",
       "name": "Nilamber Pant",
-      "description": "Nilamber Pant (born 25 July 1931) is an Indian space scientist, a former member of the Space Commission of India and a pioneer of satellite based communication and broadcasting in India. He served at the Satish Dhawan Space Centre and the ISRO Satellite Centre before becoming the vice chairman of the Indian Space Research Organization (ISRO). The Government of India awarded Pant the Padma Shri, the fourth-highest civ",
+      "description": "Nilamber Pant (born 25 July 1931) is an Indian space scientist, a former member of the Space Commission of India and a pioneer of satellite based communication and broadcasting in India. He served at the Satish Dhawan Space Centre and the ISRO Satellite Centre before becoming the vice chairman of the Indian Space Research Organization (ISRO). The Government of India awarded Pant the Padma Shri, the fourth-highest civilian honour in India, in 1984.",
       "birthPlace": "Kumaon / Almora documented connection",
       "occupation": "Science & education",
       "image": "",
       "url": "https://en.wikipedia.org/wiki/Nilamber_Pant",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q7040015",
       "name": "Nirmal Pandey",
       "description": "Nirmal Pandey (10 August 1962 – 18 February 2010) was an Indian Bollywood actor who was known for his roles of Vikram Mallah in Shekhar Kapur's Bandit Queen (1994), and Dajjal in television series Hatim. He portrayed a transgender woman in Daayraa (1996) for which he won a Best Actress Valenti award in France. He also appeared in Train To Pakistan (1998) and Godmother (1999).",
       "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Culture",
+      "occupation": "Public service",
       "image": "",
       "url": "https://en.wikipedia.org/wiki/Nirmal_Pandey",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q16239212",
@@ -715,19 +515,9 @@
       "occupation": "Culture",
       "image": "https://upload.wikimedia.org/wikipedia/commons/0/0b/NiteshP.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
       "url": "https://en.wikipedia.org/wiki/Nitesh_Pandey",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q949193",
-      "name": "Padma Shri",
-      "description": "The Padma Shri (IAST: padma śrī, lit. 'Lotus Honour'), also spelled Padma Shree, is the fourth-highest civilian award of the Republic of India, after the Bharat Ratna, the Padma Vibhushan and the Padma Bhushan. Instituted on 2 January 1954, the award is conferred in recognition of \"distinguished contribution in various spheres of activity including the arts, education, industry, literature, science, acting, medicine,",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Padma_Shri_Award.png/960px-Padma_Shri_Award.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "url": "https://en.wikipedia.org/wiki/Padma_Shri",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q7156110",
@@ -737,41 +527,21 @@
       "occupation": "Sports",
       "image": "",
       "url": "https://en.wikipedia.org/wiki/Pawan_Negi",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q2249870",
-      "name": "Pithoragarh",
-      "description": "Pithoragarh (Kumaoni: Pithor'garh) is a Himalayan town and a municipal corporation in Pithoragarh district in the Indian state of Uttarakhand. It is the largest hill town in Kumaon division and in Uttarakhand.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Pithoragarh_Sunrise.jpg/960px-Pithoragarh_Sunrise.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "url": "https://en.wikipedia.org/wiki/Pithoragarh",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q1945425",
-      "name": "Pithoragarh district",
-      "description": "Pithoragarh district is the easternmost district in the state of Uttarakhand. It is located in the Himalayas and has an area of 7,110 km2 (2,750 sq mi) and a population of 483,439 (as of 2011). The city of Pithoragarh, located in Saur Valley, is its headquarters.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Panchchuli_range_viewed_from_Kausani.jpg/960px-Panchchuli_range_viewed_from_Kausani.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "url": "https://en.wikipedia.org/wiki/Pithoragarh_district",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q27734155",
       "name": "Pooran Chand Joshi",
-      "description": "P. C. Joshi (1 June 1956 – 20 June 2025) was an Indian academic who served as the 23rd Pro-vice-chancellor of the University of Delhi. He was a professor of Social Anthropology at the Department of Anthropology, University of Delhi, India. His area of specialization was Medical Anthropology and he focused on the Anthropology of Disasters, Anthropology of Development and on issues related to Social Exclusion and Adver",
+      "description": "P. C. Joshi (1 June 1956 – 20 June 2025) was an Indian academic who served as the 23rd Pro-vice-chancellor of the University of Delhi. He was a professor of Social Anthropology at the Department of Anthropology, University of Delhi, India. His area of specialization was Medical Anthropology and he focused on the Anthropology of Disasters, Anthropology of Development and on issues related to Social Exclusion and Adverse Inclusion.",
       "birthPlace": "Kumaon / Almora documented connection",
       "occupation": "Science & education",
       "image": "https://upload.wikimedia.org/wikipedia/commons/6/68/PC_Joshi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
       "url": "https://en.wikipedia.org/wiki/Pooran_Chand_Joshi",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q7237442",
@@ -781,294 +551,9 @@
       "occupation": "Public service",
       "image": "",
       "url": "https://en.wikipedia.org/wiki/Pradeep_Tamta",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q16151921",
-      "name": "Prafulla Chandra Pant",
-      "description": "Prafulla Chandra Pant (born 30 August 1952) is a retired Indian judge and author who served as a judge of the Supreme Court of India from 2014 to 2017. He later served as a member of the National Human Rights Commission of India from 2019 to 2021, and briefly acted as its chairperson. Prior to his appointment as a judge of the Supreme Court of India, he had previously served as chief justice of the Meghalaya High Cou",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public service",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Pcpant.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-      "url": "https://en.wikipedia.org/wiki/Prafulla_Chandra_Pant",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q24572636",
-      "name": "Prakash Pant",
-      "description": "Prakash Pant (11 November 1960 - 5 June 2019) was an Indian politician and pharmacist and a member of Bharatiya Janata Party who served as the first speaker of Uttarakhand Legislative Assembly. He was elected from Pithoragarh (Vidhan Sabha constituency) in the 2002 , 2007 and 2017 but in 2012, he lost to Mayukh Mahar of Indian National Congress by a significant margin before regaining it from him in 2017. He was the ",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public service",
-      "image": "",
-      "url": "https://en.wikipedia.org/wiki/Prakash_Pant",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q7238560",
-      "name": "Prasoon Joshi",
-      "description": "Prasoon Joshi (born 16 September 1971) is an Indian poet, writer, lyricist, screenwriter, communication specialist and marketer. He is the former CEO of McCann World group India and Chairman APAC (Asia Pacific), then a subsidiary of the global marketing firm McCann Erickson, and served as the Chairperson of the Central Board of Film Certification from August 2017 to May 2026. On May 2, 2026, he was appointed as the c",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Culture",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Prasoon_Joshi_%28Cropped%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-      "url": "https://en.wikipedia.org/wiki/Prasoon_Joshi",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q7260825",
-      "name": "Puran Chand Joshi",
-      "description": "Puran Chand Joshi (14 April 1907 – 9 November 1980) was one of the early leaders of the communist movement in India. He was the general secretary of the Communist Party of India from 1935 to 1947.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public service",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/6/6d/PC_Joshi_1937.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-      "url": "https://en.wikipedia.org/wiki/Puran_Chand_Joshi",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q7261858",
-      "name": "Pushpesh Pant",
-      "description": "Pushpesh Pant (born 1946) is an Indian academic, food critic and historian. He retired as a professor of International relations from Jawaharlal Nehru University, Delhi. He is one of India's leading experts on International Relations as well as Indian cuisine, and as a columnist has written for a number of major publications like Forbes, Open, Outlook, Times of India and The Tribune.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Science & education",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Pushpesh_Pant_Indian_historian_and_food_critic.jpg/960px-Pushpesh_Pant_Indian_historian_and_food_critic.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "url": "https://en.wikipedia.org/wiki/Pushpesh_Pant",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q1951764",
-      "name": "Ra'ana Liaquat Ali Khan",
-      "description": "Begum Ra'ana Liaqat Ali Khan (Urdu: رعنا لياقت على خان, known as Gul-i-Rana; 13 February 1905 – 13 June 1990) was the First Lady of Pakistan from 1947 to 1951 as the wife of Liaquat Ali Khan who served as the 1st Prime Minister of Pakistan. She was also the first female governor in Pakistan, serving Sindh. She was one of the leading woman figures in the Pakistan Movement, and a career economist, and prominent statesw",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public service",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Begum_Ra%27ana_Liaquat_Ali_Khan_%281961%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-      "url": "https://en.wikipedia.org/wiki/Ra%27ana_Liaquat_Ali_Khan",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q127326575",
-      "name": "2016 Uttarakhand political crisis",
-      "description": "Starting March 2016, Indian state of Uttarakhand underwent a political crisis. The Indian National Congress Chief Minister Harish Rawat replaced Vijay Bahuguna as the Chief Minister of Uttarakhand on 2014. After a political crisis in 2016, the President's rule was imposed ending his tenure as the Chief Minister when 9 rebel Congress MLAs withdrew their support to the Harish Rawat government.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public service",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/2/20/HarishRawat.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-      "url": "https://en.wikipedia.org/wiki/2016_Uttarakhand_political_crisis",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q16058123",
-      "name": "Administrative divisions of Uttarakhand",
-      "description": "The northern Indian state of Uttarakhand, comprises 2 administrative divisions. Within these 2 divisions, there are a total of 13 districts. The following table shows the name of each division, its administrative headquarters, its constituent districts, and a map of its location.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "",
-      "url": "https://en.wikipedia.org/wiki/Administrative_divisions_of_Uttarakhand",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q3349281",
-      "name": "Advaita Ashrama",
-      "description": "Advaita Ashrama, Mayavati, is a branch of the Ramakrishna Math, founded on 19 March 1899 at the behest of Vivekananda, by his disciples James Henry Sevier, and Charlotte Sevier. Today it publishes the original writings of Vivekananda. As an ashram dedicated to the study and practice of Advaita Vedanta, no images or idols are worshipped there, not even of Ramakrishna; and no images were kept in the premises according ",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Emblem-Ramakrishna-Mission-Transparent.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-      "url": "https://en.wikipedia.org/wiki/Advaita_Ashrama",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q4693678",
-      "name": "Agra Presidency",
-      "description": "Agra Presidency was constituted as one of the four presidencies of British India (the other three being Bengal, Bombay, and Madras) and was among the eight separate administrative divisions into which India was divided in the first half of the 19th century. It had an area of 9,479 mi2 (24,550 km2) and a population of about 4,500,000. Agra Presidency was established on 14 November 1834 under the provisions of the Gove",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "",
-      "url": "https://en.wikipedia.org/wiki/Agra_Presidency",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q16736901",
-      "name": "Ajay Tamta",
-      "description": "Ajay Tamta (born 16 July 1972) is a politician from Uttarakhand, India. He represents Bharatiya Janata Party serving as a Minister of State in the Ministry of Road Transport and Highways. He had also served as Minister of State for Textiles and is Member of Parliament (MP) from Almora constituency.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Sports",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a4/The_Minister_of_State_for_Textiles%2C_Shri_Ajay_Tamta_addressing_at_the_inauguration_of_the_60th_India_International_Garment_Fair%2C_in_New_Delhi_on_January_17%2C_2018.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-      "url": "https://en.wikipedia.org/wiki/Ajay_Tamta",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q4723454",
-      "name": "Alfred Sorensen",
-      "description": "Alfred Julius Emmanuel Sorensen (October 27, 1890 – August 13, 1984), also known as Sunyata, Shunya or Sunyabhai, was a Danish mystic, horticulturist and writer who lived in Europe, India and the US.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Culture",
-      "image": "",
-      "url": "https://en.wikipedia.org/wiki/Alfred_Sorensen",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q468356",
-      "name": "Ali Akbar Khan",
-      "description": "Ali Akbar Khan (14 April 1922 – 18 June 2009) was an Indian Hindustani classical musician of the Maihar gharana, known for his virtuosity in playing the sarod. Trained as a classical musician and instrumentalist by his father, Allauddin Khan, he also composed numerous classical ragas and film scores. He established a music school in Calcutta in 1956, and the Ali Akbar College of Music in 1967, which moved with him to",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Culture",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Ali_Akbar.jpg/960px-Ali_Akbar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "url": "https://en.wikipedia.org/wiki/Ali_Akbar_Khan",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q1321122",
-      "name": "All India Radio",
-      "description": "All India Radio (AIR), also known as Akashvani (lit. 'Voice from the sky' or 'Oracle'), is India's state-owned public radio broadcaster. Founded in 1936, it operates under the Ministry of Information and Broadcasting and is one of the two divisions of Prasar Bharati. Headquartered at the Akashvani Bhavan in New Delhi, it houses the Drama Section, FM Section, and National Service.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Stamp_of_India_-_1961_-_Colnect_141804_-_Silver_Jubilee_All_India_Radio_-_Radio_Masts_and_Emblem.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-      "url": "https://en.wikipedia.org/wiki/All_India_Radio",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q6711",
-      "name": "Allen Ginsberg",
-      "description": "Irwin Allen Ginsberg (; June 3, 1926 – April 5, 1997) was an American poet and writer. As a student at Columbia University in the 1940s, he befriended Lucien Carr, William S. Burroughs, and Jack Kerouac, forming the core of the Beat Generation. He vigorously opposed militarism, economic materialism, and sexual repression, and he embodied various aspects of this counterculture with his views on drugs, sex, multicultur",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Culture",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Allen_Ginsberg_1979_-_cropped.jpg/960px-Allen_Ginsberg_1979_-_cropped.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "url": "https://en.wikipedia.org/wiki/Allen_Ginsberg",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q131452447",
-      "name": "Almora Municipal Corporation",
-      "description": "Almora Municipal Corporation is the civic body that governs the city of Almora in Uttarakhand, India.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/India_Almora%2C_Uttarakhand_Municipal_Corporation_2025.svg/960px-India_Almora%2C_Uttarakhand_Municipal_Corporation_2025.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "url": "https://en.wikipedia.org/wiki/Almora_Municipal_Corporation",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q7499190",
-      "name": "Shiv Dutt Upadhyaya",
-      "description": "Shiv Dutt Upadhyaya was born in Dwarahat district of Almora in Uttarakhand, India. He joined Pandit Motilal Nehru as his personal secretary in 1923. After the death of Pandit Motilal Nehru, he was retained by Pandit Jawaharlal Nehru, with whom he remained associated till the latter's death.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "",
-      "url": "https://en.wikipedia.org/wiki/Shiv_Dutt_Upadhyaya",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q7499334",
-      "name": "Shivani",
-      "description": "Gaura Pant (17 October 1923 – 21 March 2003), better known as Shivani, was a Hindi writer of the 20th century and a pioneer in writing Indian women-centric fiction. She was awarded the Padma Shri for her contribution to Hindi literature in 1982. She garnered a following in the pre-television era of 1960s and 1970s, and her literary works such as Krishnakali, were serialised in Hindi magazines like Dharmayug and Sapta",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Culture",
-      "image": "",
-      "url": "https://en.wikipedia.org/wiki/Shivani",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q7503808",
-      "name": "Shri Krishna Joshi",
-      "description": "Prof. Shri Krishna Joshi (6 June 1935 – 15 May 2020) was an Indian physicist. He was born on 6 June 1935 in the village of Anarpa in Kumaun, Uttarakhand, India.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "",
-      "url": "https://en.wikipedia.org/wiki/Shri_Krishna_Joshi",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q4445352",
-      "name": "Sudhanshu Pandey",
-      "description": "Sudhanshu Pandey (Born 22 Aug 1974) is an Indian model, film and television actor, singer, writer producer and part time poet. He has appeared in many Hindi films and few Tamil films.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Culture",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/4/40/Sudhanshu_Pandey_at_the_Star_Parivaar_Awards_2023_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-      "url": "https://en.wikipedia.org/wiki/Sudhanshu_Pandey",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q15697622",
-      "name": "Sudhir Pandey",
-      "description": "Sudhir Pandey is an Indian actor known for his work in Hindi-language films, television, and theatre. With a career spanning several decades, he has played a variety of supporting and character roles, often portraying fathers, uncles, or authority figures. He is a Film and Television Institute of India graduate.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Culture",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Sudhir_pande.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-      "url": "https://en.wikipedia.org/wiki/Sudhir_Pandey",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q7635860",
-      "name": "Sukirti Kandpal",
-      "description": "Sukirti Kandpal is an Indian actress and model who appears in Hindi television. She established herself as one of the leading actresses of Indian Television from the late 2000s through the early 2010s. Recognised for her comic timing and vivacious on-screen persona, she is the recipient of several accolades, in addition to two Indian Television Academy Awards nominations.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Culture",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/6/65/Sukirti_Kandpal_at_the_success_party_of_Box_Cricket_League.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-      "url": "https://en.wikipedia.org/wiki/Sukirti_Kandpal",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q172634",
-      "name": "Sumitranandan Pant",
-      "description": "Sumitranandan Pant (20 May 1900 – 28 December 1977) was an Indian poet. He was one of the most celebrated 20th century poets of the Hindi language and was known for romanticism in his poems which were inspired by nature, people and beauty within.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Culture",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Sumitranandan_Pant_2015_stamp_of_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-      "url": "https://en.wikipedia.org/wiki/Sumitranandan_Pant",
-      "source": "Wikipedia / Wikimedia",
-      "featured": true
-    },
-    {
-      "id": "Q16206736",
-      "name": "Sunita Rajwar",
-      "description": "Sunita Chand Rajwar is an Indian actress known for working in film, television and stage productions. She graduated from the National School of Drama (NSD), New Delhi in 1997. She is known for her performance in the films including Ek Chalis Ki Last Local (2007), Shubh Mangal Zyada Saavdhan (2020), Bala (2019), Stree (2018), Kedarnath (2018), and the Sony LIV's comedy series Gullak.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Culture",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Sunita_Rajwar_in_February_2020.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-      "url": "https://en.wikipedia.org/wiki/Sunita_Rajwar",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q213380",
-      "name": "Supreme Court of India",
-      "description": "The Supreme Court of India is the supreme judicial authority and the highest court in India. It is the highest appellate court for all civil and criminal cases in India. The court is led by the Chief Justice of India and has a maximum sanctioned strength of 37 judges excluding the chief justice.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public service",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Emblem_of_the_Supreme_Court_of_India.svg/960px-Emblem_of_the_Supreme_Court_of_India.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "url": "https://en.wikipedia.org/wiki/Supreme_Court_of_India",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q4739210",
-      "name": "Amala Shankar",
-      "description": "Amala Shankar (née Nandy, 27 June 1919 – 24 July 2020) was an Indian dancer. She was the wife of dancer and choreographer Uday Shankar and mother of musician Ananda Shankar and dancer Mamata Shankar (later she became an actress) and sister-in-law of musician and composer Ravi Shankar. Amala Shankar acted in the film Kalpana written, co-produced and directed by husband Uday Shankar.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Culture",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Amala_Shankar_-_Kolkata_2011-05-09_2810.JPG/960px-Amala_Shankar_-_Kolkata_2011-05-09_2810.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "url": "https://en.wikipedia.org/wiki/Amala_Shankar",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "Q67297",
@@ -1078,305 +563,417 @@
       "occupation": "Culture",
       "image": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Lama_Govinda_in_an_internment_camp_during_World_War_II.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
       "url": "https://en.wikipedia.org/wiki/Anagarika_Govinda",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
-      "id": "Q195378",
-      "name": "Anglo-Nepalese War",
-      "description": "The Anglo-Nepalese War (1 November 1814 – 4 March 1816), also known as the Gorkha War, was fought between the British East India Company and the Kingdom of Nepal. The conflict was caused by territorial disputes and expansionist ambitions on both sides. Nepal had expanded westward and eastward in the late 18th century, bringing it into conflict with British interests in northern India.",
+      "id": "Q107463278",
+      "name": "Anant Joshi",
+      "description": "Anant Vijay Joshi (born 26 October 1989) is an Indian actor who first became known for playing the title role in the ALTBalaji series Virgin Bhasskar (2019–2020). He has since starred in the television series Yeh Kaali Kaali Ankhein (2022), Maamla Legal Hai (2024), and films Kathal (2023), 12th Fail (2023) and Ajey: The Untold Story of a Yogi (2025).",
       "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/8/85/Death_of_Rollo_Gillespie_%28Cassell%27s_illustrated_history_of_India%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-      "url": "https://en.wikipedia.org/wiki/Anglo-Nepalese_War",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "occupation": "Culture",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/9/99/Anant_Joshi_at_the_premiere_of_Kathal.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "url": "https://en.wikipedia.org/wiki/Anant_Joshi",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
-      "id": "Q2440940",
-      "name": "Annapurna Devi",
-      "description": "Annapurna Devi (Bengali pronunciation: [ɔnːopurɳa debi]; 17 April 1927 – 13 October 2018) was an Indian surbahar player of Hindustani classical music. She was given the name 'Annapurna' by Maharaja Brijnath Singh of the former Maihar Estate, and it was by this name that she was popularly known. She was the daughter and disciple of Ustad Allauddin Khan, and the sister of Ustad Ali Akbar Khan.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "",
-      "url": "https://en.wikipedia.org/wiki/Annapurna_Devi",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q179733",
-      "name": "Aryan",
-      "description": "Aryan (), or Arya (borrowed from Sanskrit ārya), is a term originating from the ethno-cultural self-designation of the Indo-Iranians. It stood in contrast to nearby outsiders, whom they designated as non-Aryan (*an-āryā). In ancient India, the term was used by the Indo-Aryan peoples of the Vedic period both as an endonym and in reference to a region called Aryavarta (lit. 'Land of the Aryans'), where their culture em",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "",
-      "url": "https://en.wikipedia.org/wiki/Aryan",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q4803494",
-      "name": "Asan Barrage",
-      "description": "The Asan Barrage is a barrage in the Uttarakhand-Himachal Pradesh border region in Doon Valley (Dehradun district), northern India, situated at the confluence of the Eastern Yamuna Canal and the Asan River and about 11 km (7 mi) from Dakpathar, and 28 km. northwest of Dehradun in Uttarakhand. The barrage is 287.5m long and has water throughout the year which is fed from the river Asan and the discharge channel of the",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Asan_Barrage_%28June_2017%29.jpg/960px-Asan_Barrage_%28June_2017%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "url": "https://en.wikipedia.org/wiki/Asan_Barrage",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q799695",
-      "name": "Badrinath Temple",
-      "description": "Badarinath Temple, also known as Badarinarayana Temple, is a Hindu temple dedicated to Vishnu. It is located in the town of Badrinath in Chamoli district of Uttarakhand, India. The temple is one of the 108 Divya Desams, sacred to Vaishnavism, where Vishnu is worshipped as Badrinath.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Badrinath_Temple_%2C_Uttarakhand.jpg/960px-Badrinath_Temple_%2C_Uttarakhand.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "url": "https://en.wikipedia.org/wiki/Badrinath_Temple",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q2565071",
-      "name": "Baijnath, Uttarakhand",
-      "description": "Baijnath is a small town on the banks of the Gomati River in the Bageshwar district in Kumaon division of Uttarakhand, India. The place is most noted for its ancient temples, which have been recognized as Monuments of National Importance by the Archaeological Survey of India in Uttarakhand. Baijnath has been selected as one of the four places to be connected by the Shiva Heritage Circuit in Kumaon, under the Swadesh ",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Baijnath_Dham_with_Himalayas_in_the_backdrop.jpg/960px-Baijnath_Dham_with_Himalayas_in_the_backdrop.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "url": "https://en.wikipedia.org/wiki/Baijnath%2C_Uttarakhand",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q637878",
-      "name": "Bajpur",
-      "description": "Bazpur, or Bajpur, is a city and a municipality in Udham Singh Nagar district in the state of Uttarakhand, India. Bazpur is well connected with the industrial city of Rudrapur and the historical city of Kashipur. Bazpur is nearest city to Nainital.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "",
-      "url": "https://en.wikipedia.org/wiki/Bajpur",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q2003502",
-      "name": "Balika Vadhu",
-      "description": "Balika Vadhu (transl. The Child Bride) is an Indian soap opera that aired on Colors TV between 21 July 2008 to 31 July 2016 with 2,245 episodes. The story is set in rural Rajasthan and revolves around the life of a child bride from childhood to womanhood.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "",
-      "url": "https://en.wikipedia.org/wiki/Balika_Vadhu",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q637818",
-      "name": "Banbasa",
-      "description": "Banbasa is a nagar panchayat in Champawat district in the state of Uttarakhand, India most famous for its border crossing into Nepal from India. The major occupation is agriculture.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Banbasa_Canal_Range%2C_Uttarakhand%2C_India_-_panoramio_%284%29.jpg/960px-Banbasa_Canal_Range%2C_Uttarakhand%2C_India_-_panoramio_%284%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "url": "https://en.wikipedia.org/wiki/Banbasa",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q30274595",
-      "name": "Bangani",
-      "description": "Bangani ([bəŋɡaːɳiː] , बंगाणी baṅgāṇī) is dialect of Garhwali spoken in parts of Uttarkashi district in the west of the Garhwal division of Uttarakhand, India. It has been described as a member of the Western Pahari language group. It shares at least half and possibly as much as two-thirds of its basic vocabulary with both neighbouring varieties of the Garhwali language and with two Western Pahari languages, Jaunsari",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Bangani.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-      "url": "https://en.wikipedia.org/wiki/Bangani",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q7913599",
-      "name": "Banrawats",
-      "description": "The Banrawats (alt., Banrajis, Vanrawats, Vanrajis) are a native endangered ethnic minority group, originating and living in Uttarakhand, India. They are distributed in the districts of Pithoragarh, Champawat and Udham Singh Nagar and in a small area confined to Western Nepal. They are the smallest Himalayan tribal group related to a larger ethno-linguistic group of Raji people.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "",
-      "url": "https://en.wikipedia.org/wiki/Banrawats",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q110486855",
-      "name": "Bar Council of Uttarakhand",
-      "description": "Bar Council of Uttarakhand is the regulatory and statutorily representative body for lawyers practicing law in the state of Uttarakhand. It was constituted as per the mandatory requirement as per Advocates Act, 1961 and Bar Council of India. In March 1953, S. R. Das as head of the 'All India Bar Committee', proposed the creation of the apex body as an All India Bar Council and Bar council at state levels and submitte",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "",
-      "url": "https://en.wikipedia.org/wiki/Bar_Council_of_Uttarakhand",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q2788745",
-      "name": "Bareilly Airport",
-      "description": "Bareilly Airport (IATA: BEK, ICAO: VIBY) is a domestic airport serving Bareilly, Uttar Pradesh, India at Indian Air Force's Trishul Air Base in Izzatnagar, located 6 kilometres (3.7 mi) north from the city centre.",
+      "id": "Q434110",
+      "name": "Brian Horrocks",
+      "description": "Lieutenant-General Sir Brian Gwynne Horrocks, (7 September 1895 – 4 January 1985) was a British Army officer, chiefly remembered as the commander of XXX Corps in Operation Market Garden and other operations during the Second World War. He also served in the First World War and the Russian Civil War, was taken prisoner twice, and competed in the modern pentathlon at the 1924 Paris Olympics. Later he was a television presenter, wrote books on military histor",
       "birthPlace": "Kumaon / Almora documented connection",
       "occupation": "Public service",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Terminal_Front_view.png/960px-Terminal_Front_view.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "url": "https://en.wikipedia.org/wiki/Bareilly_Airport",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/British_Generals_1939-1945_E16462.jpg/960px-British_Generals_1939-1945_E16462.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "url": "https://en.wikipedia.org/wiki/Brian_Horrocks",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
-      "id": "Q4891826",
-      "name": "Berinag",
-      "description": "Berinag is a hill station and municipality, located 124 km from Pithoragarh city in the Pithoragarh district, which is the easternmost Himalayan district in the state of Uttarakhand, India. It is one of the six Administrative Subdivisions (tehsil) of Pithoragarh district. National Highway 309A passes through Berinag.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Berinag_2.jpg/960px-Berinag_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "url": "https://en.wikipedia.org/wiki/Berinag",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q56904",
-      "name": "Byangsi language",
-      "description": "Byangsi (also called Byansi, Byãsi, Byangkho Lwo, Byanshi, Bhotia, and Byangkhopa) is a West Himalayish language of India and Nepal. Estimates of numbers of speakers vary, but some sources say that the language is spoken by about 1,000-1,500 people, while others estimate as many as 3,300. Byangsi is from a region of high language density, that is to say that there are many languages among few people.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "",
-      "url": "https://en.wikipedia.org/wiki/Byangsi_language",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q2543279",
-      "name": "Cantonment",
-      "description": "A cantonment (, , or UK: ) is a type of military base. In South Asia, a cantonment refers to a permanent military station (a term from the British Raj). In United States military parlance, a cantonment is a permanent residential section within a military installation.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/USAF_380_AEW_new_facilities_060214-F-0000J-001.jpg/960px-USAF_380_AEW_new_facilities_060214-F-0000J-001.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "url": "https://en.wikipedia.org/wiki/Cantonment",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q484416",
-      "name": "Caste",
-      "description": "A caste is a fixed social group into which an individual is born within a particular system of social stratification: a caste system. Within such a system, individuals are expected to marry exclusively within the same caste (endogamy), follow lifestyles often linked to a particular occupation, hold a ritual status observed within a hierarchy, and interact with others based on cultural notions of exclusion, with certa",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/1/13/Basor_Dalit_caste.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-      "url": "https://en.wikipedia.org/wiki/Caste",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q858555",
-      "name": "Chakrata",
-      "description": "Chakrata is a cantonment town and also a sub district/tehsil, in Dehradun district in the state of Uttarakhand, India. It lies between the Tons and Yamuna rivers, at an elevation of 2118 m, 98 km from the state capital, Dehradun. Chakrata was originally a cantonment of the British Indian Army.",
+      "id": "Q116003622",
+      "name": "Janaki Ballabh",
+      "description": "Janaki Ballabh (1928 – 30 December 2022) was an Indian sinologist and translator known for his work translating Chinese literature into Hindi. He spent much of his career working for the Foreign Languages Press in Beijing, and was recognised with a Peace and Friendship Award by Chinese Premier Zhou Enlai for his contributions to cultural exchange between China and India. Ballabh was the first Indian to be granted long-term residency in China, and continued",
       "birthPlace": "Kumaon / Almora documented connection",
       "occupation": "Public service",
       "image": "",
-      "url": "https://en.wikipedia.org/wiki/Chakrata",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "url": "https://en.wikipedia.org/wiki/Janaki_Ballabh",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
-      "id": "Q2082737",
-      "name": "Chand dynasty",
-      "description": "The Chand dynasty was a kingdom that ruled the Kumaon area in present-day Uttarakhand state of India, after the decline of the Katyuri kingdom. At times, their rule also extended to the western parts of present-day Nepal. Somchand established the dynasty, establishing his capital at Rajbunga in present-day Champawat.",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Fort_and_the_capital_city_of_Kali_Kumaon%2C_Champawat%2C_1815.jpg/960px-Fort_and_the_capital_city_of_Kali_Kumaon%2C_Champawat%2C_1815.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "url": "https://en.wikipedia.org/wiki/Chand_dynasty",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q43433",
-      "name": "Chandigarh",
-      "description": "Chandigarh is a city and union territory in northwestern India, serving as a shared capital for the states of Punjab and Haryana. Situated near the foothills of the Shivalik range of Himalayas, it borders Haryana to the east and Punjab in the remaining directions. Chandigarh constitutes the bulk of the Chandigarh Capital Region or Greater Chandigarh, which also includes the adjacent satellite cities of Panchkula in H",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Open_Hand_monument%2C_Chandigarh.jpg/960px-Open_Hand_monument%2C_Chandigarh.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "url": "https://en.wikipedia.org/wiki/Chandigarh",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q29026086",
-      "name": "Char Dham Highway",
-      "description": "Char Dham National Highway, is an under construction two-lane (in each direction) 889 km long National Highway with a minimum width of 10 metres in the Indian state of Uttarakhand under Char Dham Pariyojana. The under construction highway will complement the under-construction Char Dham Railway by connecting the four holy places in Uttarakhand states namely Badrinath, Kedarnath, Gangotri and Yamunotri. The project in",
-      "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/The_Prime_Minister%2C_Shri_Narendra_Modi_visiting_an_exhibition_during_the_launch_of_the_Char_Dham_Rajmarg_Vikas_Pariyojna%2C_at_Dehradun%2C_Uttarakhand.jpg/960px-The_Prime_Minister%2C_Shri_Narendra_Modi_visiting_an_exhibition_during_the_launch_of_the_Char_Dham_Rajmarg_Vikas_Pariyojna%2C_at_Dehradun%2C_Uttarakhand.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "url": "https://en.wikipedia.org/wiki/Char_Dham_Highway",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
-    },
-    {
-      "id": "Q30639691",
-      "name": "Char Dham Railway",
-      "description": "The Char Dham Railway, the Indian Railways's under-construction 453 km long railway lines network for connecting the holiest places of Hinduism called Chota Char Dham, includes two set of y-fork shaped rail links, first the A1 \"Rishikesh–Karnaprayag-Karnaprayag–Saikot–Sonprayag Kedarnath Railway\" from the existing Yog Nagari Rishikesh railway station to Kedarnath (Sonprayag railhead) with a A2 \"Saikot–Joshimath Badri",
+      "id": "Q6221107",
+      "name": "John Batten (rugby union)",
+      "description": "John Maxwell Batten (28 February 1853 – 15 October 1917) was a rugby union fullback who played club rugby for Cambridge University and international rugby for England.",
       "birthPlace": "Kumaon / Almora documented connection",
       "occupation": "Public figure",
       "image": "",
-      "url": "https://en.wikipedia.org/wiki/Char_Dham_Railway",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "url": "https://en.wikipedia.org/wiki/John_Batten_%28rugby_union%29",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
-      "id": "Q5088056",
-      "name": "Chaudangsi language",
-      "description": "Chaudangsi is a West Himalayish language of the Sino-Tibetan family, spoken in the Chaudans region of Pithoragarh district, Uttarakhand, India. It is closely related to Byangsi and Darmiya, and the three languages are mutually intelligible. Speakers of all three languages collectively refer to their speech as \"Ranglo\" and to themselves as Rang.",
+      "id": "Q61787354",
+      "name": "Rohit Dangwal",
+      "description": "Rohit Dangwal (born 31 March 1996) is an Indian cricketer. He made his Twenty20 debut for Uttarakhand in the 2018–19 Syed Mushtaq Ali Trophy on 21 February 2019.",
+      "birthPlace": "Kumaon / Almora documented connection",
+      "occupation": "Sports",
+      "image": "",
+      "url": "https://en.wikipedia.org/wiki/Rohit_Dangwal",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
+    },
+    {
+      "id": "Q7366351",
+      "name": "Roop Durgapal",
+      "description": "Roop Durgapal is an Indian television actress. She is best known for her role as Sanchi in the serial Balika Vadhu.",
+      "birthPlace": "Kumaon / Almora documented connection",
+      "occupation": "Culture",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Roop_Durgapal.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "url": "https://en.wikipedia.org/wiki/Roop_Durgapal",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
+    },
+    {
+      "id": "Q21620673",
+      "name": "Sakshi Agarwal",
+      "description": "Sakshi Agarwal (born 20 July 1990) is an Indian actress and model who has appeared in Tamil films. After beginning her working career as a marketing consultant, she pursued acting and garnered attention through part time modelling commitments. Since then she has taken up various lead and supporting roles in South Indian films.",
+      "birthPlace": "Kumaon / Almora documented connection",
+      "occupation": "Public service",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Sakshi_Agarwal.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "url": "https://en.wikipedia.org/wiki/Sakshi_Agarwal",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
+    },
+    {
+      "id": "Q7420991",
+      "name": "Sapna Awasthi",
+      "description": "Sapna Awasthi Singh is a Bollywood playback singer best known for her \"Banno Teri Ankhiyan Soorme\" from Dushmani (1995), \"Pardesi Pardesi\" from Raja Hindustani (1996), \"Chaiyya Chaiyya\" from Dil Se.. (1998), \"Angoori Badan\" from Jaanwar (1998), \"UP Bihar Lootne\" from Shool (1999) and \"Sab Kuchh Bhula Diya\" from Hum Tumhare Hain Sanam.",
+      "birthPlace": "Kumaon / Almora documented connection",
+      "occupation": "Culture",
+      "image": "",
+      "url": "https://en.wikipedia.org/wiki/Sapna_Awasthi",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
+    },
+    {
+      "id": "Q1085793",
+      "name": "Satyananda Saraswati",
+      "description": "Satyananda Saraswati (25 December 1923 – 5 December 2009), was a Sanyasi, yoga teacher and yoga guru in both his native India and the West. He was a student of Sivananda Saraswati, the founder of the Divine Life Society, and founded the Bihar School of Yoga in 1964. He wrote over 80 books, including the popular 1969 manual Asana Pranayama Mudra Bandha.",
       "birthPlace": "Kumaon / Almora documented connection",
       "occupation": "Public figure",
       "image": "",
-      "url": "https://en.wikipedia.org/wiki/Chaudangsi_language",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "url": "https://en.wikipedia.org/wiki/Satyananda_Saraswati",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
-      "id": "Q385891",
-      "name": "Cheer pheasant",
-      "description": "The cheer pheasant (Catreus wallichii), also known as Wallich's pheasant or chir pheasant, is a vulnerable species of the pheasant family, Phasianidae. It is the only member in the genus Catreus. The scientific name commemorates Danish botanist Nathaniel Wallich.",
+      "id": "Q7462470",
+      "name": "Shailesh Matiyani",
+      "description": "Ramesh Singh Matiyani 'Shailesh', popularly known as Shailesh Matiyani (14 October 1931 – 24 April 2001), was a Hindi writer, poet, essayist from Uttarakhand, India. He became most known for his short stories, depicting the struggles and the fighting spirit of the Indian lower and lower-middle class, which he embodied himself and expressed through his writings all through his life, and which gave him the title – People's Writer or 'Jankathakar'. And as, Hi",
       "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Catreus_wallichii_-Kyoto_Zoo-Japan-8a.jpg/960px-Catreus_wallichii_-Kyoto_Zoo-Japan-8a.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "url": "https://en.wikipedia.org/wiki/Cheer_pheasant",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "occupation": "Culture",
+      "image": "",
+      "url": "https://en.wikipedia.org/wiki/Shailesh_Matiyani",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
-      "id": "Q5101379",
-      "name": "Chinyalisaur",
-      "description": "Chinyalisaur is a small town and tehsil headquarters in the Uttarkashi district of the Indian state of Uttarakhand.",
+      "id": "Q7493260",
+      "name": "Shekhar Joshi",
+      "description": "Shekhar Joshi (10 September 1932 – 4 October 2022) was an Indian Hindi author, who was also known for his insight into the culture, traditions and lifestyles of people of Uttarakhand. With Shailesh Matiyani, he created a composite image of ethos of Kumaon. His best-known works are Dajyu (Big Brother) and Kosi Ka Ghatwar (The Miller of Kosi).",
+      "birthPlace": "Kumaon / Almora documented connection",
+      "occupation": "Culture",
+      "image": "",
+      "url": "https://en.wikipedia.org/wiki/Shekhar_Joshi",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
+    },
+    {
+      "id": "Q7493262",
+      "name": "Shekhar Pathak",
+      "description": "Shekhar Pathak is a historian, editor, publisher, activist, and traveller from Uttarakhand, India. He is known for his extensive knowledge of the history of colonial and postcolonial social movements and contemporary environmental and social issues in Uttarakhand, and colonial exploration in the Himalayas and Tibet. He has also been engaged in activism for various social and environmental causes since the 1970s.",
+      "birthPlace": "Kumaon / Almora documented connection",
+      "occupation": "Science & education",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/3/38/Shekhar_Phatak.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "url": "https://en.wikipedia.org/wiki/Shekhar_Pathak",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
+    },
+    {
+      "id": "Q7499190",
+      "name": "Shiv Dutt Upadhyaya",
+      "description": "Shiv Dutt Upadhyaya was born in Dwarahat district of Almora in Uttarakhand, India. He joined Pandit Motilal Nehru as his personal secretary in 1923. After the death of Pandit Motilal Nehru, he was retained by Pandit Jawaharlal Nehru, with whom he remained associated till the latter's death.",
       "birthPlace": "Kumaon / Almora documented connection",
       "occupation": "Public figure",
       "image": "",
-      "url": "https://en.wikipedia.org/wiki/Chinyalisaur",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "url": "https://en.wikipedia.org/wiki/Shiv_Dutt_Upadhyaya",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
-      "id": "Q1074585",
-      "name": "Chipko movement",
-      "description": "The Chipko movement (Hindi: चिपको आन्दोलन, lit. 'hugging movement') is a forest conservation movement in India. Opposed to commercial logging and the government's policies on deforestation, protesters in the 1970s engaged in tree hugging, wrapping their arms around trees so that they could not be felled. Today, beyond its eco-socialist reputation, the movement is seen increasingly as an ecofeminist one.",
+      "id": "Q7499334",
+      "name": "Shivani",
+      "description": "Gaura Pant (17 October 1923 – 21 March 2003), better known as Shivani, was a Hindi writer of the 20th century and a pioneer in writing Indian women-centric fiction. She was awarded the Padma Shri for her contribution to Hindi literature in 1982. She garnered a following in the pre-television era of 1960s and 1970s, and her literary works such as Krishnakali, were serialised in Hindi magazines like Dharmayug and Saptahik Hindustan.",
       "birthPlace": "Kumaon / Almora documented connection",
-      "occupation": "Public figure",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Chipko_2004.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-      "url": "https://en.wikipedia.org/wiki/Chipko_movement",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "occupation": "Culture",
+      "image": "",
+      "url": "https://en.wikipedia.org/wiki/Shivani",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
-      "id": "Q4478340",
-      "name": "Ceded and Conquered Provinces",
-      "description": "The Ceded and Conquered Provinces constituted a region in northern India that was ruled by the British East India Company from 1805 to 1834; it corresponded approximately—in present-day India—to all regions in Uttar Pradesh state with the exception of the Lucknow and Faizabad divisions of Awadh; in addition, it included the Delhi territory and, after 1816, the Kumaun division and a large part of the Garhwal division ",
+      "id": "Q7503808",
+      "name": "Shri Krishna Joshi",
+      "description": "Prof. Shri Krishna Joshi (6 June 1935 – 15 May 2020) was an Indian physicist. He was born on 6 June 1935 in the village of Anarpa in Kumaun, Uttarakhand, India.",
       "birthPlace": "Kumaon / Almora documented connection",
       "occupation": "Public figure",
-      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/4/44/India1805CededConqueredProvinces.jpg/960px-India1805CededConqueredProvinces.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "url": "https://en.wikipedia.org/wiki/Ceded_and_Conquered_Provinces",
-      "source": "Wikipedia / Wikimedia",
-      "featured": false
+      "image": "",
+      "url": "https://en.wikipedia.org/wiki/Shri_Krishna_Joshi",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
+    },
+    {
+      "id": "Q4445352",
+      "name": "Sudhanshu Pandey",
+      "description": "Sudhanshu Pandey (Born 22 Aug 1974) is an Indian model, film and television actor, singer, writer producer and part time poet. He has appeared in many Hindi films and few Tamil films.",
+      "birthPlace": "Kumaon / Almora documented connection",
+      "occupation": "Culture",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/40/Sudhanshu_Pandey_at_the_Star_Parivaar_Awards_2023_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "url": "https://en.wikipedia.org/wiki/Sudhanshu_Pandey",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
+    },
+    {
+      "id": "Q16736901",
+      "name": "Ajay Tamta",
+      "description": "Ajay Tamta (born 16 July 1972) is a politician from Uttarakhand, India. He represents Bharatiya Janata Party serving as a Minister of State in the Ministry of Road Transport and Highways. He had also served as Minister of State for Textiles and is Member of Parliament (MP) from Almora constituency.",
+      "birthPlace": "Kumaon / Almora documented connection",
+      "occupation": "Sports",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a4/The_Minister_of_State_for_Textiles%2C_Shri_Ajay_Tamta_addressing_at_the_inauguration_of_the_60th_India_International_Garment_Fair%2C_in_New_Delhi_on_January_17%2C_2018.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "url": "https://en.wikipedia.org/wiki/Ajay_Tamta",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
+    },
+    {
+      "id": "Q2845323",
+      "name": "Ananda Shankar",
+      "description": "Ananda Shankar (11 December 1942 – 26 March 1999) was an Indian sitar player, singer, and composer whose music blended Western and Eastern musical styles. He was married to dancer and choreographer Tanusree Shankar.",
+      "birthPlace": "Kumaon / Almora documented connection",
+      "occupation": "Culture",
+      "image": "",
+      "url": "https://en.wikipedia.org/wiki/Ananda_Shankar",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
+    },
+    {
+      "id": "Q113956069",
+      "name": "Anupama Upadhyaya",
+      "description": "Anupama Upadhyaya (born 12 February 2005) is an Indian badminton player. She is a former BWF World Junior Number 1. She became the Indian National Badminton Champion in women's singles in 2023.",
+      "birthPlace": "Kumaon / Almora documented connection",
+      "occupation": "Sports",
+      "image": "",
+      "url": "https://en.wikipedia.org/wiki/Anupama_Upadhyaya",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
+    },
+    {
+      "id": "Q5075986",
+      "name": "Charles C. G. Chaplin",
+      "description": "Charles Clifford Gordon Chaplin (1906–1991) was an American ichthyologist and author of British origins.",
+      "birthPlace": "Kumaon / Almora documented connection",
+      "occupation": "Culture",
+      "image": "",
+      "url": "https://en.wikipedia.org/wiki/Charles_C._G._Chaplin",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
+    },
+    {
+      "id": "Q115493328",
+      "name": "Dev Ashish",
+      "description": "Sri Dev Ashish (1946–2017) was an Australian-born Indian spiritual leader who ran the Mirtola ashram in Uttarakhand from 1997 to 2017.",
+      "birthPlace": "Kumaon / Almora documented connection",
+      "occupation": "Public figure",
+      "image": "",
+      "url": "https://en.wikipedia.org/wiki/Dev_Ashish",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
+    },
+    {
+      "id": "Q53612483",
+      "name": "Girdhar Kumar Pandey",
+      "description": "Girdhar Kumar Pandey (born 15 February 1972) is an Indian molecular biologist, biochemist, biotechnologist, and a professor at the department of plant molecular biology of the South Campus of the University of Delhi. He is known for his studies on the signal transduction pathways in Arabidopsis (rockcress) and Oryza sativa (rice) and is an elected fellow of the National Academy of Sciences, India and the National Academy of Agricultural Sciences. The Depar",
+      "birthPlace": "Kumaon / Almora documented connection",
+      "occupation": "Science & education",
+      "image": "",
+      "url": "https://en.wikipedia.org/wiki/Girdhar_Kumar_Pandey",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
+    },
+    {
+      "id": "Q16832074",
+      "name": "Gungun Uprari",
+      "description": "Gungun Uprari (born 9 December 1980) is an Indian actress who appears in Hindi TV shows. Gungun Uprari is known for her roles in serials like Bandhan Saat Janamon Ka, Rakt Sambandh, Haar Jeet,Buddha and Jo Biwi Se Kare Pyaar.",
+      "birthPlace": "Kumaon / Almora documented connection",
+      "occupation": "Culture",
+      "image": "",
+      "url": "https://en.wikipedia.org/wiki/Gungun_Uprari",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
+    },
+    {
+      "id": "Q140827356",
+      "name": "Hari Prasad Tamta",
+      "description": "Munshi Hari Prasad Tamta (1887–1960) was Indian social activist and former editor of the magazine Samata. He is widely known for his work in the upliftment of Dalit communities of Uttarakhand and was called as \"Father of Shilpkar Revolution\".",
+      "birthPlace": "Kumaon / Almora documented connection",
+      "occupation": "Business & social impact",
+      "image": "",
+      "url": "https://en.wikipedia.org/wiki/Hari_Prasad_Tamta",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
+    },
+    {
+      "id": "Q135935205",
+      "name": "Harshdeo Joshi",
+      "description": "Harshdeo Joshi was a prominent 18th-century Kumaoni statesman, diplomat, and military strategist during the decline of the Chand dynasty in the Kumaon Kingdom. Known for his intelligence and political maneuvering, Joshi played a decisive role in the succession disputes and administration of Kumaon.",
+      "birthPlace": "Kumaon / Almora documented connection",
+      "occupation": "Public service",
+      "image": "",
+      "url": "https://en.wikipedia.org/wiki/Harshdeo_Joshi",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
+    },
+    {
+      "id": "Q28445563",
+      "name": "Kailash Sharma",
+      "description": "Kailash Sharma is an Indian politician and member of the Bharatiya Janata Party. Sharma was a member of the Uttarakhand Legislative Assembly from the Almora constituency in Almora district.",
+      "birthPlace": "Kumaon / Almora documented connection",
+      "occupation": "Public service",
+      "image": "",
+      "url": "https://en.wikipedia.org/wiki/Kailash_Sharma",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
+    },
+    {
+      "id": "Q140830977",
+      "name": "Kirati Chand",
+      "description": "Kirati Chand (also spelled Kirti Chand; reigned 1488–1503 AD) was a ruler of the Chand dynasty who ruled the Kumaon Kingdom. He is regarded as one of the most active and expansionist rulers of the early Chand dynasty, consolidating Chand authority over much of present-day Kumaon through military campaigns against neighboring principalities.",
+      "birthPlace": "Kumaon / Almora documented connection",
+      "occupation": "Public service",
+      "image": "",
+      "url": "https://en.wikipedia.org/wiki/Kirati_Chand",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
+    },
+    {
+      "id": "Q6521789",
+      "name": "Len Garwood",
+      "description": "Leonard Frank Garwood (28 July 1923 – 1979) was an English professional footballer who played for Hitchin Town, Tottenham Hotspur and Bedford Town.",
+      "birthPlace": "Kumaon / Almora documented connection",
+      "occupation": "Sports",
+      "image": "",
+      "url": "https://en.wikipedia.org/wiki/Len_Garwood",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
+    },
+    {
+      "id": "Q130525981",
+      "name": "Madan Singh Bisht",
+      "description": "Madan Singh Bisht (born 1963) is an Indian politician from Uttarakhand. He is an MLA from Dwarahat Assembly constituency in Almora district. He won the 2022 Uttarakhand Legislative Assembly election representing the Indian National Congress.",
+      "birthPlace": "Kumaon / Almora documented connection",
+      "occupation": "Public service",
+      "image": "",
+      "url": "https://en.wikipedia.org/wiki/Madan_Singh_Bisht",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
+    },
+    {
+      "id": "Q107122823",
+      "name": "Mahesh Singh Jeena",
+      "description": "Mahesh Singh Jeena is an Indian politician. He was elected to the Uttarakhand Legislative Assembly from Salt Assembly constituency in the 2021 Uttarakhand legislative assembly by-election and 2022 Uttarakhand Legislative Assembly election as a member of the Bharatiya Janata Party. He defeated Ganga Pancholi of Indian National Congress by 4,600 votes in 2021 By-elections.",
+      "birthPlace": "Kumaon / Almora documented connection",
+      "occupation": "Public service",
+      "image": "",
+      "url": "https://en.wikipedia.org/wiki/Mahesh_Singh_Jeena",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
+    },
+    {
+      "id": "Q107366046",
+      "name": "Manoj Tiwari (Uttarakhand politician)",
+      "description": "Manoj Tewari is an Indian politician from Almora, Uttarakhand and a three term Member of the Uttarakhand Legislative Assembly.",
+      "birthPlace": "Kumaon / Almora documented connection",
+      "occupation": "Public service",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Manoj_Tewari_MLA.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "url": "https://en.wikipedia.org/wiki/Manoj_Tiwari_%28Uttarakhand_politician%29",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
+    },
+    {
+      "id": "Q130535327",
+      "name": "Mohan Singh Mahara",
+      "description": "Mohan Singh Mahara (born 1954) is an Indian politician from Uttarakhand. He is an MLA from Jageshwar Assembly constituency in Almora district. He won as an MLA in the 2022 Uttarakhand Legislative Assembly election representing the Bharatiya Janata Party.",
+      "birthPlace": "Kumaon / Almora documented connection",
+      "occupation": "Public service",
+      "image": "",
+      "url": "https://en.wikipedia.org/wiki/Mohan_Singh_Mahara",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
+    },
+    {
+      "id": "Q1394526",
+      "name": "Nain Singh",
+      "description": "Nain Singh Rawat (21 October 1830 – 1 February 1882), was one of the first Indian explorers (dubbed \"pundits\") employed by the British to explore the Himalayas and Central Asia. He came from the Johar Valley in Kumaon. He surveyed the trade route through Ladakh to Tibet, determined the location and altitude of Lhasa in Tibet, and surveyed a large section of Brahmaputra.",
+      "birthPlace": "Kumaon / Almora documented connection",
+      "occupation": "Public figure",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/2b/NainSingh.gif?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "url": "https://en.wikipedia.org/wiki/Nain_Singh",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
+    },
+    {
+      "id": "Q18918576",
+      "name": "Nancy Thomas",
+      "description": "Nancy Thomas (23 August 1918 – 7 January 2015) was a British television producer known for her work within the Talks Department of BBC Television. Thomas was born in Ranikhet, British India, to Charles D'Arcy Bingham and Bertha (née Birkbeck). Her father had been stationed as an army colonel in Ranikhet, a hill station located in the present-day state of Uttarakhand.",
+      "birthPlace": "Kumaon / Almora documented connection",
+      "occupation": "Public service",
+      "image": "",
+      "url": "https://en.wikipedia.org/wiki/Nancy_Thomas",
+      "source": "Wikipedia / Wikimedia + Wikidata human validation",
+      "featured": false,
+      "verification": "Wikidata instance-of human (Q5)"
     },
     {
       "id": "tripti-bhatt",
@@ -1387,7 +984,8 @@
       "birthPlace": "Almora",
       "occupation": "Public service",
       "image": "https://static.langimg.com/nbt/thumb/125504199/success-story-of-ips-tripti-bhatt.jpg?height=394&imgsize=1463247&resizemode=75&width=700",
-      "url": "https://sad.uk.gov.in/tripti-bhatt/"
+      "url": "https://sad.uk.gov.in/tripti-bhatt/",
+      "verification": "official/public profile"
     },
     {
       "id": "ravi-tamta",
@@ -1398,7 +996,8 @@
       "birthPlace": "Almora",
       "occupation": "Science & innovation",
       "image": "",
-      "url": "https://economictimes.indiatimes.com/news/new-updates/this-uttarakhand-youth-built-a-flying-car-watch-it-take-off-in-almora/articleshow/133027113.cms"
+      "url": "https://economictimes.indiatimes.com/news/new-updates/this-uttarakhand-youth-built-a-flying-car-watch-it-take-off-in-almora/articleshow/133027113.cms",
+      "verification": "published public profile"
     }
   ]
 }
