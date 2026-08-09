@@ -3,7 +3,15 @@ import { chromium } from 'playwright';
 
 const base = process.env.TEST_URL || 'http://127.0.0.1:4173';
 const browser = await chromium.launch({ headless: true });
-const report = { runs: [], ok: false };
+const report = { runs: [], localPages: [], ok: false };
+
+async function checkLocalPages(){
+  for(const path of ['/jobs.html','/businesses.html','/services.html','/resident-login.html','/business-login.html','/government-login.html']){
+    const response=await fetch(base+path);
+    report.localPages.push({path,status:response.status,ok:response.ok});
+    if(!response.ok)throw new Error(`Local destination failed: ${path} -> ${response.status}`);
+  }
+}
 
 async function run(viewport, name) {
   const page = await browser.newPage({ viewport });
@@ -57,6 +65,7 @@ async function run(viewport, name) {
     }
     await page.waitForSelector('#reportDialog[open]');
     await page.locator('#reportDialog button[value="cancel"]').click();
+    await page.waitForSelector('#reportDialog:not([open])');
 
     if (viewport.width < 861) {
       stage = 'mobile menu';
@@ -77,6 +86,7 @@ async function run(viewport, name) {
 }
 
 try {
+  await checkLocalPages();
   await run({ width: 1440, height: 1000 }, 'desktop');
   await run({ width: 390, height: 844 }, 'mobile');
   report.ok = true;
