@@ -1,4 +1,5 @@
 import {founderProfile,founderSupport} from './data/founder-profile.js';
+const impactCss=document.createElement('link');impactCss.rel='stylesheet';impactCss.href='./impact.css';document.head.appendChild(impactCss);
 
 const actionSection=document.createElement('section');
 actionSection.id='action-hubs';actionSection.className='section';
