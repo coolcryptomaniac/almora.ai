@@ -9,7 +9,13 @@ WIKI='https://en.wikipedia.org/w/api.php'
 WIKIDATA='https://www.wikidata.org/w/api.php'
 UA='AlmoraAI/1.0 (+https://almora.ai; public civic knowledge project)'
 SOURCE_PAGES=['List of Kumaoni people']
-SOURCE_CATEGORIES=['Category:People from Almora','Category:People from Almora district','Category:Kumaoni people','Category:People from Kumaon division']
+# Kumaon division comprises Almora, Bageshwar, Champawat, Nainital, Pithoragarh and Udham Singh Nagar districts.
+# Category candidates are still filtered through Wikidata P31=Q5, so only humans are published.
+SOURCE_CATEGORIES=[
+ 'Category:People from Almora','Category:People from Almora district','Category:Kumaoni people','Category:People from Kumaon division',
+ 'Category:People from Bageshwar district','Category:People from Champawat district','Category:People from Nainital district',
+ 'Category:People from Pithoragarh district','Category:People from Udham Singh Nagar district'
+]
 FEATURED={'Lakshya Sen','Ekta Bisht','Mohan Upreti','Govind Ballabh Pant','Uday Shankar','Sumitranandan Pant','Tripti Bhatt','Chirag Sen','Ravi Tamta'}
 
 
@@ -61,8 +67,7 @@ def human_qids(qids):
             claims=entity.get('claims',{}).get('P31',[])
             for claim in claims:
                 value=claim.get('mainsnak',{}).get('datavalue',{}).get('value',{})
-                if isinstance(value,dict) and value.get('id')=='Q5':
-                    humans.add(qid);break
+                if isinstance(value,dict) and value.get('id')=='Q5':humans.add(qid);break
     return humans
 
 
@@ -83,7 +88,7 @@ def main():
         for n in names:
             key=n.casefold()
             if key not in seen:seen.add(key);unique.append(n)
-        bios=details(unique[:360])
+        bios=details(unique[:600])
         humans=human_qids([b['wikibase'] for b in bios])
         bios=[b for b in bios if b['wikibase'] in humans]
     except Exception as e:
@@ -99,14 +104,14 @@ def main():
         n=b['name'];key=n.casefold()
         if key in seen:continue
         seen.add(key)
-        rows.append({'id':b['wikibase'],'name':n,'description':b['description'],'birthPlace':'Kumaon / Almora documented connection','occupation':infer_occupation(b['description']),'image':b['image'],'url':b['url'],'source':'Wikipedia / Wikimedia + Wikidata human validation','featured':n in FEATURED,'verification':'Wikidata instance-of human (Q5)'})
+        rows.append({'id':b['wikibase'],'name':n,'description':b['description'],'birthPlace':'Kumaon documented connection','occupation':infer_occupation(b['description']),'image':b['image'],'url':b['url'],'source':'Wikipedia / Wikimedia + Wikidata human validation','featured':n in FEATURED,'verification':'Wikidata instance-of human (Q5)'})
     for n,m in manual.items():
         if n.casefold() in seen:continue
         seen.add(n.casefold());rows.append({'id':re.sub(r'[^a-z0-9]+','-',n.lower()).strip('-'),'name':n,'source':'Public profile','featured':True,**m})
     rows=rows[:200]
-    if len(rows)<50:
-        raise SystemExit(f'people refresh produced only {len(rows)} verified human profiles; refusing to publish a weak atlas')
-    OUT.write_text(json.dumps({'updatedAt':datetime.now(timezone.utc).isoformat(),'method':'Public figures gathered from Kumaoni/Almora Wikipedia list/category pages, then validated through Wikidata as instance-of human (Q5). Founder and a small number of public-profile additions are maintained separately. Inclusion means documented regional connection, not endorsement.','count':len(rows),'people':rows},ensure_ascii=False,indent=2))
-    print('wrote',len(rows),'verified human profiles')
+    if len(rows)<100:
+        raise SystemExit(f'Kumaon people expansion produced only {len(rows)} verified human profiles; keeping the existing atlas rather than claiming the 100-profile target')
+    OUT.write_text(json.dumps({'updatedAt':datetime.now(timezone.utc).isoformat(),'method':'Public figures gathered from Kumaoni lists and public people categories across the six Kumaon-division districts, then validated through Wikidata as instance-of human (Q5). Founder and a small number of public-profile additions are maintained separately. Inclusion means documented regional connection, not endorsement.','count':len(rows),'people':rows},ensure_ascii=False,indent=2))
+    print('wrote',len(rows),'verified human profiles across Kumaon')
 
 if __name__=='__main__':main()
