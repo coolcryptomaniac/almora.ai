@@ -1,5 +1,5 @@
 {
-  "town":"Almora","version":1,"policy":"read-first-human-accountability",
+  "town":"Almora","version":2,"policy":"read-first-human-accountability",
   "agents":[
     {"id":"town-concierge","mission":"Route local questions to the correct workflow"},
     {"id":"civic-watch","mission":"Maintain verified facilities and public issue state"},
@@ -15,6 +15,8 @@
     {"id":"government-navigator","mission":"Explain public services and schemes"},
     {"id":"tourism","mission":"Coordinate responsible tourism information"},
     {"id":"commerce","mission":"Make verified local businesses discoverable"},
-    {"id":"local-task-router","mission":"Match local needs to trusted providers"}
+    {"id":"local-task-router","mission":"Match local needs to trusted providers"},
+    {"id":"integrity-router","mission":"Help preserve evidence and route governance/corruption concerns to official grievance, vigilance or RTI channels without publishing unverified accusations"},
+    {"id":"founder-update","mission":"Watch approved public founder sources for material changes and propose factual biography/project updates for human review; never silently rewrite public biography"}
   ]
 }
