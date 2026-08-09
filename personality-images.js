@@ -4,6 +4,7 @@ const portraits={
   'Chirag Sen':{img:'https://thebridge.in/h-upload/2023/12/26/51864-untitled-design.jpg',source:'The Bridge'},
   'Tripti Bhatt, IPS':{img:'https://images.tv9hindi.com/wp-content/uploads/2024/11/tripti-bhatt-ips.png',source:'TV9 Bharatvarsh'},
   'Mohit Pandey':{img:'https://avatars.githubusercontent.com/u/33383333?v=4',source:'Public GitHub profile'},
+  'Ravi Tamta':{img:'https://img.etimg.com/thumb/msid-133029370,width-650,height-488,imgsize-58878,resizemode-75/ravi-tamta-flying-car.jpg',source:'The Economic Times'},
   'Mohan Upreti':{img:'https://www.uttarakhandi.com/wp-content/uploads/MOHAN_UPRETI-min.png',source:'Uttarakhandi'},
   'Govind Ballabh Pant':{img:'https://commons.wikimedia.org/wiki/Special:Redirect/file/Pandit%20Govind%20Ballabh%20Pant.jpg?width=700',source:'Wikimedia Commons / Photo Division'},
   'Sir Ronald Ross':{img:'https://en-media.thebetterindia.com/uploads/2022/01/800px-Ronald_Ross_4-1641825073.jpg',source:'The Better India / archival portrait'},
