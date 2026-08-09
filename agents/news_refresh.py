@@ -1,63 +1,102 @@
 #!/usr/bin/env python3
 import json, re, urllib.parse, urllib.request, xml.etree.ElementTree as ET
+from collections import Counter, defaultdict
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'data'/'live-news.json'
 UA='AlmoraAI/1.0 (+https://almora.ai)'
 QUERIES={
- 'innovation':'Almora Uttarakhand innovation OR startup OR technology OR science',
- 'jobs':'Almora Uttarakhand jobs OR recruitment OR vacancy OR रोजगार',
- 'politics':'Almora Uttarakhand government policy politics development',
- 'education':'Almora Uttarakhand education university school scholarship',
- 'sports':'Almora Uttarakhand sports athlete badminton cricket',
- 'infrastructure':'Almora Uttarakhand road water transport infrastructure',
- 'environment':'Almora Uttarakhand environment wildlife monkey forest climate'
+ 'innovation':'Almora Uttarakhand innovation startup technology science',
+ 'jobs':'Almora Uttarakhand jobs recruitment vacancy employment',
+ 'politics':'Almora Uttarakhand government policy election development politics',
+ 'education':'Almora Uttarakhand education university college school scholarship research',
+ 'sports':'Almora Uttarakhand sports athlete badminton cricket tournament',
+ 'infrastructure':'Almora Uttarakhand road water transport infrastructure project',
+ 'environment':'Almora Uttarakhand environment wildlife monkey forest climate farming'
 }
-EXCLUDE=re.compile(r'\b(murder|rape|theft|robbery|assault|suicide|accident|arrested|एफआईआर|हत्या|चोरी|बलात्कार)\b',re.I)
-MAJOR=re.compile(r'\b(state|national|high court|supreme court|policy|government|election|minister|मुख्यमंत्री|सरकार|राज्य|राष्ट्रीय)\b',re.I)
-TRUSTED=('almora.nic.in','uk.gov.in','sports.uk.gov.in','sssc.uk.gov.in','amarujala.com','jagran.com','livehindustan.com','timesofindia.indiatimes.com','hindustantimes.com','thehindu.com','indianexpress.com','economictimes.indiatimes.com')
+BASELINE=[
+ {'id':'official-district','category':'governance','title':'Almora district administration and current public notices','source':'District Almora','published':'','url':'https://almora.nic.in/','summary':'Official district notices, public utilities, tenders, disaster-management and administration updates.'},
+ {'id':'official-jobs','category':'jobs','title':'Uttarakhand Subordinate Service Selection Commission recruitment updates','source':'UKSSSC','published':'','url':'https://sssc.uk.gov.in/','summary':'Official state recruitment notices and candidate updates.'},
+ {'id':'official-sports','category':'sports','title':'Uttarakhand Sports Department facilities and sports updates','source':'Uttarakhand Sports Department','published':'','url':'https://sports.uk.gov.in/','summary':'Official sports infrastructure, schemes and department updates.'},
+ {'id':'official-education','category':'education','title':'Kumaun University academic and student updates','source':'Kumaun University','published':'','url':'https://www.kunainital.ac.in/','summary':'Official university notices and academic information for the Kumaon region.'},
+ {'id':'official-incubator','category':'innovation','title':'Rural Business Incubator, Hawalbagh supports local entrepreneurship','source':'District Almora','published':'','url':'https://almora.nic.in/','summary':'District-backed entrepreneurship support and rural business-incubation information.'},
+ {'id':'monkey-ranikhet','category':'environment','title':'Monkey and langur activity remains a public concern around Ranikhet','source':'Amar Ujala','published':'2026-05-08T23:42:00+05:30','url':'https://www.amarujala.com/uttarakhand/almora/in-the-morning-flocks-of-monkeys-were-seen-in-the-markets-and-streets-leaving-people-in-panic-ranikhet-news-c-232-1-alm1002-143114-2026-05-08','summary':'A local report documented recurring monkey/langur activity in Ranikhet and nearby areas.'}
+]
+EXCLUDE=re.compile(r'\b(murder|rape|theft|robbery|assault|suicide|minor accident|arrested|एफआईआर|हत्या|चोरी|बलात्कार)\b',re.I)
+MAJOR=re.compile(r'\b(state|national|high court|supreme court|policy|government|election|minister|major|मुख्यमंत्री|सरकार|राज्य|राष्ट्रीय)\b',re.I)
+TRUSTED=('almora.nic.in','uk.gov.in','sports.uk.gov.in','sssc.uk.gov.in','kunainital.ac.in','amarujala.com','jagran.com','livehindustan.com','timesofindia.indiatimes.com','hindustantimes.com','thehindu.com','indianexpress.com','economictimes.indiatimes.com','indiatoday.in','livemint.com','moneycontrol.com','theprint.in','pti.in')
+SOCIAL=('LinkedIn','YouTube','Instagram','X')
+CATEGORY_RULES=[('jobs',re.compile(r'\b(job|jobs|vacanc|recruit|hiring|employment|ssc|psc|रोजगार|भर्ती)\b',re.I)),('education',re.compile(r'\b(school|college|university|student|education|scholarship|research|exam|teacher|शिक्षा|विद्यालय)\b',re.I)),('sports',re.compile(r'\b(sport|badminton|cricket|football|athlete|tournament|championship|bwf|olymp)\b',re.I)),('science',re.compile(r'\b(science|research|laboratory|space|ai\b|artificial intelligence|scientist)\b',re.I)),('innovation',re.compile(r'\b(innovation|innovator|startup|technology|tech\b|prototype|skynex|flying car|drone|electric vehicle|incubator)\b',re.I)),('infrastructure',re.compile(r'\b(road|highway|bridge|water|transport|rail|airport|infrastructure|project|crore|construction|landslide)\b',re.I)),('environment',re.compile(r'\b(monkey|wildlife|forest|climate|environment|leopard|agriculture|farm|waste|water conservation)\b',re.I)),('politics',re.compile(r'\b(election|party|congress|bjp|politic|minister|mla|mp\b|rally)\b',re.I)),('governance',re.compile(r'\b(government|administration|district magistrate|dm\b|policy|scheme|digitisation|digital governance|sop|सरकार|प्रशासन)\b',re.I))]
+STOP={'almora','uttarakhand','india','today','latest','news','the','from','with','this','that','young','watch','video','in','of','to','a','an','and'}
 
 def text(node,name):
-    x=node.find(name); return (x.text or '').strip() if x is not None else ''
-
+    x=node.find(name);return (x.text or '').strip() if x is not None else ''
+def classify(title,fallback):
+    for cat,rule in CATEGORY_RULES:
+        if rule.search(title):return cat
+    return fallback
+def published_ts(pub):
+    try:return parsedate_to_datetime(pub).timestamp()
+    except Exception:
+        try:return datetime.fromisoformat(pub).timestamp()
+        except Exception:return 0
+def event_signature(title):
+    low=title.lower()
+    if 'skynex' in low or 'flying car' in low:return 'skynex-flying-car'
+    words=[w for w in re.findall(r'[a-z0-9]+',low) if len(w)>3 and w not in STOP]
+    return '-'.join(sorted(w for w,_ in Counter(words).most_common(6)))[:180]
+def score(row):
+    title=row['title'];s=0;low=title.lower()
+    if 'almora' in low or 'अल्मो' in title:s+=6
+    if any(d in row.get('sourceUrl','') for d in TRUSTED):s+=4
+    if row['source'] in SOCIAL:s+=1
+    if row['category'] in {'jobs','education','science','innovation','infrastructure','governance','sports'}:s+=2
+    ts=published_ts(row.get('published',''));age=max(0,(datetime.now(timezone.utc).timestamp()-ts)/86400) if ts else 999
+    if age<=2:s+=5
+    elif age<=7:s+=3
+    elif age<=30:s+=2
+    elif age<=180:s+=1
+    return s
 def fetch(category,q):
-    url='https://news.google.com/rss/search?'+urllib.parse.urlencode({'q':q,'hl':'en-IN','gl':'IN','ceid':'IN:en'})
-    req=urllib.request.Request(url,headers={'User-Agent':UA})
-    with urllib.request.urlopen(req,timeout=20) as r: root=ET.fromstring(r.read())
+    url='https://news.google.com/rss/search?'+urllib.parse.urlencode({'q':q,'hl':'en-IN','gl':'IN','ceid':'IN:en'});req=urllib.request.Request(url,headers={'User-Agent':UA})
+    with urllib.request.urlopen(req,timeout=12) as r:root=ET.fromstring(r.read())
     rows=[]
-    for it in root.findall('./channel/item')[:20]:
-        title=text(it,'title'); link=text(it,'link'); pub=text(it,'pubDate')
-        source_node=it.find('source'); source=(source_node.text or '').strip() if source_node is not None else 'News'
-        source_url=source_node.attrib.get('url','') if source_node is not None else ''
+    for it in root.findall('./channel/item')[:30]:
+        title=text(it,'title');link=text(it,'link');pub=text(it,'pubDate');source_node=it.find('source');source=(source_node.text or '').strip() if source_node is not None else 'News';source_url=source_node.attrib.get('url','') if source_node is not None else ''
         hay=f'{title} {source} {source_url}'
-        if EXCLUDE.search(hay) and not MAJOR.search(hay): continue
-        if source_url and not any(d in source_url for d in TRUSTED):
-            # Keep unknown sources only when the headline is strongly Almora-specific.
-            if 'almora' not in title.lower() and 'अल्मो' not in title: continue
-        rows.append({'category':category,'title':title,'source':source,'published':pub,'url':link,'summary':''})
+        if EXCLUDE.search(hay) and not MAJOR.search(hay):continue
+        local=('almora' in title.lower() or 'अल्मो' in title or 'uttarakhand' in title.lower());trusted=any(d in source_url for d in TRUSTED) if source_url else False;social=source in SOCIAL
+        if not (trusted or (social and local) or ('almora' in title.lower() or 'अल्मो' in title)):continue
+        row={'category':classify(title,category),'title':title,'source':source,'sourceUrl':source_url,'published':pub,'url':link,'summary':''};row['_score']=score(row);row['_event']=event_signature(title);rows.append(row)
     return rows
 
 def main():
-    existing={'items':[]}
-    if OUT.exists():
-        try: existing=json.loads(OUT.read_text())
-        except Exception: pass
-    items=[]
-    try:
-        for cat,q in QUERIES.items(): items.extend(fetch(cat,q))
-    except Exception as e:
-        print('news refresh warning:',e)
-    if not items:
-        print('No fresh feed; preserving existing data')
-        return
-    seen=set(); clean=[]
-    for x in items:
-        key=re.sub(r'\W+',' ',x['title'].lower()).strip()
-        if key in seen: continue
-        seen.add(key); x['id']=f"{x['category']}-{abs(hash(key))}"; clean.append(x)
-    clean=clean[:48]
-    OUT.write_text(json.dumps({'updatedAt':datetime.now(timezone.utc).isoformat(),'editorialPolicy':'High-value Almora/Uttarakhand innovation, jobs, politics/policy, infrastructure, education, sports, science/technology and major public-interest developments. Routine crime is filtered unless major state/national relevance is detected.','items':clean},ensure_ascii=False,indent=2))
-    print('wrote',len(clean),'news items')
-if __name__=='__main__': main()
+    fetched=[];errors=[]
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        futures={pool.submit(fetch,cat,q):cat for cat,q in QUERIES.items()}
+        for f in as_completed(futures):
+            cat=futures[f]
+            try:fetched.extend(f.result())
+            except Exception as e:errors.append(f'{cat}: {e}')
+    fetched.sort(key=lambda x:(x['_score'],published_ts(x.get('published',''))),reverse=True)
+    events=set();per_cat=defaultdict(int);clean=[]
+    for x in fetched:
+        if x['_event'] in events or per_cat[x['category']]>=5:continue
+        events.add(x['_event']);per_cat[x['category']]+=1;x.pop('_score',None);x.pop('_event',None);x.pop('sourceUrl',None);key=re.sub(r'\W+',' ',x['title'].lower()).strip();x['id']=f"{x['category']}-{abs(hash(key))}";clean.append(x)
+        if len(clean)>=36:break
+    used_urls={x['url'] for x in clean};used_titles={event_signature(x['title']) for x in clean}
+    for x in BASELINE:
+        sig=event_signature(x['title'])
+        if x['url'] in used_urls and sig in used_titles:continue
+        clean.append(dict(x));used_urls.add(x['url']);used_titles.add(sig)
+    if not clean:raise SystemExit('news refresh failed: '+'; '.join(errors or ['no usable items']))
+    categories={x['category'] for x in clean}
+    if len(clean)<8 or len(categories)<4:raise SystemExit(f'news refresh quality too low: items={len(clean)}, categories={sorted(categories)}')
+    OUT.write_text(json.dumps({'updatedAt':datetime.now(timezone.utc).isoformat(),'editorialPolicy':'High-value Almora/Uttarakhand innovation, jobs, politics/policy, governance, infrastructure, education, sports, science/technology and major public-interest developments. Routine crime is filtered unless major state/national relevance is detected. Public social-media items may appear when surfaced through a news feed and strongly Almora-relevant. Official update hubs are retained as stable anchors when live feeds are thin.','items':clean[:42]},ensure_ascii=False,indent=2))
+    print('wrote',min(len(clean),42),'news items across',len(categories),'categories; fresh=',len(fetched))
+    if errors:print('partial feed warnings:',*errors,sep='\n- ')
+if __name__=='__main__':main()

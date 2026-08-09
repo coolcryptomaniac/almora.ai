@@ -6,7 +6,7 @@ const browser = await chromium.launch({ headless: true });
 const report = { runs: [], localPages: [], sharedPage: null, v7: {}, ok: false };
 
 async function checkLocalPages(){
-  for(const path of ['/jobs.html','/businesses.html','/services.html','/resident-login.html','/business-login.html','/government-login.html','/monkey.html','/people.html','/data/live-news.json','/data/monkey-hotspots.json','/data/people.json','/data/agent-status.json']){
+  for(const path of ['/jobs.html','/businesses.html','/services.html','/resident-login.html','/business-login.html','/government-login.html','/monkey.html','/people.html','/data/live-news.json','/data/monkey-hotspots.json','/data/people.json','/data/agent-status.json','/assets/generated/almora-twilight.webp','/assets/generated/almora-sunset.webp']){
     const response=await fetch(base+path);
     report.localPages.push({path,status:response.status,ok:response.ok});
     if(!response.ok)throw new Error(`Local destination failed: ${path} -> ${response.status}`);
@@ -58,7 +58,17 @@ async function run(viewport, name) {
     await page.goto(base, { waitUntil: 'domcontentloaded', timeout: 30000 });
     stage='main content';await page.waitForSelector('#home');await page.waitForSelector('#newsGrid .newsCard',{timeout:10000});
     stage='v7 mount';await page.waitForSelector('.heroSlides',{timeout:10000});await page.waitForSelector('.monkeyPreview',{timeout:10000});await page.waitForSelector('.peoplePreview',{timeout:10000});await page.waitForSelector('.cultureThemePicker',{timeout:10000});
-    const initialSlide=await page.locator('.heroPhoto').getAttribute('data-slide');await page.locator('.heroArrow.next').click();await page.waitForTimeout(250);const nextSlide=await page.locator('.heroPhoto').getAttribute('data-slide');if(initialSlide===nextSlide)throw new Error('Hero slideshow failed');
+    stage='generated hero decode';
+    for(const slide of [1,2]){
+      await page.locator(`[data-slide="${slide}"]`).click();
+      await page.waitForFunction(i=>document.querySelector('.heroPhoto')?.dataset.slide===String(i),slide,{timeout:6000});
+    }
+    const decoded=await page.evaluate(async()=>{
+      const urls=['./assets/generated/almora-twilight.webp','./assets/generated/almora-sunset.webp'];
+      return Promise.all(urls.map(src=>new Promise(resolve=>{const img=new Image();img.onload=()=>resolve({src,ok:img.naturalWidth>0,w:img.naturalWidth,h:img.naturalHeight});img.onerror=()=>resolve({src,ok:false});img.src=src})))
+    });
+    if(decoded.some(x=>!x.ok))throw new Error(`Generated hero decode failed: ${JSON.stringify(decoded)}`);
+    report.v7.generatedHero=decoded;
     const cultureBefore=await page.locator('html').getAttribute('data-culture-theme');await page.locator('#cultureThemeBtn').click();await page.locator('[data-culture="pichoda"]').click();const cultureAfter=await page.locator('html').getAttribute('data-culture-theme');if(cultureBefore===cultureAfter)throw new Error('Cultural theme failed');
     await page.screenshot({ path: `homepage-${name}.png`, fullPage: true });
 
@@ -74,4 +84,4 @@ async function run(viewport, name) {
   } catch(error){await page.screenshot({path:`homepage-failure-${name}.png`,fullPage:true});report.runs.push({name,ok:false,stage,error:error.message,stack:error.stack,pageErrors:errors,consoleErrors});throw error}finally{await page.close()}
 }
 
-try{await checkLocalPages();await checkSharedPage();await checkMonkeyAndPeople();await run({width:1440,height:1000},'desktop');await run({width:390,height:844},'mobile');report.ok=true;console.log('Homepage v7 smoke tests passed')}catch(error){console.error('Homepage smoke failed:',error);process.exitCode=1}finally{fs.writeFileSync('homepage-smoke-result.json',JSON.stringify(report,null,2));await browser.close()}
+try{await checkLocalPages();await checkSharedPage();await checkMonkeyAndPeople();await run({width:1440,height:1000},'desktop');await run({width:390,height:844},'mobile');report.ok=true;console.log('Homepage v7.1 smoke tests passed')}catch(error){console.error('Homepage smoke failed:',error);process.exitCode=1}finally{fs.writeFileSync('homepage-smoke-result.json',JSON.stringify(report,null,2));await browser.close()}
