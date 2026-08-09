@@ -1,0 +1,43 @@
+name: Almora Daily News
+on:
+  schedule:
+    - cron: '20 1 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Refresh news JSON
+        run: |
+          python - <<'PY'
+          import json, urllib.parse, urllib.request, xml.etree.ElementTree as ET
+          from datetime import datetime, timezone
+          q=urllib.parse.quote('Almora Uttarakhand when:2d')
+          url=f'https://news.google.com/rss/search?q={q}&hl=en-IN&gl=IN&ceid=IN:en'
+          req=urllib.request.Request(url,headers={'User-Agent':'almora.ai/1.0'})
+          items=[]
+          try:
+              with urllib.request.urlopen(req,timeout=20) as r:
+                  root=ET.fromstring(r.read())
+              for it in root.findall('.//item')[:12]:
+                  title=(it.findtext('title') or '').strip()
+                  link=(it.findtext('link') or '').strip()
+                  pub=(it.findtext('pubDate') or '').strip()
+                  source=it.find('source')
+                  items.append({'title':title,'source':(source.text.strip() if source is not None and source.text else 'News source'),'published':pub,'url':link,'tag':'Local news'})
+          except Exception as e:
+              print('news fetch failed:',e)
+          if items:
+              with open('data/news.json','w',encoding='utf-8') as f:
+                  json.dump({'updatedAt':datetime.now(timezone.utc).isoformat(),'items':items},f,ensure_ascii=False,indent=2)
+          PY
+      - name: Commit changes when feed changed
+        run: |
+          git config user.name 'almora-ai-bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add data/news.json
+          git diff --cached --quiet || git commit -m 'data: refresh Almora daily news'
+          git push
