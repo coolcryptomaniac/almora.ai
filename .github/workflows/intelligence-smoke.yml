@@ -1,0 +1,42 @@
+name: Intelligence Smoke
+
+on:
+  pull_request:
+    paths:
+      - 'agents/**'
+      - 'data/**'
+      - '.github/workflows/intelligence-smoke.yml'
+      - '.github/workflows/town-intelligence.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  intelligence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Refresh people atlas
+        run: python3 agents/people_refresh.py
+      - name: Refresh live news
+        run: python3 agents/news_refresh.py
+      - name: Coordinate agents
+        run: python3 agents/agent_orchestrator.py
+      - name: Validate output quality
+        run: |
+          python3 - <<'PY'
+          import json
+          people=json.load(open('data/people.json'))
+          news=json.load(open('data/live-news.json'))
+          agents=json.load(open('data/agent-status.json'))
+          assert people['count'] >= 35, people['count']
+          assert len(people['people']) == people['count']
+          categories={x['category'] for x in news['items']}
+          assert len(news['items']) >= 8, len(news['items'])
+          assert len(categories) >= 4, categories
+          assert agents['metrics']['agentCount'] == 15, agents['metrics']
+          assert agents['metrics']['collaborationCount'] >= 4, agents['metrics']
+          print({'people':people['count'],'news':len(news['items']),'categories':sorted(categories),'agents':agents['metrics']})
+          PY
