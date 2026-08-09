@@ -3,7 +3,7 @@ import { chromium } from 'playwright';
 
 const base = process.env.TEST_URL || 'http://127.0.0.1:4173';
 const browser = await chromium.launch({ headless: true });
-const report = { runs: [], localPages: [], ok: false };
+const report = { runs: [], localPages: [], sharedPage: null, ok: false };
 
 async function checkLocalPages(){
   for(const path of ['/jobs.html','/businesses.html','/services.html','/resident-login.html','/business-login.html','/government-login.html']){
@@ -11,6 +11,26 @@ async function checkLocalPages(){
     report.localPages.push({path,status:response.status,ok:response.ok});
     if(!response.ok)throw new Error(`Local destination failed: ${path} -> ${response.status}`);
   }
+}
+
+async function checkSharedPage(){
+  const page=await browser.newPage({viewport:{width:1200,height:900}});
+  try{
+    await page.goto(base+'/jobs.html',{waitUntil:'domcontentloaded',timeout:30000});
+    await page.waitForSelector('#globalThemeSwitch',{timeout:10000});
+    await page.waitForSelector('#globalLangSwitch',{timeout:10000});
+    const before=await page.locator('html').getAttribute('data-theme');
+    await page.locator('#globalThemeSwitch').click();
+    const after=await page.locator('html').getAttribute('data-theme');
+    if(before===after)throw new Error('Shared page theme switch failed');
+    await page.locator('#globalLangSwitch').click();
+    await page.waitForTimeout(100);
+    if(!(await page.locator('.marketHero h1').textContent()).includes('स्थानीय काम'))throw new Error('Jobs Hindi localization failed');
+    await page.locator('#globalLangSwitch').click();
+    await page.waitForTimeout(100);
+    if(!(await page.locator('.marketHero h1').textContent()).includes('स्थानीय काम'))throw new Error('Jobs Kumaoni localization failed');
+    report.sharedPage={ok:true,theme:after,language:'kfy'};
+  }finally{await page.close()}
 }
 
 async function run(viewport, name) {
@@ -87,6 +107,7 @@ async function run(viewport, name) {
 
 try {
   await checkLocalPages();
+  await checkSharedPage();
   await run({ width: 1440, height: 1000 }, 'desktop');
   await run({ width: 390, height: 844 }, 'mobile');
   report.ok = true;
