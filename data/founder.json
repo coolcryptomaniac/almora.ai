@@ -1,9 +1,25 @@
 {
   "name":"Mohit Pandey",
   "role":"Founder, Almora.ai",
+  "location":"Almora, Uttarakhand, India",
   "photo":"https://avatars.githubusercontent.com/u/33383333?v=4",
   "github":"https://github.com/coolcryptomaniac",
   "linkedin":"https://www.linkedin.com/in/rockermohit",
+  "youtube":"https://youtube.com/@mohucool",
+  "spotify":"https://open.spotify.com/artist/2qbS0OT9WF0Wpf2WnggrKS",
+  "roamwise":"https://roamwise.co.in/",
   "upiId":"coolmohit@ybl",
+  "bio":"Almora-based builder working across music, entertainment and technology, and the founder of Almora.ai. Public profiles connect the same identity to RoamWise and the @mohucool creator/music handle.",
+  "projects":[
+    {"name":"Almora.ai","type":"AI civic-tech / local super app","url":"https://almora.ai","summary":"AI-assisted local coordination for services, culture, mobility, jobs, public information, water, rural education and wildlife conflict in Almora."},
+    {"name":"RoamWise","type":"AI travel product","url":"https://roamwise.co.in/","summary":"A travel-planning product covering itineraries, budgets, crowd-aware planning, treks and travel content, publicly described as built by Mohit Pandey from Almora."},
+    {"name":"@mohucool","type":"Creator / music identity","url":"https://youtube.com/@mohucool","summary":"Public creator handle linked from the founder's professional profile."},
+    {"name":"Mohit Pandey on Spotify","type":"AI music / artist profile","url":"https://open.spotify.com/artist/2qbS0OT9WF0Wpf2WnggrKS","summary":"Public artist profile that explicitly references the @mohucool YouTube handle and includes releases such as Kale Kowa Ghughuti Mala and Kashmir."}
+  ],
+  "sources":[
+    {"label":"LinkedIn · Mohit Pandey — Roamwise","url":"https://www.linkedin.com/in/rockermohit","supports":"Almora location, RoamWise website, @mohucool portfolio and music/entertainment/technology background."},
+    {"label":"RoamWise","url":"https://roamwise.co.in/","supports":"Founder identity and description of RoamWise as a solo Himalayan product built from Almora."},
+    {"label":"Spotify · Mohit Pandey","url":"https://open.spotify.com/artist/2qbS0OT9WF0Wpf2WnggrKS","supports":"Music profile that explicitly links the artist identity to @mohucool."}
+  ],
   "supportNote":"Verified founder-provided UPI handle. Payment UI must always ask the user to verify the payee name in their payment app before confirming."
 }
