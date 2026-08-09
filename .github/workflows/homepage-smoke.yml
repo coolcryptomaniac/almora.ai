@@ -1,0 +1,46 @@
+name: Homepage Smoke
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: homepage-smoke-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install browser test dependency
+        run: |
+          npm install --no-save playwright@1.55.0
+          npx playwright install --with-deps chromium
+      - name: Start static site
+        run: |
+          python3 -m http.server 4173 --bind 127.0.0.1 > /tmp/almora-http.log 2>&1 &
+          sleep 2
+      - name: Validate JavaScript syntax
+        run: |
+          find src/scripts -name '*.js' -print0 | xargs -0 -n1 node --check
+          node --check ai-client.js
+      - name: Run desktop + mobile smoke tests
+        env:
+          TEST_URL: http://127.0.0.1:4173
+        run: node tests/homepage-smoke.mjs
+      - name: Upload smoke diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: homepage-smoke-diagnostics
+          path: |
+            homepage-smoke-result.json
+            homepage-desktop.png
+            homepage-mobile.png
+            homepage-failure-*.png
+          if-no-files-found: ignore

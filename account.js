@@ -1,3 +1,4 @@
+import './src/scripts/page-theme.js';
 import { auth, db } from './firebase-platform.js';
 import { signOut, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/12.16.0/firebase-auth.js';
 import { doc, getDoc, setDoc, serverTimestamp } from 'https://www.gstatic.com/firebasejs/12.16.0/firebase-firestore.js';
