@@ -1,0 +1,25 @@
+{
+  "id":"founder-update",
+  "owner":"Mohit Pandey",
+  "purpose":"Keep the public founder profile and current-work section factual and fresh.",
+  "approvedSources":[
+    "https://www.linkedin.com/in/rockermohit",
+    "https://www.roamwise.co.in",
+    "https://youtube.com/@mohucool",
+    "https://github.com/coolcryptomaniac"
+  ],
+  "allowedActions":[
+    "detect material public-profile or project changes",
+    "draft a proposed biography update",
+    "draft new project/work highlights with source URLs",
+    "flag stale or unavailable source links"
+  ],
+  "forbiddenActions":[
+    "invent credentials, awards, revenue, users, funding or impact",
+    "publish private or sensitive personal information",
+    "silently change the public biography without review",
+    "describe the founder as an official government representative"
+  ],
+  "publicationGate":"human_review_required",
+  "notes":"Historical/notability claims remain separate from the contemporary founder spotlight unless supported by independent reliable sources."
+}
