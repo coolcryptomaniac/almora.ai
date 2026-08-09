@@ -24,6 +24,21 @@ service cloud.firestore {
     match /transport/{id} { allow read: if true; allow write: if moderator(); }
     match /businesses/{id} { allow read: if true; allow write: if moderator(); }
     match /verifiedSources/{id} { allow read: if true; allow write: if moderator(); }
+    match /serviceProviders/{id} { allow read: if true; allow write: if moderator(); }
+
+    match /serviceRequests/{id} {
+      allow create: if signedIn()
+                    && request.resource.data.requesterUid == request.auth.uid
+                    && request.resource.data.status == 'open'
+                    && request.resource.data.service is string
+                    && request.resource.data.service.size() <= 80
+                    && request.resource.data.location is string
+                    && request.resource.data.location.size() <= 160
+                    && request.resource.data.description is string
+                    && request.resource.data.description.size() <= 2000;
+      allow read: if moderator() || (signedIn() && resource.data.requesterUid == request.auth.uid);
+      allow update, delete: if moderator();
+    }
 
     match /jobSubmissions/{id} {
       allow create: if signedIn()

@@ -19,11 +19,10 @@ export const founderProfile={
  sourceNote:'Founder biography is based on Mohit Pandey’s public profiles and project pages; updates should be reviewed before publication.'
 };
 
-// Add a verified personal payment/support URL here after the founder confirms it.
-// Example options: UPI payment link, Razorpay Payment Page, Buy Me a Coffee, GitHub Sponsors.
 export const founderSupport={
- enabled:false,
- url:'',
- label:'Support Mohit directly',
- disclosure:'Personal voluntary support for Mohit Pandey, founder of Almora.ai. This is not a government fee, tax, charity donation, or payment for public services.'
+ enabled:true,
+ upiId:'coolmohit@ybl',
+ url:'upi://pay?pa=coolmohit%40ybl&pn=Mohit%20Pandey&tn=Support%20Almora.ai&cu=INR',
+ label:'Support Mohit via UPI',
+ disclosure:'Personal voluntary support for Mohit Pandey, founder of Almora.ai. This is not a government fee, tax, charity donation, investment, or payment for public/civic services. Support does not influence issue moderation, government routing or service priority.'
 };
