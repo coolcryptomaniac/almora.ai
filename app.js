@@ -1,5 +1,6 @@
 import { firebaseReady, appCheckReady, addTownReport, watchCollection } from './firebase-client.js';
 import { aiReady, askAlmoraAI } from './ai-client.js';
+import { directory, culture, figures, officialLinks, emergency } from './data/almora-knowledge.js';
 
 const ALMORA=[29.5892,79.6467];
 const promptBox=document.querySelector('#prompt');
@@ -17,13 +18,20 @@ const intents=[
  [/doctor|hospital|health|medical|medicine/i,'Health navigator','I can help find appropriate verified healthcare facilities and transport. I do not diagnose; emergencies should be escalated to appropriate emergency services.'],
  [/school|education|student|college|scholarship/i,'Education','I can connect students and families to verified schools, scholarships, courses and local opportunities.'],
  [/price|scam|fraud|bribe|corruption|overcharg/i,'Consumer & integrity','I can organize evidence and compare verifiable price/service information. Suspicious patterns should go to human review; allegations are never presented as facts without evidence.'],
- [/tour|visit|trip|hotel|trek/i,'Responsible tourism','I can combine weather, roads, places, transport and local commerce to plan a lower-friction, responsible Almora visit.']
+ [/tour|visit|trip|hotel|trek|culture|festival/i,'Responsible tourism','I can combine weather, roads, places, transport, culture and local commerce to plan a lower-friction, responsible Almora visit.']
 ];
 
 function fallback(q){const hit=intents.find(x=>x[0].test(q));return {title:hit?hit[1]:'Town concierge',body:hit?hit[2]:'I can route this to the right Almora workflow. Include the broad location, what happened and what outcome you need.'}}
 function esc(v){return String(v).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]))}
 function compact(item){const out={};['id','title','name','role','employer','category','location','description','status','route','payRange','contact','source'].forEach(k=>{if(item?.[k]!==undefined&&item?.[k]!==null&&String(item[k]).length<500)out[k]=item[k]});return out}
-function buildVerifiedContext(){const sections=[];for(const [name,rows] of Object.entries(publicSnapshots)){if(rows.length)sections.push(`${name}: ${JSON.stringify(rows.slice(0,20).map(compact))}`)}return sections.length?`VERIFIED PUBLIC DATA FROM ALMORA FIRESTORE:\n${sections.join('\n')}`:'VERIFIED PUBLIC DATA: No verified records are currently available in the relevant public collections.'}
+function buildVerifiedContext(){
+ const sections=[];
+ for(const [name,rows] of Object.entries(publicSnapshots)){if(rows.length)sections.push(`${name}: ${JSON.stringify(rows.slice(0,20).map(compact))}`)}
+ const officialDirectory=directory.filter(x=>x.trust==='official').map(x=>({name:x.name,category:x.category,area:x.area,phone:x.phone,source:x.source}));
+ const directoryListings=directory.filter(x=>x.trust!=='official').map(x=>({name:x.name,category:x.category,area:x.area,source:'directory listing; not government verified'}));
+ const seed=`OFFICIAL STATIC ALMORA SEED DATA:\nDirectory: ${JSON.stringify(officialDirectory)}\nCulture: ${JSON.stringify(culture.map(x=>({name:x.name,when:x.when,type:x.type})))}\nFigures: ${JSON.stringify(figures.map(x=>({name:x.name,relation:x.relation,tag:x.tag})))}\nEmergency: ${JSON.stringify(emergency)}\nOfficial sources: ${JSON.stringify(officialLinks.map(x=>x.label))}\nDIRECTORY-ONLY LISTINGS (do not call these government verified): ${JSON.stringify(directoryListings)}`;
+ return `${seed}\n${sections.length?`VERIFIED PUBLIC DATA FROM ALMORA FIRESTORE:\n${sections.join('\n')}`:'VERIFIED PUBLIC FIRESTORE DATA: No verified records are currently available in the public collections.'}`;
+}
 
 async function ask(q=promptBox.value){q=q.trim();if(!q)return;promptBox.value=q;answer.hidden=false;askButton.disabled=true;askButton.textContent='Thinking…';answer.innerHTML='<b>✦ Almora AI</b><p>Checking the town network…</p>';try{if(aiReady){const result=await askAlmoraAI(q,buildVerifiedContext());answer.innerHTML=`<b>✦ Almora AI</b><p>${esc(result.text).replace(/\n/g,'<br>')}</p><small>${esc(result.agent)} · Gemini 3.6 Flash · App Check ${appCheckReady?'active':'not initialized'}</small>`;}else{throw new Error('AI unavailable')}}catch(e){const f=fallback(q);answer.innerHTML=`<b>✦ ${f.title}</b><p>${f.body}</p><small>${firebaseReady?'Connected to Almora Firestore.':'Prototype mode · Firebase unavailable.'} AI fallback active.</small>`;console.warn('AI request fell back',e)}finally{askButton.disabled=false;askButton.textContent='Ask AI ↑';answer.scrollIntoView({behavior:'smooth',block:'nearest'});}}
 askButton.onclick=()=>ask();promptBox.addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();ask()}});document.querySelectorAll('[data-q]').forEach(el=>el.onclick=()=>ask(el.dataset.q));

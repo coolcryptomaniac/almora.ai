@@ -1,0 +1,21 @@
+name: Almora Official Source Watch
+on:
+  schedule:
+    - cron: '15 2 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-health:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check official Almora sources
+        run: python3 scripts/check_official_sources.py
+      - name: Upload source-health report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: official-source-health
+          path: data/source-health.json
+          retention-days: 14
