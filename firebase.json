@@ -1,4 +1,17 @@
 {
   "firestore": {"rules": "firestore.rules", "indexes": "firestore.indexes.json"},
-  "hosting": {"public": ".", "ignore": ["firebase.json", "**/.*", "**/node_modules/**", "agents/**", "docs/**"]}
+  "hosting": {
+    "public": ".",
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**", "agents/**", "docs/**", "tests/**"],
+    "headers": [
+      {"source": "**/*.html", "headers": [{"key": "Cache-Control", "value": "no-cache, no-store, must-revalidate"}]},
+      {"source": "/", "headers": [{"key": "Cache-Control", "value": "no-cache, no-store, must-revalidate"}]},
+      {"source": "**/*.js", "headers": [{"key": "Cache-Control", "value": "public, max-age=300, must-revalidate"}]},
+      {"source": "**/*.css", "headers": [{"key": "Cache-Control", "value": "public, max-age=300, must-revalidate"}]},
+      {"source": "assets/**", "headers": [{"key": "Cache-Control", "value": "public, max-age=86400"}]},
+      {"source": "data/**", "headers": [{"key": "Cache-Control", "value": "public, max-age=300, must-revalidate"}]}
+    ]
+  }
 }
