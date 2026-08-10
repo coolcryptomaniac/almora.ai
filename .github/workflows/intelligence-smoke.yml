@@ -40,6 +40,7 @@ jobs:
           routes=json.load(open('data/routes.json'))
           integrations=json.load(open('data/integrations.json'))
           apps=json.load(open('data/apps.json'))
+          founder=json.load(open('data/founder.json'))
           assert 12 <= people['count'] <= 200, people['count']
           assert len(people['people']) == people['count']
           names={p['name'] for p in people['people']}
@@ -50,6 +51,16 @@ jobs:
           assert all('Wikidata human' in p.get('verification','') or 'Wikidata instance-of human' in p.get('verification','') for p in auto)
           assert all('almora' in (p.get('connection','')+' '+p.get('description','')).lower() for p in people['people'] if p.get('id') != 'mohit-pandey-almora-ai')
           assert 'Hemant Pandey' not in names, 'Regional-only Pithoragarh profile must not enter strict Almora atlas'
+          ajay=next((p for p in people['people'] if p['name']=='Ajay Tamta'),None)
+          assert ajay, 'Ajay Tamta public-service profile missing'
+          assert 'public' in ajay.get('categories',[]) and 'sports' not in ajay.get('categories',[]), ajay
+          assert 'polit' in ajay.get('occupation','').lower() or 'public service' in ajay.get('occupation','').lower(), ajay
+          mohit=next(p for p in people['people'] if p.get('id')=='mohit-pandey-almora-ai')
+          assert {'culture','innovation'} <= set(mohit.get('categories',[])), mohit
+          assert 'music' in mohit.get('occupation','').lower(), mohit
+          assert founder.get('upiId')=='coolmohit@ybl'
+          assert 'github' not in founder, 'Founder public config must not expose GitHub'
+          assert len(founder.get('photos',[])) >= 3
 
           categories={x['category'] for x in news['items']}
           assert len(news['items']) >= 8, len(news['items'])
