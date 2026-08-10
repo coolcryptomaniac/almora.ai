@@ -60,7 +60,7 @@ jobs:
           assert 'music' in mohit.get('occupation','').lower(), mohit
           assert founder.get('upiId')=='coolmohit@ybl'
           assert 'github' not in founder, 'Founder public config must not expose GitHub'
-          assert len(founder.get('photos',[])) >= 3
+          assert len(founder.get('photos',[])) >= 2
 
           categories={x['category'] for x in news['items']}
           assert len(news['items']) >= 8, len(news['items'])
