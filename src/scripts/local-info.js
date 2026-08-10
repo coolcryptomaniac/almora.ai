@@ -2,10 +2,15 @@ const $=(s,r=document)=>r.querySelector(s);
 const $$=(s,r=document)=>[...r.querySelectorAll(s)];
 
 const HEROES=[
-  {url:'./assets/hero-top.png',label:{en:'Almora · Himalaya',hi:'अल्मोड़ा · हिमालय',kfy:'अल्माड़ · हिमाल'}},
-  {url:'./assets/generated/almora-sunset.webp',label:{en:'Almora golden hour',hi:'अल्मोड़ा की सुनहरी शाम',kfy:'अल्माड़ सुनौल बखत'}},
-  {url:'./assets/generated/almora-twilight.webp',label:{en:'Almora twilight',hi:'अल्मोड़ा की सांझ',kfy:'अल्माड़ संझ्याव'}}
+  {url:'./assets/generated/hero-aipan-girl.webp',weight:3,label:{en:'Almora · Aipan heritage',hi:'अल्मोड़ा · ऐपण विरासत',kfy:'अल्माड़ · ऐपण विरासत'}},
+  {url:'./assets/hero-top.png',weight:1,label:{en:'Almora · Himalaya',hi:'अल्मोड़ा · हिमालय',kfy:'अल्माड़ · हिमाल'}},
+  {url:'./assets/generated/hero-connected-almora.webp',weight:1,label:{en:'Connected Almora',hi:'जुड़ा हुआ अल्मोड़ा',kfy:'जुड़ अल्माड़'}},
+  {url:'./assets/generated/hero-founder.webp',weight:1,label:{en:'Built for Almora',hi:'अल्मोड़ा के लिए',kfy:'अल्माड़ खातिर'}},
+  {url:'./assets/generated/hero-aipan-sunrise.svg',weight:1,label:{en:'Almora sunrise',hi:'अल्मोड़ा की सुबह',kfy:'अल्माड़ बिहान'}},
+  {url:'./assets/generated/almora-sunset.webp',weight:1,label:{en:'Almora golden hour',hi:'अल्मोड़ा की सुनहरी शाम',kfy:'अल्माड़ सुनौल बखत'}},
+  {url:'./assets/generated/almora-twilight.webp',weight:1,label:{en:'Almora twilight',hi:'अल्मोड़ा की सांझ',kfy:'अल्माड़ संझ्याव'}}
 ];
+const HERO_SEQUENCE=HEROES.flatMap((item)=>Array(item.weight||1).fill(item));
 let heroIndex=0;
 
 const copy={
@@ -19,12 +24,12 @@ function tr(k){return copy[lang()]?.[k]||copy.en[k]||k}
 
 function rotateHero(){
   const photo=$('.heroPhoto'); if(!photo)return;
-  const item=HEROES[heroIndex%HEROES.length];
+  const item=HERO_SEQUENCE[heroIndex%HERO_SEQUENCE.length];
   const probe=new Image();
   probe.onload=()=>{photo.style.opacity='.25';setTimeout(()=>{photo.style.backgroundImage=`url("${item.url}")`;photo.style.opacity='1';const lab=$('#heroArtLabel');if(lab)lab.textContent=item.label[lang()]||item.label.en},160)};
   probe.onerror=()=>{};
   probe.src=item.url;
-  heroIndex=(heroIndex+1)%HEROES.length;
+  heroIndex=(heroIndex+1)%HERO_SEQUENCE.length;
 }
 
 function tick(){
@@ -60,7 +65,7 @@ async function liveWeather(){
 
 function localize(){
   $$('[data-local-key]').forEach(el=>{el.textContent=tr(el.dataset.localKey)});
-  const item=HEROES[(heroIndex+HEROES.length-1)%HEROES.length]; if($('#heroArtLabel'))$('#heroArtLabel').textContent=item.label[lang()]||item.label.en;
+  const item=HERO_SEQUENCE[(heroIndex+HERO_SEQUENCE.length-1)%HERO_SEQUENCE.length]; if($('#heroArtLabel'))$('#heroArtLabel').textContent=item.label[lang()]||item.label.en;
   tick();
 }
 
