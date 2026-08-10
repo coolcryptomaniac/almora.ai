@@ -5,7 +5,8 @@
   "photo":"./assets/founder/mohit-1.webp",
   "photos":[
     "./assets/founder/mohit-1.webp",
-    "./assets/founder/mohit-2.webp"
+    "./assets/founder/mohit-2.webp",
+    "./assets/founder/mohit-3.webp"
   ],
   "linkedin":"https://www.linkedin.com/in/rockermohit",
   "youtube":"https://youtube.com/@mohucool",
@@ -19,7 +20,7 @@
     {"name":"Almora.ai","type":"AI civic-tech / local super app","url":"https://almora.ai","summary":"AI-assisted local coordination for services, culture, mobility, jobs, public information, water, rural education and wildlife conflict in Almora."},
     {"name":"RoamWise","type":"AI travel product","url":"https://roamwise.co.in/","summary":"Travel planning around itineraries, budgets, crowd-aware discovery, treks and destination intelligence."},
     {"name":"@mohucool","type":"Creator / music identity","url":"https://youtube.com/@mohucool","summary":"Public creator and music channel linked from the founder's professional profile."},
-    {"name":"Mohit Pandey on Spotify","type":"Music / artist profile","url":"https://open.spotify.com/artist/2qbS0OT9WF0Wpf2WnggrKS","summary":"Public artist profile cross-linked to the @mohucool creator identity, including Kumaoni-inspired and independent releases."}
+    {"name":"Mohit Pandey on Spotify","type":"Music / artist profile","url":"https://open.spotify.com/artist/2qbS0OT9WF0Wpf2WnggrKS","summary":"Public artist profile cross-linked to the @mohucool identity, including Kumaoni-inspired and independent releases."}
   ],
   "sources":[
     {"label":"LinkedIn · Mohit Pandey","url":"https://www.linkedin.com/in/rockermohit","supports":"Almora location, RoamWise, public creator portfolio and music/technology background."},
