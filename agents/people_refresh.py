@@ -9,7 +9,7 @@ WIKI='https://en.wikipedia.org/w/api.php';WIKIDATA='https://www.wikidata.org/w/a
 UA='AlmoraAI/1.0 (+https://almora.ai; public civic knowledge project)'
 SOURCE_PAGES=['List of Kumaoni people']
 SOURCE_CATEGORIES=['Category:People from Almora','Category:People from Almora district']
-FEATURED={'Lakshya Sen','Ekta Bisht','Mohan Upreti','Govind Ballabh Pant','Uday Shankar','Tripti Bhatt','Chirag Sen','Ravi Tamta','B. D. Pande'}
+FEATURED={'Lakshya Sen','Ekta Bisht','Mohan Upreti','Govind Ballabh Pant','Uday Shankar','Tripti Bhatt','Chirag Sen','Ravi Tamta','B. D. Pande','Ajay Tamta'}
 
 def api(base,params,timeout=25):
     url=base+'?'+urllib.parse.urlencode(params);req=urllib.request.Request(url,headers={'User-Agent':UA,'Accept':'application/json'})
@@ -49,10 +49,22 @@ def human_qids(qids):
                 if isinstance(value,dict) and value.get('id')=='Q5':humans.add(qid);break
     return humans
 def infer_occupation(text):
-    low=text.lower();rules=[('Sports',r'badminton|cricket|football|boxer|mountaineer|athlete|wrestler|sport'),('Public service',r'minister|politician|officer|civil servant|admiral|general|army|navy|air force|judge|governor'),('Culture',r'poet|writer|author|singer|musician|actor|actress|dancer|choreographer|theatre|artist|filmmaker'),('Science & education',r'scientist|professor|academic|historian|researcher|engineer|educator|physician|doctor'),('Business & social impact',r'entrepreneur|business|executive|philanthrop|activist|social worker')]
+    low=text.lower();rules=[
+      ('Public service',r'minister|member of parliament|politician|political|officer|civil servant|admiral|general|army|navy|air force|judge|governor|legislator'),
+      ('Sports',r'badminton|cricket|football|boxer|mountaineer|athlete|wrestler|sport'),
+      ('Culture',r'poet|writer|author|singer|musician|actor|actress|dancer|choreographer|theatre|artist|filmmaker'),
+      ('Science & education',r'scientist|professor|academic|historian|researcher|engineer|educator|physician|doctor'),
+      ('Business & social impact',r'entrepreneur|business|executive|philanthrop|activist|social worker')]
     for label,pat in rules:
         if re.search(pat,low):return label
     return 'Public figure'
+def categories_for(occupation,text=''):
+    s=f'{occupation} {text}'.lower();cats=[]
+    if re.search(r'minister|politic|public service|government|parliament|civil servant|officer',s):cats.append('public')
+    if re.search(r'sport|badminton|cricket|football|athlete|mountaineer',s):cats.append('sports')
+    if re.search(r'music|singer|musician|artist|dance|culture|writer|poet|theatre|film',s):cats.append('culture')
+    if re.search(r'innov|science|technology|engineer|entrepreneur|founder|research',s):cats.append('innovation')
+    return list(dict.fromkeys(cats)) or ['other']
 
 def main():
     almora_category=set();names=[]
@@ -67,22 +79,24 @@ def main():
         bios=details(unique[:500]);humans=human_qids([b['wikibase'] for b in bios]);bios=[b for b in bios if b['wikibase'] in humans]
     except Exception as e:raise SystemExit(f'people refresh failed: {e}')
 
-    founder={'id':'mohit-pandey-almora-ai','name':'Mohit Pandey','description':'Almora-based founder of Almora.ai working across civic-tech, travel technology and music/creator projects. His public professional profile links RoamWise and the @mohucool portfolio; the dedicated founder page preserves the supporting public sources.','connection':'Lives/builds from Almora; founder of Almora.ai and publicly described creator of RoamWise from Almora','occupation':'Civic-tech builder · creator','image':'https://avatars.githubusercontent.com/u/33383333?v=4','url':'./mohit-pandey.html','source':'Cross-confirmed public founder sources','featured':True,'verification':'self-maintained profile + public LinkedIn/RoamWise/music links'}
+    founder={'id':'mohit-pandey-almora-ai','name':'Mohit Pandey','description':'Almora-based founder of Almora.ai working across civic-tech, travel technology, music and creator projects. Public sources connect the same identity to RoamWise and the @mohucool music/creator handle.','connection':'Lives/builds from Almora; founder of Almora.ai and creator of Almora-linked technology and music projects','occupation':'Music · innovation · civic-tech','categories':['culture','innovation'],'image':'./assets/founder/mohit-1.webp','url':'./mohit-pandey.html','source':'Cross-confirmed public founder sources','featured':True,'verification':'self-maintained profile + public LinkedIn/RoamWise/music links'}
     manual={
-      'Tripti Bhatt':{'description':'Indian Police Service officer publicly profiled as being from Almora.','connection':'From Almora','occupation':'Public service','image':'https://static.langimg.com/nbt/thumb/125504199/success-story-of-ips-tripti-bhatt.jpg?height=394&imgsize=1463247&resizemode=75&width=700','url':'https://sad.uk.gov.in/tripti-bhatt/','verification':'official/public profile'},
-      'Ravi Tamta':{'description':'Almora innovator associated with the HAPIDA SKYNeX personal-air-mobility prototype demonstrated in Almora.','connection':'Innovation work in Almora','occupation':'Science & innovation','image':'','url':'https://economictimes.indiatimes.com/news/new-updates/this-uttarakhand-youth-built-a-flying-car-watch-it-take-off-in-almora/articleshow/133027113.cms','verification':'published public profile'},
-      'Uday Shankar':{'description':'Dancer and choreographer who established the Uday Shankar India Cultural Centre in Almora, making the town central to a major modern Indian arts experiment.','connection':'Founded major cultural centre in Almora','occupation':'Culture','image':'','url':'https://en.wikipedia.org/wiki/Uday_Shankar','verification':'documented cultural connection'}
+      'Tripti Bhatt':{'description':'Indian Police Service officer publicly profiled as being from Almora.','connection':'From Almora','occupation':'Public service','categories':['public'],'image':'https://static.langimg.com/nbt/thumb/125504199/success-story-of-ips-tripti-bhatt.jpg?height=394&imgsize=1463247&resizemode=75&width=700','url':'https://sad.uk.gov.in/tripti-bhatt/','verification':'official/public profile'},
+      'Ravi Tamta':{'description':'Almora innovator associated with the HAPIDA SKYNeX personal-air-mobility prototype demonstrated in Almora.','connection':'Innovation work in Almora','occupation':'Science & innovation','categories':['innovation'],'image':'','url':'https://economictimes.indiatimes.com/news/new-updates/this-uttarakhand-youth-built-a-flying-car-watch-it-take-off-in-almora/articleshow/133027113.cms','verification':'published public profile'},
+      'Uday Shankar':{'description':'Dancer and choreographer who established the Uday Shankar India Cultural Centre in Almora, making the town central to a major modern Indian arts experiment.','connection':'Founded major cultural centre in Almora','occupation':'Culture','categories':['culture'],'image':'','url':'https://en.wikipedia.org/wiki/Uday_Shankar','verification':'documented cultural connection'},
+      'Ajay Tamta':{'description':'Indian politician and Union Minister of State who represents the Almora Lok Sabha parliamentary constituency.','connection':'Represents the Almora parliamentary constituency and participates in public programmes in Almora','occupation':'Politics & public service','categories':['public'],'image':'','url':'https://cm.uk.gov.in/members-of-parliament-lok-sabha/','verification':'official Uttarakhand government MP listing'}
     }
     rows=[founder];seen={'mohit pandey'}
     for b in bios:
         n=b['name'];k=n.casefold();text=b['description']
+        if k in {x.casefold() for x in manual}:continue
         explicit=('almora' in text.casefold()) or (k in almora_category)
         if not explicit or k in seen:continue
-        seen.add(k);rows.append({'id':b['wikibase'],'name':n,'description':text,'connection':'Explicit Almora / Almora district connection in public source','occupation':infer_occupation(text),'image':b['image'],'url':b['url'],'source':'Wikipedia / Wikimedia + Wikidata human validation','featured':n in FEATURED,'verification':'Wikidata human + explicit Almora connection'})
+        occ=infer_occupation(text);seen.add(k);rows.append({'id':b['wikibase'],'name':n,'description':text,'connection':'Explicit Almora / Almora district connection in public source','occupation':occ,'categories':categories_for(occ,text),'image':b['image'],'url':b['url'],'source':'Wikipedia / Wikimedia + Wikidata human validation','featured':n in FEATURED,'verification':'Wikidata human + explicit Almora connection'})
     for n,m in manual.items():
         if n.casefold() in seen:continue
         seen.add(n.casefold());rows.append({'id':re.sub(r'[^a-z0-9]+','-',n.lower()).strip('-'),'name':n,'source':'Public profile','featured':True,**m})
     rows=sorted(rows,key=lambda x:(not x.get('featured',False),x['name'].casefold()))[:200]
-    OUT.write_text(json.dumps({'updatedAt':datetime.now(timezone.utc).isoformat(),'method':'Strict Almora atlas: public figures require an explicit Almora/Almora-district connection in source text/category or a manually documented deep connection through substantial work, education, institution-building or cultural contribution. Regional Kumaon-only association is not enough.','count':len(rows),'people':rows},ensure_ascii=False,indent=2))
+    OUT.write_text(json.dumps({'updatedAt':datetime.now(timezone.utc).isoformat(),'method':'Strict Almora atlas: public figures require an explicit Almora/Almora-district connection in source text/category or a manually documented deep connection through substantial work, education, representation, institution-building or cultural contribution. Regional Kumaon-only association is not enough.','count':len(rows),'people':rows},ensure_ascii=False,indent=2))
     print('wrote',len(rows),'Almora-connected public profiles')
 if __name__=='__main__':main()
