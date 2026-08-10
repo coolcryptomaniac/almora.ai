@@ -1,14 +1,32 @@
 {
-  "updatedAt": "2026-08-10T01:17:56.671212+00:00",
-  "method": "Strict Almora atlas: public figures require an explicit Almora/Almora-district connection in source text/category or a manually documented deep connection through substantial work, education, institution-building or cultural contribution. Regional Kumaon-only association is not enough.",
+  "updatedAt": "2026-08-10T02:32:02.823289+00:00",
+  "method": "Strict Almora atlas: public figures require an explicit Almora/Almora-district connection in source text/category or a manually documented deep connection through substantial work, education, representation, institution-building or cultural contribution. Regional Kumaon-only association is not enough.",
   "count": 32,
   "people": [
+    {
+      "id": "ajay-tamta",
+      "name": "Ajay Tamta",
+      "source": "Public profile",
+      "featured": true,
+      "description": "Indian politician and Union Minister of State who represents the Almora Lok Sabha parliamentary constituency.",
+      "connection": "Represents the Almora parliamentary constituency and participates in public programmes in Almora",
+      "occupation": "Politics & public service",
+      "categories": [
+        "public"
+      ],
+      "image": "",
+      "url": "https://cm.uk.gov.in/members-of-parliament-lok-sabha/",
+      "verification": "official Uttarakhand government MP listing"
+    },
     {
       "id": "Q4900784",
       "name": "B. D. Pande",
       "description": "Bhairab Dutt Pande (17 March 1917 – 2009) was a member of the Indian Civil Service and Union Cabinet Secretary of the Government of India under Indira Gandhi. He served as the Governor of West Bengal (1981–1983), and Punjab (1983–1984), and the Administrator of Chandigarh for a brief period. Born in Almora, in the Indian state of Uttarakhand, Pande served as a Cabinet Secretary to the Union Government from 2 November 1972 to 31 March 1977. When President's rule was imposed on Punjab, he served as the governor of the state.",
       "connection": "Explicit Almora / Almora district connection in public source",
       "occupation": "Public service",
+      "categories": [
+        "public"
+      ],
       "image": "",
       "url": "https://en.wikipedia.org/wiki/B._D._Pande",
       "source": "Wikipedia / Wikimedia + Wikidata human validation",
@@ -21,6 +39,9 @@
       "description": "Ekta Bisht is an Indian cricketer. She plays as a slow left-arm orthodox bowler. She was India's first international woman cricketer from Uttarakhand. She was also the first cricketer for India to take a hat-trick in a Women's Twenty20 International match.",
       "connection": "Explicit Almora / Almora district connection in public source",
       "occupation": "Sports",
+      "categories": [
+        "sports"
+      ],
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Ekta-bisht.jpg/960px-Ekta-bisht.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
       "url": "https://en.wikipedia.org/wiki/Ekta_Bisht",
       "source": "Wikipedia / Wikimedia + Wikidata human validation",
@@ -33,6 +54,9 @@
       "description": "Govind Ballabh Pant (10 September 1887 – 7 March 1961) was an Indian independence activist and politician who was the first Chief Minister of Uttar Pradesh. Alongside Mahatma Gandhi, Jawaharlal Nehru and Vallabhbhai Patel, Pant was a key figure in the Indian independence movement and later a pivotal figure in the Indian government. He was one of the foremost political leaders of Uttar Pradesh (then known as United Provinces) and a key player in the successful movement to establish Hindi as the official language of Indian Union.. Today, several Indian hos",
       "connection": "Explicit Almora / Almora district connection in public source",
       "occupation": "Public service",
+      "categories": [
+        "public"
+      ],
       "image": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Govind_Ballabh_Pant_1965_stamp_of_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
       "url": "https://en.wikipedia.org/wiki/Govind_Ballabh_Pant",
       "source": "Wikipedia / Wikimedia + Wikidata human validation",
@@ -45,6 +69,9 @@
       "description": "Lakshya Sen (born 16 August 2001) is an Indian badminton player. He has won bronze at the World Championships and gold at the Commonwealth Games. Sen won gold and bronze at the Thomas Cup, and silver at the Asian and Commonwealth Games in team events. He also won bronze at the Asia Team and Asia Mixed Team Championships.",
       "connection": "Explicit Almora / Almora district connection in public source",
       "occupation": "Sports",
+      "categories": [
+        "sports"
+      ],
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Lakshya_Sen_in_2018.jpg/960px-Lakshya_Sen_in_2018.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
       "url": "https://en.wikipedia.org/wiki/Lakshya_Sen",
       "source": "Wikipedia / Wikimedia + Wikidata human validation",
@@ -54,10 +81,14 @@
     {
       "id": "mohit-pandey-almora-ai",
       "name": "Mohit Pandey",
-      "description": "Almora-based founder of Almora.ai working across civic-tech, travel technology and music/creator projects. His public professional profile links RoamWise and the @mohucool portfolio; the dedicated founder page preserves the supporting public sources.",
-      "connection": "Lives/builds from Almora; founder of Almora.ai and publicly described creator of RoamWise from Almora",
-      "occupation": "Civic-tech builder · creator",
-      "image": "https://avatars.githubusercontent.com/u/33383333?v=4",
+      "description": "Almora-based founder of Almora.ai working across civic-tech, travel technology, music and creator projects. Public sources connect the same identity to RoamWise and the @mohucool music/creator handle.",
+      "connection": "Lives/builds from Almora; founder of Almora.ai and creator of Almora-linked technology and music projects",
+      "occupation": "Music · innovation · civic-tech",
+      "categories": [
+        "culture",
+        "innovation"
+      ],
+      "image": "./assets/founder/mohit-1.webp",
       "url": "./mohit-pandey.html",
       "source": "Cross-confirmed public founder sources",
       "featured": true,
@@ -71,6 +102,9 @@
       "description": "Almora innovator associated with the HAPIDA SKYNeX personal-air-mobility prototype demonstrated in Almora.",
       "connection": "Innovation work in Almora",
       "occupation": "Science & innovation",
+      "categories": [
+        "innovation"
+      ],
       "image": "",
       "url": "https://economictimes.indiatimes.com/news/new-updates/this-uttarakhand-youth-built-a-flying-car-watch-it-take-off-in-almora/articleshow/133027113.cms",
       "verification": "published public profile"
@@ -83,6 +117,9 @@
       "description": "Indian Police Service officer publicly profiled as being from Almora.",
       "connection": "From Almora",
       "occupation": "Public service",
+      "categories": [
+        "public"
+      ],
       "image": "https://static.langimg.com/nbt/thumb/125504199/success-story-of-ips-tripti-bhatt.jpg?height=394&imgsize=1463247&resizemode=75&width=700",
       "url": "https://sad.uk.gov.in/tripti-bhatt/",
       "verification": "official/public profile"
@@ -95,21 +132,12 @@
       "description": "Dancer and choreographer who established the Uday Shankar India Cultural Centre in Almora, making the town central to a major modern Indian arts experiment.",
       "connection": "Founded major cultural centre in Almora",
       "occupation": "Culture",
+      "categories": [
+        "culture"
+      ],
       "image": "",
       "url": "https://en.wikipedia.org/wiki/Uday_Shankar",
       "verification": "documented cultural connection"
-    },
-    {
-      "id": "Q16736901",
-      "name": "Ajay Tamta",
-      "description": "Ajay Tamta (born 16 July 1972) is a politician from Uttarakhand, India. He represents Bharatiya Janata Party serving as a Minister of State in the Ministry of Road Transport and Highways. He had also served as Minister of State for Textiles and is Member of Parliament (MP) from Almora constituency. He contested 2009 Lok Sabha elections from Almora of Uttarakhand but lost.",
-      "connection": "Explicit Almora / Almora district connection in public source",
-      "occupation": "Sports",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a4/The_Minister_of_State_for_Textiles%2C_Shri_Ajay_Tamta_addressing_at_the_inauguration_of_the_60th_India_International_Garment_Fair%2C_in_New_Delhi_on_January_17%2C_2018.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-      "url": "https://en.wikipedia.org/wiki/Ajay_Tamta",
-      "source": "Wikipedia / Wikimedia + Wikidata human validation",
-      "featured": false,
-      "verification": "Wikidata human + explicit Almora connection"
     },
     {
       "id": "Q67297",
@@ -117,6 +145,10 @@
       "description": "Anagarika Govinda (born Ernst Lothar Hoffmann, 17 May 1898 – 14 January 1985) was the founder of the order of the Arya Maitreya Mandala and an expositor of Tibetan Buddhism, Abhidharma, and Buddhist meditation as well as other aspects of Buddhism. He was also a painter and poet.",
       "connection": "Explicit Almora / Almora district connection in public source",
       "occupation": "Culture",
+      "categories": [
+        "culture",
+        "innovation"
+      ],
       "image": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Lama_Govinda_in_an_internment_camp_during_World_War_II.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
       "url": "https://en.wikipedia.org/wiki/Anagarika_Govinda",
       "source": "Wikipedia / Wikimedia + Wikidata human validation",
@@ -129,6 +161,9 @@
       "description": "Ananda Shankar (11 December 1942 – 26 March 1999) was an Indian sitar player, singer, and composer whose music blended Western and Eastern musical styles. He was married to dancer and choreographer Tanusree Shankar.",
       "connection": "Explicit Almora / Almora district connection in public source",
       "occupation": "Culture",
+      "categories": [
+        "culture"
+      ],
       "image": "",
       "url": "https://en.wikipedia.org/wiki/Ananda_Shankar",
       "source": "Wikipedia / Wikimedia + Wikidata human validation",
@@ -141,6 +176,9 @@
       "description": "Anant Vijay Joshi (born 26 October 1989) is an Indian actor who first became known for playing the title role in the ALTBalaji series Virgin Bhasskar (2019–2020). He has since starred in the television series Yeh Kaali Kaali Ankhein (2022), Maamla Legal Hai (2024), and films Kathal (2023), 12th Fail (2023) and Ajey: The Untold Story of a Yogi (2025).",
       "connection": "Explicit Almora / Almora district connection in public source",
       "occupation": "Culture",
+      "categories": [
+        "culture"
+      ],
       "image": "https://upload.wikimedia.org/wikipedia/commons/9/99/Anant_Joshi_at_the_premiere_of_Kathal.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
       "url": "https://en.wikipedia.org/wiki/Anant_Joshi",
       "source": "Wikipedia / Wikimedia + Wikidata human validation",
@@ -153,6 +191,9 @@
       "description": "Anupama Upadhyaya (born 12 February 2005) is an Indian badminton player. She is a former BWF World Junior Number 1. She became the Indian National Badminton Champion in women's singles in 2023.",
       "connection": "Explicit Almora / Almora district connection in public source",
       "occupation": "Sports",
+      "categories": [
+        "sports"
+      ],
       "image": "",
       "url": "https://en.wikipedia.org/wiki/Anupama_Upadhyaya",
       "source": "Wikipedia / Wikimedia + Wikidata human validation",
@@ -165,6 +206,9 @@
       "description": "Bachi Singh Rawat (1 August 1949 – 18 April 2021), was an Indian politician from the Bharatiya Janata Party (BJP). He was a member of the 14th Lok Sabha of India and a 4 time MP. He represented the Almora constituency of Uttarakhand. He had to shift base to Nainital for the 15th Lok Sabha, as Almora was designated a reserved constituency. He however lost the Election to K. C. Singh Baba (INC).",
       "connection": "Explicit Almora / Almora district connection in public source",
       "occupation": "Public service",
+      "categories": [
+        "public"
+      ],
       "image": "",
       "url": "https://en.wikipedia.org/wiki/Bachi_Singh_Rawat",
       "source": "Wikipedia / Wikimedia + Wikidata human validation",
@@ -176,7 +220,10 @@
       "name": "Badri Datt Pandey",
       "description": "Pandit Badri Datt Pandey (15 February 1882 – 13 January 1965) was an Indian historian, freedom fighter, social reformer, and later a Member of Parliament from Almora in independent India.",
       "connection": "Explicit Almora / Almora district connection in public source",
-      "occupation": "Science & education",
+      "occupation": "Public service",
+      "categories": [
+        "public"
+      ],
       "image": "",
       "url": "https://en.wikipedia.org/wiki/Badri_Datt_Pandey",
       "source": "Wikipedia / Wikimedia + Wikidata human validation",
@@ -189,6 +236,9 @@
       "description": "Bhagat Singh Koshyari (born 17 June 1942) is an Indian politician, journalist, author and former teacher who served as the 22nd governor of Maharashtra from 2019 to 2023. An RSS veteran, Koshyari served as National Vice-President of BJP and party's 3rd State president for Uttarakhand. He also served as 2nd Chief Minister of Uttarakhand (formerly Uttaranchal) from 2001 to 2002 and thereafter, was the first leader of the opposition in the Uttarakhand Legislative Assembly from 2002 to 2003. He also served as an MLC in Uttar Pradesh Legislative Council (when",
       "connection": "Explicit Almora / Almora district connection in public source",
       "occupation": "Public service",
+      "categories": [
+        "public"
+      ],
       "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Bhagat_Singh_Koshyari.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
       "url": "https://en.wikipedia.org/wiki/Bhagat_Singh_Koshyari",
       "source": "Wikipedia / Wikimedia + Wikidata human validation",
@@ -200,7 +250,10 @@
       "name": "Bipin Chandra Tripathi",
       "description": "Bipin Chandra Tripathi (Kumaoni: बिपिन चन्द्र त्रिपाठी; 23 February 1945 – 30 August 2004) was a social and environmental activist, a journalist, and a founding member of the Uttarakhand Kranti Dal, a political party in the Indian state of Uttarakhand.",
       "connection": "Explicit Almora / Almora district connection in public source",
-      "occupation": "Business & social impact",
+      "occupation": "Public service",
+      "categories": [
+        "public"
+      ],
       "image": "",
       "url": "https://en.wikipedia.org/wiki/Bipin_Chandra_Tripathi",
       "source": "Wikipedia / Wikimedia + Wikidata human validation",
@@ -213,6 +266,9 @@
       "description": "Lieutenant-General Sir Brian Gwynne Horrocks, (7 September 1895 – 4 January 1985) was a British Army officer, chiefly remembered as the commander of XXX Corps in Operation Market Garden and other operations during the Second World War. He also served in the First World War and the Russian Civil War, was taken prisoner twice, and competed in the modern pentathlon at the 1924 Paris Olympics. Later he was a television presenter, wrote books on military history, and was Black Rod in the House of Lords for 14 years. In 1940 Horrocks commanded a battalion duri",
       "connection": "Explicit Almora / Almora district connection in public source",
       "occupation": "Public service",
+      "categories": [
+        "public"
+      ],
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/British_Generals_1939-1945_E16462.jpg/960px-British_Generals_1939-1945_E16462.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
       "url": "https://en.wikipedia.org/wiki/Brian_Horrocks",
       "source": "Wikipedia / Wikimedia + Wikidata human validation",
@@ -225,6 +281,9 @@
       "description": "Charles Clifford Gordon Chaplin (1906–1991) was an American ichthyologist and author of British origins.",
       "connection": "Explicit Almora / Almora district connection in public source",
       "occupation": "Culture",
+      "categories": [
+        "culture"
+      ],
       "image": "",
       "url": "https://en.wikipedia.org/wiki/Charles_C._G._Chaplin",
       "source": "Wikipedia / Wikimedia + Wikidata human validation",
@@ -237,6 +296,9 @@
       "description": "Sri Dev Ashish (1946–2017) was an Australian-born Indian spiritual leader who ran the Mirtola ashram in Uttarakhand from 1997 to 2017.",
       "connection": "Explicit Almora / Almora district connection in public source",
       "occupation": "Public figure",
+      "categories": [
+        "other"
+      ],
       "image": "",
       "url": "https://en.wikipedia.org/wiki/Dev_Ashish",
       "source": "Wikipedia / Wikimedia + Wikidata human validation",
@@ -249,6 +311,9 @@
       "description": "Admiral Devendra Kumar Joshi, PVSM, AVSM, YSM, NM, VSM (born 4 July 1954) is the 14th Lieutenant Governor of Andaman and Nicobar Islands since 2017 and the Vice Chairman of Islands Development Agency (IDA). He was an Admiral in the Indian Navy and served as the 21st Chief of Naval Staff of the Indian Navy, having assumed office on 31 August 2012. He is a specialist in anti-submarine warfare. He resigned on 26 February 2014, taking responsibility for a series of accidents, thus becoming the first Indian Navy Chief to resign.",
       "connection": "Explicit Almora / Almora district connection in public source",
       "occupation": "Public service",
+      "categories": [
+        "public"
+      ],
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/DK_Joshi_official_portrait.jpg/960px-DK_Joshi_official_portrait.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
       "url": "https://en.wikipedia.org/wiki/Devendra_Kumar_Joshi",
       "source": "Wikipedia / Wikimedia + Wikidata human validation",
@@ -261,6 +326,10 @@
       "description": "Ghananand Pande (1 January 1902 – c. 1995) was an Indian engineer and a civil servant. He held key positions in the Government of India and contributed to engineering education reforms in India. In 1969, he received the Padma Vibhushan award, the second highest civilian award of India.",
       "connection": "Explicit Almora / Almora district connection in public source",
       "occupation": "Public service",
+      "categories": [
+        "public",
+        "innovation"
+      ],
       "image": "",
       "url": "https://en.wikipedia.org/wiki/Ghananand_Pande",
       "source": "Wikipedia / Wikimedia + Wikidata human validation",
@@ -273,6 +342,10 @@
       "description": "Girdhar Kumar Pandey (born 15 February 1972) is an Indian molecular biologist, biochemist, biotechnologist, and a professor at the department of plant molecular biology of the South Campus of the University of Delhi. He is known for his studies on the signal transduction pathways in Arabidopsis (rockcress) and Oryza sativa (rice) and is an elected fellow of the National Academy of Sciences, India and the National Academy of Agricultural Sciences. The Department of Biotechnology of the Government of India awarded him the National Bioscience Award for Care",
       "connection": "Explicit Almora / Almora district connection in public source",
       "occupation": "Science & education",
+      "categories": [
+        "public",
+        "innovation"
+      ],
       "image": "",
       "url": "https://en.wikipedia.org/wiki/Girdhar_Kumar_Pandey",
       "source": "Wikipedia / Wikimedia + Wikidata human validation",
@@ -285,6 +358,9 @@
       "description": "Gungun Uprari (born 9 December 1980) is an Indian actress who appears in Hindi TV shows. Gungun Uprari is known for her roles in serials like Bandhan Saat Janamon Ka, Rakt Sambandh, Haar Jeet,Buddha and Jo Biwi Se Kare Pyaar.",
       "connection": "Explicit Almora / Almora district connection in public source",
       "occupation": "Culture",
+      "categories": [
+        "culture"
+      ],
       "image": "",
       "url": "https://en.wikipedia.org/wiki/Gungun_Uprari",
       "source": "Wikipedia / Wikimedia + Wikidata human validation",
@@ -297,6 +373,9 @@
       "description": "Munshi Hari Prasad Tamta (1887–1960) was Indian social activist and former editor of the magazine Samata. He is widely known for his work in the upliftment of Dalit communities of Uttarakhand and was called as \"Father of Shilpkar Revolution\".",
       "connection": "Explicit Almora / Almora district connection in public source",
       "occupation": "Business & social impact",
+      "categories": [
+        "other"
+      ],
       "image": "",
       "url": "https://en.wikipedia.org/wiki/Hari_Prasad_Tamta",
       "source": "Wikipedia / Wikimedia + Wikidata human validation",
@@ -309,6 +388,9 @@
       "description": "Vice Admiral Harish Chandra Singh Bisht, PVSM, AVSM, ADC (1957 - 2026) was a former Flag Officer of the Indian Navy. He is an alumnus of the Sainik School Ghorakhal, Nainital; National Defence Academy Khadakvasla, Pune and the Naval Academy, Kochi and served as Flag Officer Commanding-in-Chief, Eastern Naval Command until his retirement on 31 October 2017.",
       "connection": "Explicit Almora / Almora district connection in public source",
       "occupation": "Public service",
+      "categories": [
+        "public"
+      ],
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/US_Navy_110407-N-XXXXX-036_Indian_navy_Rear_Adm._HCS_Bisht%2C_flag_officer_of_Commanding_Eastern_Fleet%2C_presents_a_gift_to_Vice_Adm._Scott_R._Van_Bu.jpg/960px-US_Navy_110407-N-XXXXX-036_Indian_navy_Rear_Adm._HCS_Bisht%2C_flag_officer_of_Commanding_Eastern_Fleet%2C_presents_a_gift_to_Vice_Adm._Scott_R._Van_Bu.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
       "url": "https://en.wikipedia.org/wiki/Harish_Bisht",
       "source": "Wikipedia / Wikimedia + Wikidata human validation",
@@ -321,6 +403,10 @@
       "description": "Harish Singh Rawat (born 27 April 1948) is an Indian politician who served as the Chief Minister of Uttarakhand from 2014 to 2017. A five-time Member of Parliament, Rawat is a senior leader of the Indian National Congress party. As a member of 15th Lok Sabha, Rawat served as Union Minister of Water Resources in the cabinet of Prime Minister Manmohan Singh from 2012 to 2014. He also worked as Minister of State at the Ministry of Parliamentary Affairs, Ministry of Agriculture, Ministry of Food Processing Industries (2011–2012) and Ministry of Labour and Em",
       "connection": "Explicit Almora / Almora district connection in public source",
       "occupation": "Public service",
+      "categories": [
+        "public",
+        "culture"
+      ],
       "image": "https://upload.wikimedia.org/wikipedia/commons/2/20/HarishRawat.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
       "url": "https://en.wikipedia.org/wiki/Harish_Rawat",
       "source": "Wikipedia / Wikimedia + Wikidata human validation",
@@ -333,6 +419,9 @@
       "description": "Jagat Pati Joshi (born 14 July 1932) is an Indian archaeologist who discovered the Indus Valley sites of Dholavira and Surkotada. Joshi served as the Director General of the Archaeological Survey of India (ASI) from 1987 to 1990. However, it is now widely known that the Dholavira site was discovered by geologist Shambhudan Ghadvi.",
       "connection": "Explicit Almora / Almora district connection in public source",
       "occupation": "Public service",
+      "categories": [
+        "public"
+      ],
       "image": "",
       "url": "https://en.wikipedia.org/wiki/J._P._Joshi",
       "source": "Wikipedia / Wikimedia + Wikidata human validation",
@@ -345,6 +434,9 @@
       "description": "Janaki Ballabh (1928 – 30 December 2022) was an Indian sinologist and translator known for his work translating Chinese literature into Hindi. He spent much of his career working for the Foreign Languages Press in Beijing, and was recognised with a Peace and Friendship Award by Chinese Premier Zhou Enlai for his contributions to cultural exchange between China and India. Ballabh was the first Indian to be granted long-term residency in China, and continued to translate works into Hindi even in his retirement.",
       "connection": "Explicit Almora / Almora district connection in public source",
       "occupation": "Public figure",
+      "categories": [
+        "other"
+      ],
       "image": "",
       "url": "https://en.wikipedia.org/wiki/Janaki_Ballabh",
       "source": "Wikipedia / Wikimedia + Wikidata human validation",
@@ -357,6 +449,9 @@
       "description": "John Maxwell Batten (28 February 1853 – 15 October 1917) was a rugby union fullback who played club rugby for Cambridge University and international rugby for England.",
       "connection": "Explicit Almora / Almora district connection in public source",
       "occupation": "Public figure",
+      "categories": [
+        "other"
+      ],
       "image": "",
       "url": "https://en.wikipedia.org/wiki/John_Batten_%28rugby_union%29",
       "source": "Wikipedia / Wikimedia + Wikidata human validation",
@@ -369,6 +464,9 @@
       "description": "Kailash Sharma is an Indian politician and member of the Bharatiya Janata Party. Sharma was a member of the Uttarakhand Legislative Assembly from the Almora constituency in Almora district.",
       "connection": "Explicit Almora / Almora district connection in public source",
       "occupation": "Public service",
+      "categories": [
+        "public"
+      ],
       "image": "",
       "url": "https://en.wikipedia.org/wiki/Kailash_Sharma",
       "source": "Wikipedia / Wikimedia + Wikidata human validation",
@@ -381,6 +479,9 @@
       "description": "Mir Ranjan Negi is a field hockey player and former goalkeeper of the India men's national field hockey team. He was involved with the development of the 2007 film, Chak De India. He was born in Almora district of Uttarakhand.",
       "connection": "Explicit Almora / Almora district connection in public source",
       "occupation": "Public figure",
+      "categories": [
+        "culture"
+      ],
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Mir_Ranjan_Negi.jpg/960px-Mir_Ranjan_Negi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
       "url": "https://en.wikipedia.org/wiki/Mir_Ranjan_Negi",
       "source": "Wikipedia / Wikimedia + Wikidata human validation",
