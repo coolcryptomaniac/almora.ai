@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-08-11T02:30:03.597449+00:00",
+  "updatedAt": "2026-08-11T04:42:59.797419+00:00",
   "editorialPolicy": "Rank current, useful and source-linked Almora public-interest content. Routine sensational crime is not promoted. Resident/problem signals remain explicitly unverified or evidence-scoped.",
-  "count": 21,
+  "count": 20,
   "items": [
     {
-      "id": "news-12",
+      "id": "news-11",
       "kind": "news",
       "category": "governance",
       "title": "Almora district administration and current public notices",
@@ -37,8 +37,8 @@
       "id": "news-6",
       "kind": "news",
       "category": "sports",
-      "title": "Lakshya Sen and the Story of Badminton in Almora - garhwalpost.in",
-      "summary": "garhwalpost.in update",
+      "title": "Lakshya Sen and the Story of Badminton in Almora - Garhwal Post",
+      "summary": "Garhwal Post update",
       "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBWbndyY3V5Q1lXUUNGbFQ5WWVBbkxZTzB5Y2pWMlk5MU9OUEZlRlRJNHlicnFyT2ZNN3JIUDI5aWhhcjFKV21xcU5VTzZzWmMwY1Vnc09uSWthX0V5S01jLXNaZVVNNTIzZGRGV08wOUd4eVh5aktrb2l4VU8?oc=5",
       "score": 10,
       "reason": "Fresh public-interest news"
@@ -64,7 +64,7 @@
       "reason": "Fresh public-interest news"
     },
     {
-      "id": "news-13",
+      "id": "news-12",
       "kind": "news",
       "category": "jobs",
       "title": "Uttarakhand Subordinate Service Selection Commission recruitment updates",
@@ -114,7 +114,7 @@
       "reason": "Fresh public-interest news"
     },
     {
-      "id": "news-16",
+      "id": "news-15",
       "kind": "news",
       "category": "innovation",
       "title": "Rural Business Incubator, Hawalbagh supports local entrepreneurship",
@@ -124,7 +124,7 @@
       "reason": "Fresh public-interest news"
     },
     {
-      "id": "news-15",
+      "id": "news-14",
       "kind": "news",
       "category": "education",
       "title": "Kumaun University academic and student updates",
@@ -164,22 +164,12 @@
       "reason": "Featured person with meaningful Almora connection"
     },
     {
-      "id": "news-17",
+      "id": "news-16",
       "kind": "news",
       "category": "environment",
       "title": "Monkey and langur activity remains a public concern around Ranikhet",
       "summary": "A local report documented recurring monkey/langur activity in Ranikhet and nearby areas.",
       "url": "https://www.amarujala.com/uttarakhand/almora/in-the-morning-flocks-of-monkeys-were-seen-in-the-markets-and-streets-leaving-people-in-panic-ranikhet-news-c-232-1-alm1002-143114-2026-05-08",
-      "score": 7,
-      "reason": "Fresh public-interest news"
-    },
-    {
-      "id": "news-11",
-      "kind": "news",
-      "category": "politics",
-      "title": "MC Election Highlights February 11| 25% of candidates in fray for Punjab polls face criminal cases: Report - Moneycontrol.com",
-      "summary": "Moneycontrol.com update",
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPeGJDNlBrYW9fX3Q3alNmMjlwX1lOeVF0SjZfWDdFVkIwV2VJeFVzZFNJMVR0dTdwQUdSUmhwZExNdDI3a2FjcnYxWG1ieVZ6Z1laZXZER1VXRHNjWWtaM2dWNFRSVmpPc3ZXNnVYTk5vNENZRGpzVHJ5S0lsUGdZSjdmVG1CaDBuRmxYeXp3a3VfOW5ZbElYZnRCUGtYd09iWEs1SERVeUJmT3l1OC1rVGlGcHRXVjBObkFlcDZVNzVqVnFtQWJLYl9UWHdQeGJKbVpqMUFyanU3WlUxVms1VUtnRE93bjJocHl4Y1N30gHzAUFVX3lxTFBPY2VzOF8wMnZlcUlIbThobVRtMERjbklKSkNBeFFQQnhFbS1ndjBkNDdLRmx2Sm1JQ0d1UWdnaExET1FibS0zbkJFbGV5ZjZqZWlWbm95SThsN1hDZ2NQVmhFa3hHZExNNDZsRjBtT21iaEJ2ZWlJQTdNQXZmb0dnWGY2bmw4RUh2T1lNMUhlNG96M1RGaTRMTU41UGFNY0ZDejcyOVZsMWNDYnV0RnM1XzAxVHVCaVAwdE9mNzR6MDU2cTY4WVRNenZ4WXl2MG45WWxuUjgzUVlrX3NCZmdUQVk3UnYyX0UtWEFJNmpjcDQtWQ?oc=5",
       "score": 7,
       "reason": "Fresh public-interest news"
     },
@@ -216,39 +206,39 @@
   ],
   "agentIndex": {
     "town-concierge": [
+      "news-11",
       "news-12",
-      "news-13",
       "news-7",
       "monkey-Sarkar Ki Ali",
       "monkey-Ranidhara",
       "news-8",
-      "news-15",
+      "news-14",
       "route-ranikhet",
       "route-pithoragarh"
     ],
     "monkey-wildlife": [
       "monkey-Sarkar Ki Ali",
       "monkey-Ranidhara",
-      "news-17"
+      "news-16"
     ],
     "farm-watch": [
       "monkey-Sarkar Ki Ali",
       "monkey-Ranidhara",
-      "news-17"
+      "news-16"
     ],
     "local-jobs": [
-      "news-13",
+      "news-12",
       "news-8",
-      "news-15"
+      "news-14"
     ],
     "rural-education": [
-      "news-13",
+      "news-12",
       "news-8",
-      "news-15"
+      "news-14"
     ],
     "water-watch": [
       "news-7",
-      "news-17"
+      "news-16"
     ],
     "route-intelligence": [
       "news-7",
@@ -258,20 +248,19 @@
     "tourism": [
       "person-uday-shankar",
       "person-tripti-bhatt",
-      "news-17",
+      "news-16",
       "route-ranikhet",
       "route-pithoragarh"
     ],
     "government-navigator": [
-      "news-12",
-      "news-9",
       "news-11",
+      "news-9",
       "news-10"
     ],
     "civic-watch": [
-      "news-12",
+      "news-11",
       "news-7",
-      "news-17"
+      "news-16"
     ],
     "health-navigator": [
       "route-ranikhet",
@@ -286,7 +275,7 @@
       "monkey-Sarkar Ki Ali",
       "monkey-Ranidhara",
       "news-8",
-      "news-15",
+      "news-14",
       "route-ranikhet",
       "route-pithoragarh"
     ]
