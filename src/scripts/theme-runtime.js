@@ -1,0 +1,11 @@
+const root=document.documentElement;
+const CULTURES=[['aipan','Aipan'],['pichoda','Pichoda'],['baal-mithai','Baal Mithai'],['kaafal','Kaafal'],['ghughutiya','Ghughutiya'],['kaale-kowa','Kaale Kowa'],['buransh','Buransh'],['ringaal','Ringaal']];
+function read(){const theme=localStorage.getItem('almoraTheme')||root.dataset.theme||'modern';const culture=localStorage.getItem('almoraCultureTheme')||root.dataset.cultureTheme||'aipan';root.dataset.theme=theme==='heritage'?'heritage':'modern';root.dataset.cultureTheme=CULTURES.some(x=>x[0]===culture)?culture:'aipan'}
+function setTheme(theme){root.dataset.theme=theme==='heritage'?'heritage':'modern';localStorage.setItem('almoraTheme',root.dataset.theme);window.dispatchEvent(new CustomEvent('almora:theme',{detail:{theme:root.dataset.theme}}));return root.dataset.theme}
+function setCultureTheme(theme){root.dataset.cultureTheme=CULTURES.some(x=>x[0]===theme)?theme:'aipan';localStorage.setItem('almoraCultureTheme',root.dataset.cultureTheme);window.dispatchEvent(new CustomEvent('almora:culture-theme',{detail:{theme:root.dataset.cultureTheme}}));return root.dataset.cultureTheme}
+function cycleTheme(){return setTheme(root.dataset.theme==='heritage'?'modern':'heritage')}
+function cycleCulture(){const i=Math.max(0,CULTURES.findIndex(x=>x[0]===root.dataset.cultureTheme));return setCultureTheme(CULTURES[(i+1)%CULTURES.length][0])}
+function cultureLabel(){return CULTURES.find(x=>x[0]===root.dataset.cultureTheme)?.[1]||'Aipan'}
+function mountThemeControls(host){if(!host||document.getElementById('globalThemeSwitch'))return;const wrap=document.createElement('div');wrap.dataset.sharedThemeControls='';wrap.className='sharedThemeControls';const mode=document.createElement('button');mode.id='globalThemeSwitch';mode.type='button';mode.className='globalThemeSwitch';const culture=document.createElement('button');culture.id='globalCultureSwitch';culture.type='button';culture.className='globalThemeSwitch';const paint=()=>{mode.textContent=`◐ ${root.dataset.theme==='heritage'?'Heritage':'Modern'}`;culture.textContent=`✺ ${cultureLabel()}`};mode.onclick=()=>{cycleTheme();paint()};culture.onclick=()=>{cycleCulture();paint()};wrap.append(mode,culture);host.appendChild(wrap);paint()}
+read();
+export{CULTURES,read,setTheme,setCultureTheme,cycleTheme,cycleCulture,mountThemeControls};

@@ -1,0 +1,3 @@
+import{json,withCors,readJson}from'./lib/http.js';import{handleHealth}from'./routes/health.js';import{handlePublicData}from'./routes/public-data.js';import{handleAI}from'./routes/ai.js';
+const routes=[['/api/health',handleHealth],['/api/public/',handlePublicData],['/api/ai',handleAI]];
+export default{async fetch(request,env,ctx){const url=new URL(request.url);if(request.method==='OPTIONS')return withCors(new Response(null,{status:204}),request,env);for(const[prefix,handler]of routes){if(url.pathname===prefix||url.pathname.startsWith(prefix))return withCors(await handler({request,url,env,ctx,readJson,json}),request,env)}return withCors(json({ok:false,error:'not_found'},{status:404}),request,env)}};
