@@ -1,46 +1,23 @@
-/* Focused visual fixes layered after the core theme styles. */
+/* Homepage-only compatibility layer. Cultural frame ownership belongs to aipan.css. */
+:root{--surface-solid:var(--panel);--surface-raised:var(--panel2)}
+html[data-theme="modern"]{--surface-solid:#0b1a28;--surface-raised:#102435}
+html[data-theme="heritage"]{--surface-solid:#1b140d;--surface-raised:#25180e}
 
-/* Keep the cultural frame visibly patterned instead of a plain gradient. */
-body::after{
-  border-color:transparent!important;
-  border-image:var(--culture-pattern) 18 round!important;
-  filter:drop-shadow(0 0 4px rgba(0,0,0,.4))!important;
-}
-body::before{
-  border:2px solid color-mix(in srgb,var(--culture-accent2) 78%,transparent)!important;
-  border-image:none!important;
-  opacity:.9!important;
-}
-.aipan-divider{background:var(--culture-pattern)!important;background-size:auto 100%!important}
+.section,.today,.aiResults{background:var(--surface-solid)!important;color:var(--text)!important}
+.newsCard,.serviceCard,.richCard,.infoCard,.directoryCard,.agentTile,.routeCard,.integrationCard,.founderMini{background:var(--surface-raised)!important;color:var(--text)!important}
+.sectionHead h2,.sectionHead p,.newsCard h3,.newsCard p,.infoCard,.infoCard p,.directoryCard,.directoryCard p{color:inherit}
+.sectionHead p,.newsCard p,.infoCard small,.directoryCard small,.serviceCard small,.richBody p{color:var(--muted)!important}
+.tabs button{color:var(--text)!important;background:var(--surface-raised)!important}.tabs button.active{color:#07120b!important;background:var(--green)!important}
 
-/* Never put pale theme ink on pale cards. */
-.section,.today,.aiResults{background:linear-gradient(180deg,var(--panel),color-mix(in srgb,var(--panel) 88%,var(--bg)))!important;color:var(--text)!important}
-.newsCard,.serviceCard,.richCard,.infoCard,.directoryCard{background:var(--panel2)!important;color:var(--text)!important}
-.newsCard h3,.newsCard p,.sectionHead h2,.sectionHead p{color:inherit}
-.newsCard p,.sectionHead p,.infoCard small,.directoryCard small{color:var(--muted)!important}
-.tabs button{color:var(--text)!important;background:var(--panel2)!important}
-.tabs button.active{color:#07120b!important;background:var(--green)!important}
+/* Keep generated Almora artwork visible. Only one lightweight readability veil is used. */
+.heroPhoto{background-color:#071018!important;background-size:cover!important;background-position:center!important;transition:opacity .35s ease,background-image .25s ease;filter:saturate(1.05) contrast(1.03)!important;transform:none!important}
+.heroCoverLeft{inset:0 48% 0 0!important;background:linear-gradient(90deg,rgba(4,12,18,.88) 0%,rgba(4,12,18,.66) 62%,rgba(4,12,18,.20) 88%,transparent)!important;pointer-events:none}
+.heroCoverBottom{background:linear-gradient(transparent,rgba(5,13,20,.88) 65%)!important;pointer-events:none}
+html[data-theme="heritage"] .heroCoverLeft{background:linear-gradient(90deg,rgba(20,11,5,.90),rgba(24,13,6,.66) 62%,rgba(24,13,6,.20) 88%,transparent)!important}
+.heroArtLabel{position:absolute;z-index:5;right:18px;top:16px;padding:6px 9px;border-radius:999px;border:1px solid rgba(255,255,255,.22);background:rgba(4,12,18,.64);color:#fff;font-size:9px;backdrop-filter:blur(8px)}
+.heroSlides{position:absolute;z-index:6;left:14px;right:14px;top:14px;display:flex;align-items:center;gap:7px;pointer-events:none}.heroSlides button{pointer-events:auto}.heroDots{display:flex;gap:5px}.heroDots button{width:9px;height:9px;padding:0;border:0;border-radius:50%;background:rgba(255,255,255,.35)}.heroDots button.active{width:24px;border-radius:999px;background:#fff}.heroArrow{width:34px;height:34px;border:1px solid rgba(255,255,255,.25);border-radius:50%;background:rgba(4,12,18,.66);color:#fff}.heroCaption{margin-left:auto;padding:6px 9px;border-radius:999px;background:rgba(4,12,18,.62);border:1px solid rgba(255,255,255,.18);color:#fff}.heroCaption b,.heroCaption small{display:block;font-size:8px}
 
-/* Restore the generated hero artwork without sacrificing readable copy. */
-.heroPhoto{transition:opacity .45s ease,background-image .1s linear;filter:saturate(.96) contrast(1.04)}
-.heroCoverLeft{inset:0 28% 0 0!important;background:linear-gradient(90deg,rgba(4,12,18,.98) 0%,rgba(5,15,23,.92) 54%,rgba(5,15,23,.62) 78%,transparent)!important}
-html[data-theme="heritage"] .heroCoverLeft{background:linear-gradient(90deg,rgba(20,11,5,.98),rgba(24,13,6,.91) 55%,rgba(24,13,6,.55) 80%,transparent)!important}
-.heroArtLabel{position:absolute;z-index:5;right:18px;top:16px;padding:6px 9px;border-radius:999px;border:1px solid rgba(255,255,255,.18);background:rgba(4,12,18,.68);color:#fff;font-size:9px;backdrop-filter:blur(8px)}
-
-/* Live local information block. */
-.localInfo{display:grid;grid-template-columns:1.05fr 1fr 1fr;gap:10px}
-.infoCard{border:1px solid var(--line);border-radius:16px;padding:14px;min-height:140px}
-.infoCard h3{margin:0 0 6px;font-size:15px}.infoCard p{margin:4px 0;font-size:11px;line-height:1.5}.infoCard strong{font-size:22px}.infoCard a{color:var(--green);text-underline-offset:3px}.infoActions{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.infoActions a{border:1px solid var(--line);border-radius:9px;padding:7px 9px;text-decoration:none;font-size:10px;background:var(--panel)}
-.liveClock{font-variant-numeric:tabular-nums;letter-spacing:-.03em}.sourceNote{display:block;margin-top:8px;font-size:8px!important}
-
-/* Directory page. */
-.directoryPage{max-width:1180px;margin:0 auto;padding:22px 16px 54px}.directoryTop{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}.directoryTop a{text-decoration:none}.directoryGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.directoryCard{border:1px solid var(--line);border-radius:16px;padding:14px}.directoryCard h2,.directoryCard h3{margin:0 0 7px}.directoryCard p{font-size:11px;line-height:1.55;margin:5px 0}.directoryCard a{color:var(--green);word-break:break-word}.directoryMeta{display:flex;gap:7px;flex-wrap:wrap;margin-top:9px}.directoryMeta span{font-size:8px;border:1px solid var(--line);border-radius:999px;padding:4px 7px}.directoryWide{grid-column:1/-1}.mediaLinks{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.mediaLinks a{display:block;border:1px solid var(--line);background:var(--panel);border-radius:11px;padding:11px;text-decoration:none;color:var(--text)}.mediaLinks small{display:block;margin-top:3px}
-
+.localInfo{display:grid;grid-template-columns:1.05fr 1fr 1fr;gap:10px}.infoCard{border:1px solid var(--line);border-radius:16px;padding:14px;min-height:140px}.infoCard h3{margin:0 0 6px;font-size:15px}.infoCard p{margin:4px 0;font-size:11px;line-height:1.5}.infoCard strong{font-size:22px}.infoCard a{color:var(--green);text-underline-offset:3px}.infoActions{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.infoActions a{border:1px solid var(--line);border-radius:9px;padding:7px 9px;text-decoration:none;font-size:10px;background:var(--panel)}.liveClock{font-variant-numeric:tabular-nums;letter-spacing:-.03em}.sourceNote{display:block;margin-top:8px;font-size:8px!important}
+.directoryPage{max-width:1180px;margin:0 auto;padding:22px 16px 54px}.directoryTop{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}.directoryGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.directoryCard{border:1px solid var(--line);border-radius:16px;padding:14px}.directoryCard a{color:var(--green);word-break:break-word}.directoryWide{grid-column:1/-1}.mediaLinks{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.mediaLinks a{display:block;border:1px solid var(--line);background:var(--surface-raised);border-radius:11px;padding:11px;text-decoration:none;color:var(--text)}
 @media(max-width:1050px){.localInfo,.directoryGrid{grid-template-columns:1fr 1fr}.directoryWide{grid-column:1/-1}.mediaLinks{grid-template-columns:1fr 1fr}}
-@media(max-width:760px){
-  body::after{border-width:8px!important}body::before{inset:10px!important}
-  .heroCoverLeft{inset:0!important;background:linear-gradient(90deg,rgba(4,12,18,.94),rgba(4,12,18,.58))!important}
-  .heroArtLabel{right:12px;top:12px}
-  .localInfo,.directoryGrid,.mediaLinks{grid-template-columns:1fr}.directoryWide{grid-column:auto}
-  .section{padding:14px!important}.newsCard{min-height:0}.newsCard h3{font-size:13px!important}.newsCard p{font-size:9px!important}
-}
+@media(max-width:760px){.heroCoverLeft{inset:0!important;background:linear-gradient(90deg,rgba(4,12,18,.80),rgba(4,12,18,.28) 72%,transparent)!important}.heroPhoto{background-position:65% center!important}.heroArtLabel{right:12px;top:12px}.heroCaption{display:none}.localInfo,.directoryGrid,.mediaLinks{grid-template-columns:1fr}.directoryWide{grid-column:auto}.section{padding:14px!important}.newsCard{min-height:0}.newsCard h3{font-size:13px!important}.newsCard p{font-size:9px!important}}
