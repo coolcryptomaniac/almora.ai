@@ -1,0 +1,6 @@
+const MAX_BODY_BYTES=24_000;
+function json(value,init={}){const headers=new Headers(init.headers||{});headers.set('content-type','application/json; charset=utf-8');headers.set('cache-control','no-store');return new Response(JSON.stringify(value),{...init,headers})}
+function allowedOrigin(request,env){const origin=request.headers.get('origin');if(!origin)return '*';const configured=String(env.ALLOWED_ORIGINS||'').split(',').map(x=>x.trim()).filter(Boolean);if(configured.length===0)return origin;return configured.includes(origin)?origin:'null'}
+function withCors(response,request,env){const headers=new Headers(response.headers);headers.set('access-control-allow-origin',allowedOrigin(request,env));headers.set('vary','Origin');headers.set('access-control-allow-methods','GET,POST,OPTIONS');headers.set('access-control-allow-headers','content-type');headers.set('x-content-type-options','nosniff');headers.set('referrer-policy','no-referrer');return new Response(response.body,{status:response.status,statusText:response.statusText,headers})}
+async function readJson(request){const len=Number(request.headers.get('content-length')||0);if(len>MAX_BODY_BYTES)throw new Error('payload_too_large');const text=await request.text();if(text.length>MAX_BODY_BYTES)throw new Error('payload_too_large');return text?JSON.parse(text):{}}
+export{json,withCors,readJson,MAX_BODY_BYTES};
