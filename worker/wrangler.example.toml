@@ -1,0 +1,20 @@
+name = "almora-ai-router"
+main = "src/index.js"
+compatibility_date = "2026-08-11"
+
+# Copy this file to wrangler.toml only when Cloudflare is intentionally configured.
+# No routes, DNS changes, account IDs, secrets, billing settings, or production bindings are committed here.
+
+[vars]
+ALMORA_ENABLE_AI = "0"
+ALLOWED_ORIGINS = "https://almora.ai,https://www.almora.ai"
+# AI_MODEL is intentionally omitted until a model is selected and tested.
+
+# Future optional Workers AI binding:
+# [ai]
+# binding = "AI"
+
+# Future third-party provider secrets must be set with `wrangler secret put`, never committed:
+# GROQ_API_KEY
+# NVIDIA_API_KEY
+# PEXELS_API_KEY
