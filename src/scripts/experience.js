@@ -1,3 +1,4 @@
+import{setLang}from'./i18n.js';
 const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
 
 const THEMES=[
@@ -44,12 +45,13 @@ const copy={
 const tr=k=>copy[lang()]?.[k]||copy.en[k]||k;
 function tick(){const now=new Date();const locale=lang()==='en'?'en-IN':'hi-IN';const t=new Intl.DateTimeFormat(locale,{timeZone:'Asia/Kolkata',hour:'2-digit',minute:'2-digit',second:'2-digit'}).format(now);const d=new Intl.DateTimeFormat(locale,{timeZone:'Asia/Kolkata',weekday:'short',day:'numeric',month:'short'}).format(now);if($('#liveClock'))$('#liveClock').textContent=t;if($('#liveDate'))$('#liveDate').textContent=d+' · IST'}
 async function liveWeather(){try{const [wr,ar]=await Promise.all([fetch('https://api.open-meteo.com/v1/forecast?latitude=29.5892&longitude=79.6467&current=temperature_2m&daily=sunrise,sunset&timezone=Asia%2FKolkata&forecast_days=1'),fetch('https://air-quality-api.open-meteo.com/v1/air-quality?latitude=29.5892&longitude=79.6467&current=us_aqi&timezone=Asia%2FKolkata')]);if(!wr.ok)throw new Error('weather');const w=await wr.json(),a=ar.ok?await ar.json():null,n=Math.round(w.current.temperature_2m),sr=w.daily?.sunrise?.[0]?.split('T')[1]||'—',ss=w.daily?.sunset?.[0]?.split('T')[1]||'—',aqi=a?.current?.us_aqi;if($('#topTemp'))$('#topTemp').textContent=`${n}°C`;if($('#bigTemp'))$('#bigTemp').textContent=`${n}°C`;const sun=$$('.sunGrid b');if(sun[0])sun[0].textContent=sr;if(sun[1])sun[1].textContent=ss;if($('.aqi'))$('.aqi').textContent=Number.isFinite(aqi)?`AQI ${Math.round(aqi)} · live`:'AQI · unavailable';if($('#weatherLine'))$('#weatherLine').textContent=`${n}°C · ${tr('sunrise')} ${sr} · ${tr('sunset')} ${ss}`;if($('#aqiLine'))$('#aqiLine').textContent=Number.isFinite(aqi)?`${tr('aqi')}: ${Math.round(aqi)} (US AQI)`:tr('weatherUnavailable')}catch{if($('.aqi'))$('.aqi').textContent='AQI · unavailable';if($('#weatherLine'))$('#weatherLine').textContent=tr('weatherUnavailable')}}
-function localize(){ $$('[data-local-key]').forEach(el=>{el.textContent=tr(el.dataset.localKey)});const item=HEROES[heroIndex];const lab=$('#heroArtLabel');if(lab)lab.textContent=item.label[lang()]||item.label.en;applyTheme(document.documentElement.dataset.cultureTheme||localStorage.getItem('almoraCultureTheme')||'aipan');tick() }
+function localize(){ $$('[data-local-key]').forEach(el=>{el.textContent=tr(el.dataset.localKey)});const item=HEROES[heroIndex];const lab=$('#heroArtLabel');if(lab)lab.textContent=item.label[lang()]||item.label.en;applyTheme(document.documentElement.dataset.cultureTheme||localStorage.getItem('almoraCultureTheme')||'aipan');$$('[data-lang]').forEach(b=>b.classList.toggle('active',b.dataset.lang===lang()));tick() }
 
 function install(){
   applyTheme(localStorage.getItem('almoraCultureTheme')||'aipan');
   const themeBtn=$('#themeBtn');if(themeBtn)themeBtn.onclick=nextTheme;
-  ensureHeroNav();showHero(0);tick();liveWeather();
+  $$('[data-lang]').forEach(b=>b.onclick=()=>{setLang(b.dataset.lang);localize()});
+  ensureHeroNav();showHero(0);tick();liveWeather();localize();
   setInterval(tick,1000);setInterval(()=>showHero(heroIndex+1),11000);setInterval(liveWeather,10*60*1000);
   window.addEventListener('almora:language',localize);
   window.addEventListener('resize',()=>{document.body.classList.toggle('compactViewport',innerWidth<901)},{passive:true});
