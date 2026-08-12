@@ -1,3 +1,4 @@
+@import url('./responsive-stability.css?v=1');
 /* Homepage-only compatibility layer. Cultural frame ownership belongs to aipan.css. */
 :root{--surface-solid:var(--panel);--surface-raised:var(--panel2);--culture-gradient:linear-gradient(135deg,#6e1712,#a6241b 45%,#fffaf0 50%,#a6241b 55%,#6e1712)}
 html[data-theme="modern"]{--surface-solid:#0b1a28;--surface-raised:#102435}
