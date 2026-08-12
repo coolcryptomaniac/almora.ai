@@ -30,11 +30,16 @@ jobs:
           find src/scripts -name '*.js' -print0 | xargs -0 -n1 node --check
           node --check ai-client.js
           node --check tests/homepage-smoke.mjs
+          node --check tests/accessibility-performance-smoke.mjs
           node --check tests/app-contract.mjs
       - name: Run desktop + mobile smoke tests
         env:
           TEST_URL: http://127.0.0.1:4173
         run: node tests/homepage-smoke.mjs
+      - name: Run accessibility + constrained-network smoke
+        env:
+          TEST_URL: http://127.0.0.1:4173
+        run: node tests/accessibility-performance-smoke.mjs
       - name: Run all-app manifest contract
         env:
           TEST_URL: http://127.0.0.1:4173
