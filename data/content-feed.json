@@ -1,10 +1,20 @@
 {
-  "updatedAt": "2026-08-13T19:28:40.511269+00:00",
+  "updatedAt": "2026-08-13T21:05:59.553112+00:00",
   "editorialPolicy": "Rank current, useful and source-linked Almora public-interest content. Routine sensational crime is not promoted. Resident/problem signals remain explicitly unverified or evidence-scoped.",
-  "count": 20,
+  "count": 21,
   "items": [
     {
-      "id": "news-11",
+      "id": "news-5",
+      "kind": "news",
+      "category": "infrastructure",
+      "title": "Uttarakhand CM Inaugurates Rs 138 Crore Projects In Almora - Construction World",
+      "summary": "Construction World update",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPMTdBUGllMXhXQTNCaWRfZ3hsMURjMGN3Tkk2ZDM0WEZaR3VESlJxVHVoTEY4LXdBNkJyQmlJalF6UUNzbHQya0N1V3VKUnIyelB2bXc5X1NXMzQ1Tzc4UFlrb1JQeGZrZWQxRjdScDc4T3hCU1JwTHF5MHMwNmVLdDVFQmNPWFpkdDQ0eVA1NFdaSlF4LVRBd2x5WVBEWnhsazNzU0x3MC1memtEQW9hMkx6OFlqMm9KMmhwZWdHQ0RwSDdiWS1RdVRB?oc=5",
+      "score": 12,
+      "reason": "Fresh public-interest news"
+    },
+    {
+      "id": "news-12",
       "kind": "news",
       "category": "governance",
       "title": "Almora district administration and current public notices",
@@ -34,7 +44,7 @@
       "reason": "Fresh public-interest news"
     },
     {
-      "id": "news-6",
+      "id": "news-7",
       "kind": "news",
       "category": "sports",
       "title": "Lakshya Sen and the Story of Badminton in Almora - Garhwal Post",
@@ -44,7 +54,7 @@
       "reason": "Fresh public-interest news"
     },
     {
-      "id": "news-5",
+      "id": "news-6",
       "kind": "news",
       "category": "sports",
       "title": "From Almora To Olympic Semifinals: Meet Lakshya Sen, Indian Badminton Player Who Made History At Paris Olympics 2024 - Zee News",
@@ -64,7 +74,7 @@
       "reason": "Fresh public-interest news"
     },
     {
-      "id": "news-12",
+      "id": "news-13",
       "kind": "news",
       "category": "jobs",
       "title": "Uttarakhand Subordinate Service Selection Commission recruitment updates",
@@ -74,7 +84,7 @@
       "reason": "Fresh public-interest news"
     },
     {
-      "id": "news-7",
+      "id": "news-8",
       "kind": "news",
       "category": "infrastructure",
       "title": "Uttarakhand Chief Minister Discusses Railway Infrastructure Expansion with Union Minister Ashwini Vaishnaw | Hindustan Times - Hindustan Times",
@@ -104,7 +114,7 @@
       "reason": "Local problem signal"
     },
     {
-      "id": "news-8",
+      "id": "news-9",
       "kind": "news",
       "category": "education",
       "title": "Why are U’khand villages emptying out? Education gaps 2nd largest driver of migration: Report - The Times of India",
@@ -114,7 +124,7 @@
       "reason": "Fresh public-interest news"
     },
     {
-      "id": "news-15",
+      "id": "news-16",
       "kind": "news",
       "category": "innovation",
       "title": "Rural Business Incubator, Hawalbagh supports local entrepreneurship",
@@ -124,7 +134,7 @@
       "reason": "Fresh public-interest news"
     },
     {
-      "id": "news-14",
+      "id": "news-15",
       "kind": "news",
       "category": "education",
       "title": "Kumaun University academic and student updates",
@@ -134,7 +144,7 @@
       "reason": "Fresh public-interest news"
     },
     {
-      "id": "news-9",
+      "id": "news-10",
       "kind": "news",
       "category": "politics",
       "title": "Uttarakhand panchayat election results: Coin toss, slip draws decide winners on counting day; young voic - The Times of India",
@@ -164,7 +174,7 @@
       "reason": "Featured person with meaningful Almora connection"
     },
     {
-      "id": "news-16",
+      "id": "news-17",
       "kind": "news",
       "category": "environment",
       "title": "Monkey and langur activity remains a public concern around Ranikhet",
@@ -174,11 +184,11 @@
       "reason": "Fresh public-interest news"
     },
     {
-      "id": "news-10",
+      "id": "news-11",
       "kind": "news",
       "category": "politics",
-      "title": "BJP sweeps urban local body polls in Uttarakhand, wins 10 of 11 mayoral seats - newindianexpress.com",
-      "summary": "newindianexpress.com update",
+      "title": "BJP sweeps urban local body polls in Uttarakhand, wins 10 of 11 mayoral seats - The New Indian Express",
+      "summary": "The New Indian Express update",
       "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOcG1mU1JCeGQzYUxHcV9TWVNyS0N0NE5Nd1V0WDV1YVUySFdCb1MzN3hKam9GaXppWnNLcEMxWXgyRnV4QWpHTkRYUVNVcmZEd1JaMExoZ0xvV3RWTFRESjQ4amt1Z0FiNDNaOFlIdm1fdUJtVmtNOXFoTms3VzVSTnh0SnhicUpjS0FlZzV5WkNCUFRoZk10YTcxVk8wYllraEJmUVJfYVRNWG9maXJlbWp5ckNHYWs1dWxTTE02Mk80YVlFa3fSAdMBQVVfeXFMT3dGcnRmaFhWNnBnQUZVUWx2aGJoM0ZvTl9BZ2tka1lGQm0yNTRHb1NEWXNRcEF0TXA5VGx0ckxnbl8wNXlfb1dzZDRDUnBBUnUxQUhuakVVSDZnUjBvb0JYNk5Fb2tqWEpfb1ZjSUxjSlpJS1BOa3FfMjRHYnZCdzNhcUxwd1BfVVcyVnYtMDRobzJvOGlPenlqRE9KcWl5c3pIaHZRTjZRWFcydkZPbWxWb1VpSFFRbDUzUURQTjBEd2tFN01ER1cyQVhwdkZqZXlURQ?oc=5",
       "score": 7,
       "reason": "Fresh public-interest news"
@@ -206,61 +216,65 @@
   ],
   "agentIndex": {
     "town-concierge": [
-      "news-11",
+      "news-5",
       "news-12",
-      "news-7",
+      "news-13",
+      "news-8",
       "monkey-Sarkar Ki Ali",
       "monkey-Ranidhara",
-      "news-8",
-      "news-14",
+      "news-9",
+      "news-15",
       "route-ranikhet",
       "route-pithoragarh"
     ],
     "monkey-wildlife": [
       "monkey-Sarkar Ki Ali",
       "monkey-Ranidhara",
-      "news-16"
+      "news-17"
     ],
     "farm-watch": [
       "monkey-Sarkar Ki Ali",
       "monkey-Ranidhara",
-      "news-16"
+      "news-17"
     ],
     "local-jobs": [
-      "news-12",
-      "news-8",
-      "news-14"
+      "news-13",
+      "news-9",
+      "news-15"
     ],
     "rural-education": [
-      "news-12",
-      "news-8",
-      "news-14"
+      "news-13",
+      "news-9",
+      "news-15"
     ],
     "water-watch": [
-      "news-7",
-      "news-16"
+      "news-5",
+      "news-8",
+      "news-17"
     ],
     "route-intelligence": [
-      "news-7",
+      "news-5",
+      "news-8",
       "route-ranikhet",
       "route-pithoragarh"
     ],
     "tourism": [
       "person-uday-shankar",
       "person-tripti-bhatt",
-      "news-16",
+      "news-17",
       "route-ranikhet",
       "route-pithoragarh"
     ],
     "government-navigator": [
-      "news-11",
-      "news-9",
-      "news-10"
+      "news-12",
+      "news-10",
+      "news-11"
     ],
     "civic-watch": [
-      "news-11",
-      "news-7",
-      "news-16"
+      "news-5",
+      "news-12",
+      "news-8",
+      "news-17"
     ],
     "health-navigator": [
       "route-ranikhet",
@@ -271,11 +285,12 @@
       "route-pithoragarh"
     ],
     "hill-life": [
-      "news-7",
+      "news-5",
+      "news-8",
       "monkey-Sarkar Ki Ali",
       "monkey-Ranidhara",
-      "news-8",
-      "news-14",
+      "news-9",
+      "news-15",
       "route-ranikhet",
       "route-pithoragarh"
     ]
