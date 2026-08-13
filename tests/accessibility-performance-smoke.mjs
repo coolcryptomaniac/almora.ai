@@ -12,6 +12,14 @@ try{
   await page.waitForFunction(()=>document.querySelector('#mobileMenu')?.getAttribute('aria-expanded')==='true');
   await page.keyboard.press('Escape');
   await page.waitForFunction(()=>document.querySelector('#mobileMenu')?.getAttribute('aria-expanded')==='false'&&!document.querySelector('#sidebar')?.classList.contains('open'));
+  await page.locator('#cultureThemeBtn').click();
+  await page.waitForFunction(()=>document.querySelector('#cultureThemeBtn')?.getAttribute('aria-expanded')==='true');
+  if(!(await page.locator('.cultureMenu [data-culture]').first().evaluate(el=>el===document.activeElement)))throw new Error('Cultural theme menu did not move focus to first option');
+  await page.keyboard.press('ArrowDown');
+  if(!(await page.locator('.cultureMenu [data-culture]').nth(1).evaluate(el=>el===document.activeElement)))throw new Error('Cultural theme ArrowDown navigation failed');
+  await page.keyboard.press('Escape');
+  await page.waitForFunction(()=>document.querySelector('#cultureThemeBtn')?.getAttribute('aria-expanded')==='false');
+  if(!(await page.locator('#cultureThemeBtn').evaluate(el=>el===document.activeElement)))throw new Error('Cultural theme Escape did not restore trigger focus');
   await page.close();
 
   const context=await browser.newContext({viewport:{width:390,height:844}});
