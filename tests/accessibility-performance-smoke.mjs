@@ -8,6 +8,14 @@ try{
   if(await page.locator('#mobileMenu').getAttribute('aria-controls')!=='sidebar')throw new Error('Mobile menu aria-controls missing');
   if(await page.locator('#mobileMenu').getAttribute('aria-expanded')!=='false')throw new Error('Mobile menu initial aria-expanded is wrong');
   if(await page.locator('#sidebar').getAttribute('aria-label')!=='Almora navigation')throw new Error('Sidebar accessible name missing');
+  if(await page.locator('#headerQuery').getAttribute('aria-label')!=='Ask Almora AI')throw new Error('Header query accessible name missing');
+  if(await page.locator('#askInput').getAttribute('aria-label')!=='Ask Almora AI a question')throw new Error('Hero ask accessible name missing');
+  if(await page.locator('#reportDialog').getAttribute('aria-labelledby')!=='reportDialogTitle')throw new Error('Report dialog accessible label relationship missing');
+  if(await page.locator('#reportStatus').getAttribute('role')!=='status'||await page.locator('#reportStatus').getAttribute('aria-live')!=='polite')throw new Error('Report status live region missing');
+  await page.locator('[data-lang="hi"]').click();
+  await page.waitForFunction(()=>document.querySelector('#headerQuery')?.getAttribute('aria-label')==='अल्मोड़ा AI से पूछें');
+  await page.locator('[data-lang="en"]').click();
+  await page.waitForFunction(()=>document.querySelector('#headerQuery')?.getAttribute('aria-label')==='Ask Almora AI');
   await page.locator('#mobileMenu').click();
   await page.waitForFunction(()=>document.querySelector('#mobileMenu')?.getAttribute('aria-expanded')==='true');
   await page.keyboard.press('Escape');
