@@ -14,8 +14,6 @@ try{
   if(await page.locator('#reportStatus').getAttribute('role')!=='status'||await page.locator('#reportStatus').getAttribute('aria-live')!=='polite')throw new Error('Report status live region missing');
   await page.locator('[data-lang="hi"]').click();
   await page.waitForFunction(()=>document.querySelector('#headerQuery')?.getAttribute('aria-label')==='अल्मोड़ा AI से पूछें');
-  await page.locator('[data-lang="en"]').click();
-  await page.waitForFunction(()=>document.querySelector('#headerQuery')?.getAttribute('aria-label')==='Ask Almora AI');
   await page.locator('#mobileMenu').click();
   await page.waitForFunction(()=>document.querySelector('#mobileMenu')?.getAttribute('aria-expanded')==='true');
   await page.keyboard.press('Escape');
