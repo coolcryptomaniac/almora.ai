@@ -14,10 +14,12 @@ try{
   if(await page.locator('#reportStatus').getAttribute('role')!=='status'||await page.locator('#reportStatus').getAttribute('aria-live')!=='polite')throw new Error('Report status live region missing');
   await page.locator('[data-lang="hi"]').click();
   await page.waitForFunction(()=>document.querySelector('#headerQuery')?.getAttribute('aria-label')==='अल्मोड़ा AI से पूछें');
+  await page.waitForFunction(()=>document.querySelector('#sidebar')?.getAttribute('aria-label')==='अल्मोड़ा नेविगेशन');
   await page.locator('#mobileMenu').click();
   await page.waitForFunction(()=>document.querySelector('#mobileMenu')?.getAttribute('aria-expanded')==='true');
   await page.keyboard.press('Escape');
   await page.waitForFunction(()=>document.querySelector('#mobileMenu')?.getAttribute('aria-expanded')==='false'&&!document.querySelector('#sidebar')?.classList.contains('open'));
+  if(!(await page.locator('#mobileMenu').evaluate(el=>el===document.activeElement)))throw new Error('Mobile sidebar Escape did not restore trigger focus');
   await page.locator('#cultureThemeBtn').click();
   await page.waitForFunction(()=>document.querySelector('#cultureThemeBtn')?.getAttribute('aria-expanded')==='true');
   if(!(await page.locator('.cultureMenu [data-culture]').first().evaluate(el=>el===document.activeElement)))throw new Error('Cultural theme menu did not move focus to first option');
@@ -27,6 +29,16 @@ try{
   await page.waitForFunction(()=>document.querySelector('#cultureThemeBtn')?.getAttribute('aria-expanded')==='false');
   if(!(await page.locator('#cultureThemeBtn').evaluate(el=>el===document.activeElement)))throw new Error('Cultural theme Escape did not restore trigger focus');
   await page.close();
+
+  const desktop=await browser.newPage({viewport:{width:1440,height:1000}});
+  await desktop.goto(base,{waitUntil:'domcontentloaded',timeout:30000});
+  await desktop.waitForSelector('#menuBtn');
+  await desktop.locator('#menuBtn').click();
+  await desktop.waitForFunction(()=>document.querySelector('#sidebar')?.classList.contains('open'));
+  await desktop.keyboard.press('Escape');
+  await desktop.waitForFunction(()=>!document.querySelector('#sidebar')?.classList.contains('open'));
+  if(!(await desktop.locator('#menuBtn').evaluate(el=>el===document.activeElement)))throw new Error('Desktop sidebar Escape did not restore active trigger focus');
+  await desktop.close();
 
   const context=await browser.newContext({viewport:{width:390,height:844}});
   await context.addInitScript(()=>Object.defineProperty(navigator,'connection',{configurable:true,value:{saveData:true,effectiveType:'4g'}}));
