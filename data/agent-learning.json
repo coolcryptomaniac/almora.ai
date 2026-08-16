@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-16T14:42:30.170554+00:00",
+  "updatedAt": "2026-08-16T15:39:22.443180+00:00",
   "mode": "shared-evidence-memory-not-model-training",
   "explanation": "These short-lived lessons are derived from verified/public signals and agent handoffs. They improve coordination context without retraining or autonomously modifying the underlying language model.",
   "count": 8,
@@ -23,8 +23,8 @@
         "Dungadhara: activity 4/4; https://www.amarujala.com/uttarakhand/almora/monkeys-ateck-in-almora-almora-news-c-8-1-146492-2023-05-21"
       ],
       "confidence": "high",
-      "createdAt": "2026-08-16T14:42:30.170554+00:00",
-      "expiresAt": "2026-08-23T14:42:30.170554+00:00"
+      "createdAt": "2026-08-16T15:39:22.443180+00:00",
+      "expiresAt": "2026-08-23T15:39:22.443180+00:00"
     },
     {
       "id": "access-before-travel",
@@ -40,12 +40,11 @@
       "rule": "Before giving hill-route or tourism advice, check current access/infrastructure signals and hand off to a live map for the final route.",
       "evidence": [
         "Uttarakhand CM Inaugurates Rs 138 Crore Projects In Almora - Construction World — https://news.google.com/rss/articles/CBMiygFBVV95cUxPMTdBUGllMXhXQTNCaWRfZ3hsMURjMGN3Tkk2ZDM0WEZaR3VESlJxVHVoTEY4LXdBNkJyQmlJalF6UUNzbHQya0N1V3VKUnIyelB2bXc5X1NXMzQ1Tzc4UFlrb1JQeGZrZWQxRjdScDc4T3hCU1JwTHF5MHMwNmVLdDVFQmNPWFpkdDQ0eVA1NFdaSlF4LVRBd2x5WVBEWnhsazNzU0x3MC1memtEQW9hMkx6OFlqMm9KMmhwZWdHQ0RwSDdiWS1RdVRB?oc=5",
-        "Uttarakhand Chief Minister Discusses Railway Infrastructure Expansion with Union Minister Ashwini Vaishnaw | Hindustan Times - Hindustan Times — https://news.google.com/rss/articles/CBMi-gFBVV95cUxOZEEwRmEwNGgya21tMF9KN2JlTWV3QUV5QU9UXzZmNnVtaWZDUUhxX2tKWHFjYUdoaE5LTkN3eUlFN3B3UHRYRmdjdWw0Q2NSWlR0QTNLUHRhWFJSa0R1MXZMb093Q3JxeTFFc0VuXzByd1BLSmt3SHI1SUcyVnBUQ2NUMG5zYkNqWHgtUFJ3a0M2YnNVOWMyZmtRdVdPSExQRWhDdFdrZlZJOENNdHl6YXgwMUx6RE1CNmxMRXhzVm5ndTdpVXlQTTBLLU00QkFVLVg2N2pyQmdFei1wLTdnZ2kxS2ZmVElhSmRESF84ZFd2b2pnRk5OcnhR0gH_AUFVX3lxTFBjTXZRbmVuVTJ4UXk2WDFLZHVQTnhSeUxQSGE4TE02bkhaQ1otVWxiXy1UX21lOXVBcXJqeTRCM0Q4c1lraEdZYllRWWozOEFFaENVYTVMcnB5SERMVnNLN1hVZDZqY1FPWGhfbTUwYWsydDJNY014MWJmMGlSRlBRMzhPSWk0QkVydWhwLW05Wk5RTVhYTUxKSTEyUzVGcmZvRUw1ekpoSUFMaDhXc1lHLVdtX2x1T1dDalJDS3ZPeEdlbnhHd25ZQUdodHlPa3RWQnZKZDhCTUt5WElUZlhQX0RYeHpMVVhZUXh4TUVvWnhhYnlkMGgwUDIwMFcxOA?oc=5",
         "Monkey and langur activity remains a public concern around Ranikhet — https://www.amarujala.com/uttarakhand/almora/in-the-morning-flocks-of-monkeys-were-seen-in-the-markets-and-streets-leaving-people-in-panic-ranikhet-news-c-232-1-alm1002-143114-2026-05-08"
       ],
       "confidence": "high",
-      "createdAt": "2026-08-16T14:42:30.170554+00:00",
-      "expiresAt": "2026-08-23T14:42:30.170554+00:00"
+      "createdAt": "2026-08-16T15:39:22.443180+00:00",
+      "expiresAt": "2026-08-23T15:39:22.443180+00:00"
     },
     {
       "id": "learn-to-earn",
@@ -63,8 +62,8 @@
         "Kumaun University academic and student updates — https://www.kunainital.ac.in/"
       ],
       "confidence": "medium",
-      "createdAt": "2026-08-16T14:42:30.170554+00:00",
-      "expiresAt": "2026-08-23T14:42:30.170554+00:00"
+      "createdAt": "2026-08-16T15:39:22.443180+00:00",
+      "expiresAt": "2026-08-23T15:39:22.443180+00:00"
     },
     {
       "id": "jobs-to-skills",
@@ -82,8 +81,8 @@
         "Kumaun University academic and student updates — https://www.kunainital.ac.in/"
       ],
       "confidence": "medium",
-      "createdAt": "2026-08-16T14:42:30.170554+00:00",
-      "expiresAt": "2026-08-23T14:42:30.170554+00:00"
+      "createdAt": "2026-08-16T15:39:22.443180+00:00",
+      "expiresAt": "2026-08-23T15:39:22.443180+00:00"
     },
     {
       "id": "external-app-fallback",
@@ -103,8 +102,8 @@
         "Business Hub: ./businesses.html"
       ],
       "confidence": "high",
-      "createdAt": "2026-08-16T14:42:30.170554+00:00",
-      "expiresAt": "2026-08-23T14:42:30.170554+00:00"
+      "createdAt": "2026-08-16T15:39:22.443180+00:00",
+      "expiresAt": "2026-08-23T15:39:22.443180+00:00"
     },
     {
       "id": "cross-service-sequencing",
@@ -128,8 +127,8 @@
         "tourism + route-intelligence: Tourism planning should account for real access and intercity routes"
       ],
       "confidence": "high",
-      "createdAt": "2026-08-16T14:42:30.170554+00:00",
-      "expiresAt": "2026-08-23T14:42:30.170554+00:00"
+      "createdAt": "2026-08-16T15:39:22.443180+00:00",
+      "expiresAt": "2026-08-23T15:39:22.443180+00:00"
     },
     {
       "id": "public-source-discipline",
@@ -143,12 +142,12 @@
       "rule": "For government/political/current-affairs questions, distinguish official information, reported news and resident allegation. Prefer source links and timestamps.",
       "evidence": [
         "Uttarakhand panchayat election results: Coin toss, slip draws decide winners on counting day; young voic - The Times of India — The Times of India",
-        "BJP sweeps urban local body polls in Uttarakhand, wins 10 of 11 mayoral seats - newindianexpress.com — newindianexpress.com",
+        "BJP sweeps urban local body polls in Uttarakhand, wins 10 of 11 mayoral seats - The New Indian Express — The New Indian Express",
         "Almora district administration and current public notices — District Almora"
       ],
       "confidence": "high",
-      "createdAt": "2026-08-16T14:42:30.170554+00:00",
-      "expiresAt": "2026-08-23T14:42:30.170554+00:00"
+      "createdAt": "2026-08-16T15:39:22.443180+00:00",
+      "expiresAt": "2026-08-23T15:39:22.443180+00:00"
     },
     {
       "id": "route-distance-discipline",
@@ -168,8 +167,8 @@
         "Almora → Pithoragarh: approx 115 km"
       ],
       "confidence": "high",
-      "createdAt": "2026-08-16T14:42:30.170554+00:00",
-      "expiresAt": "2026-08-23T14:42:30.170554+00:00"
+      "createdAt": "2026-08-16T15:39:22.443180+00:00",
+      "expiresAt": "2026-08-23T15:39:22.443180+00:00"
     }
   ]
 }
