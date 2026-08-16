@@ -1,10 +1,20 @@
 {
-  "updatedAt": "2026-08-16T16:44:11.744213+00:00",
+  "updatedAt": "2026-08-16T17:37:10.335283+00:00",
   "editorialPolicy": "Rank current, useful and source-linked Almora public-interest content. Routine sensational crime is not promoted. Resident/problem signals remain explicitly unverified or evidence-scoped.",
-  "count": 19,
+  "count": 20,
   "items": [
     {
-      "id": "news-10",
+      "id": "news-5",
+      "kind": "news",
+      "category": "infrastructure",
+      "title": "Uttarakhand CM Inaugurates Rs 138 Crore Projects In Almora - Construction World",
+      "summary": "Construction World update",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPMTdBUGllMXhXQTNCaWRfZ3hsMURjMGN3Tkk2ZDM0WEZaR3VESlJxVHVoTEY4LXdBNkJyQmlJalF6UUNzbHQya0N1V3VKUnIyelB2bXc5X1NXMzQ1Tzc4UFlrb1JQeGZrZWQxRjdScDc4T3hCU1JwTHF5MHMwNmVLdDVFQmNPWFpkdDQ0eVA1NFdaSlF4LVRBd2x5WVBEWnhsazNzU0x3MC1memtEQW9hMkx6OFlqMm9KMmhwZWdHQ0RwSDdiWS1RdVRB?oc=5",
+      "score": 12,
+      "reason": "Fresh public-interest news"
+    },
+    {
+      "id": "news-11",
       "kind": "news",
       "category": "governance",
       "title": "Almora district administration and current public notices",
@@ -17,8 +27,8 @@
       "id": "news-0",
       "kind": "news",
       "category": "innovation",
-      "title": "No ethanol needed: Young innovator from Uttarakhand's Almora tests flying car - indiatoday.in",
-      "summary": "indiatoday.in update",
+      "title": "No ethanol needed: Young innovator from Uttarakhand's Almora tests flying car - India Today",
+      "summary": "India Today update",
       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPQXVIMGVnNjFBT2pIeUdiUXpTN1AwN3ZvbWZQcHlOWFBTNUVIRzBJYTZHUTdpX29DX2JGSWRMMlBpSE5ES0JLODRQNnU0T2hIdEI4MHBzaUdLLXVkVDAxb2J5RkxuRVhOeTlpNzQ3U3hFbHNzZkRQVEtmWUd0SUVNbnhwYWVPQjl0TkNYYnh1QlFSdVBWRzRFN2RIZm81QTVqMm5jQzZmczJEQVdGRDAzNEVGWkVxd0p1VzFFa2dQNUU4RU1MNHFCWEpLRTZPZ9IB0wFBVV95cUxNbV9zdjliWlJVa3hKVTNaNnVZYnBLZkxzVWVvR2UzVTNHZEhjd01NWVV1T3dvRVZDUUtCVDNPNFBkTXJkc2xyb0dvdHZMcWxPRmtxZXRyY2xxY0xTSmQ4UFIyZzFuRTBENjRKQWFFcWxwVDh6MkxQVUx3WXFFLWRxSGFwN1h6bXhYU2haNktJTTlmSDNqMENvLTIxeEFBdXFPVnotYUt3NTdTaEp5ZE9nek5mdGZJZlFQLTdfOVRKNDRuVUlVR1BTaUF3Ym1maDJ4b21N?oc=5",
       "score": 11,
       "reason": "Fresh public-interest news"
@@ -34,21 +44,21 @@
       "reason": "Fresh public-interest news"
     },
     {
-      "id": "news-6",
+      "id": "news-7",
       "kind": "news",
       "category": "sports",
-      "title": "Lakshya Sen and the Story of Badminton in Almora - Garhwal Post",
-      "summary": "Garhwal Post update",
+      "title": "Lakshya Sen and the Story of Badminton in Almora - garhwalpost.in",
+      "summary": "garhwalpost.in update",
       "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBWbndyY3V5Q1lXUUNGbFQ5WWVBbkxZTzB5Y2pWMlk5MU9OUEZlRlRJNHlicnFyT2ZNN3JIUDI5aWhhcjFKV21xcU5VTzZzWmMwY1Vnc09uSWthX0V5S01jLXNaZVVNNTIzZGRGV08wOUd4eVh5aktrb2l4VU8?oc=5",
       "score": 10,
       "reason": "Fresh public-interest news"
     },
     {
-      "id": "news-5",
+      "id": "news-6",
       "kind": "news",
       "category": "sports",
-      "title": "From Almora To Olympic Semifinals: Meet Lakshya Sen, Indian Badminton Player Who Made History At Paris Olympics 2024 - zeenews.india.com",
-      "summary": "zeenews.india.com update",
+      "title": "From Almora To Olympic Semifinals: Meet Lakshya Sen, Indian Badminton Player Who Made History At Paris Olympics 2024 - Zee News",
+      "summary": "Zee News update",
       "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPb1RKeGhJQWpZVjIyWjREYW1sU3NBTVdjQ1RDWGotRVJGdHlGUzJEbHk3ekZUakZzcUpJbFJJbWQwRjhrdmlocDhQSS14ZlE2VUEwTkc4TW1YQlNVTjR6ak16b1JCcmdoWDZpQkcwRTJRMnBWUTdrenU0WWNZdW1rOS01R2FtcXpLVk50RnU5SWhSVl83LU1OZmpWLXNxRE9CNk9CTEY4dkxldUlhVDBMc21oTDZUU2sybGdSN3REYTI1dE8zZXdtZ2xXLW81T1FsQVRQRW41Ti1CaldmaEVLdEMxQUdvNzQ2R3VlbURiallrMmZRenpCbG9n0gH_AUFVX3lxTFAyVHc5Q2NKeXAyeVdyNHk4WWM4aFpJeVRad2plR182WVdJOUd0aUZ0ZGtMb0NFVTZyOXJRNjdvZ1VpNGk5bFJwdjNMVzhoUGJGMUtHVU91R2NRU1FOdFoxTVliNlNVSUpiX0xvbGVqeXlfYVhLXzlFY3A0dHM1eW1ma1d2NHdzNVNhNmdndzRiTjhsbldXeWo2Qnpoel9qTm9QYUNUZ2xVTndPa1d1ZjFpdFE2aHNId0RycHU1cEZ3UWk0d1ZtbVZ1dzJQcGg3YVBVTEdhaEc2WnlWY2FDOHRsY1JVNlBaX25LUnI0RU1TcndybkdybWhnNVlOZU5ITQ?oc=5",
       "score": 10,
       "reason": "Fresh public-interest news"
@@ -64,7 +74,7 @@
       "reason": "Fresh public-interest news"
     },
     {
-      "id": "news-11",
+      "id": "news-12",
       "kind": "news",
       "category": "jobs",
       "title": "Uttarakhand Subordinate Service Selection Commission recruitment updates",
@@ -94,17 +104,17 @@
       "reason": "Local problem signal"
     },
     {
-      "id": "news-7",
+      "id": "news-8",
       "kind": "news",
       "category": "education",
-      "title": "Why are U’khand villages emptying out? Education gaps 2nd largest driver of migration: Report - The Times of India",
-      "summary": "The Times of India update",
+      "title": "Why are U’khand villages emptying out? Education gaps 2nd largest driver of migration: Report - timesofindia.indiatimes.com",
+      "summary": "timesofindia.indiatimes.com update",
       "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOM2kydW9zZnpDYVpmUU1Ca1p5QjgzbjdwN3kzcXNLNE5sODktdUFfV3pCZ3ZkVnZXek1uOXV2X3NfbTdQNnZpMnNjYVJHSkRhR1ZZTFRETGE1eFZMVFRtUXF0eUFhMW9NV3FKcTc1OU1aQndMY3JWVGZiT1dwTXc1MmJSdF9zbVVKSEd5TjZHUTJhdXBYOWloUWZ3TC1tVkhma3FOREdYTnhRUHpDV1k0R1lRVkw3X1dFZlJJRVFDNnBZWm5qbkVqNU5oWTJkdUN5T2JFbXhQWHhLZUlCN2ZsVTdQZDRYSEF6OXFxMUJNSndkM3UxV0prVHNR0gH_AUFVX3lxTE45MGRaZGNOY1FOS1BxZnNJUGtCcnJhNkM4azhDTEwzbVZjQy1zTXdRa3c3MktBNnNobmRsa1dkM05GS0tRcVVvRVhHVDVYS2pfcmtkN3I1Xzk5djNMZ2J3LXZoMFN4TXdieUNOOURrNnM5NXhrQjlSRzlKTzhuSFhQbWhkcVpFMktoY3JlcjZYLXF4Wmp6LXpkUFdGS2FfU2JJRldpeWFFc0Z1WWFDMGo3dVZsdUoxdk9hMGF3SUVUYXZSa2R5cFFDTi1TUzRsejF6Rjc0U0hyZXhiLTQ5dWZBRHcyNldUakZicVhQcUVjNEpJNHJnTk9sd2ZsZHlVRQ?oc=5",
       "score": 8,
       "reason": "Fresh public-interest news"
     },
     {
-      "id": "news-14",
+      "id": "news-15",
       "kind": "news",
       "category": "innovation",
       "title": "Rural Business Incubator, Hawalbagh supports local entrepreneurship",
@@ -114,7 +124,7 @@
       "reason": "Fresh public-interest news"
     },
     {
-      "id": "news-13",
+      "id": "news-14",
       "kind": "news",
       "category": "education",
       "title": "Kumaun University academic and student updates",
@@ -124,11 +134,11 @@
       "reason": "Fresh public-interest news"
     },
     {
-      "id": "news-8",
+      "id": "news-9",
       "kind": "news",
       "category": "politics",
-      "title": "Uttarakhand panchayat election results: Coin toss, slip draws decide winners on counting day; young voic - The Times of India",
-      "summary": "The Times of India update",
+      "title": "Uttarakhand panchayat election results: Coin toss, slip draws decide winners on counting day; young voic - timesofindia.indiatimes.com",
+      "summary": "timesofindia.indiatimes.com update",
       "url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxPRW10eFdrMFZuMGVqTVlmQ3g4QUlNYzAycGE0a2hQR2c0NDJQQ0RycFlIRWFwejVSNXBicmtZeVVib093SkNWLWNXOW5JR0tjVFAxS1pIbkFsSFVHUlpXXzU3QV8ya0lCUlptRWlVTS04cU5sRW14dXc1UVowR3JuU0dIUHhsQUktTldaZm9GQjNPczNYdG5kc1VsX3NQeHF1bEdYTmdIbTA1S1dJbGRsNXhzS2dCcFowd2xQY2o5RE9lNm5CMkpldHU4N2dDbmk5aWl3X2lXd0VSRVJuMTFJSHVKXzRWN05LWkZIRC16R0lSS1NLb0djOEpqWEJWUk02ZnhYbzdTVDkwWFhPVV9jZWlwcldaeTJHU2FRTkZwRXhSeUxBZjY0RTg3UjdfQXdZOTFV0gG4AkFVX3lxTE45dUJKTVVnX2VKb3VHQTVaWVJCS3JVcHc3S25xbGtrS1JTS1ZHdjVyWjZvc0Q1bkJsdzA5V1B4RThpNXZhZXJ6RlFZa1F4eVJhUHQ5UVJlaVpCcVFuZ0YtTVdIT2pmRHNnZDJQM0ZoX0g4UW5ZZWhlcmFfX1FCS1liQUJvQkZ3dzBGV1pFWldQc1BYaGloWjhjQzNCc1AxMWRBaVhKMVRNcGxIMHJ5c29xUXRSQ1A3c0RqekhyNjhhcGpVQW9sVC01cHV0Z3BXUWNORk1faUdleDdwM2pudkFYWmVSS3RDdm52M1JPcGU0dm9iTzBzamQtTDBGRGpIbmpGc3ZxRV96YnBhVDFwMUg0dl9RTnhmSTREeTVjRmduZUl4aHVLNzU4V2RhUW1fMFhiZkdSLTRWSw?oc=5",
       "score": 7,
       "reason": "Fresh public-interest news"
@@ -154,7 +164,7 @@
       "reason": "Featured person with meaningful Almora connection"
     },
     {
-      "id": "news-15",
+      "id": "news-16",
       "kind": "news",
       "category": "environment",
       "title": "Monkey and langur activity remains a public concern around Ranikhet",
@@ -164,7 +174,7 @@
       "reason": "Fresh public-interest news"
     },
     {
-      "id": "news-9",
+      "id": "news-10",
       "kind": "news",
       "category": "politics",
       "title": "BJP sweeps urban local body polls in Uttarakhand, wins 10 of 11 mayoral seats - The New Indian Express",
@@ -196,57 +206,61 @@
   ],
   "agentIndex": {
     "town-concierge": [
-      "news-10",
+      "news-5",
       "news-11",
+      "news-12",
       "monkey-Sarkar Ki Ali",
       "monkey-Ranidhara",
-      "news-7",
-      "news-13",
+      "news-8",
+      "news-14",
       "route-ranikhet",
       "route-pithoragarh"
     ],
     "monkey-wildlife": [
       "monkey-Sarkar Ki Ali",
       "monkey-Ranidhara",
-      "news-15"
+      "news-16"
     ],
     "farm-watch": [
       "monkey-Sarkar Ki Ali",
       "monkey-Ranidhara",
-      "news-15"
+      "news-16"
     ],
     "local-jobs": [
-      "news-11",
-      "news-7",
-      "news-13"
+      "news-12",
+      "news-8",
+      "news-14"
     ],
     "rural-education": [
-      "news-11",
-      "news-7",
-      "news-13"
+      "news-12",
+      "news-8",
+      "news-14"
     ],
     "water-watch": [
-      "news-15"
+      "news-5",
+      "news-16"
     ],
     "route-intelligence": [
+      "news-5",
       "route-ranikhet",
       "route-pithoragarh"
     ],
     "tourism": [
       "person-uday-shankar",
       "person-tripti-bhatt",
-      "news-15",
+      "news-16",
       "route-ranikhet",
       "route-pithoragarh"
     ],
     "government-navigator": [
-      "news-10",
-      "news-8",
-      "news-9"
+      "news-11",
+      "news-9",
+      "news-10"
     ],
     "civic-watch": [
-      "news-10",
-      "news-15"
+      "news-5",
+      "news-11",
+      "news-16"
     ],
     "health-navigator": [
       "route-ranikhet",
@@ -257,10 +271,11 @@
       "route-pithoragarh"
     ],
     "hill-life": [
+      "news-5",
       "monkey-Sarkar Ki Ali",
       "monkey-Ranidhara",
-      "news-7",
-      "news-13",
+      "news-8",
+      "news-14",
       "route-ranikhet",
       "route-pithoragarh"
     ]

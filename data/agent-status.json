@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-08-16T16:44:11.661271+00:00",
+  "updatedAt": "2026-08-16T17:37:10.247362+00:00",
   "mode": "coordination-not-self-training",
   "explanation": "Agents consume refreshed public signals and coordinate workflows. They do not retrain or self-modify the underlying language model. High-impact actions remain human-accountable.",
   "metrics": {
-    "newsSignals": 16,
+    "newsSignals": 17,
     "monkeyHotspots": 12,
     "peopleProfiles": 32,
     "routeCatalog": 7,
     "appIntegrations": 6,
     "agentCount": 20,
-    "collaborationCount": 7
+    "collaborationCount": 9
   },
   "agents": [
     {
@@ -22,23 +22,23 @@
           "category": "innovation",
           "categoryBasis": "headline-keyword",
           "discoveredBy": "innovation",
-          "title": "No ethanol needed: Young innovator from Uttarakhand's Almora tests flying car - indiatoday.in",
-          "source": "indiatoday.in",
+          "title": "No ethanol needed: Young innovator from Uttarakhand's Almora tests flying car - India Today",
+          "source": "India Today",
           "published": "Fri, 07 Aug 2026 07:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPQXVIMGVnNjFBT2pIeUdiUXpTN1AwN3ZvbWZQcHlOWFBTNUVIRzBJYTZHUTdpX29DX2JGSWRMMlBpSE5ES0JLODRQNnU0T2hIdEI4MHBzaUdLLXVkVDAxb2J5RkxuRVhOeTlpNzQ3U3hFbHNzZkRQVEtmWUd0SUVNbnhwYWVPQjl0TkNYYnh1QlFSdVBWRzRFN2RIZm81QTVqMm5jQzZmczJEQVdGRDAzNEVGWkVxd0p1VzFFa2dQNUU4RU1MNHFCWEpLRTZPZ9IB0wFBVV95cUxNbV9zdjliWlJVa3hKVTNaNnVZYnBLZkxzVWVvR2UzVTNHZEhjd01NWVV1T3dvRVZDUUtCVDNPNFBkTXJkc2xyb0dvdHZMcWxPRmtxZXRyY2xxY0xTSmQ4UFIyZzFuRTBENjRKQWFFcWxwVDh6MkxQVUx3WXFFLWRxSGFwN1h6bXhYU2haNktJTTlmSDNqMENvLTIxeEFBdXFPVnotYUt3NTdTaEp5ZE9nek5mdGZJZlFQLTdfOVRKNDRuVUlVR1BTaUF3Ym1maDJ4b21N?oc=5",
           "summary": "",
-          "id": "innovation-976866745417898200"
+          "id": "innovation-2664484546255185691"
         },
         {
           "category": "sports",
           "categoryBasis": "headline-keyword",
           "discoveredBy": "jobs",
-          "title": "24th U’khand state badminton championship kicks off in Almora - The Times of India",
-          "source": "The Times of India",
+          "title": "24th U’khand state badminton championship kicks off in Almora - timesofindia.indiatimes.com",
+          "source": "timesofindia.indiatimes.com",
           "published": "Wed, 30 Jul 2025 07:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNRHBteVdYUzdEU255bnNkYUNEMEtzMW9qeW1vWEFmY0NNR2tRTVFnNEhrVG1sX1ZCb2tSSWE3NWFZbG9iNTlEVTV6YjlSX0R0bFFMaUpHNmE2TUc0NWFIVFFuRzMyaUV3UHdRcDc0RTNucG5XQmFXSnZnTnhFNHVDaTd3S0NnemVQSDdTZ3JQUnRHc3dYSExONXZpN1JkTUtrWE9fNzFBVV9TRU8tOTl3bDdwYUd2dFVkMGdndW1udVVHUmkxbFMtcWVTWXYxYlJST0HSAdcBQVVfeXFMTVRBVU9sa3dlZDV3dDBBZUFfUVBra2lCY3ZUSGgwZ2xkQlpPVGJJWHkyNVZSUW1tMVNhaDE1MzhHbWlicGlLYnZXUEIwQ3VGWm5IMTZDa2tBb1ZOQl9OcURhaWxPcy1oc2lXbmJTWnRiODVEaGdmQUlfX01IU2c5MldPbUROVFpwaVJxc00taC04LV9yLXNWaUxZOHpqRzNPQ1FkSEVWSWFvbGE1a3QxRUF4VmQ2QWxJcHhQM2V3T2gwMWlLUms5UkpzQ0xOTW1nQ2ZtcFZMQ2c?oc=5",
           "summary": "",
-          "id": "sports-2108369628299868813"
+          "id": "sports-7872046067527041428"
         },
         {
           "category": "sports",
@@ -49,18 +49,18 @@
           "published": "Sat, 26 Mar 2022 07:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNRXZsbDVtNHFGdTNsQi1EWEpNUnI4WXVNLWZKY1V6WS1OMlBuRWE0LWxCQWMxY1JER3ZlME45ZHVtN2lJYzdqbFg3WlpjbnF4Y042T2JEd0N6TnJ6YjBseFRnYnkwWkc0dlJfdkFiT2J4anN0UU5aaElPUnZ5cFNjTWhVMW9JNTdyby1JQ1FjM2wwOXpIaDF6cEVTZ21jbTJGOFM3SmFRbGVTRW5DV09fLWxCbERWMDVZVTE1UjlFdVNxeWZpblJz0gHMAUFVX3lxTE5URmpHSTFjWmJZeHdXeExsUGZTUUl6X2h0R0p5TnczRjBtYXRfQ05ZUjVDWFdzdWJrUHQ1T21QV2JYVTJDRTdpS2kzS2FXY0QwblhnQ2J3cVpsenMyTlVlMG52TU9WSkJhZGUtSVVGd2x6eGJfOGllS042QVlHWFBYTW9QN2JLU3BzZk1tUENaMzB1Z05seU12ODBYaFpMVmpsOURHZHVlWG1jdGh2elEzMDRpbmhDUXBGSlo2M2Z4VG9vUE9pRkowUmh1LQ?oc=5",
           "summary": "",
-          "id": "sports-4467223804129575089"
+          "id": "sports-6999475754358738599"
         },
         {
           "category": "sports",
           "categoryBasis": "headline-keyword",
           "discoveredBy": "sports",
-          "title": "Almora girl Aditi Bhatt picked for India’s junior badminton team - The Times of India",
-          "source": "The Times of India",
+          "title": "Almora girl Aditi Bhatt picked for India’s junior badminton team - timesofindia.indiatimes.com",
+          "source": "timesofindia.indiatimes.com",
           "published": "Fri, 31 Jan 2020 08:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNdllQYlpnc1ptcHdXMVA3VzRQVC1UQzJ3WWRUcnItU18xNlB1azl2ZUotMHZpZnprYWFVS29vZGdaOWRpTUNlSEZRZ2hpXy1qdkdBRnhINTlocE5lVDZvMTdKd1JBQnJGcWl2LUtjQURGbjM4elhQd0M0Zno3WjJ1V1M3OUpRSUUtSy1oMTZxMnZERXNTQjJKOHowTzkzVGhzY183S3hZd2pRSW9uTEg2amRKcW4yZlZZbEt4Z1R6Y3p0VnRKVC00MlBhU2hNVDEwYkd3btIB2gFBVV95cUxOS2FWSjl1R1ZhbnF5cDBfWGRYdm5CRG9hdnNnaXZyV2lWVk9OZlczaU9XN0toWS1LVEllbVY4aGFmcVQ1WU1aRzF0aW5faC12ZUdISTU0dmk4N3ZSVDYxb3BwTFkwMUdlOF9WYUNnR2VxcmsyaEJlNnBkOFF3UTFfdTNVYzR4S0hoOWE2blVSQ1k4MU12VlhGcUpyNGlSc3dNUEdHS2YwVkV5Wkg1aHRNcHV3aU52c295SXhVN1JGY1piM2lreG9STnR4UGhYQnNWel9nT29TVWl6dw?oc=5",
           "summary": "",
-          "id": "sports-5368589500844177821"
+          "id": "sports-899968733003068459"
         },
         {
           "category": "innovation",
@@ -71,7 +71,7 @@
           "published": "Fri, 07 Aug 2026 12:13:22 GMT",
           "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPS0pXOFJEeWt6V2h3MnAxaks4eUdrY3NBY3lhR0VIYVh6QnBoWjVuSlZjMm0tT1B1X2xhMXNUMk5VRUtuR2NGNm5rQkhKYUFJbXZLbHQ0d3RLSUVPd0NKU1YySGRVcEo3RlpCSHN3UGtubTJJUnVkd0dsZVhRcHJ3VXd5TUVDRmdPMXBwb2k2WGZKbkVYQlVBUHllOTJZelVHd0xwM2ZoQnBBSmNqcGlhNm5kZUVuc2p1RXQtMk5sLTVNN1loN0Jsb1dPR0psWnhQUGc?oc=5",
           "summary": "",
-          "id": "innovation-1480313871173693998"
+          "id": "innovation-4363000453529486451"
         }
       ]
     },
@@ -79,18 +79,29 @@
       "id": "civic-watch",
       "label": "Civic & Safety",
       "state": "ready",
-      "signalCount": 4,
+      "signalCount": 5,
       "signals": [
+        {
+          "category": "infrastructure",
+          "categoryBasis": "headline-keyword",
+          "discoveredBy": "infrastructure",
+          "title": "Uttarakhand CM Inaugurates Rs 138 Crore Projects In Almora - Construction World",
+          "source": "Construction World",
+          "published": "Mon, 01 Jun 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPMTdBUGllMXhXQTNCaWRfZ3hsMURjMGN3Tkk2ZDM0WEZaR3VESlJxVHVoTEY4LXdBNkJyQmlJalF6UUNzbHQya0N1V3VKUnIyelB2bXc5X1NXMzQ1Tzc4UFlrb1JQeGZrZWQxRjdScDc4T3hCU1JwTHF5MHMwNmVLdDVFQmNPWFpkdDQ0eVA1NFdaSlF4LVRBd2x5WVBEWnhsazNzU0x3MC1memtEQW9hMkx6OFlqMm9KMmhwZWdHQ0RwSDdiWS1RdVRB?oc=5",
+          "summary": "",
+          "id": "infrastructure-7658286359612432803"
+        },
         {
           "category": "politics",
           "categoryBasis": "headline-keyword",
           "discoveredBy": "politics",
-          "title": "Uttarakhand panchayat election results: Coin toss, slip draws decide winners on counting day; young voic - The Times of India",
-          "source": "The Times of India",
+          "title": "Uttarakhand panchayat election results: Coin toss, slip draws decide winners on counting day; young voic - timesofindia.indiatimes.com",
+          "source": "timesofindia.indiatimes.com",
           "published": "Fri, 01 Aug 2025 07:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxPRW10eFdrMFZuMGVqTVlmQ3g4QUlNYzAycGE0a2hQR2c0NDJQQ0RycFlIRWFwejVSNXBicmtZeVVib093SkNWLWNXOW5JR0tjVFAxS1pIbkFsSFVHUlpXXzU3QV8ya0lCUlptRWlVTS04cU5sRW14dXc1UVowR3JuU0dIUHhsQUktTldaZm9GQjNPczNYdG5kc1VsX3NQeHF1bEdYTmdIbTA1S1dJbGRsNXhzS2dCcFowd2xQY2o5RE9lNm5CMkpldHU4N2dDbmk5aWl3X2lXd0VSRVJuMTFJSHVKXzRWN05LWkZIRC16R0lSS1NLb0djOEpqWEJWUk02ZnhYbzdTVDkwWFhPVV9jZWlwcldaeTJHU2FRTkZwRXhSeUxBZjY0RTg3UjdfQXdZOTFV0gG4AkFVX3lxTE45dUJKTVVnX2VKb3VHQTVaWVJCS3JVcHc3S25xbGtrS1JTS1ZHdjVyWjZvc0Q1bkJsdzA5V1B4RThpNXZhZXJ6RlFZa1F4eVJhUHQ5UVJlaVpCcVFuZ0YtTVdIT2pmRHNnZDJQM0ZoX0g4UW5ZZWhlcmFfX1FCS1liQUJvQkZ3dzBGV1pFWldQc1BYaGloWjhjQzNCc1AxMWRBaVhKMVRNcGxIMHJ5c29xUXRSQ1A3c0RqekhyNjhhcGpVQW9sVC01cHV0Z3BXUWNORk1faUdleDdwM2pudkFYWmVSS3RDdm52M1JPcGU0dm9iTzBzamQtTDBGRGpIbmpGc3ZxRV96YnBhVDFwMUg0dl9RTnhmSTREeTVjRmduZUl4aHVLNzU4V2RhUW1fMFhiZkdSLTRWSw?oc=5",
           "summary": "",
-          "id": "politics-3400250322029202431"
+          "id": "politics-7107499874758017017"
         },
         {
           "category": "politics",
@@ -101,7 +112,7 @@
           "published": "Sun, 26 Jan 2025 08:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOcG1mU1JCeGQzYUxHcV9TWVNyS0N0NE5Nd1V0WDV1YVUySFdCb1MzN3hKam9GaXppWnNLcEMxWXgyRnV4QWpHTkRYUVNVcmZEd1JaMExoZ0xvV3RWTFRESjQ4amt1Z0FiNDNaOFlIdm1fdUJtVmtNOXFoTms3VzVSTnh0SnhicUpjS0FlZzV5WkNCUFRoZk10YTcxVk8wYllraEJmUVJfYVRNWG9maXJlbWp5ckNHYWs1dWxTTE02Mk80YVlFa3fSAdMBQVVfeXFMT3dGcnRmaFhWNnBnQUZVUWx2aGJoM0ZvTl9BZ2tka1lGQm0yNTRHb1NEWXNRcEF0TXA5VGx0ckxnbl8wNXlfb1dzZDRDUnBBUnUxQUhuakVVSDZnUjBvb0JYNk5Fb2tqWEpfb1ZjSUxjSlpJS1BOa3FfMjRHYnZCdzNhcUxwd1BfVVcyVnYtMDRobzJvOGlPenlqRE9KcWl5c3pIaHZRTjZRWFcydkZPbWxWb1VpSFFRbDUzUURQTjBEd2tFN01ER1cyQVhwdkZqZXlURQ?oc=5",
           "summary": "",
-          "id": "politics-3263194404688379226"
+          "id": "politics-6936163561372256895"
         },
         {
           "id": "official-district",
@@ -230,15 +241,39 @@
       "id": "transport-watch",
       "label": "Transport",
       "state": "ready",
-      "signalCount": 0,
-      "signals": []
+      "signalCount": 1,
+      "signals": [
+        {
+          "category": "infrastructure",
+          "categoryBasis": "headline-keyword",
+          "discoveredBy": "infrastructure",
+          "title": "Uttarakhand CM Inaugurates Rs 138 Crore Projects In Almora - Construction World",
+          "source": "Construction World",
+          "published": "Mon, 01 Jun 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPMTdBUGllMXhXQTNCaWRfZ3hsMURjMGN3Tkk2ZDM0WEZaR3VESlJxVHVoTEY4LXdBNkJyQmlJalF6UUNzbHQya0N1V3VKUnIyelB2bXc5X1NXMzQ1Tzc4UFlrb1JQeGZrZWQxRjdScDc4T3hCU1JwTHF5MHMwNmVLdDVFQmNPWFpkdDQ0eVA1NFdaSlF4LVRBd2x5WVBEWnhsazNzU0x3MC1memtEQW9hMkx6OFlqMm9KMmhwZWdHQ0RwSDdiWS1RdVRB?oc=5",
+          "summary": "",
+          "id": "infrastructure-7658286359612432803"
+        }
+      ]
     },
     {
       "id": "road-access",
       "label": "Road Access",
       "state": "ready",
-      "signalCount": 0,
-      "signals": []
+      "signalCount": 1,
+      "signals": [
+        {
+          "category": "infrastructure",
+          "categoryBasis": "headline-keyword",
+          "discoveredBy": "infrastructure",
+          "title": "Uttarakhand CM Inaugurates Rs 138 Crore Projects In Almora - Construction World",
+          "source": "Construction World",
+          "published": "Mon, 01 Jun 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPMTdBUGllMXhXQTNCaWRfZ3hsMURjMGN3Tkk2ZDM0WEZaR3VESlJxVHVoTEY4LXdBNkJyQmlJalF6UUNzbHQya0N1V3VKUnIyelB2bXc5X1NXMzQ1Tzc4UFlrb1JQeGZrZWQxRjdScDc4T3hCU1JwTHF5MHMwNmVLdDVFQmNPWFpkdDQ0eVA1NFdaSlF4LVRBd2x5WVBEWnhsazNzU0x3MC1memtEQW9hMkx6OFlqMm9KMmhwZWdHQ0RwSDdiWS1RdVRB?oc=5",
+          "summary": "",
+          "id": "infrastructure-7658286359612432803"
+        }
+      ]
     },
     {
       "id": "education",
@@ -250,12 +285,12 @@
           "category": "education",
           "categoryBasis": "headline-keyword",
           "discoveredBy": "jobs",
-          "title": "Why are U’khand villages emptying out? Education gaps 2nd largest driver of migration: Report - The Times of India",
-          "source": "The Times of India",
+          "title": "Why are U’khand villages emptying out? Education gaps 2nd largest driver of migration: Report - timesofindia.indiatimes.com",
+          "source": "timesofindia.indiatimes.com",
           "published": "Fri, 04 Apr 2025 07:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOM2kydW9zZnpDYVpmUU1Ca1p5QjgzbjdwN3kzcXNLNE5sODktdUFfV3pCZ3ZkVnZXek1uOXV2X3NfbTdQNnZpMnNjYVJHSkRhR1ZZTFRETGE1eFZMVFRtUXF0eUFhMW9NV3FKcTc1OU1aQndMY3JWVGZiT1dwTXc1MmJSdF9zbVVKSEd5TjZHUTJhdXBYOWloUWZ3TC1tVkhma3FOREdYTnhRUHpDV1k0R1lRVkw3X1dFZlJJRVFDNnBZWm5qbkVqNU5oWTJkdUN5T2JFbXhQWHhLZUlCN2ZsVTdQZDRYSEF6OXFxMUJNSndkM3UxV0prVHNR0gH_AUFVX3lxTE45MGRaZGNOY1FOS1BxZnNJUGtCcnJhNkM4azhDTEwzbVZjQy1zTXdRa3c3MktBNnNobmRsa1dkM05GS0tRcVVvRVhHVDVYS2pfcmtkN3I1Xzk5djNMZ2J3LXZoMFN4TXdieUNOOURrNnM5NXhrQjlSRzlKTzhuSFhQbWhkcVpFMktoY3JlcjZYLXF4Wmp6LXpkUFdGS2FfU2JJRldpeWFFc0Z1WWFDMGo3dVZsdUoxdk9hMGF3SUVUYXZSa2R5cFFDTi1TUzRsejF6Rjc0U0hyZXhiLTQ5dWZBRHcyNldUakZicVhQcUVjNEpJNHJnTk9sd2ZsZHlVRQ?oc=5",
           "summary": "",
-          "id": "education-528204825850572492"
+          "id": "education-2639801246089243027"
         },
         {
           "id": "official-jobs",
@@ -283,18 +318,29 @@
       "id": "rural-education",
       "label": "Rural Education",
       "state": "ready",
-      "signalCount": 3,
+      "signalCount": 4,
       "signals": [
+        {
+          "category": "infrastructure",
+          "categoryBasis": "headline-keyword",
+          "discoveredBy": "infrastructure",
+          "title": "Uttarakhand CM Inaugurates Rs 138 Crore Projects In Almora - Construction World",
+          "source": "Construction World",
+          "published": "Mon, 01 Jun 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPMTdBUGllMXhXQTNCaWRfZ3hsMURjMGN3Tkk2ZDM0WEZaR3VESlJxVHVoTEY4LXdBNkJyQmlJalF6UUNzbHQya0N1V3VKUnIyelB2bXc5X1NXMzQ1Tzc4UFlrb1JQeGZrZWQxRjdScDc4T3hCU1JwTHF5MHMwNmVLdDVFQmNPWFpkdDQ0eVA1NFdaSlF4LVRBd2x5WVBEWnhsazNzU0x3MC1memtEQW9hMkx6OFlqMm9KMmhwZWdHQ0RwSDdiWS1RdVRB?oc=5",
+          "summary": "",
+          "id": "infrastructure-7658286359612432803"
+        },
         {
           "category": "education",
           "categoryBasis": "headline-keyword",
           "discoveredBy": "jobs",
-          "title": "Why are U’khand villages emptying out? Education gaps 2nd largest driver of migration: Report - The Times of India",
-          "source": "The Times of India",
+          "title": "Why are U’khand villages emptying out? Education gaps 2nd largest driver of migration: Report - timesofindia.indiatimes.com",
+          "source": "timesofindia.indiatimes.com",
           "published": "Fri, 04 Apr 2025 07:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOM2kydW9zZnpDYVpmUU1Ca1p5QjgzbjdwN3kzcXNLNE5sODktdUFfV3pCZ3ZkVnZXek1uOXV2X3NfbTdQNnZpMnNjYVJHSkRhR1ZZTFRETGE1eFZMVFRtUXF0eUFhMW9NV3FKcTc1OU1aQndMY3JWVGZiT1dwTXc1MmJSdF9zbVVKSEd5TjZHUTJhdXBYOWloUWZ3TC1tVkhma3FOREdYTnhRUHpDV1k0R1lRVkw3X1dFZlJJRVFDNnBZWm5qbkVqNU5oWTJkdUN5T2JFbXhQWHhLZUlCN2ZsVTdQZDRYSEF6OXFxMUJNSndkM3UxV0prVHNR0gH_AUFVX3lxTE45MGRaZGNOY1FOS1BxZnNJUGtCcnJhNkM4azhDTEwzbVZjQy1zTXdRa3c3MktBNnNobmRsa1dkM05GS0tRcVVvRVhHVDVYS2pfcmtkN3I1Xzk5djNMZ2J3LXZoMFN4TXdieUNOOURrNnM5NXhrQjlSRzlKTzhuSFhQbWhkcVpFMktoY3JlcjZYLXF4Wmp6LXpkUFdGS2FfU2JJRldpeWFFc0Z1WWFDMGo3dVZsdUoxdk9hMGF3SUVUYXZSa2R5cFFDTi1TUzRsejF6Rjc0U0hyZXhiLTQ5dWZBRHcyNldUakZicVhQcUVjNEpJNHJnTk9sd2ZsZHlVRQ?oc=5",
           "summary": "",
-          "id": "education-528204825850572492"
+          "id": "education-2639801246089243027"
         },
         {
           "id": "official-jobs",
@@ -322,8 +368,19 @@
       "id": "water-watch",
       "label": "Water Watch",
       "state": "ready",
-      "signalCount": 1,
+      "signalCount": 2,
       "signals": [
+        {
+          "category": "infrastructure",
+          "categoryBasis": "headline-keyword",
+          "discoveredBy": "infrastructure",
+          "title": "Uttarakhand CM Inaugurates Rs 138 Crore Projects In Almora - Construction World",
+          "source": "Construction World",
+          "published": "Mon, 01 Jun 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPMTdBUGllMXhXQTNCaWRfZ3hsMURjMGN3Tkk2ZDM0WEZaR3VESlJxVHVoTEY4LXdBNkJyQmlJalF6UUNzbHQya0N1V3VKUnIyelB2bXc5X1NXMzQ1Tzc4UFlrb1JQeGZrZWQxRjdScDc4T3hCU1JwTHF5MHMwNmVLdDVFQmNPWFpkdDQ0eVA1NFdaSlF4LVRBd2x5WVBEWnhsazNzU0x3MC1memtEQW9hMkx6OFlqMm9KMmhwZWdHQ0RwSDdiWS1RdVRB?oc=5",
+          "summary": "",
+          "id": "infrastructure-7658286359612432803"
+        },
         {
           "id": "monkey-ranikhet",
           "category": "environment",
@@ -340,7 +397,7 @@
       "id": "route-intelligence",
       "label": "Route Intelligence",
       "state": "ready",
-      "signalCount": 4,
+      "signalCount": 5,
       "signals": [
         {
           "title": "Almora → Ranikhet: approx 48 km",
@@ -361,6 +418,17 @@
           "title": "Almora → Nainital: approx 65 km",
           "category": "transport",
           "url": "https://www.google.com/maps/dir/?api=1&origin=Almora%2C+Uttarakhand&destination=Nainital%2C+Uttarakhand"
+        },
+        {
+          "category": "infrastructure",
+          "categoryBasis": "headline-keyword",
+          "discoveredBy": "infrastructure",
+          "title": "Uttarakhand CM Inaugurates Rs 138 Crore Projects In Almora - Construction World",
+          "source": "Construction World",
+          "published": "Mon, 01 Jun 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPMTdBUGllMXhXQTNCaWRfZ3hsMURjMGN3Tkk2ZDM0WEZaR3VESlJxVHVoTEY4LXdBNkJyQmlJalF6UUNzbHQya0N1V3VKUnIyelB2bXc5X1NXMzQ1Tzc4UFlrb1JQeGZrZWQxRjdScDc4T3hCU1JwTHF5MHMwNmVLdDVFQmNPWFpkdDQ0eVA1NFdaSlF4LVRBd2x5WVBEWnhsazNzU0x3MC1memtEQW9hMkx6OFlqMm9KMmhwZWdHQ0RwSDdiWS1RdVRB?oc=5",
+          "summary": "",
+          "id": "infrastructure-7658286359612432803"
         }
       ]
     },
@@ -406,18 +474,29 @@
       "id": "hill-life",
       "label": "Hill Life Resolver",
       "state": "ready",
-      "signalCount": 3,
+      "signalCount": 4,
       "signals": [
+        {
+          "category": "infrastructure",
+          "categoryBasis": "headline-keyword",
+          "discoveredBy": "infrastructure",
+          "title": "Uttarakhand CM Inaugurates Rs 138 Crore Projects In Almora - Construction World",
+          "source": "Construction World",
+          "published": "Mon, 01 Jun 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPMTdBUGllMXhXQTNCaWRfZ3hsMURjMGN3Tkk2ZDM0WEZaR3VESlJxVHVoTEY4LXdBNkJyQmlJalF6UUNzbHQya0N1V3VKUnIyelB2bXc5X1NXMzQ1Tzc4UFlrb1JQeGZrZWQxRjdScDc4T3hCU1JwTHF5MHMwNmVLdDVFQmNPWFpkdDQ0eVA1NFdaSlF4LVRBd2x5WVBEWnhsazNzU0x3MC1memtEQW9hMkx6OFlqMm9KMmhwZWdHQ0RwSDdiWS1RdVRB?oc=5",
+          "summary": "",
+          "id": "infrastructure-7658286359612432803"
+        },
         {
           "category": "education",
           "categoryBasis": "headline-keyword",
           "discoveredBy": "jobs",
-          "title": "Why are U’khand villages emptying out? Education gaps 2nd largest driver of migration: Report - The Times of India",
-          "source": "The Times of India",
+          "title": "Why are U’khand villages emptying out? Education gaps 2nd largest driver of migration: Report - timesofindia.indiatimes.com",
+          "source": "timesofindia.indiatimes.com",
           "published": "Fri, 04 Apr 2025 07:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOM2kydW9zZnpDYVpmUU1Ca1p5QjgzbjdwN3kzcXNLNE5sODktdUFfV3pCZ3ZkVnZXek1uOXV2X3NfbTdQNnZpMnNjYVJHSkRhR1ZZTFRETGE1eFZMVFRtUXF0eUFhMW9NV3FKcTc1OU1aQndMY3JWVGZiT1dwTXc1MmJSdF9zbVVKSEd5TjZHUTJhdXBYOWloUWZ3TC1tVkhma3FOREdYTnhRUHpDV1k0R1lRVkw3X1dFZlJJRVFDNnBZWm5qbkVqNU5oWTJkdUN5T2JFbXhQWHhLZUlCN2ZsVTdQZDRYSEF6OXFxMUJNSndkM3UxV0prVHNR0gH_AUFVX3lxTE45MGRaZGNOY1FOS1BxZnNJUGtCcnJhNkM4azhDTEwzbVZjQy1zTXdRa3c3MktBNnNobmRsa1dkM05GS0tRcVVvRVhHVDVYS2pfcmtkN3I1Xzk5djNMZ2J3LXZoMFN4TXdieUNOOURrNnM5NXhrQjlSRzlKTzhuSFhQbWhkcVpFMktoY3JlcjZYLXF4Wmp6LXpkUFdGS2FfU2JJRldpeWFFc0Z1WWFDMGo3dVZsdUoxdk9hMGF3SUVUYXZSa2R5cFFDTi1TUzRsejF6Rjc0U0hyZXhiLTQ5dWZBRHcyNldUakZicVhQcUVjNEpJNHJnTk9sd2ZsZHlVRQ?oc=5",
           "summary": "",
-          "id": "education-528204825850572492"
+          "id": "education-2639801246089243027"
         },
         {
           "id": "official-education",
@@ -445,8 +524,20 @@
       "id": "traffic",
       "label": "Traffic",
       "state": "ready",
-      "signalCount": 0,
-      "signals": []
+      "signalCount": 1,
+      "signals": [
+        {
+          "category": "infrastructure",
+          "categoryBasis": "headline-keyword",
+          "discoveredBy": "infrastructure",
+          "title": "Uttarakhand CM Inaugurates Rs 138 Crore Projects In Almora - Construction World",
+          "source": "Construction World",
+          "published": "Mon, 01 Jun 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPMTdBUGllMXhXQTNCaWRfZ3hsMURjMGN3Tkk2ZDM0WEZaR3VESlJxVHVoTEY4LXdBNkJyQmlJalF6UUNzbHQya0N1V3VKUnIyelB2bXc5X1NXMzQ1Tzc4UFlrb1JQeGZrZWQxRjdScDc4T3hCU1JwTHF5MHMwNmVLdDVFQmNPWFpkdDQ0eVA1NFdaSlF4LVRBd2x5WVBEWnhsazNzU0x3MC1memtEQW9hMkx6OFlqMm9KMmhwZWdHQ0RwSDdiWS1RdVRB?oc=5",
+          "summary": "",
+          "id": "infrastructure-7658286359612432803"
+        }
+      ]
     },
     {
       "id": "price-scam-watch",
@@ -465,12 +556,12 @@
           "category": "politics",
           "categoryBasis": "headline-keyword",
           "discoveredBy": "politics",
-          "title": "Uttarakhand panchayat election results: Coin toss, slip draws decide winners on counting day; young voic - The Times of India",
-          "source": "The Times of India",
+          "title": "Uttarakhand panchayat election results: Coin toss, slip draws decide winners on counting day; young voic - timesofindia.indiatimes.com",
+          "source": "timesofindia.indiatimes.com",
           "published": "Fri, 01 Aug 2025 07:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxPRW10eFdrMFZuMGVqTVlmQ3g4QUlNYzAycGE0a2hQR2c0NDJQQ0RycFlIRWFwejVSNXBicmtZeVVib093SkNWLWNXOW5JR0tjVFAxS1pIbkFsSFVHUlpXXzU3QV8ya0lCUlptRWlVTS04cU5sRW14dXc1UVowR3JuU0dIUHhsQUktTldaZm9GQjNPczNYdG5kc1VsX3NQeHF1bEdYTmdIbTA1S1dJbGRsNXhzS2dCcFowd2xQY2o5RE9lNm5CMkpldHU4N2dDbmk5aWl3X2lXd0VSRVJuMTFJSHVKXzRWN05LWkZIRC16R0lSS1NLb0djOEpqWEJWUk02ZnhYbzdTVDkwWFhPVV9jZWlwcldaeTJHU2FRTkZwRXhSeUxBZjY0RTg3UjdfQXdZOTFV0gG4AkFVX3lxTE45dUJKTVVnX2VKb3VHQTVaWVJCS3JVcHc3S25xbGtrS1JTS1ZHdjVyWjZvc0Q1bkJsdzA5V1B4RThpNXZhZXJ6RlFZa1F4eVJhUHQ5UVJlaVpCcVFuZ0YtTVdIT2pmRHNnZDJQM0ZoX0g4UW5ZZWhlcmFfX1FCS1liQUJvQkZ3dzBGV1pFWldQc1BYaGloWjhjQzNCc1AxMWRBaVhKMVRNcGxIMHJ5c29xUXRSQ1A3c0RqekhyNjhhcGpVQW9sVC01cHV0Z3BXUWNORk1faUdleDdwM2pudkFYWmVSS3RDdm52M1JPcGU0dm9iTzBzamQtTDBGRGpIbmpGc3ZxRV96YnBhVDFwMUg0dl9RTnhmSTREeTVjRmduZUl4aHVLNzU4V2RhUW1fMFhiZkdSLTRWSw?oc=5",
           "summary": "",
-          "id": "politics-3400250322029202431"
+          "id": "politics-7107499874758017017"
         },
         {
           "category": "politics",
@@ -481,7 +572,7 @@
           "published": "Sun, 26 Jan 2025 08:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOcG1mU1JCeGQzYUxHcV9TWVNyS0N0NE5Nd1V0WDV1YVUySFdCb1MzN3hKam9GaXppWnNLcEMxWXgyRnV4QWpHTkRYUVNVcmZEd1JaMExoZ0xvV3RWTFRESjQ4amt1Z0FiNDNaOFlIdm1fdUJtVmtNOXFoTms3VzVSTnh0SnhicUpjS0FlZzV5WkNCUFRoZk10YTcxVk8wYllraEJmUVJfYVRNWG9maXJlbWp5ckNHYWs1dWxTTE02Mk80YVlFa3fSAdMBQVVfeXFMT3dGcnRmaFhWNnBnQUZVUWx2aGJoM0ZvTl9BZ2tka1lGQm0yNTRHb1NEWXNRcEF0TXA5VGx0ckxnbl8wNXlfb1dzZDRDUnBBUnUxQUhuakVVSDZnUjBvb0JYNk5Fb2tqWEpfb1ZjSUxjSlpJS1BOa3FfMjRHYnZCdzNhcUxwd1BfVVcyVnYtMDRobzJvOGlPenlqRE9KcWl5c3pIaHZRTjZRWFcydkZPbWxWb1VpSFFRbDUzUURQTjBEd2tFN01ER1cyQVhwdkZqZXlURQ?oc=5",
           "summary": "",
-          "id": "politics-3263194404688379226"
+          "id": "politics-6936163561372256895"
         },
         {
           "id": "official-district",
@@ -499,8 +590,19 @@
       "id": "tourism",
       "label": "Tourism Planner",
       "state": "ready",
-      "signalCount": 1,
+      "signalCount": 2,
       "signals": [
+        {
+          "category": "infrastructure",
+          "categoryBasis": "headline-keyword",
+          "discoveredBy": "infrastructure",
+          "title": "Uttarakhand CM Inaugurates Rs 138 Crore Projects In Almora - Construction World",
+          "source": "Construction World",
+          "published": "Mon, 01 Jun 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPMTdBUGllMXhXQTNCaWRfZ3hsMURjMGN3Tkk2ZDM0WEZaR3VESlJxVHVoTEY4LXdBNkJyQmlJalF6UUNzbHQya0N1V3VKUnIyelB2bXc5X1NXMzQ1Tzc4UFlrb1JQeGZrZWQxRjdScDc4T3hCU1JwTHF5MHMwNmVLdDVFQmNPWFpkdDQ0eVA1NFdaSlF4LVRBd2x5WVBEWnhsazNzU0x3MC1memtEQW9hMkx6OFlqMm9KMmhwZWdHQ0RwSDdiWS1RdVRB?oc=5",
+          "summary": "",
+          "id": "infrastructure-7658286359612432803"
+        },
         {
           "id": "monkey-ranikhet",
           "category": "environment",
@@ -535,8 +637,19 @@
       "id": "local-task-router",
       "label": "Clean Almora & Local Tasks",
       "state": "ready",
-      "signalCount": 1,
+      "signalCount": 2,
       "signals": [
+        {
+          "category": "infrastructure",
+          "categoryBasis": "headline-keyword",
+          "discoveredBy": "infrastructure",
+          "title": "Uttarakhand CM Inaugurates Rs 138 Crore Projects In Almora - Construction World",
+          "source": "Construction World",
+          "published": "Mon, 01 Jun 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPMTdBUGllMXhXQTNCaWRfZ3hsMURjMGN3Tkk2ZDM0WEZaR3VESlJxVHVoTEY4LXdBNkJyQmlJalF6UUNzbHQya0N1V3VKUnIyelB2bXc5X1NXMzQ1Tzc4UFlrb1JQeGZrZWQxRjdScDc4T3hCU1JwTHF5MHMwNmVLdDVFQmNPWFpkdDQ0eVA1NFdaSlF4LVRBd2x5WVBEWnhsazNzU0x3MC1memtEQW9hMkx6OFlqMm9KMmhwZWdHQ0RwSDdiWS1RdVRB?oc=5",
+          "summary": "",
+          "id": "infrastructure-7658286359612432803"
+        },
         {
           "id": "monkey-ranikhet",
           "category": "environment",
@@ -565,12 +678,22 @@
     },
     {
       "agents": [
+        "road-access",
+        "transport-watch"
+      ],
+      "reason": "Road and infrastructure updates change viable travel routes",
+      "signals": [
+        "Uttarakhand CM Inaugurates Rs 138 Crore Projects In Almora - Construction World"
+      ]
+    },
+    {
+      "agents": [
         "local-jobs",
         "rural-education"
       ],
       "reason": "Jobs and education should connect learning, skills and vacancies",
       "signals": [
-        "Why are U’khand villages emptying out? Education gaps 2nd largest driver of migration: Report - The Times of India",
+        "Why are U’khand villages emptying out? Education gaps 2nd largest driver of migration: Report - timesofindia.indiatimes.com",
         "Uttarakhand Subordinate Service Selection Commission recruitment updates",
         "Kumaun University academic and student updates"
       ]
@@ -582,7 +705,7 @@
       ],
       "reason": "Policy and government updates need clear citizen-facing explanations",
       "signals": [
-        "Uttarakhand panchayat election results: Coin toss, slip draws decide winners on counting day; young voic - The Times of India",
+        "Uttarakhand panchayat election results: Coin toss, slip draws decide winners on counting day; young voic - timesofindia.indiatimes.com",
         "BJP sweeps urban local body polls in Uttarakhand, wins 10 of 11 mayoral seats - The New Indian Express",
         "Almora district administration and current public notices"
       ]
@@ -606,7 +729,18 @@
       ],
       "reason": "Repeated water problems need locality clustering plus accountable public-service routing",
       "signals": [
+        "Uttarakhand CM Inaugurates Rs 138 Crore Projects In Almora - Construction World",
         "Monkey and langur activity remains a public concern around Ranikhet"
+      ]
+    },
+    {
+      "agents": [
+        "hill-life",
+        "health-navigator"
+      ],
+      "reason": "Medical and elderly-support situations often depend on road and last-mile access",
+      "signals": [
+        "Uttarakhand CM Inaugurates Rs 138 Crore Projects In Almora - Construction World"
       ]
     },
     {
