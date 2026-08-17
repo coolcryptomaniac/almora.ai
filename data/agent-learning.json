@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-17T17:47:27.528091+00:00",
+  "updatedAt": "2026-08-17T19:00:20.629261+00:00",
   "mode": "shared-evidence-memory-not-model-training",
   "explanation": "These short-lived lessons are derived from verified/public signals and agent handoffs. They improve coordination context without retraining or autonomously modifying the underlying language model.",
   "count": 8,
@@ -23,8 +23,8 @@
         "Dungadhara: activity 4/4; https://www.amarujala.com/uttarakhand/almora/monkeys-ateck-in-almora-almora-news-c-8-1-146492-2023-05-21"
       ],
       "confidence": "high",
-      "createdAt": "2026-08-17T17:47:27.528091+00:00",
-      "expiresAt": "2026-08-24T17:47:27.528091+00:00"
+      "createdAt": "2026-08-17T19:00:20.629261+00:00",
+      "expiresAt": "2026-08-24T19:00:20.629261+00:00"
     },
     {
       "id": "access-before-travel",
@@ -42,8 +42,8 @@
         "Monkey and langur activity remains a public concern around Ranikhet — https://www.amarujala.com/uttarakhand/almora/in-the-morning-flocks-of-monkeys-were-seen-in-the-markets-and-streets-leaving-people-in-panic-ranikhet-news-c-232-1-alm1002-143114-2026-05-08"
       ],
       "confidence": "high",
-      "createdAt": "2026-08-17T17:47:27.528091+00:00",
-      "expiresAt": "2026-08-24T17:47:27.528091+00:00"
+      "createdAt": "2026-08-17T19:00:20.629261+00:00",
+      "expiresAt": "2026-08-24T19:00:20.629261+00:00"
     },
     {
       "id": "learn-to-earn",
@@ -56,13 +56,13 @@
       ],
       "rule": "When education or skill guidance is requested, connect it to current local opportunity signals when available; do not invent vacancies.",
       "evidence": [
-        "Why are U’khand villages emptying out? Education gaps 2nd largest driver of migration: Report - timesofindia.indiatimes.com — https://news.google.com/rss/articles/CBMi-gFBVV95cUxOM2kydW9zZnpDYVpmUU1Ca1p5QjgzbjdwN3kzcXNLNE5sODktdUFfV3pCZ3ZkVnZXek1uOXV2X3NfbTdQNnZpMnNjYVJHSkRhR1ZZTFRETGE1eFZMVFRtUXF0eUFhMW9NV3FKcTc1OU1aQndMY3JWVGZiT1dwTXc1MmJSdF9zbVVKSEd5TjZHUTJhdXBYOWloUWZ3TC1tVkhma3FOREdYTnhRUHpDV1k0R1lRVkw3X1dFZlJJRVFDNnBZWm5qbkVqNU5oWTJkdUN5T2JFbXhQWHhLZUlCN2ZsVTdQZDRYSEF6OXFxMUJNSndkM3UxV0prVHNR0gH_AUFVX3lxTE45MGRaZGNOY1FOS1BxZnNJUGtCcnJhNkM4azhDTEwzbVZjQy1zTXdRa3c3MktBNnNobmRsa1dkM05GS0tRcVVvRVhHVDVYS2pfcmtkN3I1Xzk5djNMZ2J3LXZoMFN4TXdieUNOOURrNnM5NXhrQjlSRzlKTzhuSFhQbWhkcVpFMktoY3JlcjZYLXF4Wmp6LXpkUFdGS2FfU2JJRldpeWFFc0Z1WWFDMGo3dVZsdUoxdk9hMGF3SUVUYXZSa2R5cFFDTi1TUzRsejF6Rjc0U0hyZXhiLTQ5dWZBRHcyNldUakZicVhQcUVjNEpJNHJnTk9sd2ZsZHlVRQ?oc=5",
+        "Why are U’khand villages emptying out? Education gaps 2nd largest driver of migration: Report - The Times of India — https://news.google.com/rss/articles/CBMi-gFBVV95cUxOM2kydW9zZnpDYVpmUU1Ca1p5QjgzbjdwN3kzcXNLNE5sODktdUFfV3pCZ3ZkVnZXek1uOXV2X3NfbTdQNnZpMnNjYVJHSkRhR1ZZTFRETGE1eFZMVFRtUXF0eUFhMW9NV3FKcTc1OU1aQndMY3JWVGZiT1dwTXc1MmJSdF9zbVVKSEd5TjZHUTJhdXBYOWloUWZ3TC1tVkhma3FOREdYTnhRUHpDV1k0R1lRVkw3X1dFZlJJRVFDNnBZWm5qbkVqNU5oWTJkdUN5T2JFbXhQWHhLZUlCN2ZsVTdQZDRYSEF6OXFxMUJNSndkM3UxV0prVHNR0gH_AUFVX3lxTE45MGRaZGNOY1FOS1BxZnNJUGtCcnJhNkM4azhDTEwzbVZjQy1zTXdRa3c3MktBNnNobmRsa1dkM05GS0tRcVVvRVhHVDVYS2pfcmtkN3I1Xzk5djNMZ2J3LXZoMFN4TXdieUNOOURrNnM5NXhrQjlSRzlKTzhuSFhQbWhkcVpFMktoY3JlcjZYLXF4Wmp6LXpkUFdGS2FfU2JJRldpeWFFc0Z1WWFDMGo3dVZsdUoxdk9hMGF3SUVUYXZSa2R5cFFDTi1TUzRsejF6Rjc0U0hyZXhiLTQ5dWZBRHcyNldUakZicVhQcUVjNEpJNHJnTk9sd2ZsZHlVRQ?oc=5",
         "Uttarakhand Subordinate Service Selection Commission recruitment updates — https://sssc.uk.gov.in/",
         "Kumaun University academic and student updates — https://www.kunainital.ac.in/"
       ],
       "confidence": "medium",
-      "createdAt": "2026-08-17T17:47:27.528091+00:00",
-      "expiresAt": "2026-08-24T17:47:27.528091+00:00"
+      "createdAt": "2026-08-17T19:00:20.629261+00:00",
+      "expiresAt": "2026-08-24T19:00:20.629261+00:00"
     },
     {
       "id": "jobs-to-skills",
@@ -75,13 +75,13 @@
       ],
       "rule": "When a job requires missing skills, return a learning pathway instead of ending at the vacancy card.",
       "evidence": [
-        "Why are U’khand villages emptying out? Education gaps 2nd largest driver of migration: Report - timesofindia.indiatimes.com — https://news.google.com/rss/articles/CBMi-gFBVV95cUxOM2kydW9zZnpDYVpmUU1Ca1p5QjgzbjdwN3kzcXNLNE5sODktdUFfV3pCZ3ZkVnZXek1uOXV2X3NfbTdQNnZpMnNjYVJHSkRhR1ZZTFRETGE1eFZMVFRtUXF0eUFhMW9NV3FKcTc1OU1aQndMY3JWVGZiT1dwTXc1MmJSdF9zbVVKSEd5TjZHUTJhdXBYOWloUWZ3TC1tVkhma3FOREdYTnhRUHpDV1k0R1lRVkw3X1dFZlJJRVFDNnBZWm5qbkVqNU5oWTJkdUN5T2JFbXhQWHhLZUlCN2ZsVTdQZDRYSEF6OXFxMUJNSndkM3UxV0prVHNR0gH_AUFVX3lxTE45MGRaZGNOY1FOS1BxZnNJUGtCcnJhNkM4azhDTEwzbVZjQy1zTXdRa3c3MktBNnNobmRsa1dkM05GS0tRcVVvRVhHVDVYS2pfcmtkN3I1Xzk5djNMZ2J3LXZoMFN4TXdieUNOOURrNnM5NXhrQjlSRzlKTzhuSFhQbWhkcVpFMktoY3JlcjZYLXF4Wmp6LXpkUFdGS2FfU2JJRldpeWFFc0Z1WWFDMGo3dVZsdUoxdk9hMGF3SUVUYXZSa2R5cFFDTi1TUzRsejF6Rjc0U0hyZXhiLTQ5dWZBRHcyNldUakZicVhQcUVjNEpJNHJnTk9sd2ZsZHlVRQ?oc=5",
+        "Why are U’khand villages emptying out? Education gaps 2nd largest driver of migration: Report - The Times of India — https://news.google.com/rss/articles/CBMi-gFBVV95cUxOM2kydW9zZnpDYVpmUU1Ca1p5QjgzbjdwN3kzcXNLNE5sODktdUFfV3pCZ3ZkVnZXek1uOXV2X3NfbTdQNnZpMnNjYVJHSkRhR1ZZTFRETGE1eFZMVFRtUXF0eUFhMW9NV3FKcTc1OU1aQndMY3JWVGZiT1dwTXc1MmJSdF9zbVVKSEd5TjZHUTJhdXBYOWloUWZ3TC1tVkhma3FOREdYTnhRUHpDV1k0R1lRVkw3X1dFZlJJRVFDNnBZWm5qbkVqNU5oWTJkdUN5T2JFbXhQWHhLZUlCN2ZsVTdQZDRYSEF6OXFxMUJNSndkM3UxV0prVHNR0gH_AUFVX3lxTE45MGRaZGNOY1FOS1BxZnNJUGtCcnJhNkM4azhDTEwzbVZjQy1zTXdRa3c3MktBNnNobmRsa1dkM05GS0tRcVVvRVhHVDVYS2pfcmtkN3I1Xzk5djNMZ2J3LXZoMFN4TXdieUNOOURrNnM5NXhrQjlSRzlKTzhuSFhQbWhkcVpFMktoY3JlcjZYLXF4Wmp6LXpkUFdGS2FfU2JJRldpeWFFc0Z1WWFDMGo3dVZsdUoxdk9hMGF3SUVUYXZSa2R5cFFDTi1TUzRsejF6Rjc0U0hyZXhiLTQ5dWZBRHcyNldUakZicVhQcUVjNEpJNHJnTk9sd2ZsZHlVRQ?oc=5",
         "Uttarakhand Subordinate Service Selection Commission recruitment updates — https://sssc.uk.gov.in/",
         "Kumaun University academic and student updates — https://www.kunainital.ac.in/"
       ],
       "confidence": "medium",
-      "createdAt": "2026-08-17T17:47:27.528091+00:00",
-      "expiresAt": "2026-08-24T17:47:27.528091+00:00"
+      "createdAt": "2026-08-17T19:00:20.629261+00:00",
+      "expiresAt": "2026-08-24T19:00:20.629261+00:00"
     },
     {
       "id": "external-app-fallback",
@@ -101,8 +101,8 @@
         "Business Hub: ./businesses.html"
       ],
       "confidence": "high",
-      "createdAt": "2026-08-17T17:47:27.528091+00:00",
-      "expiresAt": "2026-08-24T17:47:27.528091+00:00"
+      "createdAt": "2026-08-17T19:00:20.629261+00:00",
+      "expiresAt": "2026-08-24T19:00:20.629261+00:00"
     },
     {
       "id": "cross-service-sequencing",
@@ -126,8 +126,8 @@
         "water-watch + civic-watch: Repeated water problems need locality clustering plus accountable public-service routing"
       ],
       "confidence": "high",
-      "createdAt": "2026-08-17T17:47:27.528091+00:00",
-      "expiresAt": "2026-08-24T17:47:27.528091+00:00"
+      "createdAt": "2026-08-17T19:00:20.629261+00:00",
+      "expiresAt": "2026-08-24T19:00:20.629261+00:00"
     },
     {
       "id": "public-source-discipline",
@@ -140,13 +140,13 @@
       ],
       "rule": "For government/political/current-affairs questions, distinguish official information, reported news and resident allegation. Prefer source links and timestamps.",
       "evidence": [
-        "Uttarakhand panchayat election results: Coin toss, slip draws decide winners on counting day; young voic - timesofindia.indiatimes.com — timesofindia.indiatimes.com",
+        "Uttarakhand panchayat election results: Coin toss, slip draws decide winners on counting day; young voic - The Times of India — The Times of India",
         "BJP sweeps urban local body polls in Uttarakhand, wins 10 of 11 mayoral seats - The New Indian Express — The New Indian Express",
         "Almora district administration and current public notices — District Almora"
       ],
       "confidence": "high",
-      "createdAt": "2026-08-17T17:47:27.528091+00:00",
-      "expiresAt": "2026-08-24T17:47:27.528091+00:00"
+      "createdAt": "2026-08-17T19:00:20.629261+00:00",
+      "expiresAt": "2026-08-24T19:00:20.629261+00:00"
     },
     {
       "id": "route-distance-discipline",
@@ -166,8 +166,8 @@
         "Almora → Pithoragarh: approx 115 km"
       ],
       "confidence": "high",
-      "createdAt": "2026-08-17T17:47:27.528091+00:00",
-      "expiresAt": "2026-08-24T17:47:27.528091+00:00"
+      "createdAt": "2026-08-17T19:00:20.629261+00:00",
+      "expiresAt": "2026-08-24T19:00:20.629261+00:00"
     }
   ]
 }
