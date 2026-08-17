@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-08-17T14:47:44.396990+00:00",
+  "updatedAt": "2026-08-17T15:43:38.070464+00:00",
   "editorialPolicy": "Rank current, useful and source-linked Almora public-interest content. Routine sensational crime is not promoted. Resident/problem signals remain explicitly unverified or evidence-scoped.",
-  "count": 20,
+  "count": 19,
   "items": [
     {
       "id": "news-4",
@@ -14,7 +14,7 @@
       "reason": "Fresh public-interest news"
     },
     {
-      "id": "news-11",
+      "id": "news-10",
       "kind": "news",
       "category": "governance",
       "title": "Almora district administration and current public notices",
@@ -64,22 +64,12 @@
       "reason": "Fresh public-interest news"
     },
     {
-      "id": "news-12",
+      "id": "news-11",
       "kind": "news",
       "category": "jobs",
       "title": "Uttarakhand Subordinate Service Selection Commission recruitment updates",
       "summary": "Official state recruitment notices and candidate updates.",
       "url": "https://sssc.uk.gov.in/",
-      "score": 9,
-      "reason": "Fresh public-interest news"
-    },
-    {
-      "id": "news-7",
-      "kind": "news",
-      "category": "infrastructure",
-      "title": "Uttarakhand Chief Minister Discusses Railway Infrastructure Expansion with Union Minister Ashwini Vaishnaw | Hindustan Times - Hindustan Times",
-      "summary": "Hindustan Times update",
-      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOZEEwRmEwNGgya21tMF9KN2JlTWV3QUV5QU9UXzZmNnVtaWZDUUhxX2tKWHFjYUdoaE5LTkN3eUlFN3B3UHRYRmdjdWw0Q2NSWlR0QTNLUHRhWFJSa0R1MXZMb093Q3JxeTFFc0VuXzByd1BLSmt3SHI1SUcyVnBUQ2NUMG5zYkNqWHgtUFJ3a0M2YnNVOWMyZmtRdVdPSExQRWhDdFdrZlZJOENNdHl6YXgwMUx6RE1CNmxMRXhzVm5ndTdpVXlQTTBLLU00QkFVLVg2N2pyQmdFei1wLTdnZ2kxS2ZmVElhSmRESF84ZFd2b2pnRk5OcnhR0gH_AUFVX3lxTFBjTXZRbmVuVTJ4UXk2WDFLZHVQTnhSeUxQSGE4TE02bkhaQ1otVWxiXy1UX21lOXVBcXJqeTRCM0Q4c1lraEdZYllRWWozOEFFaENVYTVMcnB5SERMVnNLN1hVZDZqY1FPWGhfbTUwYWsydDJNY014MWJmMGlSRlBRMzhPSWk0QkVydWhwLW05Wk5RTVhYTUxKSTEyUzVGcmZvRUw1ekpoSUFMaDhXc1lHLVdtX2x1T1dDalJDS3ZPeEdlbnhHd25ZQUdodHlPa3RWQnZKZDhCTUt5WElUZlhQX0RYeHpMVVhZUXh4TUVvWnhhYnlkMGgwUDIwMFcxOA?oc=5",
       "score": 9,
       "reason": "Fresh public-interest news"
     },
@@ -104,7 +94,7 @@
       "reason": "Local problem signal"
     },
     {
-      "id": "news-8",
+      "id": "news-7",
       "kind": "news",
       "category": "education",
       "title": "Why are U’khand villages emptying out? Education gaps 2nd largest driver of migration: Report - The Times of India",
@@ -114,7 +104,7 @@
       "reason": "Fresh public-interest news"
     },
     {
-      "id": "news-15",
+      "id": "news-14",
       "kind": "news",
       "category": "innovation",
       "title": "Rural Business Incubator, Hawalbagh supports local entrepreneurship",
@@ -124,7 +114,7 @@
       "reason": "Fresh public-interest news"
     },
     {
-      "id": "news-14",
+      "id": "news-13",
       "kind": "news",
       "category": "education",
       "title": "Kumaun University academic and student updates",
@@ -134,7 +124,7 @@
       "reason": "Fresh public-interest news"
     },
     {
-      "id": "news-9",
+      "id": "news-8",
       "kind": "news",
       "category": "politics",
       "title": "Uttarakhand panchayat election results: Coin toss, slip draws decide winners on counting day; young voic - The Times of India",
@@ -164,7 +154,7 @@
       "reason": "Featured person with meaningful Almora connection"
     },
     {
-      "id": "news-16",
+      "id": "news-15",
       "kind": "news",
       "category": "environment",
       "title": "Monkey and langur activity remains a public concern around Ranikhet",
@@ -174,7 +164,7 @@
       "reason": "Fresh public-interest news"
     },
     {
-      "id": "news-10",
+      "id": "news-9",
       "kind": "news",
       "category": "politics",
       "title": "BJP sweeps urban local body polls in Uttarakhand, wins 10 of 11 mayoral seats - The New Indian Express",
@@ -207,64 +197,60 @@
   "agentIndex": {
     "town-concierge": [
       "news-4",
+      "news-10",
       "news-11",
-      "news-12",
-      "news-7",
       "monkey-Sarkar Ki Ali",
       "monkey-Ranidhara",
-      "news-8",
-      "news-14",
+      "news-7",
+      "news-13",
       "route-ranikhet",
       "route-pithoragarh"
     ],
     "monkey-wildlife": [
       "monkey-Sarkar Ki Ali",
       "monkey-Ranidhara",
-      "news-16"
+      "news-15"
     ],
     "farm-watch": [
       "monkey-Sarkar Ki Ali",
       "monkey-Ranidhara",
-      "news-16"
+      "news-15"
     ],
     "local-jobs": [
-      "news-12",
-      "news-8",
-      "news-14"
+      "news-11",
+      "news-7",
+      "news-13"
     ],
     "rural-education": [
-      "news-12",
-      "news-8",
-      "news-14"
+      "news-11",
+      "news-7",
+      "news-13"
     ],
     "water-watch": [
       "news-4",
-      "news-7",
-      "news-16"
+      "news-15"
     ],
     "route-intelligence": [
       "news-4",
-      "news-7",
       "route-ranikhet",
       "route-pithoragarh"
     ],
     "tourism": [
       "person-uday-shankar",
       "person-tripti-bhatt",
-      "news-16",
+      "news-15",
       "route-ranikhet",
       "route-pithoragarh"
     ],
     "government-navigator": [
-      "news-11",
-      "news-9",
-      "news-10"
+      "news-10",
+      "news-8",
+      "news-9"
     ],
     "civic-watch": [
       "news-4",
-      "news-11",
-      "news-7",
-      "news-16"
+      "news-10",
+      "news-15"
     ],
     "health-navigator": [
       "route-ranikhet",
@@ -276,11 +262,10 @@
     ],
     "hill-life": [
       "news-4",
-      "news-7",
       "monkey-Sarkar Ki Ali",
       "monkey-Ranidhara",
-      "news-8",
-      "news-14",
+      "news-7",
+      "news-13",
       "route-ranikhet",
       "route-pithoragarh"
     ]
