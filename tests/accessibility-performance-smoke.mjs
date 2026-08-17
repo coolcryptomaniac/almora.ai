@@ -11,11 +11,15 @@ try{
   if(await page.locator('#headerQuery').getAttribute('aria-label')!=='Ask Almora AI')throw new Error('Header query accessible name missing');
   if(await page.locator('#askInput').getAttribute('aria-label')!=='Ask Almora AI a question')throw new Error('Hero ask accessible name missing');
   for(const [selector,label]of [['#menuBtn','Menu'],['#mobileMenu','Open navigation menu'],['.topSearch button','Voice input'],['#profileLink','Profile'],['#askSubmit','Ask Almora AI'],['#closeResults','Close AI results'],['#reportDialog .reportHead button','Close report dialog']])if(await page.locator(selector).getAttribute('aria-label')!==label)throw new Error(`English accessible label mismatch: ${selector}`);
+  await page.waitForSelector('#cultureThemeBtn');
+  if(!(await page.locator('#cultureThemeBtn').getAttribute('aria-label'))?.startsWith('Cultural visual theme:'))throw new Error('Cultural theme control English accessible name missing');
+  if(await page.locator('.cultureMenu [data-culture][aria-checked="true"]').count()!==1)throw new Error('Cultural theme selected state missing');
   if(await page.locator('#reportDialog').getAttribute('aria-labelledby')!=='reportDialogTitle')throw new Error('Report dialog accessible label relationship missing');
   if(await page.locator('#reportStatus').getAttribute('role')!=='status'||await page.locator('#reportStatus').getAttribute('aria-live')!=='polite')throw new Error('Report status live region missing');
   await page.locator('[data-lang="hi"]').click();
   await page.waitForFunction(()=>document.querySelector('#headerQuery')?.getAttribute('aria-label')==='अल्मोड़ा AI से पूछें');
   await page.waitForFunction(()=>document.querySelector('#sidebar')?.getAttribute('aria-label')==='अल्मोड़ा नेविगेशन');
+  await page.waitForFunction(()=>document.querySelector('#cultureThemeBtn')?.getAttribute('aria-label')?.startsWith('सांस्कृतिक दृश्य थीम:'));
   for(const [selector,label]of [['#mobileMenu','नेविगेशन मेन्यू खोलें'],['.topSearch button','आवाज़ से पूछें'],['#profileLink','प्रोफ़ाइल'],['#askSubmit','अल्मोड़ा AI से पूछें'],['#closeResults','AI परिणाम बंद करें'],['#reportDialog .reportHead button','रिपोर्ट डायलॉग बंद करें']])if(await page.locator(selector).getAttribute('aria-label')!==label)throw new Error(`Hindi accessible label mismatch: ${selector}`);
   await page.locator('#mobileMenu').click();
   await page.waitForFunction(()=>document.querySelector('#mobileMenu')?.getAttribute('aria-expanded')==='true');
@@ -25,14 +29,17 @@ try{
   await page.locator('[data-lang="kfy"]').click();
   await page.waitForFunction(()=>document.querySelector('#headerQuery')?.getAttribute('aria-label')==='अल्माड़ AI स्यूं पूछौ');
   if(await page.locator('#mobileMenu').getAttribute('aria-label')!=='नेविगेशन मेन्यू खोलौ'||await page.locator('#askSubmit').getAttribute('aria-label')!=='अल्माड़ AI स्यूं पूछौ')throw new Error('Kumaoni accessible labels did not update');
+  if(!(await page.locator('#cultureThemeBtn').getAttribute('aria-label'))?.startsWith('सांस्कृतिक दृश्य थीम:'))throw new Error('Cultural theme control Kumaoni accessible name missing');
   await page.locator('#cultureThemeBtn').click();
   await page.waitForFunction(()=>document.querySelector('#cultureThemeBtn')?.getAttribute('aria-expanded')==='true');
-  if(!(await page.locator('.cultureMenu [data-culture]').first().evaluate(el=>el===document.activeElement)))throw new Error('Cultural theme menu did not move focus to first option');
+  if(!(await page.locator('.cultureMenu [data-culture][aria-checked="true"]').evaluate(el=>el===document.activeElement)))throw new Error('Cultural theme menu did not focus selected option');
   await page.keyboard.press('ArrowDown');
-  if(!(await page.locator('.cultureMenu [data-culture]').nth(1).evaluate(el=>el===document.activeElement)))throw new Error('Cultural theme ArrowDown navigation failed');
-  await page.keyboard.press('Escape');
-  await page.waitForFunction(()=>document.querySelector('#cultureThemeBtn')?.getAttribute('aria-expanded')==='false');
-  if(!(await page.locator('#cultureThemeBtn').evaluate(el=>el===document.activeElement)))throw new Error('Cultural theme Escape did not restore trigger focus');
+  const focusedCulture=await page.evaluate(()=>document.activeElement?.getAttribute('data-culture'));
+  if(!focusedCulture)throw new Error('Cultural theme ArrowDown navigation failed');
+  await page.keyboard.press('Enter');
+  await page.waitForFunction(expected=>document.querySelector(`.cultureMenu [data-culture="${expected}"]`)?.getAttribute('aria-checked')==='true',focusedCulture);
+  if((await page.locator('html').getAttribute('data-culture-theme'))!==focusedCulture)throw new Error('Cultural theme selected state did not match applied theme');
+  if(!(await page.locator('#cultureThemeBtn').evaluate(el=>el===document.activeElement)))throw new Error('Cultural theme selection did not restore trigger focus');
   await page.close();
 
   const desktop=await browser.newPage({viewport:{width:1440,height:1000}});
