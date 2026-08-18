@@ -1,8 +1,18 @@
 {
-  "updatedAt": "2026-08-18T04:00:41.937743+00:00",
+  "updatedAt": "2026-08-18T05:47:18.290695+00:00",
   "editorialPolicy": "Rank current, useful and source-linked Almora public-interest content. Routine sensational crime is not promoted. Resident/problem signals remain explicitly unverified or evidence-scoped.",
   "count": 19,
   "items": [
+    {
+      "id": "news-4",
+      "kind": "news",
+      "category": "infrastructure",
+      "title": "Uttarakhand CM Inaugurates Rs 138 Crore Projects In Almora - Construction World",
+      "summary": "Construction World update",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPMTdBUGllMXhXQTNCaWRfZ3hsMURjMGN3Tkk2ZDM0WEZaR3VESlJxVHVoTEY4LXdBNkJyQmlJalF6UUNzbHQya0N1V3VKUnIyelB2bXc5X1NXMzQ1Tzc4UFlrb1JQeGZrZWQxRjdScDc4T3hCU1JwTHF5MHMwNmVLdDVFQmNPWFpkdDQ0eVA1NFdaSlF4LVRBd2x5WVBEWnhsazNzU0x3MC1memtEQW9hMkx6OFlqMm9KMmhwZWdHQ0RwSDdiWS1RdVRB?oc=5",
+      "score": 12,
+      "reason": "Fresh public-interest news"
+    },
     {
       "id": "news-10",
       "kind": "news",
@@ -24,7 +34,7 @@
       "reason": "Fresh public-interest news"
     },
     {
-      "id": "news-5",
+      "id": "news-6",
       "kind": "news",
       "category": "sports",
       "title": "Lakshya Sen and the Story of Badminton in Almora - Garhwal Post",
@@ -34,7 +44,7 @@
       "reason": "Fresh public-interest news"
     },
     {
-      "id": "news-4",
+      "id": "news-5",
       "kind": "news",
       "category": "sports",
       "title": "From Almora To Olympic Semifinals: Meet Lakshya Sen, Indian Badminton Player Who Made History At Paris Olympics 2024 - Zee News",
@@ -60,16 +70,6 @@
       "title": "Uttarakhand Subordinate Service Selection Commission recruitment updates",
       "summary": "Official state recruitment notices and candidate updates.",
       "url": "https://sssc.uk.gov.in/",
-      "score": 9,
-      "reason": "Fresh public-interest news"
-    },
-    {
-      "id": "news-6",
-      "kind": "news",
-      "category": "infrastructure",
-      "title": "Uttarakhand Chief Minister Discusses Railway Infrastructure Expansion with Union Minister Ashwini Vaishnaw | Hindustan Times - Hindustan Times",
-      "summary": "Hindustan Times update",
-      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOZEEwRmEwNGgya21tMF9KN2JlTWV3QUV5QU9UXzZmNnVtaWZDUUhxX2tKWHFjYUdoaE5LTkN3eUlFN3B3UHRYRmdjdWw0Q2NSWlR0QTNLUHRhWFJSa0R1MXZMb093Q3JxeTFFc0VuXzByd1BLSmt3SHI1SUcyVnBUQ2NUMG5zYkNqWHgtUFJ3a0M2YnNVOWMyZmtRdVdPSExQRWhDdFdrZlZJOENNdHl6YXgwMUx6RE1CNmxMRXhzVm5ndTdpVXlQTTBLLU00QkFVLVg2N2pyQmdFei1wLTdnZ2kxS2ZmVElhSmRESF84ZFd2b2pnRk5OcnhR0gH_AUFVX3lxTFBjTXZRbmVuVTJ4UXk2WDFLZHVQTnhSeUxQSGE4TE02bkhaQ1otVWxiXy1UX21lOXVBcXJqeTRCM0Q4c1lraEdZYllRWWozOEFFaENVYTVMcnB5SERMVnNLN1hVZDZqY1FPWGhfbTUwYWsydDJNY014MWJmMGlSRlBRMzhPSWk0QkVydWhwLW05Wk5RTVhYTUxKSTEyUzVGcmZvRUw1ekpoSUFMaDhXc1lHLVdtX2x1T1dDalJDS3ZPeEdlbnhHd25ZQUdodHlPa3RWQnZKZDhCTUt5WElUZlhQX0RYeHpMVVhZUXh4TUVvWnhhYnlkMGgwUDIwMFcxOA?oc=5",
       "score": 9,
       "reason": "Fresh public-interest news"
     },
@@ -196,9 +196,9 @@
   ],
   "agentIndex": {
     "town-concierge": [
+      "news-4",
       "news-10",
       "news-11",
-      "news-6",
       "monkey-Sarkar Ki Ali",
       "monkey-Ranidhara",
       "news-7",
@@ -227,11 +227,11 @@
       "news-13"
     ],
     "water-watch": [
-      "news-6",
+      "news-4",
       "news-15"
     ],
     "route-intelligence": [
-      "news-6",
+      "news-4",
       "route-ranikhet",
       "route-pithoragarh"
     ],
@@ -248,8 +248,8 @@
       "news-9"
     ],
     "civic-watch": [
+      "news-4",
       "news-10",
-      "news-6",
       "news-15"
     ],
     "health-navigator": [
@@ -261,7 +261,7 @@
       "route-pithoragarh"
     ],
     "hill-life": [
-      "news-6",
+      "news-4",
       "monkey-Sarkar Ki Ali",
       "monkey-Ranidhara",
       "news-7",
