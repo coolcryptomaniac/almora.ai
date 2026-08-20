@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T08:58:32.762100+00:00",
+  "updatedAt": "2026-08-20T09:52:12.994065+00:00",
   "mode": "shared-evidence-memory-not-model-training",
   "explanation": "These short-lived lessons are derived from verified/public signals and agent handoffs. They improve coordination context without retraining or autonomously modifying the underlying language model.",
   "count": 8,
@@ -23,8 +23,8 @@
         "Dungadhara: activity 4/4; https://www.amarujala.com/uttarakhand/almora/monkeys-ateck-in-almora-almora-news-c-8-1-146492-2023-05-21"
       ],
       "confidence": "high",
-      "createdAt": "2026-08-20T08:58:32.762100+00:00",
-      "expiresAt": "2026-08-27T08:58:32.762100+00:00"
+      "createdAt": "2026-08-20T09:52:12.994065+00:00",
+      "expiresAt": "2026-08-27T09:52:12.994065+00:00"
     },
     {
       "id": "access-before-travel",
@@ -43,8 +43,8 @@
         "Monkey and langur activity remains a public concern around Ranikhet — https://www.amarujala.com/uttarakhand/almora/in-the-morning-flocks-of-monkeys-were-seen-in-the-markets-and-streets-leaving-people-in-panic-ranikhet-news-c-232-1-alm1002-143114-2026-05-08"
       ],
       "confidence": "high",
-      "createdAt": "2026-08-20T08:58:32.762100+00:00",
-      "expiresAt": "2026-08-27T08:58:32.762100+00:00"
+      "createdAt": "2026-08-20T09:52:12.994065+00:00",
+      "expiresAt": "2026-08-27T09:52:12.994065+00:00"
     },
     {
       "id": "learn-to-earn",
@@ -62,8 +62,8 @@
         "Kumaun University academic and student updates — https://www.kunainital.ac.in/"
       ],
       "confidence": "medium",
-      "createdAt": "2026-08-20T08:58:32.762100+00:00",
-      "expiresAt": "2026-08-27T08:58:32.762100+00:00"
+      "createdAt": "2026-08-20T09:52:12.994065+00:00",
+      "expiresAt": "2026-08-27T09:52:12.994065+00:00"
     },
     {
       "id": "jobs-to-skills",
@@ -81,8 +81,8 @@
         "Kumaun University academic and student updates — https://www.kunainital.ac.in/"
       ],
       "confidence": "medium",
-      "createdAt": "2026-08-20T08:58:32.762100+00:00",
-      "expiresAt": "2026-08-27T08:58:32.762100+00:00"
+      "createdAt": "2026-08-20T09:52:12.994065+00:00",
+      "expiresAt": "2026-08-27T09:52:12.994065+00:00"
     },
     {
       "id": "external-app-fallback",
@@ -102,8 +102,8 @@
         "Business Hub: ./businesses.html"
       ],
       "confidence": "high",
-      "createdAt": "2026-08-20T08:58:32.762100+00:00",
-      "expiresAt": "2026-08-27T08:58:32.762100+00:00"
+      "createdAt": "2026-08-20T09:52:12.994065+00:00",
+      "expiresAt": "2026-08-27T09:52:12.994065+00:00"
     },
     {
       "id": "cross-service-sequencing",
@@ -127,8 +127,8 @@
         "tourism + route-intelligence: Tourism planning should account for real access and intercity routes"
       ],
       "confidence": "high",
-      "createdAt": "2026-08-20T08:58:32.762100+00:00",
-      "expiresAt": "2026-08-27T08:58:32.762100+00:00"
+      "createdAt": "2026-08-20T09:52:12.994065+00:00",
+      "expiresAt": "2026-08-27T09:52:12.994065+00:00"
     },
     {
       "id": "public-source-discipline",
@@ -146,8 +146,8 @@
         "Almora district administration and current public notices — District Almora"
       ],
       "confidence": "high",
-      "createdAt": "2026-08-20T08:58:32.762100+00:00",
-      "expiresAt": "2026-08-27T08:58:32.762100+00:00"
+      "createdAt": "2026-08-20T09:52:12.994065+00:00",
+      "expiresAt": "2026-08-27T09:52:12.994065+00:00"
     },
     {
       "id": "route-distance-discipline",
@@ -167,8 +167,8 @@
         "Almora → Pithoragarh: approx 115 km"
       ],
       "confidence": "high",
-      "createdAt": "2026-08-20T08:58:32.762100+00:00",
-      "expiresAt": "2026-08-27T08:58:32.762100+00:00"
+      "createdAt": "2026-08-20T09:52:12.994065+00:00",
+      "expiresAt": "2026-08-27T09:52:12.994065+00:00"
     }
   ]
 }
