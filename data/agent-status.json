@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-08-21T09:53:53.851169+00:00",
+  "updatedAt": "2026-08-21T10:50:17.042196+00:00",
   "mode": "coordination-not-self-training",
   "explanation": "Agents consume refreshed public signals and coordinate workflows. They do not retrain or self-modify the underlying language model. High-impact actions remain human-accountable.",
   "metrics": {
-    "newsSignals": 16,
+    "newsSignals": 17,
     "monkeyHotspots": 12,
     "peopleProfiles": 32,
     "routeCatalog": 7,
@@ -27,7 +27,7 @@
           "published": "Fri, 07 Aug 2026 07:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPQXVIMGVnNjFBT2pIeUdiUXpTN1AwN3ZvbWZQcHlOWFBTNUVIRzBJYTZHUTdpX29DX2JGSWRMMlBpSE5ES0JLODRQNnU0T2hIdEI4MHBzaUdLLXVkVDAxb2J5RkxuRVhOeTlpNzQ3U3hFbHNzZkRQVEtmWUd0SUVNbnhwYWVPQjl0TkNYYnh1QlFSdVBWRzRFN2RIZm81QTVqMm5jQzZmczJEQVdGRDAzNEVGWkVxd0p1VzFFa2dQNUU4RU1MNHFCWEpLRTZPZ9IB0wFBVV95cUxNbV9zdjliWlJVa3hKVTNaNnVZYnBLZkxzVWVvR2UzVTNHZEhjd01NWVV1T3dvRVZDUUtCVDNPNFBkTXJkc2xyb0dvdHZMcWxPRmtxZXRyY2xxY0xTSmQ4UFIyZzFuRTBENjRKQWFFcWxwVDh6MkxQVUx3WXFFLWRxSGFwN1h6bXhYU2haNktJTTlmSDNqMENvLTIxeEFBdXFPVnotYUt3NTdTaEp5ZE9nek5mdGZJZlFQLTdfOVRKNDRuVUlVR1BTaUF3Ym1maDJ4b21N?oc=5",
           "summary": "",
-          "id": "innovation-3363457743474592017"
+          "id": "innovation-4552955547275667948"
         },
         {
           "category": "sports",
@@ -38,7 +38,7 @@
           "published": "Wed, 30 Jul 2025 07:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNRHBteVdYUzdEU255bnNkYUNEMEtzMW9qeW1vWEFmY0NNR2tRTVFnNEhrVG1sX1ZCb2tSSWE3NWFZbG9iNTlEVTV6YjlSX0R0bFFMaUpHNmE2TUc0NWFIVFFuRzMyaUV3UHdRcDc0RTNucG5XQmFXSnZnTnhFNHVDaTd3S0NnemVQSDdTZ3JQUnRHc3dYSExONXZpN1JkTUtrWE9fNzFBVV9TRU8tOTl3bDdwYUd2dFVkMGdndW1udVVHUmkxbFMtcWVTWXYxYlJST0HSAdcBQVVfeXFMTVRBVU9sa3dlZDV3dDBBZUFfUVBra2lCY3ZUSGgwZ2xkQlpPVGJJWHkyNVZSUW1tMVNhaDE1MzhHbWlicGlLYnZXUEIwQ3VGWm5IMTZDa2tBb1ZOQl9OcURhaWxPcy1oc2lXbmJTWnRiODVEaGdmQUlfX01IU2c5MldPbUROVFpwaVJxc00taC04LV9yLXNWaUxZOHpqRzNPQ1FkSEVWSWFvbGE1a3QxRUF4VmQ2QWxJcHhQM2V3T2gwMWlLUms5UkpzQ0xOTW1nQ2ZtcFZMQ2c?oc=5",
           "summary": "",
-          "id": "sports-8385565265447352475"
+          "id": "sports-2162634110327200978"
         },
         {
           "category": "sports",
@@ -49,7 +49,7 @@
           "published": "Sat, 26 Mar 2022 07:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNRXZsbDVtNHFGdTNsQi1EWEpNUnI4WXVNLWZKY1V6WS1OMlBuRWE0LWxCQWMxY1JER3ZlME45ZHVtN2lJYzdqbFg3WlpjbnF4Y042T2JEd0N6TnJ6YjBseFRnYnkwWkc0dlJfdkFiT2J4anN0UU5aaElPUnZ5cFNjTWhVMW9JNTdyby1JQ1FjM2wwOXpIaDF6cEVTZ21jbTJGOFM3SmFRbGVTRW5DV09fLWxCbERWMDVZVTE1UjlFdVNxeWZpblJz0gHMAUFVX3lxTE5URmpHSTFjWmJZeHdXeExsUGZTUUl6X2h0R0p5TnczRjBtYXRfQ05ZUjVDWFdzdWJrUHQ1T21QV2JYVTJDRTdpS2kzS2FXY0QwblhnQ2J3cVpsenMyTlVlMG52TU9WSkJhZGUtSVVGd2x6eGJfOGllS042QVlHWFBYTW9QN2JLU3BzZk1tUENaMzB1Z05seU12ODBYaFpMVmpsOURHZHVlWG1jdGh2elEzMDRpbmhDUXBGSlo2M2Z4VG9vUE9pRkowUmh1LQ?oc=5",
           "summary": "",
-          "id": "sports-6561709986169796762"
+          "id": "sports-9025930172622938642"
         },
         {
           "category": "sports",
@@ -60,7 +60,7 @@
           "published": "Fri, 31 Jan 2020 08:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNdllQYlpnc1ptcHdXMVA3VzRQVC1UQzJ3WWRUcnItU18xNlB1azl2ZUotMHZpZnprYWFVS29vZGdaOWRpTUNlSEZRZ2hpXy1qdkdBRnhINTlocE5lVDZvMTdKd1JBQnJGcWl2LUtjQURGbjM4elhQd0M0Zno3WjJ1V1M3OUpRSUUtSy1oMTZxMnZERXNTQjJKOHowTzkzVGhzY183S3hZd2pRSW9uTEg2amRKcW4yZlZZbEt4Z1R6Y3p0VnRKVC00MlBhU2hNVDEwYkd3btIB2gFBVV95cUxOS2FWSjl1R1ZhbnF5cDBfWGRYdm5CRG9hdnNnaXZyV2lWVk9OZlczaU9XN0toWS1LVEllbVY4aGFmcVQ1WU1aRzF0aW5faC12ZUdISTU0dmk4N3ZSVDYxb3BwTFkwMUdlOF9WYUNnR2VxcmsyaEJlNnBkOFF3UTFfdTNVYzR4S0hoOWE2blVSQ1k4MU12VlhGcUpyNGlSc3dNUEdHS2YwVkV5Wkg1aHRNcHV3aU52c295SXhVN1JGY1piM2lreG9STnR4UGhYQnNWel9nT29TVWl6dw?oc=5",
           "summary": "",
-          "id": "sports-7395751887547019931"
+          "id": "sports-6037132763674719920"
         },
         {
           "category": "sports",
@@ -71,7 +71,7 @@
           "published": "Sat, 03 Aug 2024 07:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPb1RKeGhJQWpZVjIyWjREYW1sU3NBTVdjQ1RDWGotRVJGdHlGUzJEbHk3ekZUakZzcUpJbFJJbWQwRjhrdmlocDhQSS14ZlE2VUEwTkc4TW1YQlNVTjR6ak16b1JCcmdoWDZpQkcwRTJRMnBWUTdrenU0WWNZdW1rOS01R2FtcXpLVk50RnU5SWhSVl83LU1OZmpWLXNxRE9CNk9CTEY4dkxldUlhVDBMc21oTDZUU2sybGdSN3REYTI1dE8zZXdtZ2xXLW81T1FsQVRQRW41Ti1CaldmaEVLdEMxQUdvNzQ2R3VlbURiallrMmZRenpCbG9n0gH_AUFVX3lxTFAyVHc5Q2NKeXAyeVdyNHk4WWM4aFpJeVRad2plR182WVdJOUd0aUZ0ZGtMb0NFVTZyOXJRNjdvZ1VpNGk5bFJwdjNMVzhoUGJGMUtHVU91R2NRU1FOdFoxTVliNlNVSUpiX0xvbGVqeXlfYVhLXzlFY3A0dHM1eW1ma1d2NHdzNVNhNmdndzRiTjhsbldXeWo2Qnpoel9qTm9QYUNUZ2xVTndPa1d1ZjFpdFE2aHNId0RycHU1cEZ3UWk0d1ZtbVZ1dzJQcGg3YVBVTEdhaEc2WnlWY2FDOHRsY1JVNlBaX25LUnI0RU1TcndybkdybWhnNVlOZU5ITQ?oc=5",
           "summary": "",
-          "id": "sports-2262680881270391665"
+          "id": "sports-4624826715285310301"
         }
       ]
     },
@@ -90,7 +90,7 @@
           "published": "Thu, 09 Oct 2025 07:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOZEEwRmEwNGgya21tMF9KN2JlTWV3QUV5QU9UXzZmNnVtaWZDUUhxX2tKWHFjYUdoaE5LTkN3eUlFN3B3UHRYRmdjdWw0Q2NSWlR0QTNLUHRhWFJSa0R1MXZMb093Q3JxeTFFc0VuXzByd1BLSmt3SHI1SUcyVnBUQ2NUMG5zYkNqWHgtUFJ3a0M2YnNVOWMyZmtRdVdPSExQRWhDdFdrZlZJOENNdHl6YXgwMUx6RE1CNmxMRXhzVm5ndTdpVXlQTTBLLU00QkFVLVg2N2pyQmdFei1wLTdnZ2kxS2ZmVElhSmRESF84ZFd2b2pnRk5OcnhR0gH_AUFVX3lxTFBjTXZRbmVuVTJ4UXk2WDFLZHVQTnhSeUxQSGE4TE02bkhaQ1otVWxiXy1UX21lOXVBcXJqeTRCM0Q4c1lraEdZYllRWWozOEFFaENVYTVMcnB5SERMVnNLN1hVZDZqY1FPWGhfbTUwYWsydDJNY014MWJmMGlSRlBRMzhPSWk0QkVydWhwLW05Wk5RTVhYTUxKSTEyUzVGcmZvRUw1ekpoSUFMaDhXc1lHLVdtX2x1T1dDalJDS3ZPeEdlbnhHd25ZQUdodHlPa3RWQnZKZDhCTUt5WElUZlhQX0RYeHpMVVhZUXh4TUVvWnhhYnlkMGgwUDIwMFcxOA?oc=5",
           "summary": "",
-          "id": "infrastructure-2282555982622356495"
+          "id": "infrastructure-6978138524100196224"
         },
         {
           "category": "politics",
@@ -101,7 +101,7 @@
           "published": "Fri, 01 Aug 2025 07:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxPRW10eFdrMFZuMGVqTVlmQ3g4QUlNYzAycGE0a2hQR2c0NDJQQ0RycFlIRWFwejVSNXBicmtZeVVib093SkNWLWNXOW5JR0tjVFAxS1pIbkFsSFVHUlpXXzU3QV8ya0lCUlptRWlVTS04cU5sRW14dXc1UVowR3JuU0dIUHhsQUktTldaZm9GQjNPczNYdG5kc1VsX3NQeHF1bEdYTmdIbTA1S1dJbGRsNXhzS2dCcFowd2xQY2o5RE9lNm5CMkpldHU4N2dDbmk5aWl3X2lXd0VSRVJuMTFJSHVKXzRWN05LWkZIRC16R0lSS1NLb0djOEpqWEJWUk02ZnhYbzdTVDkwWFhPVV9jZWlwcldaeTJHU2FRTkZwRXhSeUxBZjY0RTg3UjdfQXdZOTFV0gG4AkFVX3lxTE45dUJKTVVnX2VKb3VHQTVaWVJCS3JVcHc3S25xbGtrS1JTS1ZHdjVyWjZvc0Q1bkJsdzA5V1B4RThpNXZhZXJ6RlFZa1F4eVJhUHQ5UVJlaVpCcVFuZ0YtTVdIT2pmRHNnZDJQM0ZoX0g4UW5ZZWhlcmFfX1FCS1liQUJvQkZ3dzBGV1pFWldQc1BYaGloWjhjQzNCc1AxMWRBaVhKMVRNcGxIMHJ5c29xUXRSQ1A3c0RqekhyNjhhcGpVQW9sVC01cHV0Z3BXUWNORk1faUdleDdwM2pudkFYWmVSS3RDdm52M1JPcGU0dm9iTzBzamQtTDBGRGpIbmpGc3ZxRV96YnBhVDFwMUg0dl9RTnhmSTREeTVjRmduZUl4aHVLNzU4V2RhUW1fMFhiZkdSLTRWSw?oc=5",
           "summary": "",
-          "id": "politics-7994124056494653774"
+          "id": "politics-2231419382976395236"
         },
         {
           "category": "politics",
@@ -112,7 +112,18 @@
           "published": "Sun, 26 Jan 2025 08:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOcG1mU1JCeGQzYUxHcV9TWVNyS0N0NE5Nd1V0WDV1YVUySFdCb1MzN3hKam9GaXppWnNLcEMxWXgyRnV4QWpHTkRYUVNVcmZEd1JaMExoZ0xvV3RWTFRESjQ4amt1Z0FiNDNaOFlIdm1fdUJtVmtNOXFoTms3VzVSTnh0SnhicUpjS0FlZzV5WkNCUFRoZk10YTcxVk8wYllraEJmUVJfYVRNWG9maXJlbWp5ckNHYWs1dWxTTE02Mk80YVlFa3fSAdMBQVVfeXFMT3dGcnRmaFhWNnBnQUZVUWx2aGJoM0ZvTl9BZ2tka1lGQm0yNTRHb1NEWXNRcEF0TXA5VGx0ckxnbl8wNXlfb1dzZDRDUnBBUnUxQUhuakVVSDZnUjBvb0JYNk5Fb2tqWEpfb1ZjSUxjSlpJS1BOa3FfMjRHYnZCdzNhcUxwd1BfVVcyVnYtMDRobzJvOGlPenlqRE9KcWl5c3pIaHZRTjZRWFcydkZPbWxWb1VpSFFRbDUzUURQTjBEd2tFN01ER1cyQVhwdkZqZXlURQ?oc=5",
           "summary": "",
-          "id": "politics-3139182504200391726"
+          "id": "politics-1126760893841469868"
+        },
+        {
+          "category": "politics",
+          "categoryBasis": "headline-keyword",
+          "discoveredBy": "politics",
+          "title": "MC Election Highlights February 11| 25% of candidates in fray for Punjab polls face criminal cases: Report - Moneycontrol.com",
+          "source": "Moneycontrol.com",
+          "published": "Fri, 11 Feb 2022 08:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPeGJDNlBrYW9fX3Q3alNmMjlwX1lOeVF0SjZfWDdFVkIwV2VJeFVzZFNJMVR0dTdwQUdSUmhwZExNdDI3a2FjcnYxWG1ieVZ6Z1laZXZER1VXRHNjWWtaM2dWNFRSVmpPc3ZXNnVYTk5vNENZRGpzVHJ5S0lsUGdZSjdmVG1CaDBuRmxYeXp3a3VfOW5ZbElYZnRCUGtYd09iWEs1SERVeUJmT3l1OC1rVGlGcHRXVjBObkFlcDZVNzVqVnFtQWJLYl9UWHdQeGJKbVpqMUFyanU3WlUxVms1VUtnRE93bjJocHl4Y1N30gHzAUFVX3lxTFBPY2VzOF8wMnZlcUlIbThobVRtMERjbklKSkNBeFFQQnhFbS1ndjBkNDdLRmx2Sm1JQ0d1UWdnaExET1FibS0zbkJFbGV5ZjZqZWlWbm95SThsN1hDZ2NQVmhFa3hHZExNNDZsRjBtT21iaEJ2ZWlJQTdNQXZmb0dnWGY2bmw4RUh2T1lNMUhlNG96M1RGaTRMTU41UGFNY0ZDejcyOVZsMWNDYnV0RnM1XzAxVHVCaVAwdE9mNzR6MDU2cTY4WVRNenZ4WXl2MG45WWxuUjgzUVlrX3NCZmdUQVk3UnYyX0UtWEFJNmpjcDQtWQ?oc=5",
+          "summary": "",
+          "id": "politics-1217766563719149134"
         },
         {
           "id": "official-district",
@@ -123,16 +134,6 @@
           "published": "",
           "url": "https://almora.nic.in/",
           "summary": "Official district notices, public utilities, tenders, disaster-management and administration updates."
-        },
-        {
-          "id": "monkey-ranikhet",
-          "category": "environment",
-          "categoryBasis": "curated-evidence",
-          "title": "Monkey and langur activity remains a public concern around Ranikhet",
-          "source": "Amar Ujala",
-          "published": "2026-05-08T23:42:00+05:30",
-          "url": "https://www.amarujala.com/uttarakhand/almora/in-the-morning-flocks-of-monkeys-were-seen-in-the-markets-and-streets-leaving-people-in-panic-ranikhet-news-c-232-1-alm1002-143114-2026-05-08",
-          "summary": "A local report documented recurring monkey/langur activity in Ranikhet and nearby areas."
         }
       ]
     },
@@ -252,7 +253,7 @@
           "published": "Thu, 09 Oct 2025 07:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOZEEwRmEwNGgya21tMF9KN2JlTWV3QUV5QU9UXzZmNnVtaWZDUUhxX2tKWHFjYUdoaE5LTkN3eUlFN3B3UHRYRmdjdWw0Q2NSWlR0QTNLUHRhWFJSa0R1MXZMb093Q3JxeTFFc0VuXzByd1BLSmt3SHI1SUcyVnBUQ2NUMG5zYkNqWHgtUFJ3a0M2YnNVOWMyZmtRdVdPSExQRWhDdFdrZlZJOENNdHl6YXgwMUx6RE1CNmxMRXhzVm5ndTdpVXlQTTBLLU00QkFVLVg2N2pyQmdFei1wLTdnZ2kxS2ZmVElhSmRESF84ZFd2b2pnRk5OcnhR0gH_AUFVX3lxTFBjTXZRbmVuVTJ4UXk2WDFLZHVQTnhSeUxQSGE4TE02bkhaQ1otVWxiXy1UX21lOXVBcXJqeTRCM0Q4c1lraEdZYllRWWozOEFFaENVYTVMcnB5SERMVnNLN1hVZDZqY1FPWGhfbTUwYWsydDJNY014MWJmMGlSRlBRMzhPSWk0QkVydWhwLW05Wk5RTVhYTUxKSTEyUzVGcmZvRUw1ekpoSUFMaDhXc1lHLVdtX2x1T1dDalJDS3ZPeEdlbnhHd25ZQUdodHlPa3RWQnZKZDhCTUt5WElUZlhQX0RYeHpMVVhZUXh4TUVvWnhhYnlkMGgwUDIwMFcxOA?oc=5",
           "summary": "",
-          "id": "infrastructure-2282555982622356495"
+          "id": "infrastructure-6978138524100196224"
         }
       ]
     },
@@ -271,7 +272,7 @@
           "published": "Thu, 09 Oct 2025 07:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOZEEwRmEwNGgya21tMF9KN2JlTWV3QUV5QU9UXzZmNnVtaWZDUUhxX2tKWHFjYUdoaE5LTkN3eUlFN3B3UHRYRmdjdWw0Q2NSWlR0QTNLUHRhWFJSa0R1MXZMb093Q3JxeTFFc0VuXzByd1BLSmt3SHI1SUcyVnBUQ2NUMG5zYkNqWHgtUFJ3a0M2YnNVOWMyZmtRdVdPSExQRWhDdFdrZlZJOENNdHl6YXgwMUx6RE1CNmxMRXhzVm5ndTdpVXlQTTBLLU00QkFVLVg2N2pyQmdFei1wLTdnZ2kxS2ZmVElhSmRESF84ZFd2b2pnRk5OcnhR0gH_AUFVX3lxTFBjTXZRbmVuVTJ4UXk2WDFLZHVQTnhSeUxQSGE4TE02bkhaQ1otVWxiXy1UX21lOXVBcXJqeTRCM0Q4c1lraEdZYllRWWozOEFFaENVYTVMcnB5SERMVnNLN1hVZDZqY1FPWGhfbTUwYWsydDJNY014MWJmMGlSRlBRMzhPSWk0QkVydWhwLW05Wk5RTVhYTUxKSTEyUzVGcmZvRUw1ekpoSUFMaDhXc1lHLVdtX2x1T1dDalJDS3ZPeEdlbnhHd25ZQUdodHlPa3RWQnZKZDhCTUt5WElUZlhQX0RYeHpMVVhZUXh4TUVvWnhhYnlkMGgwUDIwMFcxOA?oc=5",
           "summary": "",
-          "id": "infrastructure-2282555982622356495"
+          "id": "infrastructure-6978138524100196224"
         }
       ]
     },
@@ -290,7 +291,7 @@
           "published": "Fri, 04 Apr 2025 07:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOM2kydW9zZnpDYVpmUU1Ca1p5QjgzbjdwN3kzcXNLNE5sODktdUFfV3pCZ3ZkVnZXek1uOXV2X3NfbTdQNnZpMnNjYVJHSkRhR1ZZTFRETGE1eFZMVFRtUXF0eUFhMW9NV3FKcTc1OU1aQndMY3JWVGZiT1dwTXc1MmJSdF9zbVVKSEd5TjZHUTJhdXBYOWloUWZ3TC1tVkhma3FOREdYTnhRUHpDV1k0R1lRVkw3X1dFZlJJRVFDNnBZWm5qbkVqNU5oWTJkdUN5T2JFbXhQWHhLZUlCN2ZsVTdQZDRYSEF6OXFxMUJNSndkM3UxV0prVHNR0gH_AUFVX3lxTE45MGRaZGNOY1FOS1BxZnNJUGtCcnJhNkM4azhDTEwzbVZjQy1zTXdRa3c3MktBNnNobmRsa1dkM05GS0tRcVVvRVhHVDVYS2pfcmtkN3I1Xzk5djNMZ2J3LXZoMFN4TXdieUNOOURrNnM5NXhrQjlSRzlKTzhuSFhQbWhkcVpFMktoY3JlcjZYLXF4Wmp6LXpkUFdGS2FfU2JJRldpeWFFc0Z1WWFDMGo3dVZsdUoxdk9hMGF3SUVUYXZSa2R5cFFDTi1TUzRsejF6Rjc0U0hyZXhiLTQ5dWZBRHcyNldUakZicVhQcUVjNEpJNHJnTk9sd2ZsZHlVRQ?oc=5",
           "summary": "",
-          "id": "education-3253301935610301608"
+          "id": "education-8937242406896606601"
         },
         {
           "id": "official-jobs",
@@ -329,7 +330,7 @@
           "published": "Thu, 09 Oct 2025 07:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOZEEwRmEwNGgya21tMF9KN2JlTWV3QUV5QU9UXzZmNnVtaWZDUUhxX2tKWHFjYUdoaE5LTkN3eUlFN3B3UHRYRmdjdWw0Q2NSWlR0QTNLUHRhWFJSa0R1MXZMb093Q3JxeTFFc0VuXzByd1BLSmt3SHI1SUcyVnBUQ2NUMG5zYkNqWHgtUFJ3a0M2YnNVOWMyZmtRdVdPSExQRWhDdFdrZlZJOENNdHl6YXgwMUx6RE1CNmxMRXhzVm5ndTdpVXlQTTBLLU00QkFVLVg2N2pyQmdFei1wLTdnZ2kxS2ZmVElhSmRESF84ZFd2b2pnRk5OcnhR0gH_AUFVX3lxTFBjTXZRbmVuVTJ4UXk2WDFLZHVQTnhSeUxQSGE4TE02bkhaQ1otVWxiXy1UX21lOXVBcXJqeTRCM0Q4c1lraEdZYllRWWozOEFFaENVYTVMcnB5SERMVnNLN1hVZDZqY1FPWGhfbTUwYWsydDJNY014MWJmMGlSRlBRMzhPSWk0QkVydWhwLW05Wk5RTVhYTUxKSTEyUzVGcmZvRUw1ekpoSUFMaDhXc1lHLVdtX2x1T1dDalJDS3ZPeEdlbnhHd25ZQUdodHlPa3RWQnZKZDhCTUt5WElUZlhQX0RYeHpMVVhZUXh4TUVvWnhhYnlkMGgwUDIwMFcxOA?oc=5",
           "summary": "",
-          "id": "infrastructure-2282555982622356495"
+          "id": "infrastructure-6978138524100196224"
         },
         {
           "category": "education",
@@ -340,7 +341,7 @@
           "published": "Fri, 04 Apr 2025 07:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOM2kydW9zZnpDYVpmUU1Ca1p5QjgzbjdwN3kzcXNLNE5sODktdUFfV3pCZ3ZkVnZXek1uOXV2X3NfbTdQNnZpMnNjYVJHSkRhR1ZZTFRETGE1eFZMVFRtUXF0eUFhMW9NV3FKcTc1OU1aQndMY3JWVGZiT1dwTXc1MmJSdF9zbVVKSEd5TjZHUTJhdXBYOWloUWZ3TC1tVkhma3FOREdYTnhRUHpDV1k0R1lRVkw3X1dFZlJJRVFDNnBZWm5qbkVqNU5oWTJkdUN5T2JFbXhQWHhLZUlCN2ZsVTdQZDRYSEF6OXFxMUJNSndkM3UxV0prVHNR0gH_AUFVX3lxTE45MGRaZGNOY1FOS1BxZnNJUGtCcnJhNkM4azhDTEwzbVZjQy1zTXdRa3c3MktBNnNobmRsa1dkM05GS0tRcVVvRVhHVDVYS2pfcmtkN3I1Xzk5djNMZ2J3LXZoMFN4TXdieUNOOURrNnM5NXhrQjlSRzlKTzhuSFhQbWhkcVpFMktoY3JlcjZYLXF4Wmp6LXpkUFdGS2FfU2JJRldpeWFFc0Z1WWFDMGo3dVZsdUoxdk9hMGF3SUVUYXZSa2R5cFFDTi1TUzRsejF6Rjc0U0hyZXhiLTQ5dWZBRHcyNldUakZicVhQcUVjNEpJNHJnTk9sd2ZsZHlVRQ?oc=5",
           "summary": "",
-          "id": "education-3253301935610301608"
+          "id": "education-8937242406896606601"
         },
         {
           "id": "official-jobs",
@@ -379,7 +380,7 @@
           "published": "Thu, 09 Oct 2025 07:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOZEEwRmEwNGgya21tMF9KN2JlTWV3QUV5QU9UXzZmNnVtaWZDUUhxX2tKWHFjYUdoaE5LTkN3eUlFN3B3UHRYRmdjdWw0Q2NSWlR0QTNLUHRhWFJSa0R1MXZMb093Q3JxeTFFc0VuXzByd1BLSmt3SHI1SUcyVnBUQ2NUMG5zYkNqWHgtUFJ3a0M2YnNVOWMyZmtRdVdPSExQRWhDdFdrZlZJOENNdHl6YXgwMUx6RE1CNmxMRXhzVm5ndTdpVXlQTTBLLU00QkFVLVg2N2pyQmdFei1wLTdnZ2kxS2ZmVElhSmRESF84ZFd2b2pnRk5OcnhR0gH_AUFVX3lxTFBjTXZRbmVuVTJ4UXk2WDFLZHVQTnhSeUxQSGE4TE02bkhaQ1otVWxiXy1UX21lOXVBcXJqeTRCM0Q4c1lraEdZYllRWWozOEFFaENVYTVMcnB5SERMVnNLN1hVZDZqY1FPWGhfbTUwYWsydDJNY014MWJmMGlSRlBRMzhPSWk0QkVydWhwLW05Wk5RTVhYTUxKSTEyUzVGcmZvRUw1ekpoSUFMaDhXc1lHLVdtX2x1T1dDalJDS3ZPeEdlbnhHd25ZQUdodHlPa3RWQnZKZDhCTUt5WElUZlhQX0RYeHpMVVhZUXh4TUVvWnhhYnlkMGgwUDIwMFcxOA?oc=5",
           "summary": "",
-          "id": "infrastructure-2282555982622356495"
+          "id": "infrastructure-6978138524100196224"
         },
         {
           "id": "monkey-ranikhet",
@@ -428,7 +429,7 @@
           "published": "Thu, 09 Oct 2025 07:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOZEEwRmEwNGgya21tMF9KN2JlTWV3QUV5QU9UXzZmNnVtaWZDUUhxX2tKWHFjYUdoaE5LTkN3eUlFN3B3UHRYRmdjdWw0Q2NSWlR0QTNLUHRhWFJSa0R1MXZMb093Q3JxeTFFc0VuXzByd1BLSmt3SHI1SUcyVnBUQ2NUMG5zYkNqWHgtUFJ3a0M2YnNVOWMyZmtRdVdPSExQRWhDdFdrZlZJOENNdHl6YXgwMUx6RE1CNmxMRXhzVm5ndTdpVXlQTTBLLU00QkFVLVg2N2pyQmdFei1wLTdnZ2kxS2ZmVElhSmRESF84ZFd2b2pnRk5OcnhR0gH_AUFVX3lxTFBjTXZRbmVuVTJ4UXk2WDFLZHVQTnhSeUxQSGE4TE02bkhaQ1otVWxiXy1UX21lOXVBcXJqeTRCM0Q4c1lraEdZYllRWWozOEFFaENVYTVMcnB5SERMVnNLN1hVZDZqY1FPWGhfbTUwYWsydDJNY014MWJmMGlSRlBRMzhPSWk0QkVydWhwLW05Wk5RTVhYTUxKSTEyUzVGcmZvRUw1ekpoSUFMaDhXc1lHLVdtX2x1T1dDalJDS3ZPeEdlbnhHd25ZQUdodHlPa3RWQnZKZDhCTUt5WElUZlhQX0RYeHpMVVhZUXh4TUVvWnhhYnlkMGgwUDIwMFcxOA?oc=5",
           "summary": "",
-          "id": "infrastructure-2282555982622356495"
+          "id": "infrastructure-6978138524100196224"
         }
       ]
     },
@@ -485,7 +486,7 @@
           "published": "Thu, 09 Oct 2025 07:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOZEEwRmEwNGgya21tMF9KN2JlTWV3QUV5QU9UXzZmNnVtaWZDUUhxX2tKWHFjYUdoaE5LTkN3eUlFN3B3UHRYRmdjdWw0Q2NSWlR0QTNLUHRhWFJSa0R1MXZMb093Q3JxeTFFc0VuXzByd1BLSmt3SHI1SUcyVnBUQ2NUMG5zYkNqWHgtUFJ3a0M2YnNVOWMyZmtRdVdPSExQRWhDdFdrZlZJOENNdHl6YXgwMUx6RE1CNmxMRXhzVm5ndTdpVXlQTTBLLU00QkFVLVg2N2pyQmdFei1wLTdnZ2kxS2ZmVElhSmRESF84ZFd2b2pnRk5OcnhR0gH_AUFVX3lxTFBjTXZRbmVuVTJ4UXk2WDFLZHVQTnhSeUxQSGE4TE02bkhaQ1otVWxiXy1UX21lOXVBcXJqeTRCM0Q4c1lraEdZYllRWWozOEFFaENVYTVMcnB5SERMVnNLN1hVZDZqY1FPWGhfbTUwYWsydDJNY014MWJmMGlSRlBRMzhPSWk0QkVydWhwLW05Wk5RTVhYTUxKSTEyUzVGcmZvRUw1ekpoSUFMaDhXc1lHLVdtX2x1T1dDalJDS3ZPeEdlbnhHd25ZQUdodHlPa3RWQnZKZDhCTUt5WElUZlhQX0RYeHpMVVhZUXh4TUVvWnhhYnlkMGgwUDIwMFcxOA?oc=5",
           "summary": "",
-          "id": "infrastructure-2282555982622356495"
+          "id": "infrastructure-6978138524100196224"
         },
         {
           "category": "education",
@@ -496,7 +497,7 @@
           "published": "Fri, 04 Apr 2025 07:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOM2kydW9zZnpDYVpmUU1Ca1p5QjgzbjdwN3kzcXNLNE5sODktdUFfV3pCZ3ZkVnZXek1uOXV2X3NfbTdQNnZpMnNjYVJHSkRhR1ZZTFRETGE1eFZMVFRtUXF0eUFhMW9NV3FKcTc1OU1aQndMY3JWVGZiT1dwTXc1MmJSdF9zbVVKSEd5TjZHUTJhdXBYOWloUWZ3TC1tVkhma3FOREdYTnhRUHpDV1k0R1lRVkw3X1dFZlJJRVFDNnBZWm5qbkVqNU5oWTJkdUN5T2JFbXhQWHhLZUlCN2ZsVTdQZDRYSEF6OXFxMUJNSndkM3UxV0prVHNR0gH_AUFVX3lxTE45MGRaZGNOY1FOS1BxZnNJUGtCcnJhNkM4azhDTEwzbVZjQy1zTXdRa3c3MktBNnNobmRsa1dkM05GS0tRcVVvRVhHVDVYS2pfcmtkN3I1Xzk5djNMZ2J3LXZoMFN4TXdieUNOOURrNnM5NXhrQjlSRzlKTzhuSFhQbWhkcVpFMktoY3JlcjZYLXF4Wmp6LXpkUFdGS2FfU2JJRldpeWFFc0Z1WWFDMGo3dVZsdUoxdk9hMGF3SUVUYXZSa2R5cFFDTi1TUzRsejF6Rjc0U0hyZXhiLTQ5dWZBRHcyNldUakZicVhQcUVjNEpJNHJnTk9sd2ZsZHlVRQ?oc=5",
           "summary": "",
-          "id": "education-3253301935610301608"
+          "id": "education-8937242406896606601"
         },
         {
           "id": "official-education",
@@ -535,7 +536,7 @@
           "published": "Thu, 09 Oct 2025 07:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOZEEwRmEwNGgya21tMF9KN2JlTWV3QUV5QU9UXzZmNnVtaWZDUUhxX2tKWHFjYUdoaE5LTkN3eUlFN3B3UHRYRmdjdWw0Q2NSWlR0QTNLUHRhWFJSa0R1MXZMb093Q3JxeTFFc0VuXzByd1BLSmt3SHI1SUcyVnBUQ2NUMG5zYkNqWHgtUFJ3a0M2YnNVOWMyZmtRdVdPSExQRWhDdFdrZlZJOENNdHl6YXgwMUx6RE1CNmxMRXhzVm5ndTdpVXlQTTBLLU00QkFVLVg2N2pyQmdFei1wLTdnZ2kxS2ZmVElhSmRESF84ZFd2b2pnRk5OcnhR0gH_AUFVX3lxTFBjTXZRbmVuVTJ4UXk2WDFLZHVQTnhSeUxQSGE4TE02bkhaQ1otVWxiXy1UX21lOXVBcXJqeTRCM0Q4c1lraEdZYllRWWozOEFFaENVYTVMcnB5SERMVnNLN1hVZDZqY1FPWGhfbTUwYWsydDJNY014MWJmMGlSRlBRMzhPSWk0QkVydWhwLW05Wk5RTVhYTUxKSTEyUzVGcmZvRUw1ekpoSUFMaDhXc1lHLVdtX2x1T1dDalJDS3ZPeEdlbnhHd25ZQUdodHlPa3RWQnZKZDhCTUt5WElUZlhQX0RYeHpMVVhZUXh4TUVvWnhhYnlkMGgwUDIwMFcxOA?oc=5",
           "summary": "",
-          "id": "infrastructure-2282555982622356495"
+          "id": "infrastructure-6978138524100196224"
         }
       ]
     },
@@ -550,7 +551,7 @@
       "id": "government-navigator",
       "label": "Government Navigator",
       "state": "ready",
-      "signalCount": 3,
+      "signalCount": 4,
       "signals": [
         {
           "category": "politics",
@@ -561,7 +562,7 @@
           "published": "Fri, 01 Aug 2025 07:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxPRW10eFdrMFZuMGVqTVlmQ3g4QUlNYzAycGE0a2hQR2c0NDJQQ0RycFlIRWFwejVSNXBicmtZeVVib093SkNWLWNXOW5JR0tjVFAxS1pIbkFsSFVHUlpXXzU3QV8ya0lCUlptRWlVTS04cU5sRW14dXc1UVowR3JuU0dIUHhsQUktTldaZm9GQjNPczNYdG5kc1VsX3NQeHF1bEdYTmdIbTA1S1dJbGRsNXhzS2dCcFowd2xQY2o5RE9lNm5CMkpldHU4N2dDbmk5aWl3X2lXd0VSRVJuMTFJSHVKXzRWN05LWkZIRC16R0lSS1NLb0djOEpqWEJWUk02ZnhYbzdTVDkwWFhPVV9jZWlwcldaeTJHU2FRTkZwRXhSeUxBZjY0RTg3UjdfQXdZOTFV0gG4AkFVX3lxTE45dUJKTVVnX2VKb3VHQTVaWVJCS3JVcHc3S25xbGtrS1JTS1ZHdjVyWjZvc0Q1bkJsdzA5V1B4RThpNXZhZXJ6RlFZa1F4eVJhUHQ5UVJlaVpCcVFuZ0YtTVdIT2pmRHNnZDJQM0ZoX0g4UW5ZZWhlcmFfX1FCS1liQUJvQkZ3dzBGV1pFWldQc1BYaGloWjhjQzNCc1AxMWRBaVhKMVRNcGxIMHJ5c29xUXRSQ1A3c0RqekhyNjhhcGpVQW9sVC01cHV0Z3BXUWNORk1faUdleDdwM2pudkFYWmVSS3RDdm52M1JPcGU0dm9iTzBzamQtTDBGRGpIbmpGc3ZxRV96YnBhVDFwMUg0dl9RTnhmSTREeTVjRmduZUl4aHVLNzU4V2RhUW1fMFhiZkdSLTRWSw?oc=5",
           "summary": "",
-          "id": "politics-7994124056494653774"
+          "id": "politics-2231419382976395236"
         },
         {
           "category": "politics",
@@ -572,7 +573,18 @@
           "published": "Sun, 26 Jan 2025 08:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOcG1mU1JCeGQzYUxHcV9TWVNyS0N0NE5Nd1V0WDV1YVUySFdCb1MzN3hKam9GaXppWnNLcEMxWXgyRnV4QWpHTkRYUVNVcmZEd1JaMExoZ0xvV3RWTFRESjQ4amt1Z0FiNDNaOFlIdm1fdUJtVmtNOXFoTms3VzVSTnh0SnhicUpjS0FlZzV5WkNCUFRoZk10YTcxVk8wYllraEJmUVJfYVRNWG9maXJlbWp5ckNHYWs1dWxTTE02Mk80YVlFa3fSAdMBQVVfeXFMT3dGcnRmaFhWNnBnQUZVUWx2aGJoM0ZvTl9BZ2tka1lGQm0yNTRHb1NEWXNRcEF0TXA5VGx0ckxnbl8wNXlfb1dzZDRDUnBBUnUxQUhuakVVSDZnUjBvb0JYNk5Fb2tqWEpfb1ZjSUxjSlpJS1BOa3FfMjRHYnZCdzNhcUxwd1BfVVcyVnYtMDRobzJvOGlPenlqRE9KcWl5c3pIaHZRTjZRWFcydkZPbWxWb1VpSFFRbDUzUURQTjBEd2tFN01ER1cyQVhwdkZqZXlURQ?oc=5",
           "summary": "",
-          "id": "politics-3139182504200391726"
+          "id": "politics-1126760893841469868"
+        },
+        {
+          "category": "politics",
+          "categoryBasis": "headline-keyword",
+          "discoveredBy": "politics",
+          "title": "MC Election Highlights February 11| 25% of candidates in fray for Punjab polls face criminal cases: Report - Moneycontrol.com",
+          "source": "Moneycontrol.com",
+          "published": "Fri, 11 Feb 2022 08:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPeGJDNlBrYW9fX3Q3alNmMjlwX1lOeVF0SjZfWDdFVkIwV2VJeFVzZFNJMVR0dTdwQUdSUmhwZExNdDI3a2FjcnYxWG1ieVZ6Z1laZXZER1VXRHNjWWtaM2dWNFRSVmpPc3ZXNnVYTk5vNENZRGpzVHJ5S0lsUGdZSjdmVG1CaDBuRmxYeXp3a3VfOW5ZbElYZnRCUGtYd09iWEs1SERVeUJmT3l1OC1rVGlGcHRXVjBObkFlcDZVNzVqVnFtQWJLYl9UWHdQeGJKbVpqMUFyanU3WlUxVms1VUtnRE93bjJocHl4Y1N30gHzAUFVX3lxTFBPY2VzOF8wMnZlcUlIbThobVRtMERjbklKSkNBeFFQQnhFbS1ndjBkNDdLRmx2Sm1JQ0d1UWdnaExET1FibS0zbkJFbGV5ZjZqZWlWbm95SThsN1hDZ2NQVmhFa3hHZExNNDZsRjBtT21iaEJ2ZWlJQTdNQXZmb0dnWGY2bmw4RUh2T1lNMUhlNG96M1RGaTRMTU41UGFNY0ZDejcyOVZsMWNDYnV0RnM1XzAxVHVCaVAwdE9mNzR6MDU2cTY4WVRNenZ4WXl2MG45WWxuUjgzUVlrX3NCZmdUQVk3UnYyX0UtWEFJNmpjcDQtWQ?oc=5",
+          "summary": "",
+          "id": "politics-1217766563719149134"
         },
         {
           "id": "official-district",
@@ -601,7 +613,7 @@
           "published": "Thu, 09 Oct 2025 07:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOZEEwRmEwNGgya21tMF9KN2JlTWV3QUV5QU9UXzZmNnVtaWZDUUhxX2tKWHFjYUdoaE5LTkN3eUlFN3B3UHRYRmdjdWw0Q2NSWlR0QTNLUHRhWFJSa0R1MXZMb093Q3JxeTFFc0VuXzByd1BLSmt3SHI1SUcyVnBUQ2NUMG5zYkNqWHgtUFJ3a0M2YnNVOWMyZmtRdVdPSExQRWhDdFdrZlZJOENNdHl6YXgwMUx6RE1CNmxMRXhzVm5ndTdpVXlQTTBLLU00QkFVLVg2N2pyQmdFei1wLTdnZ2kxS2ZmVElhSmRESF84ZFd2b2pnRk5OcnhR0gH_AUFVX3lxTFBjTXZRbmVuVTJ4UXk2WDFLZHVQTnhSeUxQSGE4TE02bkhaQ1otVWxiXy1UX21lOXVBcXJqeTRCM0Q4c1lraEdZYllRWWozOEFFaENVYTVMcnB5SERMVnNLN1hVZDZqY1FPWGhfbTUwYWsydDJNY014MWJmMGlSRlBRMzhPSWk0QkVydWhwLW05Wk5RTVhYTUxKSTEyUzVGcmZvRUw1ekpoSUFMaDhXc1lHLVdtX2x1T1dDalJDS3ZPeEdlbnhHd25ZQUdodHlPa3RWQnZKZDhCTUt5WElUZlhQX0RYeHpMVVhZUXh4TUVvWnhhYnlkMGgwUDIwMFcxOA?oc=5",
           "summary": "",
-          "id": "infrastructure-2282555982622356495"
+          "id": "infrastructure-6978138524100196224"
         },
         {
           "id": "monkey-ranikhet",
@@ -648,7 +660,7 @@
           "published": "Thu, 09 Oct 2025 07:00:00 GMT",
           "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOZEEwRmEwNGgya21tMF9KN2JlTWV3QUV5QU9UXzZmNnVtaWZDUUhxX2tKWHFjYUdoaE5LTkN3eUlFN3B3UHRYRmdjdWw0Q2NSWlR0QTNLUHRhWFJSa0R1MXZMb093Q3JxeTFFc0VuXzByd1BLSmt3SHI1SUcyVnBUQ2NUMG5zYkNqWHgtUFJ3a0M2YnNVOWMyZmtRdVdPSExQRWhDdFdrZlZJOENNdHl6YXgwMUx6RE1CNmxMRXhzVm5ndTdpVXlQTTBLLU00QkFVLVg2N2pyQmdFei1wLTdnZ2kxS2ZmVElhSmRESF84ZFd2b2pnRk5OcnhR0gH_AUFVX3lxTFBjTXZRbmVuVTJ4UXk2WDFLZHVQTnhSeUxQSGE4TE02bkhaQ1otVWxiXy1UX21lOXVBcXJqeTRCM0Q4c1lraEdZYllRWWozOEFFaENVYTVMcnB5SERMVnNLN1hVZDZqY1FPWGhfbTUwYWsydDJNY014MWJmMGlSRlBRMzhPSWk0QkVydWhwLW05Wk5RTVhYTUxKSTEyUzVGcmZvRUw1ekpoSUFMaDhXc1lHLVdtX2x1T1dDalJDS3ZPeEdlbnhHd25ZQUdodHlPa3RWQnZKZDhCTUt5WElUZlhQX0RYeHpMVVhZUXh4TUVvWnhhYnlkMGgwUDIwMFcxOA?oc=5",
           "summary": "",
-          "id": "infrastructure-2282555982622356495"
+          "id": "infrastructure-6978138524100196224"
         },
         {
           "id": "monkey-ranikhet",
@@ -707,7 +719,7 @@
       "signals": [
         "Uttarakhand panchayat election results: Coin toss, slip draws decide winners on counting day; young voic - The Times of India",
         "BJP sweeps urban local body polls in Uttarakhand, wins 10 of 11 mayoral seats - The New Indian Express",
-        "Almora district administration and current public notices"
+        "MC Election Highlights February 11| 25% of candidates in fray for Punjab polls face criminal cases: Report - Moneycontrol.com"
       ]
     },
     {
