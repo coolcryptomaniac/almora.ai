@@ -1,8 +1,6 @@
-name: Fallback GitHub Pages
+name: Fallback GitHub Pages (Manual)
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -11,7 +9,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: fallback-pages
+  group: fallback-pages-manual
   cancel-in-progress: true
 
 jobs:
