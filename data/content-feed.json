@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T23:42:07.749545+00:00",
+  "updatedAt": "2026-08-22T01:52:44.147805+00:00",
   "editorialPolicy": "Rank current, useful and source-linked Almora public-interest content. Routine sensational crime is not promoted. Resident/problem signals remain explicitly unverified or evidence-scoped.",
   "count": 20,
   "items": [
@@ -24,22 +24,12 @@
       "reason": "Fresh public-interest news"
     },
     {
-      "id": "news-5",
+      "id": "news-4",
       "kind": "news",
       "category": "sports",
       "title": "Lakshya Sen and the Story of Badminton in Almora - Garhwal Post",
       "summary": "Garhwal Post update",
       "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBWbndyY3V5Q1lXUUNGbFQ5WWVBbkxZTzB5Y2pWMlk5MU9OUEZlRlRJNHlicnFyT2ZNN3JIUDI5aWhhcjFKV21xcU5VTzZzWmMwY1Vnc09uSWthX0V5S01jLXNaZVVNNTIzZGRGV08wOUd4eVh5aktrb2l4VU8?oc=5",
-      "score": 10,
-      "reason": "Fresh public-interest news"
-    },
-    {
-      "id": "news-4",
-      "kind": "news",
-      "category": "sports",
-      "title": "From Almora To Olympic Semifinals: Meet Lakshya Sen, Indian Badminton Player Who Made History At Paris Olympics 2024 - Zee News",
-      "summary": "Zee News update",
-      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPb1RKeGhJQWpZVjIyWjREYW1sU3NBTVdjQ1RDWGotRVJGdHlGUzJEbHk3ekZUakZzcUpJbFJJbWQwRjhrdmlocDhQSS14ZlE2VUEwTkc4TW1YQlNVTjR6ak16b1JCcmdoWDZpQkcwRTJRMnBWUTdrenU0WWNZdW1rOS01R2FtcXpLVk50RnU5SWhSVl83LU1OZmpWLXNxRE9CNk9CTEY4dkxldUlhVDBMc21oTDZUU2sybGdSN3REYTI1dE8zZXdtZ2xXLW81T1FsQVRQRW41Ti1CaldmaEVLdEMxQUdvNzQ2R3VlbURiallrMmZRenpCbG9n0gH_AUFVX3lxTFAyVHc5Q2NKeXAyeVdyNHk4WWM4aFpJeVRad2plR182WVdJOUd0aUZ0ZGtMb0NFVTZyOXJRNjdvZ1VpNGk5bFJwdjNMVzhoUGJGMUtHVU91R2NRU1FOdFoxTVliNlNVSUpiX0xvbGVqeXlfYVhLXzlFY3A0dHM1eW1ma1d2NHdzNVNhNmdndzRiTjhsbldXeWo2Qnpoel9qTm9QYUNUZ2xVTndPa1d1ZjFpdFE2aHNId0RycHU1cEZ3UWk0d1ZtbVZ1dzJQcGg3YVBVTEdhaEc2WnlWY2FDOHRsY1JVNlBaX25LUnI0RU1TcndybkdybWhnNVlOZU5ITQ?oc=5",
       "score": 10,
       "reason": "Fresh public-interest news"
     },
@@ -50,6 +40,16 @@
       "title": "Badminton star Lakshya Sen: From Almora to All England finals - Moneycontrol.com",
       "summary": "Moneycontrol.com update",
       "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNRXZsbDVtNHFGdTNsQi1EWEpNUnI4WXVNLWZKY1V6WS1OMlBuRWE0LWxCQWMxY1JER3ZlME45ZHVtN2lJYzdqbFg3WlpjbnF4Y042T2JEd0N6TnJ6YjBseFRnYnkwWkc0dlJfdkFiT2J4anN0UU5aaElPUnZ5cFNjTWhVMW9JNTdyby1JQ1FjM2wwOXpIaDF6cEVTZ21jbTJGOFM3SmFRbGVTRW5DV09fLWxCbERWMDVZVTE1UjlFdVNxeWZpblJz0gHMAUFVX3lxTE5URmpHSTFjWmJZeHdXeExsUGZTUUl6X2h0R0p5TnczRjBtYXRfQ05ZUjVDWFdzdWJrUHQ1T21QV2JYVTJDRTdpS2kzS2FXY0QwblhnQ2J3cVpsenMyTlVlMG52TU9WSkJhZGUtSVVGd2x6eGJfOGllS042QVlHWFBYTW9QN2JLU3BzZk1tUENaMzB1Z05seU12ODBYaFpMVmpsOURHZHVlWG1jdGh2elEzMDRpbmhDUXBGSlo2M2Z4VG9vUE9pRkowUmh1LQ?oc=5",
+      "score": 10,
+      "reason": "Fresh public-interest news"
+    },
+    {
+      "id": "news-3",
+      "kind": "news",
+      "category": "sports",
+      "title": "Almora girl Aditi Bhatt picked for India’s junior badminton team - The Times of India",
+      "summary": "The Times of India update",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNdllQYlpnc1ptcHdXMVA3VzRQVC1UQzJ3WWRUcnItU18xNlB1azl2ZUotMHZpZnprYWFVS29vZGdaOWRpTUNlSEZRZ2hpXy1qdkdBRnhINTlocE5lVDZvMTdKd1JBQnJGcWl2LUtjQURGbjM4elhQd0M0Zno3WjJ1V1M3OUpRSUUtSy1oMTZxMnZERXNTQjJKOHowTzkzVGhzY183S3hZd2pRSW9uTEg2amRKcW4yZlZZbEt4Z1R6Y3p0VnRKVC00MlBhU2hNVDEwYkd3btIB2gFBVV95cUxOS2FWSjl1R1ZhbnF5cDBfWGRYdm5CRG9hdnNnaXZyV2lWVk9OZlczaU9XN0toWS1LVEllbVY4aGFmcVQ1WU1aRzF0aW5faC12ZUdISTU0dmk4N3ZSVDYxb3BwTFkwMUdlOF9WYUNnR2VxcmsyaEJlNnBkOFF3UTFfdTNVYzR4S0hoOWE2blVSQ1k4MU12VlhGcUpyNGlSc3dNUEdHS2YwVkV5Wkg1aHRNcHV3aU52c295SXhVN1JGY1piM2lreG9STnR4UGhYQnNWel9nT29TVWl6dw?oc=5",
       "score": 10,
       "reason": "Fresh public-interest news"
     },
