@@ -1,27 +1,19 @@
-name: Town Intelligence Refresh
+name: Town Intelligence Refresh (Monthly)
 
 on:
   schedule:
-    - cron: '17 * * * *'
+    - cron: '17 2 4 * *'
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - 'agents/**'
-      - 'data/monkey-hotspots.json'
-      - 'data/apps.json'
-      - '.github/workflows/town-intelligence.yml'
 
 permissions:
   contents: write
 
 concurrency:
-  group: town-intelligence
+  group: town-intelligence-monthly
   cancel-in-progress: true
 
 jobs:
   refresh:
-    if: ${{ !contains(github.event.head_commit.message || '', '[data-refresh]') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -44,24 +36,9 @@ jobs:
           python3 -m json.tool data/agent-learning.json >/dev/null
           python3 -m json.tool data/content-feed.json >/dev/null
       - name: Commit refreshed public intelligence
-        id: data_commit
         run: |
           git config user.name 'almora-ai-agent'
           git config user.email 'actions@users.noreply.github.com'
           git add data/live-news.json data/people.json data/agent-status.json data/agent-learning.json data/content-feed.json
-          if git diff --cached --quiet; then
-            echo 'changed=false' >> "$GITHUB_OUTPUT"
-            echo 'No public intelligence changes.'
-          else
-            git commit -m 'data: refresh town intelligence [data-refresh]'
-            git push
-            echo 'changed=true' >> "$GITHUB_OUTPUT"
-          fi
-      - name: Deploy refreshed intelligence to Firebase Hosting
-        if: steps.data_commit.outputs.changed == 'true'
-        uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_ALMORAAI }}
-          channelId: live
-          projectId: almoraai
+          git diff --cached --quiet || git commit -m 'data: monthly town intelligence refresh'
+          git push
