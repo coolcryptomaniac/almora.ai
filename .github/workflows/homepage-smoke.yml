@@ -1,12 +1,10 @@
-name: Homepage Smoke
+name: Homepage Smoke (Manual)
 on:
-  pull_request:
-    branches: [main]
   workflow_dispatch:
 permissions:
   contents: read
 concurrency:
-  group: homepage-smoke-${{ github.event.pull_request.number || github.ref }}
+  group: homepage-smoke-manual
   cancel-in-progress: true
 jobs:
   smoke:
