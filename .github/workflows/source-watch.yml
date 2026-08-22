@@ -1,7 +1,7 @@
-name: Almora Official Source Watch
+name: Almora Official Source Watch (Monthly)
 on:
   schedule:
-    - cron: '15 2 * * *'
+    - cron: '15 2 3 * *'
   workflow_dispatch:
 permissions:
   contents: read
@@ -18,4 +18,4 @@ jobs:
         with:
           name: official-source-health
           path: data/source-health.json
-          retention-days: 14
+          retention-days: 7
