@@ -1,7 +1,7 @@
-name: Agent scorecard
+name: Agent Scorecard (Monthly)
 on:
   schedule:
-    - cron: '35 2 * * *'
+    - cron: '35 2 2 * *'
   workflow_dispatch:
 permissions:
   contents: write
@@ -17,5 +17,5 @@ jobs:
           git config user.name "almora-ai-agent"
           git config user.email "actions@users.noreply.github.com"
           git add data/agent-status.json
-          git diff --cached --quiet || git commit -m "chore: refresh agent scorecard"
+          git diff --cached --quiet || git commit -m "chore: refresh monthly agent scorecard"
           git push
