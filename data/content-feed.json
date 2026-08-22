@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T19:39:21.445667+00:00",
+  "updatedAt": "2026-08-22T20:42:18.242683+00:00",
   "editorialPolicy": "Rank current, useful and source-linked Almora public-interest content. Routine sensational crime is not promoted. Resident/problem signals remain explicitly unverified or evidence-scoped.",
   "count": 20,
   "items": [
@@ -104,6 +104,16 @@
       "reason": "Fresh public-interest news"
     },
     {
+      "id": "news-8",
+      "kind": "news",
+      "category": "education",
+      "title": "Uttarakhand Student Union Election Ban Sparks Crisis: Self-immolation Attempt Highlights Youth Desperation - Frontline Magazine",
+      "summary": "Frontline Magazine update",
+      "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxPdkh4cHNiMngxTDZKRlZiamxqNmRfWG5GVTFtTUtuYmIyNWF3cDFDN3h0YmRqTU1jQW5jQ2lCaHJtUFE2WU9lcF9sOHp1d215TWNITDlkbzBBd3VkdG9rSVNVamR3MFJ5S0ptdFNSb3d5b1pSLUo1Z3hSbmZvWENHLWgxNDBWYWhxUzFENE1WZTdIU1BkWXpxdmVWU0x4R1VzR3BweDdrbXNveW5HSnJCdHEwYktrUENIRm1IbXJiZnZvTU9GR3pzTU9iaDNFb1hmdzBsYkFPUnZZTjlaVWZiWXU1MFdwWjVYWUpLTHVNSHhTQWFqTFNkR2hxd2QwUmNIOTI5aUk3b2FFUVYzbHBYWE5ObThvM0oxbW85elVn0gGkAkFVX3lxTE9wMXRScFQwcFc5NjM2N2NHZHVaOFowTWR0N3V1QVdndE5TYVd6WTZLQy1XaGFWRzg2R1JFYkp1MDIybGF6RXY5NTR6dGlSOGFNZDVsNGM0SWdnVkJvdDA1TFY3Ny1KUC0wT2RBVkQ4UEhFNEhnd0dQYjdZQmpJa3BQeko5UWZLT2l1Nm5kVnc2d0ZjYnh5TS14QTFlaWJHTy1DWUZSMFpXd0N6dnExLU9YOXpSN2Y3TWJSR1lveUN6cF80by1rZXZESlUwdVoweXJtcDlFT1pQc0g0aEtFRzJUcC1oLVN0ZWJyejJIOTkzUV8za0VRM09tclVJOW90NEYxU2FFUXFxdEx3dHNSc0VXalZNQktic3p4aWVacnowTHFDY0c?oc=5",
+      "score": 8,
+      "reason": "Fresh public-interest news"
+    },
+    {
       "id": "news-15",
       "kind": "news",
       "category": "innovation",
@@ -124,7 +134,7 @@
       "reason": "Fresh public-interest news"
     },
     {
-      "id": "news-8",
+      "id": "news-9",
       "kind": "news",
       "category": "politics",
       "title": "Uttarakhand panchayat election results: Coin toss, slip draws decide winners on counting day; young voic - The Times of India",
@@ -167,16 +177,6 @@
       "id": "news-10",
       "kind": "news",
       "category": "politics",
-      "title": "MC Election Highlights February 11| 25% of candidates in fray for Punjab polls face criminal cases: Report - Moneycontrol.com",
-      "summary": "Moneycontrol.com update",
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPeGJDNlBrYW9fX3Q3alNmMjlwX1lOeVF0SjZfWDdFVkIwV2VJeFVzZFNJMVR0dTdwQUdSUmhwZExNdDI3a2FjcnYxWG1ieVZ6Z1laZXZER1VXRHNjWWtaM2dWNFRSVmpPc3ZXNnVYTk5vNENZRGpzVHJ5S0lsUGdZSjdmVG1CaDBuRmxYeXp3a3VfOW5ZbElYZnRCUGtYd09iWEs1SERVeUJmT3l1OC1rVGlGcHRXVjBObkFlcDZVNzVqVnFtQWJLYl9UWHdQeGJKbVpqMUFyanU3WlUxVms1VUtnRE93bjJocHl4Y1N30gHzAUFVX3lxTFBPY2VzOF8wMnZlcUlIbThobVRtMERjbklKSkNBeFFQQnhFbS1ndjBkNDdLRmx2Sm1JQ0d1UWdnaExET1FibS0zbkJFbGV5ZjZqZWlWbm95SThsN1hDZ2NQVmhFa3hHZExNNDZsRjBtT21iaEJ2ZWlJQTdNQXZmb0dnWGY2bmw4RUh2T1lNMUhlNG96M1RGaTRMTU41UGFNY0ZDejcyOVZsMWNDYnV0RnM1XzAxVHVCaVAwdE9mNzR6MDU2cTY4WVRNenZ4WXl2MG45WWxuUjgzUVlrX3NCZmdUQVk3UnYyX0UtWEFJNmpjcDQtWQ?oc=5",
-      "score": 7,
-      "reason": "Fresh public-interest news"
-    },
-    {
-      "id": "news-9",
-      "kind": "news",
-      "category": "politics",
       "title": "BJP sweeps urban local body polls in Uttarakhand, wins 10 of 11 mayoral seats - The New Indian Express",
       "summary": "The New Indian Express update",
       "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOcG1mU1JCeGQzYUxHcV9TWVNyS0N0NE5Nd1V0WDV1YVUySFdCb1MzN3hKam9GaXppWnNLcEMxWXgyRnV4QWpHTkRYUVNVcmZEd1JaMExoZ0xvV3RWTFRESjQ4amt1Z0FiNDNaOFlIdm1fdUJtVmtNOXFoTms3VzVSTnh0SnhicUpjS0FlZzV5WkNCUFRoZk10YTcxVk8wYllraEJmUVJfYVRNWG9maXJlbWp5ckNHYWs1dWxTTE02Mk80YVlFa3fSAdMBQVVfeXFMT3dGcnRmaFhWNnBnQUZVUWx2aGJoM0ZvTl9BZ2tka1lGQm0yNTRHb1NEWXNRcEF0TXA5VGx0ckxnbl8wNXlfb1dzZDRDUnBBUnUxQUhuakVVSDZnUjBvb0JYNk5Fb2tqWEpfb1ZjSUxjSlpJS1BOa3FfMjRHYnZCdzNhcUxwd1BfVVcyVnYtMDRobzJvOGlPenlqRE9KcWl5c3pIaHZRTjZRWFcydkZPbWxWb1VpSFFRbDUzUURQTjBEd2tFN01ER1cyQVhwdkZqZXlURQ?oc=5",
@@ -212,6 +212,7 @@
       "monkey-Sarkar Ki Ali",
       "monkey-Ranidhara",
       "news-7",
+      "news-8",
       "news-14",
       "route-ranikhet",
       "route-pithoragarh"
@@ -229,11 +230,13 @@
     "local-jobs": [
       "news-12",
       "news-7",
+      "news-8",
       "news-14"
     ],
     "rural-education": [
       "news-12",
       "news-7",
+      "news-8",
       "news-14"
     ],
     "water-watch": [
@@ -254,9 +257,8 @@
     ],
     "government-navigator": [
       "news-11",
-      "news-8",
-      "news-10",
-      "news-9"
+      "news-9",
+      "news-10"
     ],
     "civic-watch": [
       "news-11",
@@ -276,6 +278,7 @@
       "monkey-Sarkar Ki Ali",
       "monkey-Ranidhara",
       "news-7",
+      "news-8",
       "news-14",
       "route-ranikhet",
       "route-pithoragarh"
