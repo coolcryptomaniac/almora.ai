@@ -1,12 +1,10 @@
-name: Feature Pages Smoke
+name: Feature Pages Smoke (Manual)
 on:
-  pull_request:
-    branches: [main]
   workflow_dispatch:
 permissions:
   contents: read
 concurrency:
-  group: feature-pages-smoke-${{ github.event.pull_request.number || github.ref }}
+  group: feature-pages-smoke-manual
   cancel-in-progress: true
 jobs:
   smoke:
