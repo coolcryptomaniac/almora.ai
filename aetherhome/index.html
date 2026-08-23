@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>AETHERHOME — Autonomous Living Intelligence</title>
+<meta name="description" content="AETHERHOME is a concept for an autonomous living vehicle with an embodied AI copilot." />
+<meta name="robots" content="noindex,nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<canvas id="matrix"></canvas><canvas id="mesh"></canvas><div class="scanlines"></div>
+<header class="nav">
+  <a class="brand" href="#top"><span class="brandmark">AΞ</span><span><b>AETHERHOME</b><small>Autonomous Living Intelligence</small></span></a>
+  <nav><a href="#experience">Experience</a><a href="#architecture">Architecture</a><a href="#funding">Funding</a><a href="whitepaper.html">White paper</a><a class="pill" href="investor.html">Investor room</a></nav>
+</header>
+
+<main id="top">
+<section class="hero section-pad">
+ <div class="hero-copy reveal">
+  <div class="kicker">STEALTH / PHYSICAL AI × AUTONOMOUS MOBILITY</div>
+  <h1>Your car becomes<br><span>home.</span> Your home<br>learns to <span>move.</span></h1>
+  <p>A premium autonomous living vehicle with a near-human embodied copilot that can drive, cook, clean, prepare the cabin, host guests and keep your life moving while you work, rest or travel.</p>
+  <div class="actions"><a class="btn btn-primary" href="#experience">Enter AETHERHOME</a><a class="btn" href="deck.html">View investor deck</a></div>
+  <div class="truthline">Concept-stage company narrative. No affiliation with Tesla, Enigma, Genesis AI or Walden Robotics.</div>
+ </div>
+ <div class="hero-visual reveal delay1">
+  <div class="hero-img-wrap"><img src="assets/hero.webp" alt="AETHERHOME autonomous living vehicle with humanoid copilot" />
+    <div class="hud hud-a"><b>ATLAS</b><span>COPILOT ONLINE</span></div><div class="hud hud-b"><b>LIVING OS</b><span>MODE: ARRIVAL</span></div>
+    <div class="eye-pulse eye-left"></div><div class="eye-pulse eye-right"></div>
+  </div>
+ </div>
+</section>
+
+<section class="marquee"><div>DRIVE · WORK · DINE · SLEEP · HOST · CLEAN · TRAVEL · ARRIVE READY · DRIVE · WORK · DINE · SLEEP · HOST · CLEAN · TRAVEL · ARRIVE READY ·</div></section>
+
+<section id="experience" class="section-pad experience">
+ <div class="section-head reveal"><div class="kicker">ONE SYSTEM / MANY LIVES</div><h2>The vehicle does not wait outside your life.<br>It becomes part of it.</h2></div>
+ <div class="cinema reveal">
+   <div class="scene active" data-title="ARRIVE" data-copy="ATLAS opens, loads, welcomes and resets the cabin." style="background-image:url('assets/arrival.webp')"></div>
+   <div class="scene" data-title="WORK" data-copy="The autonomy stack drives while the cabin becomes a private office." style="background-image:url('assets/work.webp')"></div>
+   <div class="scene" data-title="COOK" data-copy="ATLAS performs constrained food-prep and service workflows." style="background-image:url('assets/cook.webp')"></div>
+   <div class="scene" data-title="RESET" data-copy="The copilot tidies, folds, replenishes and prepares the vehicle for the next mode." style="background-image:url('assets/travel.webp')"></div>
+   <div class="cinema-shade"></div>
+   <div class="cinema-copy"><span id="sceneIndex">01 / 04</span><h3 id="sceneTitle">ARRIVE</h3><p id="sceneCopy">ATLAS opens, loads, welcomes and resets the cabin.</p></div>
+   <div class="robot-motion"><i></i><i></i><i></i></div>
+   <div class="scene-dots" id="sceneDots"></div>
+ </div>
+ <div class="mode-grid">
+  <article class="glass reveal"><span>01</span><h3>Executive Mode</h3><p>Desk, privacy, conferencing, route-aware calendar and a continuously prepared workspace.</p></article>
+  <article class="glass reveal delay1"><span>02</span><h3>Hospitality Mode</h3><p>Guest welcome, beverage and serving workflows, climate, lighting, music and event-ready presentation.</p></article>
+  <article class="glass reveal delay2"><span>03</span><h3>Rest Mode</h3><p>Transformable seating, sleep environment, luggage management and destination-aware wake-up.</p></article>
+  <article class="glass reveal delay3"><span>04</span><h3>Self-Reset</h3><p>Tidying, sanitation assistance, inventory sensing and maintenance diagnostics between journeys.</p></article>
+ </div>
+</section>
+
+<section id="architecture" class="section-pad architecture">
+ <div class="section-head reveal"><div class="kicker">SYSTEM ARCHITECTURE</div><h2>Four frontier ideas, combined into one new product category.</h2><p>We borrow public technical patterns, not proprietary technology.</p></div>
+ <div class="arch-grid">
+  <article class="arch-card reveal"><div class="arch-no">A1</div><h3>Autonomy Brain</h3><p>Vision, world modeling, planning, efficient inference and fleet-learning patterns inspired by modern autonomy systems.</p><small>Reference: Tesla public AI & Robotics materials</small></article>
+  <article class="arch-card reveal delay1"><div class="arch-no">A2</div><h3>Intuitive Robot Interface</h3><p>Robot-agnostic abstraction and human-first interaction so the copilot feels obvious instead of requiring robotics expertise.</p><small>Reference: Enigma public technology materials</small></article>
+  <article class="arch-card reveal delay2"><div class="arch-no">A3</div><h3>Dexterous Physical AI</h3><p>Vision-language-action reasoning, simulation and manipulation data for kitchen, cleaning and cabin tasks.</p><small>Reference: Genesis AI public GENE materials</small></article>
+  <article class="arch-card reveal delay3"><div class="arch-no">A4</div><h3>Useful Work First</h3><p>Constrained real-world tasks, human fallback and continuous improvement before attempting unrestricted autonomy.</p><small>Reference: Walden Robotics public deployment philosophy</small></article>
+ </div>
+ <div class="system-map glass reveal">
+   <div><b>PERCEPTION</b><span>cameras · audio · cabin sensing · vehicle state</span></div><em>→</em>
+   <div><b>LIVING OS</b><span>intent · schedule · privacy · safety · personalization</span></div><em>→</em>
+   <div><b>ATLAS</b><span>manipulation · service · chores · human interaction</span></div><em>→</em>
+   <div><b>FLEET BRAIN</b><span>simulation · evaluation · teleoperation · learning</span></div>
+ </div>
+</section>
+
+<section class="section-pad wedge">
+ <div class="section-head reveal"><div class="kicker">BUILD WHAT CAN SHIP</div><h2>$100M vision. A prototype that starts much smaller.</h2></div>
+ <div class="wedge-grid">
+  <article class="glass reveal"><b>01 — Smart cabin</b><h3>Make the living environment real first.</h3><p>Transforming seats, work surfaces, lighting, audio, privacy, climate, inventory and cabin orchestration on a partner vehicle platform.</p></article>
+  <article class="glass reveal delay1"><b>02 — Constrained copilot</b><h3>Only high-value chores.</h3><p>Start with loading, serving, tidying, folding, object retrieval and cabin preparation—with remote human fallback.</p></article>
+  <article class="glass reveal delay2"><b>03 — Premium fleet</b><h3>Sell the experience before the car.</h3><p>Executive mobility, hotels, resorts, luxury travel, events and long-distance premium fleet partners.</p></article>
+ </div>
+</section>
+
+<section id="funding" class="section-pad funding">
+ <div class="fund-grid">
+  <div class="fund-copy reveal"><div class="kicker">LIVE INDICATIONS OF INTEREST</div><h2>Help fund the first autonomous living platform.</h2><p>Investor submissions are <strong>non-binding indications of interest</strong>. The public counter includes only commitments manually verified by the company. No fake investors, no fabricated totals.</p>
+    <div class="fund-stats"><div><span id="verifiedCount">0</span><small>verified indications</small></div><div><span id="verifiedTotal">$0</span><small>verified total</small></div></div>
+    <div class="goal"><div class="goal-label"><span>Prototype round</span><b>$5M</b></div><div class="track"><i id="goal5"></i></div></div>
+    <div class="goal"><div class="goal-label"><span>Frontier scale target</span><b>$100M</b></div><div class="track"><i id="goal100"></i></div></div>
+    <div class="recent"><h4>Verified activity</h4><div id="recentList" class="recent-list"><span class="muted">No verified indications yet.</span></div></div>
+  </div>
+  <form id="commitForm" class="commit-form glass reveal delay1">
+   <div class="form-title">Investor indication</div>
+   <label>Name<input name="name" required maxlength="80" autocomplete="name"></label>
+   <label>Fund / organization<input name="organization" maxlength="120"></label>
+   <label>Public display label (optional)<input name="publicLabel" maxlength="80" placeholder="e.g. Global mobility fund"></label>
+   <label>Email<input name="email" type="email" required autocomplete="email"></label>
+   <label>Indicative amount (USD)<input name="amount" type="number" required min="10000" max="100000000" step="10000" placeholder="500000"></label>
+   <label>Investor type<select name="type"><option>VC fund</option><option>Corporate / strategic</option><option>Family office</option><option>Angel / operator</option><option>Other</option></select></label>
+   <label>Note<textarea name="note" rows="3" maxlength="500" placeholder="What would make you lean in?"></textarea></label>
+   <label class="check"><input type="checkbox" required name="nonbinding"> I understand this is a non-binding indication of interest, not a securities purchase.</label>
+   <button class="btn btn-primary wide" type="submit">Submit indication</button>
+   <div id="formStatus" class="form-status">Live backend not connected yet.</div>
+  </form>
+ </div>
+</section>
+
+<section class="section-pad docs-section">
+ <div class="section-head reveal"><div class="kicker">DILIGENCE ROOM</div><h2>Read the thesis. Challenge the architecture.</h2></div>
+ <div class="doc-grid">
+  <a class="doc-card reveal" href="whitepaper.html"><span>PDF · WHITE PAPER</span><h3>Autonomous Living Intelligence</h3><p>Technical thesis, product architecture, safety model, roadmap and business strategy.</p><b>Open white paper →</b></a>
+  <a class="doc-card reveal delay1" href="deck.html"><span>PDF · INVESTOR DECK</span><h3>The Moving Home</h3><p>Category, wedge, product, moat, milestones and funding narrative.</p><b>Open deck →</b></a>
+ </div>
+</section>
+
+<section class="closing section-pad reveal"><div class="kicker">THE CATEGORY</div><h2>The world built smart homes.<br>Then autonomous cars.<br>Then humanoid robots.<br><span>We combine all three.</span></h2><a class="btn btn-primary" href="investor.html">Enter investor room</a></section>
+</main>
+<footer><span>AETHERHOME · STEALTH CONCEPT</span><span>Concept visuals are illustrative. Product capability claims are roadmap targets unless explicitly stated otherwise.</span></footer>
+<script src="app.js"></script>
+</body></html>

@@ -85,6 +85,38 @@ service cloud.firestore {
       allow read, write: if owner(uid);
     }
 
+    // AETHERHOME public-safe funding indications. Public records contain no email or personal contact details.
+    match /aetherhomeIndications/{id} {
+      allow create: if request.resource.data.keys().hasOnly(['publicLabel','amount','investorType','status','createdAt','nonbinding'])
+                    && request.resource.data.publicLabel is string
+                    && request.resource.data.publicLabel.size() <= 80
+                    && request.resource.data.amount is int
+                    && request.resource.data.amount >= 10000
+                    && request.resource.data.amount <= 100000000
+                    && request.resource.data.investorType is string
+                    && request.resource.data.investorType.size() <= 80
+                    && request.resource.data.status == 'pending'
+                    && request.resource.data.createdAt is timestamp
+                    && request.resource.data.nonbinding == true;
+      allow read: if moderator() || resource.data.status == 'verified';
+      allow update, delete: if moderator();
+    }
+
+    // Sensitive investor contact data is never publicly readable.
+    match /aetherhomeIndicationContacts/{id} {
+      allow create: if request.resource.data.keys().hasOnly(['name','organization','email','note','createdAt'])
+                    && request.resource.data.name is string
+                    && request.resource.data.name.size() <= 80
+                    && request.resource.data.organization is string
+                    && request.resource.data.organization.size() <= 120
+                    && request.resource.data.email is string
+                    && request.resource.data.email.size() <= 160
+                    && request.resource.data.note is string
+                    && request.resource.data.note.size() <= 500
+                    && request.resource.data.createdAt is timestamp;
+      allow read, update, delete: if moderator();
+    }
+
     match /{document=**} { allow read, write: if false; }
   }
 }
