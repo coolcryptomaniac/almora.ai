@@ -1,0 +1,19 @@
+{
+  "feeds": [
+    {"name":"arXiv embodied AI","url":"https://export.arxiv.org/api/query?search_query=all:%22embodied%20AI%22%20OR%20all:%22humanoid%20robot%22%20OR%20all:%22vision-language-action%22&sortBy=submittedDate&sortOrder=descending&max_results=20","kind":"research"},
+    {"name":"NVIDIA robotics","url":"https://blogs.nvidia.com/blog/category/robotics/feed/","kind":"physical-ai"},
+    {"name":"Google DeepMind","url":"https://deepmind.google/blog/rss.xml","kind":"research"}
+  ],
+  "pages": [
+    {"name":"Tesla AI","url":"https://www.tesla.com/AI","kind":"autonomy"},
+    {"name":"Genesis AI","url":"https://genesis-ai.company/","kind":"physical-ai"},
+    {"name":"Walden Robotics","url":"https://www.waldenrobotics.com/","kind":"physical-ai"},
+    {"name":"Lambda GPU Cloud","url":"https://lambda.ai/service/gpu-cloud","kind":"gpu-cost"},
+    {"name":"Runpod pricing","url":"https://www.runpod.io/pricing","kind":"gpu-cost"},
+    {"name":"CoreWeave pricing","url":"https://www.coreweave.com/pricing","kind":"gpu-cost"},
+    {"name":"Modal pricing","url":"https://modal.com/pricing","kind":"gpu-cost"},
+    {"name":"Figure careers","url":"https://www.figure.ai/careers","kind":"talent-cost"},
+    {"name":"Physical Intelligence careers","url":"https://www.physicalintelligence.company/careers","kind":"talent-cost"},
+    {"name":"Skild AI careers","url":"https://www.skild.ai/careers","kind":"talent-cost"}
+  ]
+}

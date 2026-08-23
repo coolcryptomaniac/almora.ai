@@ -1,0 +1,52 @@
+name: AETHERHOME Physical AI Intelligence
+
+on:
+  schedule:
+    - cron: '30 6 * * 0'   # Sunday 12:00 IST
+    - cron: '45 6 1 * *'   # First day of month 12:15 IST
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Research depth
+        required: true
+        default: weekly
+        type: choice
+        options: [weekly, monthly]
+
+permissions:
+  contents: write
+  models: read
+
+concurrency:
+  group: aetherhome-intelligence
+  cancel-in-progress: false
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Resolve research mode
+        shell: bash
+        run: |
+          MODE="${{ inputs.mode || 'weekly' }}"
+          if [ "${{ github.event.schedule }}" = "45 6 1 * *" ]; then MODE="monthly"; fi
+          echo "MODE=$MODE" >> "$GITHUB_ENV"
+      - name: Run research agent
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          AETHERHOME_MODEL: openai/gpt-4.1-mini
+        run: python aetherhome/agents/research_agent.py --mode "$MODE"
+      - name: Commit intelligence ledger
+        shell: bash
+        run: |
+          git config user.name "aetherhome-intelligence[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add aetherhome/data/intelligence aetherhome/reports
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "data(aetherhome): $MODE physical-ai intelligence"
+          git push

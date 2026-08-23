@@ -1,0 +1,14 @@
+{
+  "updated":"2026-08-23T15:30:00Z",
+  "currentPhase":0,
+  "phases":[
+    {"phase":"P0","name":"Category thesis","status":"current","cost":"$10K–$100K","objective":"Narrative, system architecture, user scenarios, investor diligence and simulation targets."},
+    {"phase":"P1","name":"Digital twin + Living OS","status":"next","cost":"$250K–$1M","objective":"Cabin UX, sensor simulation, task planner, safety policies, teleoperation console and robot task benchmarks."},
+    {"phase":"P2","name":"Full-scale smart cabin mule","status":"planned","cost":"$1M–$3M","objective":"Physical cabin, power, seating, work surfaces, kitchen constraints, privacy, climate and service orchestration."},
+    {"phase":"P3","name":"ATLAS constrained-task MVP","status":"planned","cost":"$2M–$5M","objective":"Object retrieval, loading, serving, tidying, folding and cabin reset with human fallback."},
+    {"phase":"P4","name":"Vehicle integration + closed-course autonomy","status":"planned","cost":"$5M–$15M","objective":"Integrate a certified vehicle platform, safety architecture, localization, autonomy interfaces and redundancy."},
+    {"phase":"P5","name":"Premium pilot fleet","status":"planned","cost":"$15M–$40M","objective":"10–50 units in executive mobility, hospitality, events and long-distance premium service."},
+    {"phase":"P6","name":"Certification + commercial delivery","status":"planned","cost":"$40M–$100M+","objective":"Homologation, manufacturing partners, insurance, service network, operations and scaled fleet learning."}
+  ],
+  "notes":"Planning bands are directional concept-stage estimates, not vendor quotes or financing commitments. The research agent revises assumptions as credible public data changes."
+}

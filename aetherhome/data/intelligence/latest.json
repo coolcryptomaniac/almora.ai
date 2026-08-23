@@ -1,0 +1,15 @@
+{
+  "generated_at":"2026-08-23T15:30:00Z",
+  "mode":"bootstrap",
+  "summary":"Research agent initialized. Weekly intelligence and monthly program reviews will update this page after scheduled runs.",
+  "signals":[
+    {"category":"PHYSICAL AI","headline":"Track manipulation reliability, robot foundation models, teleoperation and deployment evidence.","impact":"Changes what ATLAS should attempt autonomously versus escalate to a human operator."},
+    {"category":"GPU ECONOMICS","headline":"Track cloud GPU and local workstation economics instead of assuming frontier-model training is required.","impact":"AETHERHOME should buy inference and simulation only where they materially improve safety or task reliability."},
+    {"category":"TALENT","headline":"Track robotics, autonomy, embedded systems, safety, industrial design and vehicle-integration hiring signals.","impact":"The team plan should optimize for rare integration talent before expanding headcount."},
+    {"category":"CAPITAL","headline":"Treat the $5M prototype round and $100M frontier-scale ambition as separate financing milestones.","impact":"Capital should unlock measurable physical capability at every stage, not fund an undifferentiated moonshot."}
+  ],
+  "sources":[],
+  "cost_watch":{"gpu":"Awaiting first weekly source pass","talent":"Awaiting first weekly source pass","prototype":"See journey planning bands"},
+  "roadmap_updates":[],
+  "model":"bootstrap"
+}
