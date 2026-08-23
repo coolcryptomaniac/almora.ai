@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """AETHERHOME scheduled research agent.
-Uses public sources + optional GitHub Models-compatible LLM. Falls back to deterministic reporting.
-No secret is required for crawling; GITHUB_TOKEN is used for GitHub Models when permitted.
+Uses public sources + an optional OpenAI-compatible LLM hook. Falls back to deterministic reporting.
+No secret is required for crawling. Scheduled ChatGPT automation performs the primary AI synthesis layer.
 """
 from __future__ import annotations
 import argparse, datetime as dt, html, json, os, re, ssl, sys, urllib.request, urllib.error
@@ -47,19 +47,22 @@ def collect():
             ledger.append({'title':src['name'],'url':src['url'],'kind':src['kind'],'ok':False,'error':str(e)[:180]})
     return corpus,ledger
 
-def github_models(corpus, mode):
-    token=os.getenv('GITHUB_TOKEN',''); model=os.getenv('AETHERHOME_MODEL','openai/gpt-4.1-mini')
-    if not token:return None
+def optional_llm(corpus, mode):
+    """Optional OpenAI-compatible inference hook. Scheduled ChatGPT automation is the primary AI synthesis layer."""
+    endpoint=os.getenv('AETHERHOME_LLM_ENDPOINT','').strip()
+    key=os.getenv('AETHERHOME_LLM_KEY','').strip()
+    model=os.getenv('AETHERHOME_LLM_MODEL','').strip()
+    if not (endpoint and key and model): return None
     compact=json.dumps(corpus[:35],ensure_ascii=False)[:42000]
-    schema='''Return ONLY valid JSON with keys summary (string), signals (array of 4-8 objects: category, headline, impact), cost_watch (object: gpu,talent,prototype), roadmap_updates (array of strings). Be conservative. Separate facts from inference. Never invent prices or funding.'''
+    schema="""Return ONLY valid JSON with keys summary (string), signals (array of 4-8 objects: category, headline, impact), cost_watch (object: gpu,talent,prototype), roadmap_updates (array of strings). Be conservative. Separate facts from inference. Never invent prices or funding."""
     prompt=f"You are AETHERHOME's {mode} physical-AI research analyst. Analyze this public-source corpus for humanoid robotics, embodied AI, autonomy, GPU economics, talent/cost signals and implications for an autonomous living vehicle. {schema}\nCORPUS:\n{compact}"
-    body=json.dumps({'model':model,'messages':[{'role':'system','content':'You are a rigorous robotics program analyst. Cite uncertainty and avoid hype.'},{'role':'user','content':prompt}],'temperature':0.2,'max_tokens':2200}).encode()
-    req=urllib.request.Request('https://models.github.ai/inference/chat/completions',data=body,headers={'Authorization':'Bearer '+token,'Content-Type':'application/json','Accept':'application/json'})
+    body=json.dumps({'model':model,'messages':[{'role':'system','content':'You are a rigorous robotics program analyst. Cite uncertainty and avoid hype.'},{'role':'user','content':prompt}],'temperature':0.2}).encode()
+    req=urllib.request.Request(endpoint,data=body,headers={'Authorization':'Bearer '+key,'Content-Type':'application/json','Accept':'application/json'})
     try:
         with urllib.request.urlopen(req,timeout=60) as r: data=json.load(r)
         content=data['choices'][0]['message']['content']; content=re.sub(r'^```(?:json)?|```$','',content.strip(),flags=re.M).strip(); return json.loads(content),model
     except Exception as e:
-        print('GitHub Models fallback:',e,file=sys.stderr);return None
+        print('Optional LLM fallback:',e,file=sys.stderr);return None
 
 def fallback(corpus):
     by={}
@@ -82,7 +85,7 @@ def report_md(data):
     return '\n'.join(lines)+'\n'
 
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('--mode',choices=['weekly','monthly'],default='weekly');args=ap.parse_args();now=dt.datetime.now(dt.timezone.utc).replace(microsecond=0);corpus,ledger=collect();llm=github_models(corpus,args.mode)
+    ap=argparse.ArgumentParser();ap.add_argument('--mode',choices=['weekly','monthly'],default='weekly');args=ap.parse_args();now=dt.datetime.now(dt.timezone.utc).replace(microsecond=0);corpus,ledger=collect();llm=optional_llm(corpus,args.mode)
     if llm: synthesis,model=llm
     else:synthesis,model=fallback(corpus)
     data={'generated_at':now.isoformat().replace('+00:00','Z'),'mode':args.mode,'summary':synthesis.get('summary',''),'signals':synthesis.get('signals',[]),'cost_watch':synthesis.get('cost_watch',{}),'roadmap_updates':synthesis.get('roadmap_updates',[]),'sources':ledger,'model':model}
