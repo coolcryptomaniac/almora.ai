@@ -1,0 +1,9 @@
+/* AETHERHOME visual fidelity hotfix — preserve 16:9 source aspect, crop instead of stretch. */
+.doc-image{inset:0!important;background:none!important;overflow:hidden;transform:none!important;filter:none!important}
+.doc-image img.doc-sprite{position:absolute;left:50%;top:50%;height:200%;width:auto;max-width:none!important;min-width:0;object-fit:unset;filter:saturate(.96) contrast(1.06) brightness(.98);will-change:transform;backface-visibility:hidden}
+.doc-image.active img.doc-sprite{animation:docSpriteKen 11s ease-in-out infinite alternate}
+.doc-vignette{background:radial-gradient(circle at 68% 45%,transparent 28%,rgba(0,0,0,.18) 68%,rgba(0,0,0,.72)),linear-gradient(90deg,rgba(0,0,0,.72),transparent 58%),linear-gradient(0deg,rgba(0,0,0,.65),transparent 42%)!important}
+.doc-teaser-bg{inset:0!important;background-size:400% auto!important;background-repeat:no-repeat!important;background-color:#020405;filter:saturate(.96) contrast(1.05) brightness(.94)!important}
+@keyframes docSpriteKen{to{scale:1.035}}
+@media(min-aspect-ratio:16/9){.doc-image img.doc-sprite{width:400%;height:auto}}
+@media(max-width:700px){.doc-vignette{background:linear-gradient(0deg,rgba(0,0,0,.82),rgba(0,0,0,.08) 68%),radial-gradient(circle at 50% 38%,transparent 18%,rgba(0,0,0,.45))!important}.doc-title{text-shadow:0 4px 24px rgba(0,0,0,.9)}}
