@@ -1,9 +1,12 @@
-/* AETHERHOME visual fidelity hotfix — preserve 16:9 source aspect, crop instead of stretch. */
-.doc-image{inset:0!important;background:none!important;overflow:hidden;transform:none!important;filter:none!important}
-.doc-image img.doc-sprite{position:absolute;left:50%;top:50%;height:200%;width:auto;max-width:none!important;min-width:0;object-fit:unset;filter:saturate(.96) contrast(1.06) brightness(.98);will-change:transform;backface-visibility:hidden}
-.doc-image.active img.doc-sprite{animation:docSpriteKen 11s ease-in-out infinite alternate}
-.doc-vignette{background:radial-gradient(circle at 68% 45%,transparent 28%,rgba(0,0,0,.18) 68%,rgba(0,0,0,.72)),linear-gradient(90deg,rgba(0,0,0,.72),transparent 58%),linear-gradient(0deg,rgba(0,0,0,.65),transparent 42%)!important}
-.doc-teaser-bg{inset:0!important;background-size:400% auto!important;background-repeat:no-repeat!important;background-color:#020405;filter:saturate(.96) contrast(1.05) brightness(.94)!important}
-@keyframes docSpriteKen{to{scale:1.035}}
-@media(min-aspect-ratio:16/9){.doc-image img.doc-sprite{width:400%;height:auto}}
-@media(max-width:700px){.doc-vignette{background:linear-gradient(0deg,rgba(0,0,0,.82),rgba(0,0,0,.08) 68%),radial-gradient(circle at 50% 38%,transparent 18%,rgba(0,0,0,.45))!important}.doc-title{text-shadow:0 4px 24px rgba(0,0,0,.9)}}
+/* AETHERHOME sharp-image hotfix v5: preserve source pixels instead of stretching them full-screen. */
+.doc-image{inset:0!important;background:#020405!important;overflow:hidden;transform:none!important;filter:none!important;display:grid;place-items:center}
+.doc-ambient{position:absolute;inset:-8%;background-repeat:no-repeat;filter:blur(32px) saturate(.78) contrast(1.05) brightness(.42);transform:scale(1.1);opacity:.88;will-change:transform}
+.doc-stage{position:relative;z-index:2;width:min(72vw,960px);aspect-ratio:16/9;max-height:72vh;background-repeat:no-repeat;background-color:#020405;border:1px solid rgba(124,236,255,.22);border-radius:20px;box-shadow:0 34px 120px rgba(0,0,0,.82),0 0 48px rgba(124,236,255,.08);filter:saturate(1.03) contrast(1.07) brightness(1.02);image-rendering:auto;backface-visibility:hidden;overflow:hidden}
+.doc-image.active .doc-stage{animation:docStageKen 10.5s ease-in-out infinite alternate}
+.doc-vignette{background:radial-gradient(circle at 68% 45%,transparent 34%,rgba(0,0,0,.12) 72%,rgba(0,0,0,.62)),linear-gradient(90deg,rgba(0,0,0,.68),transparent 57%),linear-gradient(0deg,rgba(0,0,0,.58),transparent 46%)!important;pointer-events:none}
+.doc-overlay{max-width:min(620px,42vw)!important;text-shadow:0 5px 28px rgba(0,0,0,.92)}
+.doc-teaser-bg{inset:0!important;background-size:400% 200%!important;background-repeat:no-repeat!important;background-color:#020405;filter:saturate(1.01) contrast(1.06) brightness(.78)!important}
+@keyframes docStageKen{from{transform:scale(1)}to{transform:scale(1.018)}}
+@media(max-width:1100px){.doc-stage{width:min(82vw,960px)}.doc-overlay{max-width:52vw!important}}
+@media(max-width:700px){.doc-stage{width:96vw;max-height:68vh;border-radius:13px}.doc-ambient{filter:blur(22px) saturate(.8) brightness(.38)}.doc-overlay{left:5vw!important;right:5vw!important;bottom:13vh!important;max-width:none!important}.doc-vignette{background:linear-gradient(0deg,rgba(0,0,0,.88),rgba(0,0,0,.05) 70%),radial-gradient(circle at 50% 36%,transparent 28%,rgba(0,0,0,.32))!important}.doc-title{text-shadow:0 5px 28px rgba(0,0,0,.95)}}
+@media(min-width:1800px){.doc-stage{width:960px}.doc-overlay{left:max(4vw,60px)!important}}
