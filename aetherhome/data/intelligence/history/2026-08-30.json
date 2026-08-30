@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-08-30T03:01:00Z",
+  "mode": "weekly",
+  "summary": "Verified 2026 signals materially strengthen the case for an edge-first, simulation-heavy AETHERHOME stack with human fallback: Google DeepMind has moved Gemini Robotics 2 and an on-device VLA into whole-body and local robot control; NVIDIA now offers an open GR00T humanoid reference stack around Jetson Thor; Figure reports >350 Figure 03 units produced and a ramp from one robot/day to one/hour; U.S. AV policy is becoming more deployment-friendly. These are industry signals, not evidence that AETHERHOME itself is technically ready, funded, partnered or deployed.",
+  "signals": [
+    {"category":"PHYSICAL AI","headline":"VERIFIED: Gemini Robotics 2 adds whole-body VLA control and Gemini Robotics On-Device 2 targets local manipulation; NVIDIA's GR00T reference design combines open humanoid software with Jetson Thor.","impact":"INFERENCE: Build ATLAS around swappable local embodied policies, explicit safety constraints and teleoperation fallback."},
+    {"category":"MANIPULATION + DATA","headline":"VERIFIED: Figure reports 16M+ human-task videos in its Index pipeline; leading VLA programs combine human video, robot demonstrations, simulation and synthetic data.","impact":"INFERENCE: Cabin-specific task data, evaluation and recovery policies are a more credible early moat than training a frontier model from scratch."},
+    {"category":"EDGE COMPUTE","headline":"VERIFIED: Jetson Thor offers up to 2,070 FP4 TFLOPS, 128 GB memory and 40-130 W operation; NVIDIA Marketplace lists the developer kit at $5,499.","impact":"INFERENCE: Local perception/reasoning is increasingly practical for prototypes, but this is not a production BOM quote."},
+    {"category":"GPU ECONOMICS","headline":"VERIFIED: Lambda lists H100 PCIe at $3.29/GPU-hour, H100 SXM at $4.29 and B200 at $6.99; AWS H100 Capacity Blocks are about $4.72/GPU-hour in Mumbai and $5.191 in several U.S. regions.","impact":"INFERENCE: Prefer bursty cloud training/simulation and edge inference at the current stage."},
+    {"category":"AUTONOMOUS VEHICLES","headline":"VERIFIED: NVIDIA reports broader DRIVE Hyperion L4-ready OEM adoption; NHTSA is developing AV performance standards and granted Zoox a temporary commercial exemption for up to 2,500 vehicles annually for two years.","impact":"INFERENCE: Integrate a certified vehicle/autonomy platform rather than build road autonomy from first principles."},
+    {"category":"MANUFACTURING + DEPLOYMENT","headline":"VERIFIED: Figure says BotQ has delivered >350 Figure 03 robots and increased production from one/day to one/hour; Agility opened a 60,000-sq-ft Physical AI facility alongside RoboFab.","impact":"INFERENCE: Fleet learning and manufacturability now matter earlier, but vendor-reported throughput does not prove reliability or unit economics."},
+    {"category":"SAFETY + REGULATION","headline":"VERIFIED: ISO 10218-1:2025 and 10218-2:2025 are current industrial robot safety standards; the EU AI Act became broadly applicable on 2 August 2026; U.S. AV exemptions are being streamlined.","impact":"INFERENCE: Safety logging, fail-safe behavior, human override and traceability should be designed into the software architecture from P1."},
+    {"category":"TALENT","headline":"VERIFIED SIGNAL: public Bay Area robotics postings commonly show roughly $150K-$250K base for lead platform roles and $180K-$250K for senior embedded humanoid roles, often plus equity.","impact":"INFERENCE: Keep the U.S. senior integration core small and leverage global engineering capacity early."},
+    {"category":"CAPITAL","headline":"VERIFIED: Apptronik reports >$935M Series A; Figure previously announced >$1B Series C at $39B post-money; Xpeng Robotics announced >$900M in its first external round at >$6.3B valuation.","impact":"INFERENCE: Frontier humanoid hardware remains extremely capital intensive; AETHERHOME should finance by capability milestones."}
+  ],
+  "sources": [
+    {"title":"Google DeepMind — Gemini Robotics 2","url":"https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/","date":"2026-07-30"},
+    {"title":"Google DeepMind — Gemini Robotics On-Device 2","url":"https://deepmind.google/models/model-cards/gemini-robotics-on-device-2/","date":"2026-07-30"},
+    {"title":"NVIDIA — Isaac GR00T reference humanoid","url":"https://nvidianews.nvidia.com/news/nvidia-open-humanoid-robot-reference-design","date":"2026-05-31"},
+    {"title":"NVIDIA — Jetson Thor availability","url":"https://nvidianews.nvidia.com/news/nvidia-blackwell-powered-jetson-thor-now-available-accelerating-the-age-of-general-robotics","date":"2025-08-25"},
+    {"title":"NVIDIA Marketplace — Jetson Thor Developer Kit","url":"https://marketplace.nvidia.com/en-us/enterprise/robotics-edge/jetson-thor-developer-kit/","date":"accessed 2026-08-30"},
+    {"title":"Figure — Production ramp","url":"https://www.figure.ai/news/ramping-figure-03-production","date":"2026-04-29"},
+    {"title":"Figure — Index physical dataset","url":"https://www.figure.ai/news/introducing-index","date":"2026-08-25"},
+    {"title":"Agility Robotics — Fremont facility","url":"https://www.agilityrobotics.com/content/agility-opens-new-fremont-facility-to-accelerate-physical-ai-development","date":"2026-07-16"},
+    {"title":"NVIDIA — DRIVE Hyperion L4 adoption","url":"https://nvidianews.nvidia.com/news/drive-hyperion-level-4","date":"2026-03-16"},
+    {"title":"NHTSA — AV standards and Zoox exemption","url":"https://www.nhtsa.gov/press-releases/cutting-red-tape-safely-fast-track-automated-vehicle","date":"2026-07-30"},
+    {"title":"ISO — ISO 10218-1:2025","url":"https://www.iso.org/standard/73933.html","date":"2025-02"},
+    {"title":"ISO — ISO 10218-2:2025","url":"https://www.iso.org/standard/73934.html","date":"2025-02"},
+    {"title":"EUR-Lex — EU AI Act application","url":"https://eur-lex.europa.eu/summary/EN/4762484","date":"accessed 2026-08-30"},
+    {"title":"Lambda — GPU cloud pricing","url":"https://lambda.ai/pricing","date":"accessed 2026-08-30"},
+    {"title":"AWS — EC2 Capacity Blocks pricing","url":"https://aws.amazon.com/ec2/capacityblocks/pricing/","date":"accessed 2026-08-30"},
+    {"title":"Apptronik — Series A","url":"https://apptronik.com/news-collection/apptronik-closes-over-935-million-series-a","date":"2026-02-11"},
+    {"title":"Figure — Series C","url":"https://www.figure.ai/news/series-c","date":"2025-09-16"},
+    {"title":"Reuters — Xpeng Robotics funding","url":"https://www.reuters.com/business/retail-consumer/xpeng-says-its-robotics-business-raised-over-900-million-first-funding-round-2026-08-24/","date":"2026-08-24"}
+  ],
+  "cost_watch": {
+    "gpu": "Current official reference points: Lambda 1x H100 PCIe $3.29/hr, H100 SXM $4.29/hr, B200 $6.99/hr; AWS H100 Capacity Blocks about $4.72/hr in Mumbai and $5.191/hr in several U.S. regions. Public prices are transient and not contracted quotes.",
+    "talent": "Public U.S. postings continue to signal roughly $150K-$250K+ base for senior/lead robotics platform and embedded roles, often plus equity.",
+    "prototype": "No verified evidence this week justifies changing the journey cost bands. Jetson Thor's public developer-kit price is useful for prototyping but is not a production BOM."
+  },
+  "roadmap_updates": ["No phase or cost-band change. Strengthen P1/P3 around edge-first VLA evaluation, teleoperation fallback, task-data capture and safety logging; keep P4 focused on certified vehicle/autonomy integration."],
+  "model": "web-research-verified-v1"
+}
