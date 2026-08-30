@@ -1,81 +1,120 @@
 {
-  "generated_at": "2026-08-30T03:01:00Z",
+  "generated_at": "2026-08-30T12:09:41Z",
   "mode": "weekly",
-  "summary": "Verified 2026 signals materially strengthen the case for an edge-first, simulation-heavy AETHERHOME stack with human fallback: Google DeepMind has moved Gemini Robotics 2 and an on-device VLA into whole-body and local robot control; NVIDIA now offers an open GR00T humanoid reference stack around Jetson Thor; Figure reports >350 Figure 03 units produced and a ramp from one robot/day to one/hour; U.S. AV policy is becoming more deployment-friendly. These are industry signals, not evidence that AETHERHOME itself is technically ready, funded, partnered or deployed.",
+  "summary": "Automated source scan completed without an LLM synthesis layer; headlines are source-derived and implications are conservative program heuristics.",
   "signals": [
     {
       "category": "PHYSICAL AI",
-      "headline": "VERIFIED: Gemini Robotics 2 adds whole-body VLA control and Gemini Robotics On-Device 2 is designed for local general-purpose manipulation; NVIDIA's GR00T reference design combines an open humanoid stack with Jetson Thor.",
-      "impact": "INFERENCE: ATLAS should be architected around swappable local VLA/embodied-reasoning policies, explicit safety constraints and teleoperation fallback rather than assuming one proprietary end-to-end model will solve every task."
+      "headline": "Into the Omniverse: How Open World Models Push the Frontier of Physical AI",
+      "impact": "Re-test which cabin manipulation tasks can move from teleoperation to autonomous execution."
     },
     {
-      "category": "MANIPULATION + DATA",
-      "headline": "VERIFIED: Figure says its new Index data pipeline has processed 16M+ human-task videos from 100+ countries, while current VLA systems increasingly combine human video, robot demonstrations, simulation and synthetic trajectories.",
-      "impact": "INFERENCE: AETHERHOME's durable moat is more likely to come from cabin-specific task data, evaluation and recovery policies than from training a frontier foundation model from scratch."
+      "category": "RESEARCH",
+      "headline": "Reconstructing Humans and Objects in Interaction using Large Reconstruction Models",
+      "impact": "Track advances that improve robot planning, manipulation and evaluation rather than benchmark novelty alone."
     },
     {
-      "category": "EDGE COMPUTE",
-      "headline": "VERIFIED: NVIDIA Jetson Thor is generally available with up to 2,070 FP4 TFLOPS, 128 GB memory and 40-130 W power; NVIDIA Marketplace lists the AGX Thor developer kit at $5,499, but availability and regional pricing vary.",
-      "impact": "INFERENCE: A full local perception/reasoning tier is plausible for prototype work, but this price is a public developer-kit price, not a production BOM quote."
+      "category": "AUTONOMY",
+      "headline": "No fresh autonomy source parsed this run",
+      "impact": "Keep the vehicle interface modular; do not assume AETHERHOME must invent the base driving stack."
     },
     {
       "category": "GPU ECONOMICS",
-      "headline": "VERIFIED: Lambda currently lists single-GPU H100 PCIe at $3.29/GPU-hour, H100 SXM at $4.29/GPU-hour and B200 at $6.99/GPU-hour; AWS Capacity Blocks list H100 P5.4xlarge around $4.72/GPU-hour in Mumbai and $5.191 in several U.S. regions.",
-      "impact": "INFERENCE: bursty cloud training/simulation remains preferable to owning frontier training infrastructure at AETHERHOME's current stage; production inference should be pushed to edge hardware wherever latency and safety require it."
-    },
-    {
-      "category": "AUTONOMOUS VEHICLES",
-      "headline": "VERIFIED: NVIDIA says BYD, Geely, Isuzu and Nissan are adopting DRIVE Hyperion for Level-4-ready vehicles, while NHTSA announced first-ever AV performance standards work and a temporary exemption allowing Zoox up to 2,500 commercial vehicles annually for two years.",
-      "impact": "INFERENCE: AETHERHOME should integrate with a certified autonomy/vehicle platform instead of building a road-driving stack from first principles; P4 remains correctly separated from cabin robotics."
-    },
-    {
-      "category": "MANUFACTURING + DEPLOYMENT",
-      "headline": "VERIFIED: Figure reports >350 Figure 03 robots delivered from BotQ and a production-rate increase from one/day to one/hour; Agility opened a 60,000-sq-ft Physical AI facility complementing its RoboFab manufacturing operation.",
-      "impact": "INFERENCE: humanoid development is entering fleet-learning and manufacturing phases, but vendor-reported throughput does not prove broad reliability, unit economics or suitability for a moving-home environment."
-    },
-    {
-      "category": "SAFETY + REGULATION",
-      "headline": "VERIFIED: ISO 10218-1:2025 and 10218-2:2025 define updated industrial robot and robot-cell safety requirements; the EU AI Act became broadly applicable on 2 August 2026, while U.S. AV exemptions are being streamlined.",
-      "impact": "INFERENCE: safety cases, logging, fail-safe behavior, human override and regulatory traceability should be first-class software architecture concerns now, not deferred certification work."
-    },
-    {
-      "category": "TALENT",
-      "headline": "VERIFIED SIGNAL: current public Bay Area robotics postings show roughly $150K-$250K base for lead robotics-platform roles and about $180K-$250K for senior embedded humanoid roles, usually plus equity; individual offers vary.",
-      "impact": "INFERENCE: U.S. senior robotics integration talent remains expensive, reinforcing a small senior core plus global engineering/contractor model for early phases."
-    },
-    {
-      "category": "CAPITAL",
-      "headline": "VERIFIED: Apptronik says its Series A reached >$935M; Figure previously announced >$1B Series C at a $39B post-money valuation; Xpeng Robotics announced >$900M in its first external round at >$6.3B valuation.",
-      "impact": "INFERENCE: frontier humanoid hardware is exceptionally capital-intensive. AETHERHOME should continue financing by capability milestones instead of positioning a concept-stage company as comparable in readiness or valuation."
+      "headline": "Lambda GPU Cloud",
+      "impact": "Prefer rented inference/simulation bursts and measured edge compute over premature frontier-model training."
     }
   ],
-  "sources": [
-    {"title": "Google DeepMind — Gemini Robotics 2", "url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/", "date": "2026-07-30"},
-    {"title": "Google DeepMind — Gemini Robotics On-Device 2 model card", "url": "https://deepmind.google/models/model-cards/gemini-robotics-on-device-2/", "date": "2026-07-30"},
-    {"title": "NVIDIA — Isaac GR00T reference humanoid", "url": "https://nvidianews.nvidia.com/news/nvidia-open-humanoid-robot-reference-design", "date": "2026-05-31"},
-    {"title": "NVIDIA — Jetson Thor availability", "url": "https://nvidianews.nvidia.com/news/nvidia-blackwell-powered-jetson-thor-now-available-accelerating-the-age-of-general-robotics", "date": "2025-08-25"},
-    {"title": "NVIDIA Marketplace — Jetson Thor Developer Kit", "url": "https://marketplace.nvidia.com/en-us/enterprise/robotics-edge/jetson-thor-developer-kit/", "date": "accessed 2026-08-30"},
-    {"title": "Figure — Ramping Figure 03 production", "url": "https://www.figure.ai/news/ramping-figure-03-production", "date": "2026-04-29"},
-    {"title": "Figure — Index physical dataset", "url": "https://www.figure.ai/news/introducing-index", "date": "2026-08-25"},
-    {"title": "Agility Robotics — Fremont Physical AI facility", "url": "https://www.agilityrobotics.com/content/agility-opens-new-fremont-facility-to-accelerate-physical-ai-development", "date": "2026-07-16"},
-    {"title": "NVIDIA — DRIVE Hyperion L4 adoption", "url": "https://nvidianews.nvidia.com/news/drive-hyperion-level-4", "date": "2026-03-16"},
-    {"title": "NHTSA — AV performance standards and Zoox exemption", "url": "https://www.nhtsa.gov/press-releases/cutting-red-tape-safely-fast-track-automated-vehicle", "date": "2026-07-30"},
-    {"title": "ISO — ISO 10218-1:2025", "url": "https://www.iso.org/standard/73933.html", "date": "2025-02"},
-    {"title": "ISO — ISO 10218-2:2025", "url": "https://www.iso.org/standard/73934.html", "date": "2025-02"},
-    {"title": "EUR-Lex — EU AI Act application", "url": "https://eur-lex.europa.eu/summary/EN/4762484", "date": "accessed 2026-08-30"},
-    {"title": "Lambda — GPU cloud pricing", "url": "https://lambda.ai/pricing", "date": "accessed 2026-08-30"},
-    {"title": "AWS — EC2 Capacity Blocks pricing", "url": "https://aws.amazon.com/ec2/capacityblocks/pricing/", "date": "accessed 2026-08-30"},
-    {"title": "Apptronik — $935M+ Series A", "url": "https://apptronik.com/news-collection/apptronik-closes-over-935-million-series-a", "date": "2026-02-11"},
-    {"title": "Figure — Series C", "url": "https://www.figure.ai/news/series-c", "date": "2025-09-16"},
-    {"title": "Reuters — Xpeng Robotics funding", "url": "https://www.reuters.com/business/retail-consumer/xpeng-says-its-robotics-business-raised-over-900-million-first-funding-round-2026-08-24/", "date": "2026-08-24"}
-  ],
   "cost_watch": {
-    "gpu": "Public 2026 spot/on-demand pricing remains highly variable. Current official reference points: Lambda 1x H100 PCIe $3.29/hr, H100 SXM $4.29/hr, B200 $6.99/hr; AWS H100 Capacity Blocks about $4.72/hr in Mumbai and $5.191/hr in several U.S. regions. Treat as transient public pricing, not contracted quotes.",
-    "talent": "Public U.S. robotics postings continue to indicate roughly $150K-$250K+ base for senior/lead robotics-platform and embedded roles, often plus equity. Treat as directional hiring-market evidence, not a compensation budget quote.",
-    "prototype": "No verified evidence this week justifies changing the existing journey cost bands. Jetson Thor's public $5,499 developer-kit price is useful for edge-compute prototyping but is not a production BOM."
+    "gpu": "Public pricing pages scanned; use vendor quotes before budgeting.",
+    "talent": "No reliable salary feed configured; hiring cost remains a planning assumption.",
+    "prototype": "Use the staged cost bands in journey.json and replace them with quotes as vendors engage."
   },
   "roadmap_updates": [
-    "No phase or cost-band change this week. Strengthen P1/P3 around edge-first VLA evaluation, teleoperation fallback, task-data capture and safety logging; retain P4 as integration with a certified vehicle/autonomy platform rather than first-principles road autonomy."
+    "Maintain teleoperation fallback as a first-class product capability.",
+    "Benchmark useful cabin tasks before expanding humanoid scope."
   ],
-  "model": "web-research-verified-v1"
+  "sources": [
+    {
+      "title": "arXiv embodied AI",
+      "url": "https://export.arxiv.org/api/query?search_query=all:%22embodied%20AI%22%20OR%20all:%22humanoid%20robot%22%20OR%20all:%22vision-language-action%22&sortBy=submittedDate&sortOrder=descending&max_results=20",
+      "kind": "research",
+      "ok": true
+    },
+    {
+      "title": "NVIDIA robotics",
+      "url": "https://blogs.nvidia.com/blog/category/robotics/feed/",
+      "kind": "physical-ai",
+      "ok": true
+    },
+    {
+      "title": "Google DeepMind",
+      "url": "https://deepmind.google/blog/rss.xml",
+      "kind": "research",
+      "ok": true
+    },
+    {
+      "title": "Tesla AI",
+      "url": "https://www.tesla.com/AI",
+      "kind": "autonomy",
+      "ok": false,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "title": "Genesis AI",
+      "url": "https://genesis-ai.company/",
+      "kind": "physical-ai",
+      "ok": true
+    },
+    {
+      "title": "Walden Robotics",
+      "url": "https://www.waldenrobotics.com/",
+      "kind": "physical-ai",
+      "ok": true
+    },
+    {
+      "title": "Lambda GPU Cloud",
+      "url": "https://lambda.ai/service/gpu-cloud",
+      "kind": "gpu-cost",
+      "ok": true
+    },
+    {
+      "title": "Runpod pricing",
+      "url": "https://www.runpod.io/pricing",
+      "kind": "gpu-cost",
+      "ok": true
+    },
+    {
+      "title": "CoreWeave pricing",
+      "url": "https://www.coreweave.com/pricing",
+      "kind": "gpu-cost",
+      "ok": true
+    },
+    {
+      "title": "Modal pricing",
+      "url": "https://modal.com/pricing",
+      "kind": "gpu-cost",
+      "ok": true
+    },
+    {
+      "title": "Figure careers",
+      "url": "https://www.figure.ai/careers",
+      "kind": "talent-cost",
+      "ok": true
+    },
+    {
+      "title": "Physical Intelligence careers",
+      "url": "https://www.physicalintelligence.company/careers",
+      "kind": "talent-cost",
+      "ok": false,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "title": "Skild AI careers",
+      "url": "https://www.skild.ai/careers",
+      "kind": "talent-cost",
+      "ok": false,
+      "error": "HTTP Error 404: Not Found"
+    }
+  ],
+  "model": "deterministic-fallback"
 }
