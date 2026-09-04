@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T22:41:42.185504+00:00",
+  "updatedAt": "2026-09-04T07:13:35.698946+00:00",
   "mode": "shared-evidence-memory-not-model-training",
   "explanation": "These short-lived lessons are derived from verified/public signals and agent handoffs. They improve coordination context without retraining or autonomously modifying the underlying language model.",
   "count": 8,
@@ -23,8 +23,8 @@
         "Dungadhara: activity 4/4; https://www.amarujala.com/uttarakhand/almora/monkeys-ateck-in-almora-almora-news-c-8-1-146492-2023-05-21"
       ],
       "confidence": "high",
-      "createdAt": "2026-08-22T22:41:42.185504+00:00",
-      "expiresAt": "2026-08-29T22:41:42.185504+00:00"
+      "createdAt": "2026-09-04T07:13:35.698946+00:00",
+      "expiresAt": "2026-09-11T07:13:35.698946+00:00"
     },
     {
       "id": "access-before-travel",
@@ -43,8 +43,8 @@
         "Monkey and langur activity remains a public concern around Ranikhet — https://www.amarujala.com/uttarakhand/almora/in-the-morning-flocks-of-monkeys-were-seen-in-the-markets-and-streets-leaving-people-in-panic-ranikhet-news-c-232-1-alm1002-143114-2026-05-08"
       ],
       "confidence": "high",
-      "createdAt": "2026-08-22T22:41:42.185504+00:00",
-      "expiresAt": "2026-08-29T22:41:42.185504+00:00"
+      "createdAt": "2026-09-04T07:13:35.698946+00:00",
+      "expiresAt": "2026-09-11T07:13:35.698946+00:00"
     },
     {
       "id": "learn-to-earn",
@@ -57,13 +57,15 @@
       ],
       "rule": "When education or skill guidance is requested, connect it to current local opportunity signals when available; do not invent vacancies.",
       "evidence": [
+        "Fake Army havildar held in Bareilly for duping 17 job aspirants | Hindustan Times - Hindustan Times — https://news.google.com/rss/articles/CBMi0AFBVV95cUxNeUVsUzRnUzZTLUk4Sm9oTVJwVEt0UC13RzQwWTZfR21wdjJ4cmpZYnZTZTNYTkZrQ3R0azUtR1lGVjBKWU1zMnNxNlpyc1BNSUE1LVlPOHJHTFJyN29kQ2RUeUZQX0htcTZXUnZleGljQXN1XzhXX2dfaEk5b2VDWmF0R2JkYldhM2wzWlpqU2p4UHNPb2NndHJfeGNHU3VGcURjdGtocUxyTnhkbXRFWi1IclFXUWVmZXlyYi02TlQ1VTY2Vkw3T3laMEZ3RE5R0gHWAUFVX3lxTFBpVEJhOHU5Uy1xbHBnM2pzd3VlN2k2T2ZaTGVMWVlDQUNSVGJZY08tWlRkNnBxRzRuOGxyX01ReFhYVkVsYmZkTi0waVVyYzdJeWtwVnV5TFlNX204djJha3hMRE0yazBOTVpyT0RsNEdnSlZXRWJPVjhheTdOMS1qdFNBNzVCV1Y4U2JLRHkxQzNkZmhXSDJKOVc5S3ZRZTBESTg4TFFtcFRFWXVZNnNkanhmMHdOZC1LMmlSV211SWNULUpTRzBEVXlfeHhvNjN3eTE1N2c?oc=5",
         "Why are U’khand villages emptying out? Education gaps 2nd largest driver of migration: Report - The Times of India — https://news.google.com/rss/articles/CBMi-gFBVV95cUxOM2kydW9zZnpDYVpmUU1Ca1p5QjgzbjdwN3kzcXNLNE5sODktdUFfV3pCZ3ZkVnZXek1uOXV2X3NfbTdQNnZpMnNjYVJHSkRhR1ZZTFRETGE1eFZMVFRtUXF0eUFhMW9NV3FKcTc1OU1aQndMY3JWVGZiT1dwTXc1MmJSdF9zbVVKSEd5TjZHUTJhdXBYOWloUWZ3TC1tVkhma3FOREdYTnhRUHpDV1k0R1lRVkw3X1dFZlJJRVFDNnBZWm5qbkVqNU5oWTJkdUN5T2JFbXhQWHhLZUlCN2ZsVTdQZDRYSEF6OXFxMUJNSndkM3UxV0prVHNR0gH_AUFVX3lxTE45MGRaZGNOY1FOS1BxZnNJUGtCcnJhNkM4azhDTEwzbVZjQy1zTXdRa3c3MktBNnNobmRsa1dkM05GS0tRcVVvRVhHVDVYS2pfcmtkN3I1Xzk5djNMZ2J3LXZoMFN4TXdieUNOOURrNnM5NXhrQjlSRzlKTzhuSFhQbWhkcVpFMktoY3JlcjZYLXF4Wmp6LXpkUFdGS2FfU2JJRldpeWFFc0Z1WWFDMGo3dVZsdUoxdk9hMGF3SUVUYXZSa2R5cFFDTi1TUzRsejF6Rjc0U0hyZXhiLTQ5dWZBRHcyNldUakZicVhQcUVjNEpJNHJnTk9sd2ZsZHlVRQ?oc=5",
+        "Development, job opportunities continue to elude Ranikhet | Hindustan Times - Hindustan Times — https://news.google.com/rss/articles/CBMiygFBVV95cUxNUWVmcWZKcG1SSzB1V1pIVkxZSWI3UVp0ODBvQWROVjlBQnotdWFycEZiVkZjc0NBeHBEdWdYSFBBbkVfU2w4MVRuSWN6Q1FPODZqYlZ0SWw1aDBKdEwzbmZYOHU2Q1lweU9hR243dXMwOEo5aDdOMFYxRWZKczAwUklzd0U3SlB5WUR4eVZvUUNqQ3Y4ZGQwYUpoVmstZG9iTnROUUFEQ3MycEw0dHRKUHBIUmliR1FxMGxkVnl5Ti1ldDlOYWVtQkJR0gHPAUFVX3lxTE9GZFM3S1RRWnJ6SjBlNFhiQmgxc2U2aHBDVmRfYUdwYkYyQnJiYXgyQ21LLUFWeFNyS3hSNDZPV2l0ay1OOEJLaTEwakJtanIzeDg4MEQ0Z2VyUjBLNFpCcHpnc2MzeWdUVWV6VzFsVFVnd0k2UWcyRVY0SDd3NnJXcVdSZjBiVnZzTWhkM1duSkozSExTdUdRdndXQ3BiYzRjNm1qUURjSjNPQkdidGh3S3RXSTg1NXRXaXM4LS1TLV90Y3FaSmJYRDlTMmpkYw?oc=5",
         "Uttarakhand Subordinate Service Selection Commission recruitment updates — https://sssc.uk.gov.in/",
         "Kumaun University academic and student updates — https://www.kunainital.ac.in/"
       ],
       "confidence": "medium",
-      "createdAt": "2026-08-22T22:41:42.185504+00:00",
-      "expiresAt": "2026-08-29T22:41:42.185504+00:00"
+      "createdAt": "2026-09-04T07:13:35.698946+00:00",
+      "expiresAt": "2026-09-11T07:13:35.698946+00:00"
     },
     {
       "id": "jobs-to-skills",
@@ -76,13 +78,15 @@
       ],
       "rule": "When a job requires missing skills, return a learning pathway instead of ending at the vacancy card.",
       "evidence": [
+        "Fake Army havildar held in Bareilly for duping 17 job aspirants | Hindustan Times - Hindustan Times — https://news.google.com/rss/articles/CBMi0AFBVV95cUxNeUVsUzRnUzZTLUk4Sm9oTVJwVEt0UC13RzQwWTZfR21wdjJ4cmpZYnZTZTNYTkZrQ3R0azUtR1lGVjBKWU1zMnNxNlpyc1BNSUE1LVlPOHJHTFJyN29kQ2RUeUZQX0htcTZXUnZleGljQXN1XzhXX2dfaEk5b2VDWmF0R2JkYldhM2wzWlpqU2p4UHNPb2NndHJfeGNHU3VGcURjdGtocUxyTnhkbXRFWi1IclFXUWVmZXlyYi02TlQ1VTY2Vkw3T3laMEZ3RE5R0gHWAUFVX3lxTFBpVEJhOHU5Uy1xbHBnM2pzd3VlN2k2T2ZaTGVMWVlDQUNSVGJZY08tWlRkNnBxRzRuOGxyX01ReFhYVkVsYmZkTi0waVVyYzdJeWtwVnV5TFlNX204djJha3hMRE0yazBOTVpyT0RsNEdnSlZXRWJPVjhheTdOMS1qdFNBNzVCV1Y4U2JLRHkxQzNkZmhXSDJKOVc5S3ZRZTBESTg4TFFtcFRFWXVZNnNkanhmMHdOZC1LMmlSV211SWNULUpTRzBEVXlfeHhvNjN3eTE1N2c?oc=5",
         "Why are U’khand villages emptying out? Education gaps 2nd largest driver of migration: Report - The Times of India — https://news.google.com/rss/articles/CBMi-gFBVV95cUxOM2kydW9zZnpDYVpmUU1Ca1p5QjgzbjdwN3kzcXNLNE5sODktdUFfV3pCZ3ZkVnZXek1uOXV2X3NfbTdQNnZpMnNjYVJHSkRhR1ZZTFRETGE1eFZMVFRtUXF0eUFhMW9NV3FKcTc1OU1aQndMY3JWVGZiT1dwTXc1MmJSdF9zbVVKSEd5TjZHUTJhdXBYOWloUWZ3TC1tVkhma3FOREdYTnhRUHpDV1k0R1lRVkw3X1dFZlJJRVFDNnBZWm5qbkVqNU5oWTJkdUN5T2JFbXhQWHhLZUlCN2ZsVTdQZDRYSEF6OXFxMUJNSndkM3UxV0prVHNR0gH_AUFVX3lxTE45MGRaZGNOY1FOS1BxZnNJUGtCcnJhNkM4azhDTEwzbVZjQy1zTXdRa3c3MktBNnNobmRsa1dkM05GS0tRcVVvRVhHVDVYS2pfcmtkN3I1Xzk5djNMZ2J3LXZoMFN4TXdieUNOOURrNnM5NXhrQjlSRzlKTzhuSFhQbWhkcVpFMktoY3JlcjZYLXF4Wmp6LXpkUFdGS2FfU2JJRldpeWFFc0Z1WWFDMGo3dVZsdUoxdk9hMGF3SUVUYXZSa2R5cFFDTi1TUzRsejF6Rjc0U0hyZXhiLTQ5dWZBRHcyNldUakZicVhQcUVjNEpJNHJnTk9sd2ZsZHlVRQ?oc=5",
+        "Development, job opportunities continue to elude Ranikhet | Hindustan Times - Hindustan Times — https://news.google.com/rss/articles/CBMiygFBVV95cUxNUWVmcWZKcG1SSzB1V1pIVkxZSWI3UVp0ODBvQWROVjlBQnotdWFycEZiVkZjc0NBeHBEdWdYSFBBbkVfU2w4MVRuSWN6Q1FPODZqYlZ0SWw1aDBKdEwzbmZYOHU2Q1lweU9hR243dXMwOEo5aDdOMFYxRWZKczAwUklzd0U3SlB5WUR4eVZvUUNqQ3Y4ZGQwYUpoVmstZG9iTnROUUFEQ3MycEw0dHRKUHBIUmliR1FxMGxkVnl5Ti1ldDlOYWVtQkJR0gHPAUFVX3lxTE9GZFM3S1RRWnJ6SjBlNFhiQmgxc2U2aHBDVmRfYUdwYkYyQnJiYXgyQ21LLUFWeFNyS3hSNDZPV2l0ay1OOEJLaTEwakJtanIzeDg4MEQ0Z2VyUjBLNFpCcHpnc2MzeWdUVWV6VzFsVFVnd0k2UWcyRVY0SDd3NnJXcVdSZjBiVnZzTWhkM1duSkozSExTdUdRdndXQ3BiYzRjNm1qUURjSjNPQkdidGh3S3RXSTg1NXRXaXM4LS1TLV90Y3FaSmJYRDlTMmpkYw?oc=5",
         "Uttarakhand Subordinate Service Selection Commission recruitment updates — https://sssc.uk.gov.in/",
         "Kumaun University academic and student updates — https://www.kunainital.ac.in/"
       ],
       "confidence": "medium",
-      "createdAt": "2026-08-22T22:41:42.185504+00:00",
-      "expiresAt": "2026-08-29T22:41:42.185504+00:00"
+      "createdAt": "2026-09-04T07:13:35.698946+00:00",
+      "expiresAt": "2026-09-11T07:13:35.698946+00:00"
     },
     {
       "id": "external-app-fallback",
@@ -102,8 +106,8 @@
         "Business Hub: ./businesses.html"
       ],
       "confidence": "high",
-      "createdAt": "2026-08-22T22:41:42.185504+00:00",
-      "expiresAt": "2026-08-29T22:41:42.185504+00:00"
+      "createdAt": "2026-09-04T07:13:35.698946+00:00",
+      "expiresAt": "2026-09-11T07:13:35.698946+00:00"
     },
     {
       "id": "cross-service-sequencing",
@@ -127,8 +131,8 @@
         "tourism + route-intelligence: Tourism planning should account for real access and intercity routes"
       ],
       "confidence": "high",
-      "createdAt": "2026-08-22T22:41:42.185504+00:00",
-      "expiresAt": "2026-08-29T22:41:42.185504+00:00"
+      "createdAt": "2026-09-04T07:13:35.698946+00:00",
+      "expiresAt": "2026-09-11T07:13:35.698946+00:00"
     },
     {
       "id": "public-source-discipline",
@@ -142,13 +146,11 @@
       "rule": "For government/political/current-affairs questions, distinguish official information, reported news and resident allegation. Prefer source links and timestamps.",
       "evidence": [
         "Uttarakhand panchayat election results: Coin toss, slip draws decide winners on counting day; young voic - The Times of India — The Times of India",
-        "BJP sweeps urban local body polls in Uttarakhand, wins 10 of 11 mayoral seats - The New Indian Express — The New Indian Express",
-        "MC Election Highlights February 11| 25% of candidates in fray for Punjab polls face criminal cases: Report - Moneycontrol.com — Moneycontrol.com",
         "Almora district administration and current public notices — District Almora"
       ],
       "confidence": "high",
-      "createdAt": "2026-08-22T22:41:42.185504+00:00",
-      "expiresAt": "2026-08-29T22:41:42.185504+00:00"
+      "createdAt": "2026-09-04T07:13:35.698946+00:00",
+      "expiresAt": "2026-09-11T07:13:35.698946+00:00"
     },
     {
       "id": "route-distance-discipline",
@@ -168,8 +170,8 @@
         "Almora → Pithoragarh: approx 115 km"
       ],
       "confidence": "high",
-      "createdAt": "2026-08-22T22:41:42.185504+00:00",
-      "expiresAt": "2026-08-29T22:41:42.185504+00:00"
+      "createdAt": "2026-09-04T07:13:35.698946+00:00",
+      "expiresAt": "2026-09-11T07:13:35.698946+00:00"
     }
   ]
 }
