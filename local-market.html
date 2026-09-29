@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#102019">
+  <meta name="description" content="Discover Almora shops, local products and independent delivery partners. Order directly from local businesses.">
+  <title>Almora Bazaar — Local shops, direct orders</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./local-market.css">
+</head>
+<body class="marketPage">
+  <header class="marketNav">
+    <a class="brand" href="./"><span>आ</span><b>almora.ai</b></a>
+    <nav aria-label="Main navigation">
+      <a href="./businesses.html">Business Hub</a>
+      <a href="#shops">Shops & goods</a>
+      <a href="#delivery">Local delivery</a>
+      <a class="marketButton" href="#seller">Sell on Almora Bazaar</a>
+      <button class="basketButton" id="basketButton" type="button" aria-label="Open your basket">Basket <span id="basketCount">0</span></button>
+    </nav>
+  </header>
+  <main>
+    <section class="marketHero">
+      <div class="marketHeroCopy">
+        <span class="marketEyebrow">ALMORA BAZAAR · LOCAL COMMERCE</span>
+        <h1>Keep Almora<br><em>in the loop.</em></h1>
+        <p>Find everyday goods and services from local shops. Message the business directly, agree the price with them, and choose pickup or a local delivery partner.</p>
+        <div class="marketHeroActions"><a href="#shops" class="marketPrimary">Explore local shops <span>↓</span></a><a href="#delivery" class="marketSecondary">Become a delivery partner</a></div>
+        <div class="marketPromise"><span>↗</span> Direct shop-to-customer ordering. No per-order Almora.ai marketplace fee during this pilot.</div>
+      </div>
+      <aside class="marketHeroCard"><div class="heroCardIcon">आ</div><small>BUILT AROUND ALMORA</small><b>Local shops keep the customer relationship.</b><p>Pay the shop directly. If you need delivery, agree the fare with your chosen local rider.</p><div class="heroCardLine"><span>Discover</span><i>→</i><span>Message</span><i>→</i><span>Arrange</span></div></aside>
+    </section>
+
+    <section class="marketSection" id="shops">
+      <div class="marketSectionHead"><div><span class="marketEyebrow">THE LOCAL DIRECTORY</span><h2>Find it around town.</h2><p>Only approved shops and product listings appear here. Orders and payments are handled directly with each business.</p></div><label class="marketSearch"><span>⌕</span><input id="marketSearch" type="search" placeholder="Search shops and products" aria-label="Search shops and products"></label></div>
+      <div class="marketFilters" id="marketFilters" aria-label="Filter products"><button class="active" data-category="all">Everything</button><button data-category="food">Food & pantry</button><button data-category="craft">Craft & culture</button><button data-category="home">Home & repair</button><button data-category="services">Local services</button></div>
+      <div class="marketState" id="productState" role="status">Loading approved local listings…</div>
+      <div class="marketProducts" id="productGrid"></div>
+      <div class="marketState marketEmpty" id="productEmpty" hidden><span>🏪</span><b>Almora’s first Bazaar listings are on their way.</b><p>Local businesses can sign in and submit products for review. Approved listings will show up here.</p><a href="#seller">List a product →</a></div>
+    </section>
+
+    <section class="marketSection marketSplit" id="delivery">
+      <div class="deliveryIntro"><span class="marketEyebrow">INDEPENDENT LOCAL DELIVERY</span><h2>Your time.<br><em>Your route.</em></h2><p>Run deliveries on your own terms. Connect with a nearby shop or customer, agree the fee directly, and keep your full delivery payment. Almora.ai does not assign shifts or deduct a per-order cut.</p><div class="deliverySteps"><div><b>01</b><span>Tell us your area and vehicle</span></div><div><b>02</b><span>We review the application</span></div><div><b>03</b><span>Customers can contact you directly</span></div></div><p class="marketFine">Independent partners manage their own availability, safety, expenses, and tax obligations. A listing does not guarantee orders or income.</p></div>
+      <div class="deliverySide"><div class="marketSectionHead compact"><div><span class="marketEyebrow">LOCAL DELIVERY PARTNERS</span><h3>Nearby and independent.</h3></div><button class="outlineButton" id="partnerApplyButton" type="button">Join the network</button></div><div class="partnerList" id="partnerList"><div class="marketState">Loading approved delivery partners…</div></div><div class="partnerEmpty" id="partnerEmpty" hidden>No delivery partners have been listed yet. Apply to be among the first.</div></div>
+    </section>
+
+    <section class="marketSection townLinks" id="town-services">
+      <div class="marketSectionHead"><div><span class="marketEyebrow">ONE FRONT DOOR FOR TOWN LIFE</span><h2>More than shopping.</h2><p>Connect to Almora’s existing town services while the verified local directory grows.</p></div></div>
+      <div class="townLinkGrid">
+        <a href="./local-directory.html"><i>🏛️</i><b>Offices & important contacts</b><small>District contacts, public offices and essential numbers</small><span>Open directory →</span></a>
+        <a href="./businesses.html"><i>🏪</i><b>Shops & local businesses</b><small>Explore verified businesses and submit a shop profile</small><span>Open business hub →</span></a>
+        <a href="./jobs.html"><i>🧰</i><b>Local work & skills</b><small>Jobs, skills and service opportunities around town</small><span>Find work →</span></a>
+        <a href="./people.html"><i>🧑‍🤝‍🧑</i><b>People & community</b><small>Community stories and local people directory</small><span>Meet Almora →</span></a>
+        <a href="./#health"><i>🏥</i><b>Health & facilities</b><small>Find hospitals, care access and public facilities</small><span>Explore town services →</span></a>
+        <a href="./#safety"><i>🛟</i><b>Town issues & safety</b><small>Report a neighbourhood issue or find emergency links</small><span>Open Almora help →</span></a>
+        <a href="https://rapido.bike/" target="_blank" rel="noopener"><i>🛵</i><b>Open Rapido</b><small>Check Rapido’s official app or website for local ride availability</small><span>Go to Rapido ↗</span></a>
+        <a href="https://www.rapido.bike/CorporatePartners" target="_blank" rel="noopener"><i>🔌</i><b>Rapido partnership</b><small>Ask Rapido about an approved corporate or API integration</small><span>Contact Rapido ↗</span></a>
+        <a href="./#transport"><i>🚐</i><b>Local transport</b><small>Find Almora transport information and travel options</small><span>Explore transport →</span></a>
+      </div>
+      <p class="townNote">Rapido currently opens as a separate service. Almora.ai does not book Rapido rides or receive live fares unless an official integration is approved.</p>
+    </section>
+
+    <section class="marketSection sellerSection" id="seller">
+      <div><span class="marketEyebrow">FOR ALMORA BUSINESSES</span><h2>Your shop deserves<br><em>to be found.</em></h2><p>Add a product or service to Almora Bazaar. Listings are checked by the local administration before they go public.</p><a href="./business-login.html" class="marketSecondary">Business sign in →</a></div>
+      <form class="marketForm" id="productForm">
+        <div class="marketFormTitle"><span>SELLER DESK</span><b>Submit a listing</b></div>
+        <label>Verified business<select id="productBusiness" required><option value="">Sign in to load your businesses</option></select></label>
+        <div class="formRow"><label>Product or service<input id="productName" maxlength="100" required placeholder="e.g. Electrician · home visit"></label><label>Category<select id="productCategory"><option value="food">Food & pantry</option><option value="craft">Craft & culture</option><option value="home">Home & repair</option><option value="services">Local services</option></select></label></div>
+        <div class="formRow"><label>Price (₹)<input id="productPrice" type="number" min="1" max="1000000" step="1" required placeholder="250"></label><label>Sold as<input id="productUnit" maxlength="30" required placeholder="per jar / per visit"></label></div>
+        <label>Short details<textarea id="productDescription" maxlength="500" rows="3" placeholder="What should customers know?"></textarea></label>
+        <label>WhatsApp number for direct orders<input id="productWhatsapp" type="tel" autocomplete="tel" required placeholder="+91 98XXXXXXXX"></label>
+        <label class="consentCheck"><input id="productContactConsent" type="checkbox" required><span>I agree this business WhatsApp number can be shown publicly on my approved listing.</span></label>
+        <p class="marketFormHelp">For carpenter, mason, electrician, plumbing and repair work, use a clear starting price/unit. Confirm scope, materials, timing, any advance and the balance directly with the customer before work starts.</p>
+        <button class="marketPrimary" type="submit">Send for review <span>→</span></button>
+        <p class="formStatus" id="productFormStatus" role="status">Sign in with your approved business account to submit.</p>
+      </form>
+    </section>
+    <section class="marketSection claimSection">
+      <div><span class="marketEyebrow">ALREADY LISTED IN ALMORA?</span><h2>Claim your verified shop.</h2><p>If your business is already in the public directory, request an ownership check instead of submitting a duplicate profile. A moderator will contact the shop using public details and review your claim.</p></div>
+      <form class="marketForm" id="claimForm"><div class="marketFormTitle"><span>BUSINESS OWNERSHIP</span><b>Request verification</b></div><label>Business<select id="claimBusiness" required><option value="">Loading approved businesses…</option></select></label><label>Your business contact number<input id="claimPhone" type="tel" autocomplete="tel" required placeholder="+91 98XXXXXXXX"></label><label>How can the team verify your connection?<textarea id="claimEvidence" maxlength="500" rows="3" required placeholder="Describe your role and a way to confirm it. Do not enter passwords or bank details."></textarea></label><button class="marketPrimary" type="submit">Send ownership request <span>→</span></button><p class="formStatus" id="claimFormStatus" role="status">Sign in with your business or resident account to request verification.</p></form>
+    </section>
+    <section class="marketSection marketEarnings" id="earn">
+      <div><span class="marketEyebrow">A SUSTAINABLE TOWN PLATFORM</span><h2>Earn by creating<br><em>useful local value.</em></h2><p>Start with zero per-order commission so shops and independent workers keep what customers pay them. As the directory grows, Almora.ai can earn from optional business subscriptions and voluntary community support.</p></div>
+      <div class="earningOptions"><article><span>01 · OPEN ACCESS</span><b>Free verified listing</b><p>Help residents discover a shop or service. Customers contact and pay the provider directly.</p><small>Available in the pilot</small></article><article><span>02 · OPTIONAL PLAN</span><b>Shop subscription</b><p>Later: an opt-in monthly plan for richer storefronts, booking tools and business insights.</p><small>Payment setup required before sales</small></article><article><span>03 · COMMUNITY SUPPORT</span><b>Voluntary contribution</b><p>Residents and supporters can help cover the cost of keeping trusted town information useful.</p><small>Not a tax-deductible charitable donation</small></article><p class="earningDisclosure">No subscriptions, donations or customer payments are collected on this page today. Any future plan, fee or contribution will be shown clearly before payment.</p></div>
+    </section>
+    <footer class="marketFooter"><a class="brand" href="./"><span>आ</span><b>almora.ai</b></a><span>Local discovery, built with care in Almora.</span><a href="./businesses.html">Back to Business Hub ↑</a></footer>
+  </main>
+
+  <dialog class="marketDialog" id="partnerDialog">
+    <form method="dialog" id="partnerForm" class="marketForm">
+      <div class="marketDialogHead"><div><span class="marketEyebrow">INDEPENDENT DELIVERY PARTNER</span><h2>Join Almora’s local network.</h2></div><button class="dialogClose" value="cancel" aria-label="Close">×</button></div>
+      <p>Tell customers what you can deliver and where. Your details stay private until you opt in to a public listing and the application is approved.</p>
+      <p class="marketSignin"><a href="./resident-login.html">Sign in or create a resident account →</a></p>
+      <label>Display name<input id="partnerName" maxlength="70" required placeholder="Your name or delivery service"></label>
+      <div class="formRow"><label>WhatsApp number<input id="partnerWhatsapp" type="tel" autocomplete="tel" required placeholder="+91 98XXXXXXXX"></label><label>Vehicle<select id="partnerMode"><option>On foot</option><option>Bicycle</option><option>Scooter / motorcycle</option><option>Car / van</option><option>Other</option></select></label></div>
+      <div class="formRow"><label>Areas you cover<input id="partnerArea" maxlength="140" required placeholder="Almora Bazaar, Dharanaula…"></label><label>Typical starting fee (₹)<input id="partnerRate" type="number" min="0" max="10000" step="10" placeholder="Agreed per order"></label></div>
+      <label class="consentCheck"><input id="partnerConsent" type="checkbox" required><span>If approved, I agree that my display name, WhatsApp number, vehicle, service area and optional starting fee can be shown publicly so customers can contact me directly.</span></label>
+      <button class="marketPrimary" type="submit">Submit partner application <span>→</span></button><p class="formStatus" id="partnerFormStatus" role="status"></p>
+    </form>
+  </dialog>
+  <dialog class="marketDialog basketDialog" id="basketDialog">
+    <form method="dialog" class="marketForm" id="basketForm">
+      <div class="marketDialogHead"><div><span class="marketEyebrow">YOUR DEVICE-ONLY BASKET</span><h2>Review your picks.</h2></div><button class="dialogClose" value="cancel" aria-label="Close">×</button></div>
+      <div id="basketItems" class="basketItems"></div>
+      <label>How should the shop fulfil it?<select id="basketFulfilment"><option value="pickup">I’ll collect from the shop</option><option value="delivery">I’d like to arrange local delivery</option></select></label>
+      <label id="basketAreaWrap" hidden>Delivery area or landmark<input id="basketArea" maxlength="140" placeholder="Your area in or around Almora"></label>
+      <p class="basketTerms">We’ll open a WhatsApp order draft with each shop. The shop confirms stock, final price, delivery fare and how you can pay them directly. No payment is collected by Almora.ai.</p>
+      <div id="basketCheckout" class="basketCheckout"></div>
+    </form>
+  </dialog>
+  <script type="module" src="./local-market.js"></script>
+</body>
+</html>
