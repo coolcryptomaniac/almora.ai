@@ -23,6 +23,28 @@ service cloud.firestore {
     match /jobs/{id} { allow read: if true; allow write: if moderator(); }
     match /transport/{id} { allow read: if true; allow write: if moderator(); }
     match /businesses/{id} { allow read: if true; allow write: if moderator(); }
+    // Ownership claims are private so public business cards never expose account UIDs.
+    match /businessOwners/{businessId} {
+      allow read: if moderator() || (signedIn() && resource.data.ownerUid == request.auth.uid);
+      allow write: if moderator();
+    }
+    match /businessOwnershipSubmissions/{id} {
+      allow create: if signedIn()
+                    && request.resource.data.keys().hasOnly(['ownerUid','businessId','applicantPhone','evidenceNote','status','createdAt'])
+                    && request.resource.data.ownerUid == request.auth.uid
+                    && request.resource.data.businessId is string
+                    && exists(/databases/$(database)/documents/businesses/$(request.resource.data.businessId))
+                    && get(/databases/$(database)/documents/businesses/$(request.resource.data.businessId)).data.status == 'approved'
+                    && !exists(/databases/$(database)/documents/businessOwners/$(request.resource.data.businessId))
+                    && request.resource.data.applicantPhone.matches('^[0-9]{10,13}$')
+                    && request.resource.data.evidenceNote is string
+                    && request.resource.data.evidenceNote.size() >= 10
+                    && request.resource.data.evidenceNote.size() <= 500
+                    && request.resource.data.status == 'pending'
+                    && request.resource.data.createdAt is timestamp;
+      allow read: if moderator() || (signedIn() && resource.data.ownerUid == request.auth.uid);
+      allow update, delete: if moderator();
+    }
     match /verifiedSources/{id} { allow read: if true; allow write: if moderator(); }
     match /serviceProviders/{id} { allow read: if true; allow write: if moderator(); }
 
@@ -66,6 +88,72 @@ service cloud.firestore {
                     && request.resource.data.location.size() <= 160;
       allow read: if moderator() || (signedIn() && resource.data.ownerUid == request.auth.uid);
       allow update, delete: if moderator();
+    }
+
+    // Owner-managed local commerce: customers can see approved listings only.
+    match /marketplaceProducts/{id} {
+      allow read: if resource.data.status == 'approved';
+      allow write: if moderator();
+    }
+
+    match /marketplaceProductSubmissions/{id} {
+      allow create: if signedIn()
+                    && request.resource.data.keys().hasOnly(['ownerUid','businessId','businessName','location','name','category','price','unit','description','whatsapp','publicContactConsent','status','createdAt'])
+                    && request.resource.data.ownerUid == request.auth.uid
+                    && request.resource.data.businessId is string
+                    && request.resource.data.businessName is string
+                    && request.resource.data.businessName.size() <= 160
+                    && request.resource.data.location is string
+                    && request.resource.data.location.size() <= 160
+                    && exists(/databases/$(database)/documents/businesses/$(request.resource.data.businessId))
+                    && get(/databases/$(database)/documents/businesses/$(request.resource.data.businessId)).data.status == 'approved'
+                    && exists(/databases/$(database)/documents/businessOwners/$(request.resource.data.businessId))
+                    && get(/databases/$(database)/documents/businessOwners/$(request.resource.data.businessId)).data.ownerUid == request.auth.uid
+                    && request.resource.data.name is string
+                    && request.resource.data.name.size() > 0
+                    && request.resource.data.name.size() <= 100
+                    && request.resource.data.category in ['food','craft','home','services']
+                    && request.resource.data.price is number
+                    && request.resource.data.price >= 1
+                    && request.resource.data.price <= 1000000
+                    && request.resource.data.unit is string
+                    && request.resource.data.unit.size() <= 30
+                    && request.resource.data.description is string
+                    && request.resource.data.description.size() <= 500
+                    && request.resource.data.whatsapp.matches('^[0-9]{10,13}$')
+                    && request.resource.data.publicContactConsent == true
+                    && request.resource.data.status == 'pending'
+                    && request.resource.data.createdAt is timestamp;
+      allow read: if moderator() || (signedIn() && resource.data.ownerUid == request.auth.uid);
+      allow update, delete: if moderator();
+    }
+
+    // Delivery applicants keep their phone private until opt-in and approval.
+    match /deliveryPartnerSubmissions/{id} {
+      allow create: if signedIn()
+                    && request.resource.data.keys().hasOnly(['ownerUid','displayName','whatsapp','vehicle','coverageArea','startingFee','publicContactConsent','status','createdAt'])
+                    && request.resource.data.ownerUid == request.auth.uid
+                    && request.resource.data.displayName is string
+                    && request.resource.data.displayName.size() > 0
+                    && request.resource.data.displayName.size() <= 70
+                    && request.resource.data.whatsapp.matches('^[0-9]{10,13}$')
+                    && request.resource.data.vehicle in ['On foot','Bicycle','Scooter / motorcycle','Car / van','Other']
+                    && request.resource.data.coverageArea is string
+                    && request.resource.data.coverageArea.size() > 0
+                    && request.resource.data.coverageArea.size() <= 140
+                    && request.resource.data.startingFee is number
+                    && request.resource.data.startingFee >= 0
+                    && request.resource.data.startingFee <= 10000
+                    && request.resource.data.publicContactConsent == true
+                    && request.resource.data.status == 'pending'
+                    && request.resource.data.createdAt is timestamp;
+      allow read: if moderator() || (signedIn() && resource.data.ownerUid == request.auth.uid);
+      allow update, delete: if moderator();
+    }
+
+    match /localDeliveryPartners/{id} {
+      allow read: if resource.data.status == 'approved';
+      allow write: if moderator();
     }
 
     match /jobApplications/{id} {
