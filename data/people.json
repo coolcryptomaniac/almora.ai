@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T07:13:35.635026+00:00",
+  "updatedAt": "2026-10-04T08:25:29.669535+00:00",
   "method": "Strict Almora atlas: public figures require an explicit Almora/Almora-district connection in source text/category or a manually documented deep connection through substantial work, education, representation, institution-building or cultural contribution. Regional Kumaon-only association is not enough.",
   "count": 32,
   "people": [
@@ -42,7 +42,7 @@
       "categories": [
         "sports"
       ],
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Ekta-bisht.jpg/960px-Ekta-bisht.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Ekta-bisht.jpg/960px-Ekta-bisht.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
       "url": "https://en.wikipedia.org/wiki/Ekta_Bisht",
       "source": "Wikipedia / Wikimedia + Wikidata human validation",
       "featured": true,
@@ -72,7 +72,7 @@
       "categories": [
         "sports"
       ],
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Lakshya_Sen_in_2018.jpg/960px-Lakshya_Sen_in_2018.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Lakshya_Sen_in_2018.jpg/960px-Lakshya_Sen_in_2018.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
       "url": "https://en.wikipedia.org/wiki/Lakshya_Sen",
       "source": "Wikipedia / Wikimedia + Wikidata human validation",
       "featured": true,
@@ -269,7 +269,7 @@
       "categories": [
         "public"
       ],
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/British_Generals_1939-1945_E16462.jpg/960px-British_Generals_1939-1945_E16462.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/British_Generals_1939-1945_E16462.jpg/960px-British_Generals_1939-1945_E16462.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
       "url": "https://en.wikipedia.org/wiki/Brian_Horrocks",
       "source": "Wikipedia / Wikimedia + Wikidata human validation",
       "featured": false,
@@ -308,13 +308,13 @@
     {
       "id": "Q5266858",
       "name": "Devendra Kumar Joshi",
-      "description": "Admiral Devendra Kumar Joshi, PVSM, AVSM, YSM, NM, VSM (born 4 July 1954) is the 14th Lieutenant Governor of Andaman and Nicobar Islands since 2017 and the Vice Chairman of Islands Development Agency (IDA). He was an Admiral in the Indian Navy and served as the 21st Chief of Naval Staff of the Indian Navy, having assumed office on 31 August 2012. He is a specialist in anti-submarine warfare. He resigned on 26 February 2014, taking responsibility for a series of accidents, thus becoming the first Indian Navy Chief to resign.",
+      "description": "Admiral Devendra Kumar Joshi, PVSM, AVSM, YSM, NM, VSM (born 4 July 1954) was the 14th Lieutenant Governor of Andaman and Nicobar Islands from 2017 to 2026 and the Vice Chairman of Islands Development Agency (IDA). He was an Admiral in the Indian Navy and served as the 21st Chief of Naval Staff of the Indian Navy, having assumed office on 31 August 2012. He is a specialist in anti-submarine warfare. He resigned on 26 February 2014, taking responsibility for a series of accidents, thus becoming the first Indian Navy Chief to resign.",
       "connection": "Explicit Almora / Almora district connection in public source",
       "occupation": "Public service",
       "categories": [
         "public"
       ],
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/DK_Joshi_official_portrait.jpg/960px-DK_Joshi_official_portrait.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/DK_Joshi_official_portrait.jpg/960px-DK_Joshi_official_portrait.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
       "url": "https://en.wikipedia.org/wiki/Devendra_Kumar_Joshi",
       "source": "Wikipedia / Wikimedia + Wikidata human validation",
       "featured": false,
@@ -391,7 +391,7 @@
       "categories": [
         "public"
       ],
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/US_Navy_110407-N-XXXXX-036_Indian_navy_Rear_Adm._HCS_Bisht%2C_flag_officer_of_Commanding_Eastern_Fleet%2C_presents_a_gift_to_Vice_Adm._Scott_R._Van_Bu.jpg/960px-US_Navy_110407-N-XXXXX-036_Indian_navy_Rear_Adm._HCS_Bisht%2C_flag_officer_of_Commanding_Eastern_Fleet%2C_presents_a_gift_to_Vice_Adm._Scott_R._Van_Bu.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/US_Navy_110407-N-XXXXX-036_Indian_navy_Rear_Adm._HCS_Bisht%2C_flag_officer_of_Commanding_Eastern_Fleet%2C_presents_a_gift_to_Vice_Adm._Scott_R._Van_Bu.jpg/960px-US_Navy_110407-N-XXXXX-036_Indian_navy_Rear_Adm._HCS_Bisht%2C_flag_officer_of_Commanding_Eastern_Fleet%2C_presents_a_gift_to_Vice_Adm._Scott_R._Van_Bu.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
       "url": "https://en.wikipedia.org/wiki/Harish_Bisht",
       "source": "Wikipedia / Wikimedia + Wikidata human validation",
       "featured": false,
@@ -482,7 +482,7 @@
       "categories": [
         "culture"
       ],
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Mir_Ranjan_Negi.jpg/960px-Mir_Ranjan_Negi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Mir_Ranjan_Negi.jpg/960px-Mir_Ranjan_Negi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
       "url": "https://en.wikipedia.org/wiki/Mir_Ranjan_Negi",
       "source": "Wikipedia / Wikimedia + Wikidata human validation",
       "featured": false,
