@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T12:46:48Z",
+  "generated_at": "2026-10-11T13:21:37Z",
   "mode": "weekly",
   "summary": "Automated source scan completed without an LLM synthesis layer; headlines are source-derived and implications are conservative program heuristics.",
   "signals": [
@@ -10,7 +10,7 @@
     },
     {
       "category": "RESEARCH",
-      "headline": "DuoMind: Enabling Distributed Multi-Robot Coordination with Semantic Communication",
+      "headline": "VersaCamVLA: Camera-Configurable VLA Policies for Robotic Manipulation",
       "impact": "Track advances that improve robot planning, manipulation and evaluation rather than benchmark novelty alone."
     },
     {

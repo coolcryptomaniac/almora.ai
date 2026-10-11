@@ -1,0 +1,120 @@
+{
+  "generated_at": "2026-10-11T13:21:37Z",
+  "mode": "weekly",
+  "summary": "Automated source scan completed without an LLM synthesis layer; headlines are source-derived and implications are conservative program heuristics.",
+  "signals": [
+    {
+      "category": "PHYSICAL AI",
+      "headline": "NVIDIA Isaac ROS 5.0 Advances Agentic, Open Source Robotics Development",
+      "impact": "Re-test which cabin manipulation tasks can move from teleoperation to autonomous execution."
+    },
+    {
+      "category": "RESEARCH",
+      "headline": "VersaCamVLA: Camera-Configurable VLA Policies for Robotic Manipulation",
+      "impact": "Track advances that improve robot planning, manipulation and evaluation rather than benchmark novelty alone."
+    },
+    {
+      "category": "AUTONOMY",
+      "headline": "No fresh autonomy source parsed this run",
+      "impact": "Keep the vehicle interface modular; do not assume AETHERHOME must invent the base driving stack."
+    },
+    {
+      "category": "GPU ECONOMICS",
+      "headline": "Lambda GPU Cloud",
+      "impact": "Prefer rented inference/simulation bursts and measured edge compute over premature frontier-model training."
+    }
+  ],
+  "cost_watch": {
+    "gpu": "Public pricing pages scanned; use vendor quotes before budgeting.",
+    "talent": "No reliable salary feed configured; hiring cost remains a planning assumption.",
+    "prototype": "Use the staged cost bands in journey.json and replace them with quotes as vendors engage."
+  },
+  "roadmap_updates": [
+    "Maintain teleoperation fallback as a first-class product capability.",
+    "Benchmark useful cabin tasks before expanding humanoid scope."
+  ],
+  "sources": [
+    {
+      "title": "arXiv embodied AI",
+      "url": "https://export.arxiv.org/api/query?search_query=all:%22embodied%20AI%22%20OR%20all:%22humanoid%20robot%22%20OR%20all:%22vision-language-action%22&sortBy=submittedDate&sortOrder=descending&max_results=20",
+      "kind": "research",
+      "ok": true
+    },
+    {
+      "title": "NVIDIA robotics",
+      "url": "https://blogs.nvidia.com/blog/category/robotics/feed/",
+      "kind": "physical-ai",
+      "ok": true
+    },
+    {
+      "title": "Google DeepMind",
+      "url": "https://deepmind.google/blog/rss.xml",
+      "kind": "research",
+      "ok": true
+    },
+    {
+      "title": "Tesla AI",
+      "url": "https://www.tesla.com/AI",
+      "kind": "autonomy",
+      "ok": false,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "title": "Genesis AI",
+      "url": "https://genesis-ai.company/",
+      "kind": "physical-ai",
+      "ok": true
+    },
+    {
+      "title": "Walden Robotics",
+      "url": "https://www.waldenrobotics.com/",
+      "kind": "physical-ai",
+      "ok": true
+    },
+    {
+      "title": "Lambda GPU Cloud",
+      "url": "https://lambda.ai/service/gpu-cloud",
+      "kind": "gpu-cost",
+      "ok": true
+    },
+    {
+      "title": "Runpod pricing",
+      "url": "https://www.runpod.io/pricing",
+      "kind": "gpu-cost",
+      "ok": true
+    },
+    {
+      "title": "CoreWeave pricing",
+      "url": "https://www.coreweave.com/pricing",
+      "kind": "gpu-cost",
+      "ok": true
+    },
+    {
+      "title": "Modal pricing",
+      "url": "https://modal.com/pricing",
+      "kind": "gpu-cost",
+      "ok": true
+    },
+    {
+      "title": "Figure careers",
+      "url": "https://www.figure.ai/careers",
+      "kind": "talent-cost",
+      "ok": true
+    },
+    {
+      "title": "Physical Intelligence careers",
+      "url": "https://www.physicalintelligence.company/careers",
+      "kind": "talent-cost",
+      "ok": false,
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "title": "Skild AI careers",
+      "url": "https://www.skild.ai/careers",
+      "kind": "talent-cost",
+      "ok": false,
+      "error": "HTTP Error 404: Not Found"
+    }
+  ],
+  "model": "deterministic-fallback"
+}
