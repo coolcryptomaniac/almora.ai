@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-11T13:21:37Z",
+  "generated_at": "2026-10-18T11:35:59Z",
   "mode": "weekly",
   "summary": "Automated source scan completed without an LLM synthesis layer; headlines are source-derived and implications are conservative program heuristics.",
   "signals": [
     {
       "category": "PHYSICAL AI",
-      "headline": "NVIDIA Isaac ROS 5.0 Advances Agentic, Open Source Robotics Development",
+      "headline": "Into the Omniverse: How Developers Turn Ideas Into Simulations With Frontier AI Agents",
       "impact": "Re-test which cabin manipulation tasks can move from teleoperation to autonomous execution."
     },
     {
       "category": "RESEARCH",
-      "headline": "VersaCamVLA: Camera-Configurable VLA Policies for Robotic Manipulation",
+      "headline": "REKI: Registering Knowledge in VLAs",
       "impact": "Track advances that improve robot planning, manipulation and evaluation rather than benchmark novelty alone."
     },
     {
@@ -106,7 +106,7 @@
       "url": "https://www.physicalintelligence.company/careers",
       "kind": "talent-cost",
       "ok": false,
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "title": "Skild AI careers",
