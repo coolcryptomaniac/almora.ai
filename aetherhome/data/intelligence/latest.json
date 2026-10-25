@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T11:35:59Z",
+  "generated_at": "2026-10-25T11:55:43Z",
   "mode": "weekly",
   "summary": "Automated source scan completed without an LLM synthesis layer; headlines are source-derived and implications are conservative program heuristics.",
   "signals": [
@@ -10,7 +10,7 @@
     },
     {
       "category": "RESEARCH",
-      "headline": "REKI: Registering Knowledge in VLAs",
+      "headline": "Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success",
       "impact": "Track advances that improve robot planning, manipulation and evaluation rather than benchmark novelty alone."
     },
     {
