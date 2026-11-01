@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-01T13:43:10Z",
-  "mode": "weekly",
+  "generated_at": "2026-11-01T13:46:31Z",
+  "mode": "monthly",
   "summary": "Automated source scan completed without an LLM synthesis layer; headlines are source-derived and implications are conservative program heuristics.",
   "signals": [
     {
