@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-01T13:46:31Z",
-  "mode": "monthly",
+  "generated_at": "2026-11-08T13:46:44Z",
+  "mode": "weekly",
   "summary": "Automated source scan completed without an LLM synthesis layer; headlines are source-derived and implications are conservative program heuristics.",
   "signals": [
     {
@@ -10,7 +10,7 @@
     },
     {
       "category": "RESEARCH",
-      "headline": "Gym-Anything for Robotics: Scaling physical simulations with digital agents",
+      "headline": "OopsieRecover: Learning Transferable VLA Corrections from Semantic Interventions",
       "impact": "Track advances that improve robot planning, manipulation and evaluation rather than benchmark novelty alone."
     },
     {
