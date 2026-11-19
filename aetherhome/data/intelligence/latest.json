@@ -1,121 +1,196 @@
 {
-  "generated_at": "2026-11-15T14:14:51Z",
+  "generated_at": "2026-11-19T09:18:42.063Z",
   "mode": "weekly",
-  "summary": "Automated source scan completed without an LLM synthesis layer; headlines are source-derived and implications are conservative program heuristics.",
+  "summary": "Source-linked review through 19 November 2026. Latest repository baseline is 15 November's deterministic scan; the 14 November queue attempt remains unfinished, so dated 5–12 November context is included without presenting it as newly launched after the baseline. Findings support measured manipulation benchmarks and explicit operating limits, not a roadmap or capital-band change.",
   "signals": [
     {
-      "category": "PHYSICAL AI",
-      "headline": "How AI Helps Recyclers Turn Mixed Waste Into Reusable Material",
-      "impact": "Re-test which cabin manipulation tasks can move from teleoperation to autonomous execution."
+      "category": "MANIPULATION",
+      "headline": "11 November: execution strategy matters alongside the VLA model",
+      "impact": "Evidence: a workshop preprint studies pi0.5 on two simulation benchmarks and three real-robot tasks; continuous trajectories outperform latency-only approaches. Inference for AETHERHOME: benchmark execution horizons, asynchronous inference, continuity and intervention rate together before changing models. This is research, not cabin validation.",
+      "source_urls": [
+        "https://arxiv.org/abs/2611.15491"
+      ]
     },
     {
-      "category": "RESEARCH",
-      "headline": "Introducing Gemini 4 Hydrogen",
-      "impact": "Track advances that improve robot planning, manipulation and evaluation rather than benchmark novelty alone."
+      "category": "TACTILE CONTROL / CONTEXT",
+      "headline": "5 November: T-Rex reports 65% success across 12 contact-rich tasks",
+      "impact": "Older context omitted from the headline-only baseline: Panasonic reports 65% versus 35% for its best baseline, combining visual-language planning with faster tactile corrections. Inference: test fragile-object handling with force limits and teleoperation fallback; these results do not establish unattended passenger service readiness.",
+      "source_urls": [
+        "https://news.panasonic.com/global/press/en261105-2"
+      ]
     },
     {
-      "category": "AUTONOMY",
-      "headline": "No fresh autonomy source parsed this run",
-      "impact": "Keep the vehicle interface modular; do not assume AETHERHOME must invent the base driving stack."
+      "category": "FUNDING / MANUFACTURING",
+      "headline": "12 November: Agile Robots announces $500M at $8.5B valuation",
+      "impact": "Company-reported round and more than 20,000 installed industrial robotic solutions; the latter is not a humanoid deployment count. Claimed annual humanoid factory capacity of up to 10,000 is capacity, not deliveries. Inference: investigate integration options before financing an entire robot stack; no AETHERHOME funding or partnership is implied.",
+      "source_urls": [
+        "https://www.agile-robots.com/en/news/detail/physical-ai-leader-agile-robots-raises-500-million-series-f-funding/"
+      ]
+    },
+    {
+      "category": "COMPARABLE FUNDING",
+      "headline": "10 November: Path Robotics announces $300M Series E at $2.45B",
+      "impact": "Company announcement, led by Georgian, focused on industrial physical AI. Inference: a narrow, measurable task such as cabin reset is a better diligence milestone than general-purpose claims. Manufacturing financing is not evidence for premium mobile-home demand.",
+      "source_urls": [
+        "https://www.path-robotics.com/news/path-robotics-announces-300-million-series-e-led-by-georgian"
+      ]
+    },
+    {
+      "category": "AUTONOMY / VEHICLE INTEGRATION",
+      "headline": "5–10 November: weather limits and accessibility co-design remain central",
+      "impact": "Waymo describes reducing or pausing service outside validated weather conditions (5 November) and launches a UK accessibility network (10 November). Inference: specify operational limits, safe-stop behavior and accessible cabin controls independently of the driving supplier. Neither announcement demonstrates an available AETHERHOME vehicle integration.",
+      "source_urls": [
+        "https://waymo.com/blog/2026/11/winter-weather-preparedness/",
+        "https://waymo.com/blog/2026/11/uk-accessibility-network/"
+      ]
     },
     {
       "category": "GPU ECONOMICS",
-      "headline": "Lambda GPU Cloud",
-      "impact": "Prefer rented inference/simulation bursts and measured edge compute over premature frontier-model training."
+      "headline": "12 November pricing-page update establishes a baseline, not a verified price cut",
+      "impact": "Runpod lists H100 PCIe Secure Cloud at USD 2.89/hour and Community from USD 1.99/hour. Assumption: 10 billed GPU hours gives USD 28.90 or from USD 19.90, compute only; storage, tax and other charges excluded. Availability and security differ. No historical matched price establishes a change.",
+      "source_urls": [
+        "https://www.runpod.io/pricing"
+      ]
+    },
+    {
+      "category": "EDGE / HARDWARE",
+      "headline": "Existing Jetson Orin Nano Super reference remains USD 249",
+      "impact": "NVIDIA's page lists USD 249 and up to 67 TOPS. This is older product context, not a new launch or an India landed-price quote. Inference: use it only as an edge prototype comparator; memory, thermal, power and control latency need measurement. No verified new actuator, tactile-sensor or complete humanoid cost change.",
+      "source_urls": [
+        "https://www.nvidia.com/en-in/autonomous-machines/embedded-systems/jetson-orin/nano-super-developer-kit/"
+      ]
+    },
+    {
+      "category": "TALENT / SAFETY",
+      "headline": "No verified compensation shift or newly effective safety rule found",
+      "impact": "Figure advertises San Jose AI, engineering and design hiring but the retrieved page provides no salary bands. A3 lists robotics safety working-group meetings on 19–20 November; meetings are not new binding standards. Keep salary and certification assumptions provisional; no India regulatory conclusion is established.",
+      "source_urls": [
+        "https://www.figure.ai/careers",
+        "https://www.automate.org/robotics/robotic-standards/standards-meetings"
+      ]
     }
   ],
   "cost_watch": {
-    "gpu": "Public pricing pages scanned; use vendor quotes before budgeting.",
-    "talent": "No reliable salary feed configured; hiring cost remains a planning assumption.",
-    "prototype": "Use the staged cost bands in journey.json and replace them with quotes as vendors engage."
+    "gpu": "Runpod H100 PCIe: USD 2.89/hour Secure; Community from USD 1.99/hour, checked Nov19; page updated Nov12. No verified price delta. Lambda current page retrieved but no numeric rates exposed in text.",
+    "talent": "Figure San Jose hiring visible; no verified compensation band or change. Do not extrapolate US salaries to India.",
+    "prototype": "Jetson reference USD249 is not complete hardware or India landed cost. No supplier quotes for actuators, sensors, integration or certification; journey.json remains unchanged."
   },
   "roadmap_updates": [
-    "Maintain teleoperation fallback as a first-class product capability.",
-    "Benchmark useful cabin tasks before expanding humanoid scope."
+    "Recommendation only: use a small cabin manipulation benchmark with completion, damage, intervention, latency and recovery measures; retain teleoperation fallback.",
+    "Recommendation only: define weather and passenger-interaction operating limits before vehicle integration.",
+    "No material evidence supports changing the concept-stage roadmap or cost bands."
   ],
   "sources": [
     {
-      "title": "arXiv embodied AI",
-      "url": "https://export.arxiv.org/api/query?search_query=all:%22embodied%20AI%22%20OR%20all:%22humanoid%20robot%22%20OR%20all:%22vision-language-action%22&sortBy=submittedDate&sortOrder=descending&max_results=20",
+      "title": "VLA execution study",
+      "url": "https://arxiv.org/abs/2611.15491",
       "kind": "research",
-      "ok": false,
-      "error": "The read operation timed out"
+      "ok": true,
+      "published_at": "2026-11-11",
+      "checked_at": "2026-11-19",
+      "effective_date": "Unspecified unless stated in signal"
     },
     {
-      "title": "NVIDIA robotics",
-      "url": "https://blogs.nvidia.com/blog/category/robotics/feed/",
-      "kind": "physical-ai",
-      "ok": true
-    },
-    {
-      "title": "Google DeepMind",
-      "url": "https://deepmind.google/blog/rss.xml",
+      "title": "Panasonic T-Rex",
+      "url": "https://news.panasonic.com/global/press/en261105-2",
       "kind": "research",
-      "ok": true
+      "ok": true,
+      "published_at": "2026-11-05",
+      "checked_at": "2026-11-19",
+      "effective_date": "Unspecified unless stated in signal"
     },
     {
-      "title": "Tesla AI",
-      "url": "https://www.tesla.com/AI",
+      "title": "Agile Robots Series F",
+      "url": "https://www.agile-robots.com/en/news/detail/physical-ai-leader-agile-robots-raises-500-million-series-f-funding/",
+      "kind": "funding",
+      "ok": true,
+      "published_at": "2026-11-12",
+      "checked_at": "2026-11-19",
+      "effective_date": "Unspecified unless stated in signal"
+    },
+    {
+      "title": "Path Robotics Series E",
+      "url": "https://www.path-robotics.com/news/path-robotics-announces-300-million-series-e-led-by-georgian",
+      "kind": "funding",
+      "ok": true,
+      "published_at": "2026-11-10",
+      "checked_at": "2026-11-19",
+      "effective_date": "Unspecified unless stated in signal"
+    },
+    {
+      "title": "Waymo winter operating limits",
+      "url": "https://waymo.com/blog/2026/11/winter-weather-preparedness/",
       "kind": "autonomy",
-      "ok": false,
-      "error": "HTTP Error 403: Forbidden"
+      "ok": true,
+      "published_at": "2026-11-05",
+      "checked_at": "2026-11-19",
+      "effective_date": "Unspecified unless stated in signal"
     },
     {
-      "title": "Genesis AI",
-      "url": "https://genesis-ai.company/",
-      "kind": "physical-ai",
-      "ok": true
-    },
-    {
-      "title": "Walden Robotics",
-      "url": "https://www.waldenrobotics.com/",
-      "kind": "physical-ai",
-      "ok": true
-    },
-    {
-      "title": "Lambda GPU Cloud",
-      "url": "https://lambda.ai/service/gpu-cloud",
-      "kind": "gpu-cost",
-      "ok": true
+      "title": "Waymo UK accessibility network",
+      "url": "https://waymo.com/blog/2026/11/uk-accessibility-network/",
+      "kind": "vehicle-integration",
+      "ok": true,
+      "published_at": "2026-11-10",
+      "checked_at": "2026-11-19",
+      "effective_date": "Unspecified unless stated in signal"
     },
     {
       "title": "Runpod pricing",
       "url": "https://www.runpod.io/pricing",
       "kind": "gpu-cost",
-      "ok": true
+      "ok": true,
+      "published_at": "2026-11-12",
+      "checked_at": "2026-11-19",
+      "effective_date": "Unspecified unless stated in signal"
     },
     {
-      "title": "CoreWeave pricing",
-      "url": "https://www.coreweave.com/pricing",
-      "kind": "gpu-cost",
-      "ok": true
-    },
-    {
-      "title": "Modal pricing",
-      "url": "https://modal.com/pricing",
-      "kind": "gpu-cost",
-      "ok": true
+      "title": "Jetson Orin Nano Super",
+      "url": "https://www.nvidia.com/en-in/autonomous-machines/embedded-systems/jetson-orin/nano-super-developer-kit/",
+      "kind": "hardware",
+      "ok": true,
+      "published_at": null,
+      "checked_at": "2026-11-19",
+      "effective_date": "Unspecified unless stated in signal"
     },
     {
       "title": "Figure careers",
       "url": "https://www.figure.ai/careers",
       "kind": "talent-cost",
-      "ok": true
+      "ok": true,
+      "published_at": null,
+      "checked_at": "2026-11-19",
+      "effective_date": "Unspecified unless stated in signal"
     },
     {
-      "title": "Physical Intelligence careers",
-      "url": "https://www.physicalintelligence.company/careers",
-      "kind": "talent-cost",
-      "ok": false,
-      "error": "HTTP Error 429: Too Many Requests"
+      "title": "A3 standards meetings",
+      "url": "https://www.automate.org/robotics/robotic-standards/standards-meetings",
+      "kind": "safety",
+      "ok": true,
+      "published_at": null,
+      "checked_at": "2026-11-19",
+      "effective_date": "Unspecified unless stated in signal"
     },
     {
-      "title": "Skild AI careers",
-      "url": "https://www.skild.ai/careers",
-      "kind": "talent-cost",
-      "ok": false,
-      "error": "HTTP Error 404: Not Found"
+      "title": "Lambda instances",
+      "url": "https://lambda.com/instances",
+      "kind": "gpu-cost",
+      "ok": true,
+      "published_at": null,
+      "checked_at": "2026-11-19",
+      "effective_date": "Unspecified unless stated in signal"
     }
   ],
-  "model": "deterministic-fallback"
+  "model": "source-linked-agent-review",
+  "coverage": {
+    "last_success_at": null,
+    "repository_baseline": "2026-11-15T14:14:51Z",
+    "prior_attempt": "2026-11-14 claim has no terminal receipt; not treated as success or replayed",
+    "limitations": [
+      "Public research and company announcements are not independent reproduction or deployment audits.",
+      "No verified India salary or component quotations; pricing is not an availability guarantee.",
+      "PolyMorphWBC primary page retrieval failed; excluded from findings.",
+      "No new safety rule verified; this is not a comprehensive jurisdictional compliance review."
+    ]
+  }
 }
