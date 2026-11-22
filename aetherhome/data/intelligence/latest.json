@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-11-15T14:14:51Z",
+  "generated_at": "2026-11-22T14:48:50Z",
   "mode": "weekly",
   "summary": "Automated source scan completed without an LLM synthesis layer; headlines are source-derived and implications are conservative program heuristics.",
   "signals": [
     {
       "category": "PHYSICAL AI",
-      "headline": "How AI Helps Recyclers Turn Mixed Waste Into Reusable Material",
+      "headline": "Into the Omniverse: How Developers Turn Ideas Into Simulations With Frontier AI Agents",
       "impact": "Re-test which cabin manipulation tasks can move from teleoperation to autonomous execution."
     },
     {
       "category": "RESEARCH",
-      "headline": "Introducing Gemini 4 Hydrogen",
+      "headline": "PGX: Physically Grounded Execution for Long-Horizon Humanoid Loco-Manipulation",
       "impact": "Track advances that improve robot planning, manipulation and evaluation rather than benchmark novelty alone."
     },
     {
@@ -38,8 +38,7 @@
       "title": "arXiv embodied AI",
       "url": "https://export.arxiv.org/api/query?search_query=all:%22embodied%20AI%22%20OR%20all:%22humanoid%20robot%22%20OR%20all:%22vision-language-action%22&sortBy=submittedDate&sortOrder=descending&max_results=20",
       "kind": "research",
-      "ok": false,
-      "error": "The read operation timed out"
+      "ok": true
     },
     {
       "title": "NVIDIA robotics",
